@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function playerDoc(pid) { return /databases/$(database)/documents/players/$(pid); }
+    function isOwner(pid) { return signedIn() && request.auth.uid in get(playerDoc(pid)).data.owners; }
+    function avatarOk(a) { return a in ['🦊','🐼','🐸','🐱','🐵','🐯','🐨','🐻','🐰','🦁','🐶','🐷','🐙','🦄','🐧','🐺','🐹','🦉']; }
+
+    // nickname -> {pid, email(sahte), uid}. Giriş için herkes tek tek okuyabilir, listeleyemez.
+    match /usernames/{key} {
+      allow get: if true;
+      allow list: if false;
+      allow create: if signedIn()
+        && key.size() >= 3 && key.size() <= 16 && !key.matches('.*/.*')
+        && request.resource.data.keys().hasOnly(['pid', 'email', 'uid'])
+        && request.resource.data.uid == request.auth.uid
+        && getAfter(playerDoc(request.resource.data.pid)).data.nickKey == key
+        && request.auth.uid in getAfter(playerDoc(request.resource.data.pid)).data.owners;
+      allow update: if signedIn()
+        && isOwner(resource.data.pid)
+        && request.resource.data.keys().hasOnly(['pid', 'email', 'uid'])
+        && request.resource.data.pid == resource.data.pid
+        && request.resource.data.uid == request.auth.uid;
+      allow delete: if signedIn() && isOwner(resource.data.pid);
+    }
+
+    // Herkese açık profil: nickname + avatar. E-posta yok.
+    match /players/{pid} {
+      allow get: if true;
+      allow list: if false;
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['nick', 'nickKey', 'avatar', 'owners', 'rv', 'createdAt'])
+        && request.resource.data.nick.size() >= 3 && request.resource.data.nick.size() <= 16
+        && request.resource.data.nickKey.size() >= 3 && request.resource.data.nickKey.size() <= 16
+        && avatarOk(request.resource.data.avatar)
+        && request.resource.data.owners.size() == 2
+        && request.auth.uid in request.resource.data.owners
+        && request.resource.data.rv == 1
+        && request.resource.data.createdAt == request.time;
+      allow update: if signedIn()
+        && request.auth.uid in resource.data.owners
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['nick', 'nickKey', 'avatar', 'owners', 'rv'])
+        && request.resource.data.nick.size() >= 3 && request.resource.data.nick.size() <= 16
+        && avatarOk(request.resource.data.avatar)
+        && request.resource.data.owners.size() == 2
+        && request.auth.uid in request.resource.data.owners;
+      allow delete: if false;
+    }
+  }
+}
