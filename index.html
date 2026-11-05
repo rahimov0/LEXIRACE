@@ -78,6 +78,16 @@ body{overscroll-behavior:none}
 input[type=password]{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:16px;margin-top:8px}#acform input:first-child{margin-top:0}
 .av{width:78px;height:78px;border-radius:50%;background:var(--grey);display:grid;place-items:center;font-size:42px;margin:0 auto}.avg{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.avg button{aspect-ratio:1;border-radius:12px;border:1px solid var(--line);background:transparent;font-size:24px;cursor:pointer}.avg .on{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 18%,transparent)}
 .code{font:700 19px ui-monospace,Menlo,monospace;letter-spacing:1px;padding:14px 8px;background:var(--bg);border:1px dashed var(--acc);border-radius:12px;word-break:break-all;margin:12px 0;user-select:all}
+.auth{padding-top:6px}.ahero{text-align:center;margin:0 0 18px}.alk{display:block;height:92px;width:auto;margin:0 auto 6px}
+.acard{padding:20px 18px}.atitle{font:800 22px Outfit,sans-serif;margin:0 0 4px}
+.field{margin-bottom:12px}.field label{display:block;font:600 12px Inter,sans-serif;color:var(--mut);margin:0 2px 6px}.field input{margin:0;height:46px}.field input:focus{outline:2px solid var(--acc);outline-offset:0;border-color:transparent}
+.pw{position:relative}.pw input{padding-right:46px}.eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;background:none;color:var(--mut);cursor:pointer;display:grid;place-items:center;border-radius:10px}
+.hint{font-size:12px;margin:-6px 2px 10px;min-height:16px;color:var(--mut)}.hint.ok{color:var(--green)}.hint.bad{color:var(--red)}
+.nbox{display:flex;gap:10px;align-items:flex-start;background:color-mix(in srgb,var(--acc) 10%,transparent);border:1px solid color-mix(in srgb,var(--acc) 30%,transparent);border-radius:12px;padding:10px 12px;font-size:12.5px;line-height:1.5;color:var(--ink);margin:4px 0 12px}.nbox svg{color:var(--acc);margin-top:1px}
+.amsg{min-height:20px;margin:0 2px 8px;font-size:13px;color:var(--red)}
+.lnk{background:none;border:0;color:var(--acc);font:700 13px Inter,sans-serif;cursor:pointer;padding:6px 4px}.alinks{text-align:center;font-size:13.5px;color:var(--mut);margin-top:6px}
+.btn.busy::after{content:"";width:15px;height:15px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp .7s linear infinite}
+.auth{min-height:calc(100dvh - 60px);display:flex;flex-direction:column;justify-content:center;padding-bottom:30px}
 </style></head>
 <body><main id="app"></main>
 <script>
@@ -131,6 +141,7 @@ const P={mic:'<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><p
 P.lock='<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>';P.unlock='<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/>';
 P.user='<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>';
 P.skip='<polygon points="5 4 15 12 5 20 5 4"/><path d="M19 5v14"/>';
+P.eye='<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>';P.eyeoff='<path d="M9.9 4.2A10 10 0 0 1 12 4c6.5 0 10 8 10 8a17 17 0 0 1-3.2 4.4M6.6 6.6A16 16 0 0 0 2 12s3.5 8 10 8a10 10 0 0 0 5.4-1.6"/><path d="M2 2l20 20"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>';
 const I=(n,s=20)=>`<svg class="i" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]}</svg>`;
 const MODE=m=>m==="voice"?I("mic",14)+" Sesli":I("pen",14)+" Yazılı";
 const nav=a=>`<div class="nav"><div>${[["m","flag","Oyun"],["r","layers","Kartlar"],["p","user","Profil"],["s","sliders","Ayarlar"]].map(([k,i,t])=>`<button data-n="${k}" class="${a===k?"on":""}">${I(i,22)}<span>${t}${k==="r"&&db.deck.length?`<em class="bd">${db.deck.length}</em>`:""}</span></button>`).join("")}</div></div>`;
@@ -232,19 +243,23 @@ async function changeNick(n){const er=nickOk(n);if(er)throw new Error(er);const 
 async function changePw(cur,np){if((np||"").length<6)throw new Error("Yeni şifre en az 6 karakter olmalı.");const F=await fb(),u=F.A.currentUser;try{await F.auth.reauthenticateWithCredential(u,F.auth.EmailAuthProvider.credential(u.email,cur))}catch(e){throw new Error("Mevcut şifre hatalı.")}await F.auth.updatePassword(u,np)}
 // ---- ekranlar
 let AMODE="login";
-const fld=(id,ph,t="text",ac="off")=>`<input type="${t}" id="${id}" placeholder="${ph}" autocomplete="${ac}" autocapitalize="off" spellcheck="false">`;
-function authView(){stop();const m=AMODE;
- app.innerHTML=`<div class="in" id="acform">${head("HESAP")}<div class="segc" style="margin-bottom:12px;grid-template-columns:repeat(3,1fr)">${[["login","Giriş"],["reg","Kayıt"],["rec","Şifre kurtar"]].map(([k,t])=>`<button class="${m===k?"on":""}" data-am="${k}">${t}</button>`).join("")}</div>
- <div class="card">${m==="login"?fld("a1","Nickname","text","username")+fld("a2","Şifre","password","current-password"):m==="reg"?fld("a1","Nickname (3–16 karakter)","text","username")+fld("a2","Şifre (en az 6)","password","new-password")+fld("a3","Şifre tekrar","password","new-password"):fld("a1","Nickname","text","username")+fld("a2","Kurtarma kodu","text")+fld("a3","Yeni şifre","password","new-password")}
- <p class="note" id="amsg" style="min-height:20px;margin:8px 0;color:var(--red)"></p><button class="btn" id="ago">${m==="login"?"Giriş yap":m==="reg"?"Hesap oluştur":"Şifreyi yenile"}</button>
- ${m==="reg"?`<p class="note" style="margin-top:10px">E-posta gerekmez. Kayıttan sonra sana bir <b>kurtarma kodu</b> göstereceğiz: şifreni unutursan hesabını yalnızca onunla kurtarabilirsin.</p>`:""}</div>
- <p class="note" style="text-align:center">Oynamak için giriş yap veya hesap oluştur. E-posta gerekmez.</p></div>${ACC?nav("p"):""}`;
- bindNav();app.querySelectorAll("[data-am]").forEach(b=>b.onclick=()=>{AMODE=b.dataset.am;authView()});
+const fld=(id,label,ph,t="text",ac="off",extra="")=>`<div class="field"><label for="${id}">${label}</label><div class="${t==="password"?"pw":""}"><input type="${t}" id="${id}" placeholder="${ph}" autocomplete="${ac}" autocapitalize="off" autocorrect="off" spellcheck="false" ${extra}>${t==="password"?`<button type="button" class="eye" data-eye="${id}" aria-label="Şifreyi göster">${I("eye",18)}</button>`:""}</div></div>`;
+function authView(){stop();const m=AMODE,T={login:["Tekrar hoş geldin","Hesabınla giriş yap, kaldığın yerden devam et."],reg:["Hesap oluştur","E-posta gerekmez. Sadece bir nickname ve şifre."],rec:["Şifreni kurtar","Kayıtta aldığın kurtarma kodunla yeni şifre belirle."]}[m];
+ app.innerHTML=`<div class="in auth" id="acform"><div class="ahero"><img class="alk" src="${LOGO.lk}" alt="LexiRace"><div class="tag" style="margin:4px 0 0">THINK FAST. SPEAK ENGLISH.</div></div>
+ <div class="card acard"><h1 class="atitle">${T[0]}</h1><p class="note" style="margin:0 0 16px">${T[1]}</p>
+ ${m==="login"?fld("a1","Nickname","Nickname’in","text","username")+fld("a2","Şifre","Şifren","password","current-password")+`<div style="text-align:right;margin:-4px 0 12px"><button class="lnk" id="goRec" type="button">Şifreni mi unuttun?</button></div>`
+ :m==="reg"?fld("a1","Nickname","3–16 karakter","text","username")+`<div class="hint" id="nk"></div>`+fld("a2","Şifre","En az 6 karakter","password","new-password")+fld("a3","Şifre tekrar","Şifreyi tekrar yaz","password","new-password")+`<div class="nbox">${I("lock",18)}<span>Kayıttan sonra sana bir <b>kurtarma kodu</b> göstereceğiz. Şifreni unutursan hesabını yalnızca onunla geri alırsın.</span></div>`
+ :fld("a1","Nickname","Nickname’in","text","username")+fld("a2","Kurtarma kodu","XXXX-XXXX-XXXX-XXXX-XXXX","text","off",'style="text-transform:uppercase;letter-spacing:1px"')+fld("a3","Yeni şifre","En az 6 karakter","password","new-password")}
+ <p class="amsg" id="amsg" role="alert"></p><button class="btn" id="ago">${m==="login"?"Giriş yap":m==="reg"?"Hesap oluştur":"Şifreyi yenile"}</button></div>
+ <div class="alinks">${m==="login"?`Hesabın yok mu? <button class="lnk" data-am="reg">Kayıt ol</button>`:m==="reg"?`Zaten hesabın var mı? <button class="lnk" data-am="login">Giriş yap</button>`:`<button class="lnk" data-am="login">← Girişe dön</button>`}</div></div>${ACC?nav("p"):""}`;
+ bindNav();app.querySelectorAll("[data-am]").forEach(b=>b.onclick=()=>{AMODE=b.dataset.am;authView()});const gr=$("#goRec");if(gr)gr.onclick=()=>{AMODE="rec";authView()};
+ app.querySelectorAll("[data-eye]").forEach(b=>b.onclick=()=>{const i=$("#"+b.dataset.eye),sh=i.type==="password";i.type=sh?"text":"password";b.innerHTML=I(sh?"eyeoff":"eye",18);b.setAttribute("aria-label",sh?"Şifreyi gizle":"Şifreyi göster")});
  const msg=t=>{$("#amsg").textContent=t},v=i=>($("#a"+i)||{}).value||"";let busy=false;
- const go=async()=>{if(busy)return;busy=true;const bt=$("#ago");bt.disabled=true;msg("");try{
-   if(m==="login"){await loginAcct(v(1),v(2));return menu()}
+ if(m==="reg"){let tm=0,seq=0;$("#a1").oninput=()=>{clearTimeout(tm);const el=$("#nk"),n=v(1).trim();if(!n){el.textContent="";el.className="hint";return}const er=nickOk(n);if(er){el.className="hint bad";el.textContent=er;return}el.className="hint";el.textContent="Kontrol ediliyor…";const my=++seq;tm=setTimeout(async()=>{try{const F=await fb(),d=await F.fs.getDoc(dref(F,"usernames",nickKey(n)));if(my!==seq)return;el.className="hint "+(d.exists()?"bad":"ok");el.textContent=d.exists()?"Bu nickname alınmış":"Müsait"}catch(e){if(my===seq){el.className="hint";el.textContent=""}}},450)}}
+ const go=async()=>{if(busy)return;busy=true;const bt=$("#ago");bt.disabled=true;bt.classList.add("busy");msg("");try{
+   if(m==="login"){if(!v(1).trim()||!v(2))throw new Error("Nickname ve şifreni yaz.");await loginAcct(v(1),v(2));return menu()}
    if(m==="reg"){if(v(2)!==v(3))throw new Error("Şifreler aynı değil.");return codeView((await registerAcct(v(1),v(2))).code,"Hesabın hazır!")}
-   return codeView((await recoverAcct(v(1),v(2),v(3))).code,"Şifren yenilendi!")}catch(e){msg(aerr(e));busy=false;bt.disabled=false}};
+   return codeView((await recoverAcct(v(1),v(2),v(3))).code,"Şifren yenilendi!")}catch(e){msg(aerr(e));busy=false;bt.disabled=false;bt.classList.remove("busy")}};
  $("#ago").onclick=go;app.querySelectorAll("#acform input").forEach(i=>i.onkeydown=e=>{if(e.key==="Enter")go()})}
 function codeView(code,title){app.innerHTML=`<div class="in">${head("KURTARMA KODU")}<div class="card" style="text-align:center"><h3>${title}</h3><p class="note">Bu kodu <b>bir daha göremeyeceksin</b>. Şifreni unutursan hesabını yalnızca bununla kurtarabilirsin. Güvenli bir yere kaydet.</p><div class="code" id="rc">${code}</div><button class="btn alt" id="cp" style="margin:10px 0">Kodu kopyala</button><label class="note" style="display:flex;gap:8px;justify-content:center;align-items:center"><input type="checkbox" id="ck"> Kodu kaydettim</label><button class="btn" id="cn" style="margin-top:12px" disabled>Devam</button></div></div>`;
  bindNav();$("#cp").onclick=async()=>{try{await navigator.clipboard.writeText(code);$("#cp").textContent="Kopyalandı"}catch(e){$("#cp").textContent="Kodu elle kopyala"}};$("#ck").onchange=e=>{$("#cn").disabled=!e.target.checked};$("#cn").onclick=()=>menu()}
