@@ -221,7 +221,7 @@ let FB=null,ACC=null,AUTHREADY=false;
 function gateView(){stop();if(!AUTHREADY){app.innerHTML=`<div class="in" id="ldg">${head("THINK FAST. SPEAK ENGLISH.",1)}<p class="note" style="text-align:center">Yükleniyor…</p></div>`;return}authView()}
 function syncDb(){const p=ACC?ACC.pid:"";if(p!==CURPID0){CURPID0=p;initDb()}}
 function initDb(){db=Object.assign({games:[],recent:{},notebook:{},deck:[],unlocked:{},daily:{}},S.load());db.unlocked=db.unlocked||{};db.daily=db.daily||{};db.settings=Object.assign({},DEF,db.settings);UL.forEach(l=>checkUnlock(l));if(!isUnlocked(db.settings.lv))db.settings.lv="A1";applyTheme()}
-async function fb(){if(FB)return FB;const b="https://www.gstatic.com/firebasejs/10.14.1/",[app,auth,fs]=await Promise.all([import(b+"firebase-app.js"),import(b+"firebase-auth.js"),import(b+"firebase-firestore.js")]),a=app.initializeApp(FBCFG);return FB={app,auth,fs,A:auth.getAuth(a),D:fs.getFirestore(a)}}
+async function fb(){if(FB)return FB;const b="https://www.gstatic.com/firebasejs/10.14.1/",[app,auth,fs]=await Promise.all([import(b+"firebase-app.js"),import(b+"firebase-auth.js"),import(b+"firebase-firestore.js")]),a=app.initializeApp(FBCFG);return FB={app,a,auth,fs,A:auth.getAuth(a),D:fs.getFirestore(a)}}
 const AVATARS=["🦊","🐼","🐸","🐱","🐵","🐯","🐨","🐻","🐰","🦁","🐶","🐷","🐙","🦄","🐧","🐺","🐹","🦉"],EMD="lexirace.rahimov.tr",ALPH="ABCDEFGHJKMNPQRSTUVWXYZ23456789";
 const RESERVED=["admin","root","lexirace","moderator","support","system","null","undefined","anonymous","yonetici","yönetici"],BADW=["fuck","shit","orospu","yarrak","amk","piç","sikik","siktir","göt"];
 const nickKey=n=>(n||"").trim().replace(/[ıİ]/g,"i").toLowerCase(),codePw=c=>(c||"").replace(/[^A-Za-z0-9]/g,"").toUpperCase();
@@ -305,7 +305,7 @@ let BDQ=0;
 /* ===== 1v1 DÜELLO (Realtime Database) ===== */
 const SLOT=12500,RND=10000,lvName=k=>k==="ALL"?"TÜMÜ":k;
 let RT=null,DU=null,DUL="A1",DRES=false;
-async function rt(){if(RT)return RT;const F=await fb(),b="https://www.gstatic.com/firebasejs/10.14.1/",m=await import(b+"firebase-database.js"),d=m.getDatabase(F.app);RT={m,d,F,off:0,conn:true};
+async function rt(){if(RT)return RT;const F=await fb(),b="https://www.gstatic.com/firebasejs/10.14.1/",m=await import(b+"firebase-database.js"),d=m.getDatabase(F.a);RT={m,d,F,off:0,conn:true};
  m.onValue(m.ref(d,".info/serverTimeOffset"),s=>{RT.off=s.val()||0});m.onValue(m.ref(d,".info/connected"),s=>{RT.conn=!!s.val();if(RT.conn&&DU&&DU.started&&!DU.ended)duelPresence()});return RT}
 const srv=()=>Date.now()+(RT?RT.off:0);
 const roomCode=()=>{let s="";for(let i=0;i<5;i++)s+=ALPH[Math.floor(Math.random()*ALPH.length)];return s};
@@ -329,7 +329,7 @@ function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const m
  $("#dq").onclick=busy(()=>duelFind(DUL));$("#dc").onclick=busy(()=>duelCreate(DUL,false));
  $("#djb").onclick=busy(()=>{const c=$("#dj").value.trim().toUpperCase();if(c.length!==5)return duelHome("Kod 5 karakter olmalı.");return duelJoin(c)});
  $("#dbk").onclick=menu}
-const duelErr=e=>e&&e.code==="PERMISSION_DENIED"?"Düello şu an kullanılamıyor (veritabanı kuralları yayınlanmamış olabilir).":"Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene.";
+const duelErr=e=>{console.error("duel",e);return e&&/PERMISSION_DENIED|permission_denied/i.test(e.code+" "+e.message)?"Düello şu an kullanılamıyor: veritabanı kuralları yayınlanmamış olabilir.":"Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene. ("+String((e&&(e.code||e.message))||e).slice(0,70)+")"};
 function duelWait(t){app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center;margin-top:40px"><p class="note">${t}</p></div></div>`}
 async function duelCreate(lv,rnd){duelWait("Oda kuruluyor…");const R=await rt(),me=R.F.A.currentUser.uid;
  for(let a=0;a<4;a++){const code=roomCode();try{await R.m.set(rr("rooms/"+code),{host:me,lv,seed:Math.floor(Math.random()*1e9),status:"wait",created:R.m.serverTimestamp(),players:{[me]:{nick:ACC.nick,avatar:ACC.avatar,on:true}}});await R.m.onDisconnect(rr("rooms/"+code)).remove();if(rnd)return code;await duelOpen(code,true,{rnd:false});return code}catch(e){if(e.code==="PERMISSION_DENIED"&&a<3)continue;throw e}}}
