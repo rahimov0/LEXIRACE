@@ -10981,5 +10981,4891 @@
   "letter": "Z",
   "level": "C2",
   "turkish_explanation": "fermantasyon süreçleri ve bira yapımı bilimi"
+ },
+ {
+  "id": "n-a1-afternoon",
+  "word": "afternoon",
+  "letter": "A",
+  "level": "A1",
+  "turkish_explanation": "Öğle ile akşam arasındaki gün bölümü."
+ },
+ {
+  "id": "n-a1-bus",
+  "word": "bus",
+  "letter": "B",
+  "level": "A1",
+  "turkish_explanation": "Çok sayıda yolcu taşıyan büyük kara taşıtı."
+ },
+ {
+  "id": "n-a1-chicken",
+  "word": "chicken",
+  "letter": "C",
+  "level": "A1",
+  "turkish_explanation": "Yumurtası ve eti için yetiştirilen evcil kanatlı hayvan."
+ },
+ {
+  "id": "n-a1-email",
+  "word": "email",
+  "letter": "E",
+  "level": "A1",
+  "turkish_explanation": "İnternet üzerinden gönderilip alınan elektronik ileti."
+ },
+ {
+  "id": "n-a1-exercise",
+  "word": "exercise",
+  "letter": "E",
+  "level": "A1",
+  "turkish_explanation": "Sağlığı veya beceriyi geliştirmek için yapılan fiziksel ya da zihinsel çalışma."
+ },
+ {
+  "id": "n-a1-floor",
+  "word": "floor",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "Bir odanın üzerinde yürünülen alt yüzeyi."
+ },
+ {
+  "id": "n-a1-football",
+  "word": "football",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "İki takımın ayakla top oynadığı popüler spor."
+ },
+ {
+  "id": "n-a1-home",
+  "word": "home",
+  "letter": "H",
+  "level": "A1",
+  "turkish_explanation": "Kişinin yaşadığı ve kendini ait hissettiği yer."
+ },
+ {
+  "id": "n-a1-hotel",
+  "word": "hotel",
+  "letter": "H",
+  "level": "A1",
+  "turkish_explanation": "Yolcuların ücret karşılığında konakladığı işletme."
+ },
+ {
+  "id": "n-a1-lemon",
+  "word": "lemon",
+  "letter": "L",
+  "level": "A1",
+  "turkish_explanation": "Ekşi tadı ve sarı kabuğuyla bilinen turunçgil meyvesi."
+ },
+ {
+  "id": "n-a1-listen",
+  "word": "listen",
+  "letter": "L",
+  "level": "A1",
+  "turkish_explanation": "Dikkat vererek sesleri işitmek."
+ },
+ {
+  "id": "n-a1-meat",
+  "word": "meat",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Hayvanların yemek amacıyla kullanılan eti."
+ },
+ {
+  "id": "n-a1-minute",
+  "word": "minute",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Altmış saniyeden oluşan zaman birimi."
+ },
+ {
+  "id": "n-a1-moon",
+  "word": "moon",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Dünya'nın doğal uydusu."
+ },
+ {
+  "id": "n-a1-mountain",
+  "word": "mountain",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Çevresindeki araziden yüksek olan büyük doğal yer şekli."
+ },
+ {
+  "id": "n-a1-mouse",
+  "word": "mouse",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Uzun kuyruklu, küçük kemirgen memeli."
+ },
+ {
+  "id": "n-a1-october",
+  "word": "october",
+  "letter": "O",
+  "level": "A1",
+  "turkish_explanation": "Yılın onuncu ayı."
+ },
+ {
+  "id": "n-a1-party",
+  "word": "party",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "İnsanların kutlama veya eğlence için bir araya geldiği etkinlik."
+ },
+ {
+  "id": "n-a1-pencil",
+  "word": "pencil",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Grafit uçla yazı yazıp silmeye yarayan araç."
+ },
+ {
+  "id": "n-a1-person",
+  "word": "person",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Tek bir insan."
+ },
+ {
+  "id": "n-a1-phone",
+  "word": "phone",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "İnsanların sesli veya görüntülü iletişim kurduğu cihaz."
+ },
+ {
+  "id": "n-a1-photo",
+  "word": "photo",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Fotoğraf sözcüğünün günlük İngilizce kısaltması."
+ },
+ {
+  "id": "n-a1-plane",
+  "word": "plane",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Kanatları ve motoruyla havada uçan taşıt."
+ },
+ {
+  "id": "n-a1-police",
+  "word": "police",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Kamu düzenini ve güvenliği sağlayan kolluk teşkilatı."
+ },
+ {
+  "id": "n-a1-pool",
+  "word": "pool",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Yüzmek için yapılmış su dolu havuz."
+ },
+ {
+  "id": "n-a1-potato",
+  "word": "potato",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Toprak altında yetişen, nişastalı ve yenilebilir sebze."
+ },
+ {
+  "id": "n-a1-price",
+  "word": "price",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Bir ürün veya hizmet için ödenen para miktarı."
+ },
+ {
+  "id": "n-a1-problem",
+  "word": "problem",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "Çözüm bulunması gereken güçlük veya soru."
+ },
+ {
+  "id": "n-a1-radio",
+  "word": "radio",
+  "letter": "R",
+  "level": "A1",
+  "turkish_explanation": "Ses yayınlarını dinlemeyi sağlayan cihaz veya yayın sistemi."
+ },
+ {
+  "id": "n-a1-restaurant",
+  "word": "restaurant",
+  "letter": "R",
+  "level": "A1",
+  "turkish_explanation": "Müşterilere yemek ve içecek sunan işletme."
+ },
+ {
+  "id": "n-a1-sea",
+  "word": "sea",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Okyanusla bağlantılı geniş tuzlu su kütlesi."
+ },
+ {
+  "id": "n-a1-shop",
+  "word": "shop",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Ürünlerin satın alındığı mağaza."
+ },
+ {
+  "id": "n-a1-snow",
+  "word": "snow",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Soğuk havada bulutlardan düşen buz kristalleri."
+ },
+ {
+  "id": "n-a1-sport",
+  "word": "sport",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Fiziksel beceri veya rekabet içeren etkinlik."
+ },
+ {
+  "id": "n-a1-star",
+  "word": "star",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Gece gökyüzünde görülen, kendi ışığını üreten büyük gök cismi."
+ },
+ {
+  "id": "n-a1-summer",
+  "word": "summer",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "İlkbahardan sonra gelen en sıcak mevsim."
+ },
+ {
+  "id": "n-a1-tea",
+  "word": "tea",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Çay bitkisinin yapraklarıyla hazırlanan sıcak içecek."
+ },
+ {
+  "id": "n-a1-team",
+  "word": "team",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Ortak bir amaç için birlikte çalışan veya yarışan grup."
+ },
+ {
+  "id": "n-a1-television",
+  "word": "television",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Görüntülü yayınları izlemeyi sağlayan elektronik cihaz."
+ },
+ {
+  "id": "n-a1-test",
+  "word": "test",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Bilgi veya beceriyi ölçmek için yapılan sınama."
+ },
+ {
+  "id": "n-a1-thing",
+  "word": "thing",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Adı belirtilmeyen veya genel olarak söz edilen nesne."
+ },
+ {
+  "id": "n-a1-tomorrow",
+  "word": "tomorrow",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Bugünden sonraki gün."
+ },
+ {
+  "id": "n-a1-word",
+  "word": "word",
+  "letter": "W",
+  "level": "A1",
+  "turkish_explanation": "Bir anlamı veya dilbilgisel işlevi olan dil birimi."
+ },
+ {
+  "id": "n-a1-world",
+  "word": "world",
+  "letter": "W",
+  "level": "A1",
+  "turkish_explanation": "İnsanların ve diğer canlıların yaşadığı gezegen ve yaşam alanı."
+ },
+ {
+  "id": "n-a2-adjust",
+  "word": "adjust",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Daha uygun hâle getirmek için küçük değişiklik yapmak."
+ },
+ {
+  "id": "n-a2-agency",
+  "word": "agency",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Belirli hizmetleri veya işleri yürüten kuruluş."
+ },
+ {
+  "id": "n-a2-ancient",
+  "word": "ancient",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Çok eski dönemlere, özellikle tarih öncesi veya antik çağlara ait."
+ },
+ {
+  "id": "n-a2-ankle",
+  "word": "ankle",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Ayak ile bacağın birleştiği eklem bölgesi."
+ },
+ {
+  "id": "n-a2-appear",
+  "word": "appear",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Görünür hâle gelmek veya bir yerde ortaya çıkmak."
+ },
+ {
+  "id": "n-a2-appearance",
+  "word": "appearance",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir kişinin veya nesnenin dışarıdan nasıl göründüğü."
+ },
+ {
+  "id": "n-a2-architecture",
+  "word": "architecture",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Binaların tasarımı ve yapımıyla ilgilenen sanat ve bilim alanı."
+ },
+ {
+  "id": "n-a2-argue",
+  "word": "argue",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir konuda farklı görüşleri nedenler sunarak tartışmak."
+ },
+ {
+  "id": "n-a2-argument",
+  "word": "argument",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir görüşü destekleyen gerekçe veya karşılıklı tartışma."
+ },
+ {
+  "id": "n-a2-athlete",
+  "word": "athlete",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Spor yarışmalarına katılan veya düzenli spor yapan kişi."
+ },
+ {
+  "id": "n-a2-audience",
+  "word": "audience",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir gösteriyi, konuşmayı veya yayını izleyen ya da dinleyen insanlar."
+ },
+ {
+  "id": "n-a2-average",
+  "word": "average",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir veri grubunun toplamının eleman sayısına bölünmesiyle bulunan değer."
+ },
+ {
+  "id": "n-a2-avoid",
+  "word": "avoid",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyden uzak durmak veya onun gerçekleşmesini engellemek."
+ },
+ {
+  "id": "n-a2-basket",
+  "word": "basket",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "Eşya taşımak veya saklamak için kullanılan, çoğu zaman örgülü kap."
+ },
+ {
+  "id": "n-a2-beach",
+  "word": "beach",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "Deniz, göl veya okyanus kıyısındaki kumlu ya da çakıllı alan."
+ },
+ {
+  "id": "n-a2-become",
+  "word": "become",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "Zamanla başka bir duruma veya kimliğe dönüşmek."
+ },
+ {
+  "id": "n-a2-bicycle",
+  "word": "bicycle",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "İki tekerleği ve pedalları olan insan gücüyle hareket eden taşıt."
+ },
+ {
+  "id": "n-a2-birthday",
+  "word": "birthday",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "Bir kişinin doğduğu günün her yıl kutlanan tarihi."
+ },
+ {
+  "id": "n-a2-budget",
+  "word": "budget",
+  "letter": "B",
+  "level": "A2",
+  "turkish_explanation": "Belirli bir dönem için planlanan gelir ve giderlerin parasal dökümü."
+ },
+ {
+  "id": "n-a2-central",
+  "word": "central",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Bir yerin veya sistemin orta bölümünde bulunan."
+ },
+ {
+  "id": "n-a2-chance",
+  "word": "chance",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Bir olayın gerçekleşme olasılığı veya fırsat."
+ },
+ {
+  "id": "n-a2-cheese",
+  "word": "cheese",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Sütün pıhtılaştırılmasıyla yapılan süt ürünü."
+ },
+ {
+  "id": "n-a2-choose",
+  "word": "choose",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Alternatifler arasından birini seçmek."
+ },
+ {
+  "id": "n-a2-circle",
+  "word": "circle",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Düzlemde merkezden eşit uzaklıktaki noktaların oluşturduğu kapalı eğri."
+ },
+ {
+  "id": "n-a2-cloud",
+  "word": "cloud",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Atmosferde asılı duran su damlacıkları veya buz kristallerinden oluşan kütle."
+ },
+ {
+  "id": "n-a2-communicate",
+  "word": "communicate",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Bilgi, düşünce veya duygu paylaşmak."
+ },
+ {
+  "id": "n-a2-conversation",
+  "word": "conversation",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "İki veya daha fazla kişi arasında gerçekleşen konuşma."
+ },
+ {
+  "id": "n-a2-culture",
+  "word": "culture",
+  "letter": "C",
+  "level": "A2",
+  "turkish_explanation": "Bir toplumun dil, sanat, gelenek ve yaşam biçimlerinin bütünü."
+ },
+ {
+  "id": "n-a2-discover",
+  "word": "discover",
+  "letter": "D",
+  "level": "A2",
+  "turkish_explanation": "Daha önce bilinmeyen bir şeyi bulmak veya öğrenmek."
+ },
+ {
+  "id": "n-a2-distance",
+  "word": "distance",
+  "letter": "D",
+  "level": "A2",
+  "turkish_explanation": "İki nokta arasındaki uzunluk."
+ },
+ {
+  "id": "n-a2-double",
+  "word": "double",
+  "letter": "D",
+  "level": "A2",
+  "turkish_explanation": "İki katı olan veya iki parçadan oluşan."
+ },
+ {
+  "id": "n-a2-earth",
+  "word": "earth",
+  "letter": "E",
+  "level": "A2",
+  "turkish_explanation": "Üzerinde yaşadığımız gezegen."
+ },
+ {
+  "id": "n-a2-either",
+  "word": "either",
+  "letter": "E",
+  "level": "A2",
+  "turkish_explanation": "İki seçenekten herhangi birini belirtmek için kullanılır."
+ },
+ {
+  "id": "n-a2-example",
+  "word": "example",
+  "letter": "E",
+  "level": "A2",
+  "turkish_explanation": "Bir düşünceyi veya kuralı açıklamak için verilen örnek."
+ },
+ {
+  "id": "n-a2-exciting",
+  "word": "exciting",
+  "letter": "E",
+  "level": "A2",
+  "turkish_explanation": "Heyecan veya ilgi uyandıran."
+ },
+ {
+  "id": "n-a2-explain",
+  "word": "explain",
+  "letter": "E",
+  "level": "A2",
+  "turkish_explanation": "Bir konuyu anlaşılır hâle getirmek için nedenleriyle anlatmak."
+ },
+ {
+  "id": "n-a2-feeling",
+  "word": "feeling",
+  "letter": "F",
+  "level": "A2",
+  "turkish_explanation": "Bir kişinin yaşadığı duygu veya bedensel his."
+ },
+ {
+  "id": "n-a2-festival",
+  "word": "festival",
+  "letter": "F",
+  "level": "A2",
+  "turkish_explanation": "Sanat, müzik veya kültür etkinliklerinin düzenlendiği kutlama."
+ },
+ {
+  "id": "n-a2-finish",
+  "word": "finish",
+  "letter": "F",
+  "level": "A2",
+  "turkish_explanation": "Bir işi veya etkinliği tamamlamak."
+ },
+ {
+  "id": "n-a2-forget",
+  "word": "forget",
+  "letter": "F",
+  "level": "A2",
+  "turkish_explanation": "Bir bilgiyi veya olayı hatırlayamamak."
+ },
+ {
+  "id": "n-a2-gender",
+  "word": "gender",
+  "letter": "G",
+  "level": "A2",
+  "turkish_explanation": "Toplumsal ve kültürel açıdan kadınlık, erkeklik ve diğer kimliklerle ilgili kavram."
+ },
+ {
+  "id": "n-a2-globe",
+  "word": "globe",
+  "letter": "G",
+  "level": "A2",
+  "turkish_explanation": "Dünya'nın küre biçimindeki modeli; ayrıca yerküre."
+ },
+ {
+  "id": "n-a2-grade",
+  "word": "grade",
+  "letter": "G",
+  "level": "A2",
+  "turkish_explanation": "Öğrencinin başarısını gösteren not veya eğitim sınıfı."
+ },
+ {
+  "id": "n-a2-hope",
+  "word": "hope",
+  "letter": "H",
+  "level": "A2",
+  "turkish_explanation": "İstenen bir şeyin gerçekleşeceğine dair olumlu beklenti."
+ },
+ {
+  "id": "n-a2-hour",
+  "word": "hour",
+  "letter": "H",
+  "level": "A2",
+  "turkish_explanation": "Altmış dakikadan oluşan zaman birimi."
+ },
+ {
+  "id": "n-a2-husband",
+  "word": "husband",
+  "letter": "H",
+  "level": "A2",
+  "turkish_explanation": "Evli bir kadının erkek eşi."
+ },
+ {
+  "id": "n-a2-include",
+  "word": "include",
+  "letter": "I",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi bir bütünün veya grubun parçası olarak kapsamak."
+ },
+ {
+  "id": "n-a2-information",
+  "word": "information",
+  "letter": "I",
+  "level": "A2",
+  "turkish_explanation": "Bir konu hakkında edinilen veya paylaşılan bilgi."
+ },
+ {
+  "id": "n-a2-interest",
+  "word": "interest",
+  "letter": "I",
+  "level": "A2",
+  "turkish_explanation": "Bir konuya yönelik merak veya dikkat."
+ },
+ {
+  "id": "n-a2-interested",
+  "word": "interested",
+  "letter": "I",
+  "level": "A2",
+  "turkish_explanation": "Bir konuya merak veya ilgi duyan."
+ },
+ {
+  "id": "n-a2-kilometer",
+  "word": "kilometer",
+  "letter": "K",
+  "level": "A2",
+  "turkish_explanation": "Bin metreye eşit uzunluk ölçüsü."
+ },
+ {
+  "id": "n-a2-land",
+  "word": "land",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Deniz ve okyanusların dışında kalan yeryüzü bölümü."
+ },
+ {
+  "id": "n-a2-laugh",
+  "word": "laugh",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Eğlence veya mutluluk nedeniyle ses çıkararak gülmek."
+ },
+ {
+  "id": "n-a2-lazy",
+  "word": "lazy",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Çalışmaktan veya hareket etmekten kaçınan."
+ },
+ {
+  "id": "n-a2-lesson",
+  "word": "lesson",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Bir konuda öğretmen tarafından verilen ders veya öğrenilecek bilgi."
+ },
+ {
+  "id": "n-a2-line",
+  "word": "line",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Düz veya kıvrımlı çizgi; ayrıca sıra."
+ },
+ {
+  "id": "n-a2-lose",
+  "word": "lose",
+  "letter": "L",
+  "level": "A2",
+  "turkish_explanation": "Sahip olunan bir şeyi kaybetmek veya yarışmayı kazanamamak."
+ },
+ {
+  "id": "n-a2-magazine",
+  "word": "magazine",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "Belirli aralıklarla yayımlanan resimli veya yazılı dergi."
+ },
+ {
+  "id": "n-a2-member",
+  "word": "member",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "Bir grubun veya kuruluşun parçası olan kişi."
+ },
+ {
+  "id": "n-a2-memory",
+  "word": "memory",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "Bilgileri saklama ve geçmiş olayları hatırlama yetisi."
+ },
+ {
+  "id": "n-a2-middle",
+  "word": "middle",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyin iki ucu arasındaki merkezi bölüm."
+ },
+ {
+  "id": "n-a2-moment",
+  "word": "moment",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "Çok kısa zaman dilimi."
+ },
+ {
+  "id": "n-a2-nurse",
+  "word": "nurse",
+  "letter": "N",
+  "level": "A2",
+  "turkish_explanation": "Hastaların bakımını yapan sağlık çalışanı."
+ },
+ {
+  "id": "n-a2-officer",
+  "word": "officer",
+  "letter": "O",
+  "level": "A2",
+  "turkish_explanation": "Belirli yetki ve sorumluluk taşıyan görevli."
+ },
+ {
+  "id": "n-a2-organize",
+  "word": "organize",
+  "letter": "O",
+  "level": "A2",
+  "turkish_explanation": "İşleri planlı ve düzenli biçimde hazırlamak."
+ },
+ {
+  "id": "n-a2-pain",
+  "word": "pain",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Vücudun bir bölümünde hissedilen rahatsızlık veya acı."
+ },
+ {
+  "id": "n-a2-pair",
+  "word": "pair",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Birbiriyle eşleşen iki şey."
+ },
+ {
+  "id": "n-a2-palace",
+  "word": "palace",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Kraliyet ailesi veya önemli yöneticiler için yapılmış büyük ve gösterişli bina."
+ },
+ {
+  "id": "n-a2-patient",
+  "word": "patient",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Sağlık hizmeti alan veya tedavi gören kişi."
+ },
+ {
+  "id": "n-a2-period",
+  "word": "period",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Belirli başlangıç ve bitiş noktaları olan zaman aralığı."
+ },
+ {
+  "id": "n-a2-photographer",
+  "word": "photographer",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Fotoğraf çekmeyi meslek veya sanat olarak yapan kişi."
+ },
+ {
+  "id": "n-a2-pleasure",
+  "word": "pleasure",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Mutluluk veya keyif veren duygu."
+ },
+ {
+  "id": "n-a2-popular",
+  "word": "popular",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Birçok kişi tarafından sevilen veya tercih edilen."
+ },
+ {
+  "id": "n-a2-position",
+  "word": "position",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyin bulunduğu yer veya kişinin görevdeki konumu."
+ },
+ {
+  "id": "n-a2-power",
+  "word": "power",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi yapabilme gücü veya enerji kaynağı."
+ },
+ {
+  "id": "n-a2-prefer",
+  "word": "prefer",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Bir seçeneği diğerine göre daha çok istemek."
+ },
+ {
+  "id": "n-a2-present",
+  "word": "present",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Birine verilen armağan; ayrıca şu anda var olan."
+ },
+ {
+  "id": "n-a2-private",
+  "word": "private",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Herkese açık olmayan, kişiye veya küçük bir gruba ait."
+ },
+ {
+  "id": "n-a2-produce",
+  "word": "produce",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Bir ürün veya sonuç ortaya çıkarmak."
+ },
+ {
+  "id": "n-a2-public",
+  "word": "public",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Herkese açık veya toplumun tamamıyla ilgili."
+ },
+ {
+  "id": "n-a2-quietly",
+  "word": "quietly",
+  "letter": "Q",
+  "level": "A2",
+  "turkish_explanation": "Gürültü çıkarmadan veya sakin biçimde."
+ },
+ {
+  "id": "n-a2-rather",
+  "word": "rather",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir ölçüde veya tercih belirtirken kullanılan sözcük."
+ },
+ {
+  "id": "n-a2-reach",
+  "word": "reach",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir yere ulaşmak veya istenen düzeye varmak."
+ },
+ {
+  "id": "n-a2-record",
+  "word": "record",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bilgilerin saklandığı belge, kayıt veya ses-görüntü çalışması."
+ },
+ {
+  "id": "n-a2-recycle",
+  "word": "recycle",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Atık malzemeyi yeniden kullanılabilir ürüne dönüştürmek."
+ },
+ {
+  "id": "n-a2-relax",
+  "word": "relax",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Dinlenerek gerginliği azaltmak."
+ },
+ {
+  "id": "n-a2-remain",
+  "word": "remain",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir yerde veya durumda kalmaya devam etmek."
+ },
+ {
+  "id": "n-a2-repeat",
+  "word": "repeat",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi yeniden söylemek veya yapmak."
+ },
+ {
+  "id": "n-a2-report",
+  "word": "report",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir olay veya araştırma hakkında bilgi veren yazılı ya da sözlü metin."
+ },
+ {
+  "id": "n-a2-ride",
+  "word": "ride",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bisiklet, at veya taşıt üzerinde yol almak."
+ },
+ {
+  "id": "n-a2-role",
+  "word": "role",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Bir kişinin üstlendiği görev veya oynadığı karakter."
+ },
+ {
+  "id": "n-a2-rubbish",
+  "word": "rubbish",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "Artık kullanılmayan ve atılan maddeler; çöp."
+ },
+ {
+  "id": "n-a2-save",
+  "word": "save",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi kaybolmaktan veya zarardan korumak; para biriktirmek."
+ },
+ {
+  "id": "n-a2-science",
+  "word": "science",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Doğayı ve evreni gözlem ve deneyle inceleyen sistemli bilgi alanı."
+ },
+ {
+  "id": "n-a2-scientist",
+  "word": "scientist",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bilimsel araştırma yapan uzman."
+ },
+ {
+  "id": "n-a2-search",
+  "word": "search",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi bulmak amacıyla dikkatlice aramak."
+ },
+ {
+  "id": "n-a2-share",
+  "word": "share",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir şeyi başkalarıyla bölüşmek veya ortak kullanıma açmak."
+ },
+ {
+  "id": "n-a2-single",
+  "word": "single",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir tane olan veya evli olmayan."
+ },
+ {
+  "id": "n-a2-situation",
+  "word": "situation",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Belirli bir zamanda mevcut olan koşulların bütünü."
+ },
+ {
+  "id": "n-a2-skill",
+  "word": "skill",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir işi iyi yapmayı sağlayan öğrenilmiş beceri."
+ },
+ {
+  "id": "n-a2-social",
+  "word": "social",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Toplumla veya insanlar arasındaki ilişkilerle ilgili."
+ },
+ {
+  "id": "n-a2-society",
+  "word": "society",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Ortak kurallar ve kurumlar içinde yaşayan insan topluluğu."
+ },
+ {
+  "id": "n-a2-soldier",
+  "word": "soldier",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Orduda görev yapan asker."
+ },
+ {
+  "id": "n-a2-solve",
+  "word": "solve",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir soruna veya probleme çözüm bulmak."
+ },
+ {
+  "id": "n-a2-sound",
+  "word": "sound",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Kulakla algılanan titreşim; ses."
+ },
+ {
+  "id": "n-a2-spend",
+  "word": "spend",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Para, zaman veya enerji kullanmak."
+ },
+ {
+  "id": "n-a2-square",
+  "word": "square",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Dört eşit kenarı ve dört dik açısı bulunan geometrik şekil."
+ },
+ {
+  "id": "n-a2-strange",
+  "word": "strange",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Alışılmıştan farklı olduğu için şaşırtıcı gelen."
+ },
+ {
+  "id": "n-a2-strong",
+  "word": "strong",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Gücü veya dayanıklılığı yüksek olan."
+ },
+ {
+  "id": "n-a2-subject",
+  "word": "subject",
+  "letter": "S",
+  "level": "A2",
+  "turkish_explanation": "Bir dersin veya incelemenin konusu."
+ },
+ {
+  "id": "n-a2-terrible",
+  "word": "terrible",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Çok kötü veya korkunç nitelikte olan."
+ },
+ {
+  "id": "n-a2-therefore",
+  "word": "therefore",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Önceki bilgi veya nedenden mantıksal sonuç çıkarırken kullanılan sözcük."
+ },
+ {
+  "id": "n-a2-thick",
+  "word": "thick",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "İki yüzey arasındaki mesafesi fazla olan; yoğun."
+ },
+ {
+  "id": "n-a2-thin",
+  "word": "thin",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Kalınlığı veya genişliği az olan."
+ },
+ {
+  "id": "n-a2-tidy",
+  "word": "tidy",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Düzenli ve dağınık olmayan."
+ },
+ {
+  "id": "n-a2-title",
+  "word": "title",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Bir eserin, yazının veya kişinin adını belirten ifade."
+ },
+ {
+  "id": "n-a2-true",
+  "word": "true",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Gerçekle veya doğrulukla uyuşan."
+ },
+ {
+  "id": "n-a2-type",
+  "word": "type",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "Ortak özellikleri olan şeylerin sınıfı veya kategorisi."
+ },
+ {
+  "id": "n-a2-unfair",
+  "word": "unfair",
+  "letter": "U",
+  "level": "A2",
+  "turkish_explanation": "Adil olmayan, kişilere eşit veya hakkaniyetli davranmayan."
+ },
+ {
+  "id": "n-a2-unless",
+  "word": "unless",
+  "letter": "U",
+  "level": "A2",
+  "turkish_explanation": "Belirtilen koşul gerçekleşmediği sürece anlamı veren bağlaç."
+ },
+ {
+  "id": "n-a2-weak",
+  "word": "weak",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Gücü veya dayanıklılığı az olan."
+ },
+ {
+  "id": "n-a2-wear",
+  "word": "wear",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Giysi, ayakkabı veya aksesuarı üzerinde taşımak."
+ },
+ {
+  "id": "n-a2-weight",
+  "word": "weight",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Bir cismin kütlesiyle ilişkili ağırlık ölçüsü."
+ },
+ {
+  "id": "n-a2-whole",
+  "word": "whole",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Parçalanmamış veya eksiksiz olan."
+ },
+ {
+  "id": "n-a2-winner",
+  "word": "winner",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Bir yarışma veya mücadeleyi kazanan kişi ya da takım."
+ },
+ {
+  "id": "n-a2-wrong",
+  "word": "wrong",
+  "letter": "W",
+  "level": "A2",
+  "turkish_explanation": "Doğru olmayan veya hatalı olan."
+ },
+ {
+  "id": "n-b1-abnormal",
+  "word": "abnormal",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Genel kabul gören normal durumdan farklı olan."
+ },
+ {
+  "id": "n-b1-absence",
+  "word": "absence",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kişinin veya şeyin bulunmama durumu."
+ },
+ {
+  "id": "n-b1-absolute",
+  "word": "absolute",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Tam, eksiksiz veya herhangi bir sınırlamaya bağlı olmayan."
+ },
+ {
+  "id": "n-b1-accept",
+  "word": "accept",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Sunulan bir şeyi veya bir düşünceyi onaylayıp almak."
+ },
+ {
+  "id": "n-b1-accomplish",
+  "word": "accomplish",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Zor veya planlı bir işi başarıyla tamamlamak."
+ },
+ {
+  "id": "n-b1-additional",
+  "word": "additional",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Var olana eklenen, fazladan."
+ },
+ {
+  "id": "n-b1-administration",
+  "word": "administration",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kurumun veya devletin yönetim ve işleyiş süreci."
+ },
+ {
+  "id": "n-b1-admire",
+  "word": "admire",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kişinin niteliğine veya başarısına saygı ve beğeni duymak."
+ },
+ {
+  "id": "n-b1-adopt",
+  "word": "adopt",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir yöntemi, fikri veya çocuğu kabul edip benimsemek."
+ },
+ {
+  "id": "n-b1-advance",
+  "word": "advance",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "İleri gitmek veya gelişme kaydetmek."
+ },
+ {
+  "id": "n-b1-affect",
+  "word": "affect",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kişi veya şey üzerinde değişiklik ya da etki yaratmak."
+ },
+ {
+  "id": "n-b1-agenda",
+  "word": "agenda",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir toplantıda ele alınacak konuların veya yapılacak işlerin listesi."
+ },
+ {
+  "id": "n-b1-aggressive",
+  "word": "aggressive",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Saldırgan veya güçlü biçimde mücadeleci davranan."
+ },
+ {
+  "id": "n-b1-agriculture",
+  "word": "agriculture",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Toprağı işleyerek bitkisel ve hayvansal ürün elde etme faaliyeti."
+ },
+ {
+  "id": "n-b1-aid",
+  "word": "aid",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Birine sağlanan yardım veya destek."
+ },
+ {
+  "id": "n-b1-aim",
+  "word": "aim",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Ulaşılmak istenen hedef veya amaç."
+ },
+ {
+  "id": "n-b1-alternative",
+  "word": "alternative",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Mevcut seçeneğin yerine tercih edilebilecek başka yol."
+ },
+ {
+  "id": "n-b1-analysis",
+  "word": "analysis",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir konuyu parçalarına ayırarak ayrıntılı inceleme."
+ },
+ {
+  "id": "n-b1-analyze",
+  "word": "analyze",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir konuyu bileşenlerine ayırıp sistemli biçimde incelemek."
+ },
+ {
+  "id": "n-b1-announce",
+  "word": "announce",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir bilgiyi resmî veya açık biçimde duyurmak."
+ },
+ {
+  "id": "n-b1-annual",
+  "word": "annual",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Her yıl gerçekleşen veya bir yıllık döneme ait."
+ },
+ {
+  "id": "n-b1-anxiety",
+  "word": "anxiety",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Belirsizlik veya tehlike karşısında duyulan yoğun kaygı."
+ },
+ {
+  "id": "n-b1-apparent",
+  "word": "apparent",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "İlk bakışta açık veya belirgin görünen."
+ },
+ {
+  "id": "n-b1-appeal",
+  "word": "appeal",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "İlgi çekici olma niteliği veya resmî itiraz başvurusu."
+ },
+ {
+  "id": "n-b1-apply",
+  "word": "apply",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kuralı kullanmak veya bir pozisyona başvurmak."
+ },
+ {
+  "id": "n-b1-approach",
+  "word": "approach",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir sorunu ele alma yöntemi veya bir yere yaklaşma biçimi."
+ },
+ {
+  "id": "n-b1-arise",
+  "word": "arise",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir sorun veya durum ortaya çıkmak."
+ },
+ {
+  "id": "n-b1-arrange",
+  "word": "arrange",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir şeyi belirli bir düzene göre yerleştirmek veya planlamak."
+ },
+ {
+  "id": "n-b1-arrest",
+  "word": "arrest",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Polis tarafından bir kişiyi yasal gerekçeyle gözaltına almak."
+ },
+ {
+  "id": "n-b1-arrival",
+  "word": "arrival",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir yere ulaşma veya varış olayı."
+ },
+ {
+  "id": "n-b1-aspect",
+  "word": "aspect",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir konunun incelenebilen belirli yönü."
+ },
+ {
+  "id": "n-b1-assign",
+  "word": "assign",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir kişiye görev, sorumluluk veya kaynak vermek."
+ },
+ {
+  "id": "n-b1-assist",
+  "word": "assist",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir işi yaparken başka bir kişiye yardım etmek."
+ },
+ {
+  "id": "n-b1-assistance",
+  "word": "assistance",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir işi kolaylaştırmak için verilen yardım."
+ },
+ {
+  "id": "n-b1-associate",
+  "word": "associate",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "İki fikir veya olay arasında bağlantı kurmak."
+ },
+ {
+  "id": "n-b1-assume",
+  "word": "assume",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Kesin kanıt olmadan bir şeyin doğru olduğunu varsaymak."
+ },
+ {
+  "id": "n-b1-attach",
+  "word": "attach",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir şeyi başka bir şeye eklemek veya iliştirmek."
+ },
+ {
+  "id": "n-b1-attempt",
+  "word": "attempt",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir şeyi başarmak için yapılan girişim."
+ },
+ {
+  "id": "n-b1-attend",
+  "word": "attend",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir etkinlikte, derste veya toplantıda bulunmak."
+ },
+ {
+  "id": "n-b1-attention",
+  "word": "attention",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Zihinsel odağı bir kişi veya konu üzerinde toplama durumu."
+ },
+ {
+  "id": "n-b1-attract",
+  "word": "attract",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "İlgi, dikkat veya beğeni çekmek."
+ },
+ {
+  "id": "n-b1-available",
+  "word": "available",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Kullanılabilir veya erişilebilir durumda olan."
+ },
+ {
+  "id": "n-b1-aware",
+  "word": "aware",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "Bir durum veya bilgi hakkında haberdar olan."
+ },
+ {
+  "id": "n-b1-behavior",
+  "word": "behavior",
+  "letter": "B",
+  "level": "B1",
+  "turkish_explanation": "Bir kişinin veya canlının gözlemlenebilen davranış biçimi."
+ },
+ {
+  "id": "n-b1-calculate",
+  "word": "calculate",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Matematiksel işlem yaparak bir sonucu bulmak."
+ },
+ {
+  "id": "n-b1-chapter",
+  "word": "chapter",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Kitap veya raporun kendi içinde bütünlük taşıyan bölümü."
+ },
+ {
+  "id": "n-b1-chemical",
+  "word": "chemical",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Belirli bileşimi ve özellikleri olan madde."
+ },
+ {
+  "id": "n-b1-claim",
+  "word": "claim",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Doğruluğu ileri sürülen iddia veya hak talebi."
+ },
+ {
+  "id": "n-b1-combine",
+  "word": "combine",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "İki veya daha fazla şeyi bir araya getirmek."
+ },
+ {
+  "id": "n-b1-comment",
+  "word": "comment",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir konu hakkında yapılan kısa görüş veya açıklama."
+ },
+ {
+  "id": "n-b1-commercial",
+  "word": "commercial",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Ticaret, satış veya kâr amacıyla ilgili."
+ },
+ {
+  "id": "n-b1-commit",
+  "word": "commit",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir işi yapmayı üstlenmek veya kendini bir amaca adamak."
+ },
+ {
+  "id": "n-b1-compare",
+  "word": "compare",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Benzerlik ve farklılıkları görmek için iki şeyi karşılaştırmak."
+ },
+ {
+  "id": "n-b1-complex",
+  "word": "complex",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Birçok bağlantılı unsurdan oluşan ve anlaşılması zor olan."
+ },
+ {
+  "id": "n-b1-component",
+  "word": "component",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir bütünü meydana getiren parçalardan biri."
+ },
+ {
+  "id": "n-b1-concentrate",
+  "word": "concentrate",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Dikkati veya enerjiyi tek bir konuya yöneltmek."
+ },
+ {
+  "id": "n-b1-concern",
+  "word": "concern",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir konu hakkında duyulan ilgi, kaygı veya sorumluluk."
+ },
+ {
+  "id": "n-b1-confirm",
+  "word": "confirm",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir bilginin doğru olduğunu doğrulamak."
+ },
+ {
+  "id": "n-b1-conflict",
+  "word": "conflict",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Taraflar arasında çıkar veya görüş uyuşmazlığı."
+ },
+ {
+  "id": "n-b1-consider",
+  "word": "consider",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir konuyu dikkatlice düşünüp değerlendirmek."
+ },
+ {
+  "id": "n-b1-constant",
+  "word": "constant",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Zaman içinde değişmeden devam eden."
+ },
+ {
+  "id": "n-b1-construct",
+  "word": "construct",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Parçaları bir araya getirerek yapı veya sistem oluşturmak."
+ },
+ {
+  "id": "n-b1-consume",
+  "word": "consume",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir ürünü kullanmak veya yiyecek ve içeceği almak."
+ },
+ {
+  "id": "n-b1-contain",
+  "word": "contain",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "İçinde bir şey bulundurmak veya kapsamak."
+ },
+ {
+  "id": "n-b1-context",
+  "word": "context",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir sözcüğün veya olayın anlamını belirleyen çevresel koşullar."
+ },
+ {
+  "id": "n-b1-contrast",
+  "word": "contrast",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "İki şey arasındaki belirgin farklılık."
+ },
+ {
+  "id": "n-b1-control",
+  "word": "control",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Bir süreci yönlendirme veya denetleme gücü."
+ },
+ {
+  "id": "n-b1-convenient",
+  "word": "convenient",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Kullanımı veya ulaşılması kolay ve pratik olan."
+ },
+ {
+  "id": "n-b1-create",
+  "word": "create",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Daha önce olmayan bir şey ortaya koymak."
+ },
+ {
+  "id": "n-b1-creative",
+  "word": "creative",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Yeni ve özgün fikirler üretebilen."
+ },
+ {
+  "id": "n-b1-crime",
+  "word": "crime",
+  "letter": "C",
+  "level": "B1",
+  "turkish_explanation": "Yasalar tarafından suç sayılan eylem."
+ },
+ {
+  "id": "n-b1-define",
+  "word": "define",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Bir sözcüğün veya kavramın anlamını açıkça belirtmek."
+ },
+ {
+  "id": "n-b1-detail",
+  "word": "detail",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Bir bütünün küçük ama önemli parçası."
+ },
+ {
+  "id": "n-b1-development",
+  "word": "development",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Bir sistemin, kişinin veya olayın ilerleme süreci."
+ },
+ {
+  "id": "n-b1-device",
+  "word": "device",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Belirli bir işi yapmak üzere tasarlanmış araç veya makine."
+ },
+ {
+  "id": "n-b1-discussion",
+  "word": "discussion",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Bir konu üzerine fikir alışverişi ve değerlendirme."
+ },
+ {
+  "id": "n-b1-disease",
+  "word": "disease",
+  "letter": "D",
+  "level": "B1",
+  "turkish_explanation": "Vücudun veya zihnin normal işleyişini bozan sağlık sorunu."
+ },
+ {
+  "id": "n-b1-effectively",
+  "word": "effectively",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "İstenen sonucu sağlayacak biçimde."
+ },
+ {
+  "id": "n-b1-effort",
+  "word": "effort",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Bir hedefe ulaşmak için harcanan fiziksel veya zihinsel güç."
+ },
+ {
+  "id": "n-b1-element",
+  "word": "element",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Bir bütünün temel parçası; kimyada tek tür atomdan oluşan madde."
+ },
+ {
+  "id": "n-b1-emergency",
+  "word": "emergency",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Hemen müdahale gerektiren beklenmedik tehlikeli durum."
+ },
+ {
+  "id": "n-b1-emotion",
+  "word": "emotion",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Sevinç, korku veya öfke gibi içsel duygu durumu."
+ },
+ {
+  "id": "n-b1-evidence",
+  "word": "evidence",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Bir iddiayı destekleyen veya doğrulayan bilgi ve bulgu."
+ },
+ {
+  "id": "n-b1-evolution",
+  "word": "evolution",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Canlı türlerinin nesiller boyunca değişerek gelişmesi süreci."
+ },
+ {
+  "id": "n-b1-exact",
+  "word": "exact",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Tam ve hatasız olan."
+ },
+ {
+  "id": "n-b1-examine",
+  "word": "examine",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Bir şeyi ayrıntılı biçimde incelemek veya kontrol etmek."
+ },
+ {
+  "id": "n-b1-exist",
+  "word": "exist",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Var olmak veya gerçeklikte bulunmak."
+ },
+ {
+  "id": "n-b1-experiment",
+  "word": "experiment",
+  "letter": "E",
+  "level": "B1",
+  "turkish_explanation": "Bir varsayımı sınamak için kontrollü koşullarda yapılan bilimsel işlem."
+ },
+ {
+  "id": "n-b1-function",
+  "word": "function",
+  "letter": "F",
+  "level": "B1",
+  "turkish_explanation": "Bir sistemin veya organın yerine getirdiği görev."
+ },
+ {
+  "id": "n-b1-gene",
+  "word": "gene",
+  "letter": "G",
+  "level": "B1",
+  "turkish_explanation": "Kalıtsal özellikleri taşıyan DNA bölümü."
+ },
+ {
+  "id": "n-b1-genetic",
+  "word": "genetic",
+  "letter": "G",
+  "level": "B1",
+  "turkish_explanation": "Genler ve kalıtımla ilgili."
+ },
+ {
+  "id": "n-b1-graphic",
+  "word": "graphic",
+  "letter": "G",
+  "level": "B1",
+  "turkish_explanation": "Görsel, çizim veya görüntülerle ilgili."
+ },
+ {
+  "id": "n-b1-habitat",
+  "word": "habitat",
+  "letter": "H",
+  "level": "B1",
+  "turkish_explanation": "Bir canlının doğal olarak yaşadığı ve ihtiyaçlarını karşıladığı çevre."
+ },
+ {
+  "id": "n-b1-historical",
+  "word": "historical",
+  "letter": "H",
+  "level": "B1",
+  "turkish_explanation": "Geçmişte yaşanmış olaylar veya tarih araştırmalarıyla ilgili."
+ },
+ {
+  "id": "n-b1-honesty",
+  "word": "honesty",
+  "letter": "H",
+  "level": "B1",
+  "turkish_explanation": "Doğruyu söyleme ve aldatıcı davranışlardan kaçınma niteliği."
+ },
+ {
+  "id": "n-b1-instance",
+  "word": "instance",
+  "letter": "I",
+  "level": "B1",
+  "turkish_explanation": "Bir kuralı veya durumu açıklayan tekil örnek."
+ },
+ {
+  "id": "n-b1-institution",
+  "word": "institution",
+  "letter": "I",
+  "level": "B1",
+  "turkish_explanation": "Eğitim, hukuk veya yönetim gibi alanlarda düzenli hizmet veren kuruluş."
+ },
+ {
+  "id": "n-b1-instrument",
+  "word": "instrument",
+  "letter": "I",
+  "level": "B1",
+  "turkish_explanation": "Ölçme, inceleme veya müzik yapma amacıyla kullanılan araç."
+ },
+ {
+  "id": "n-b1-intend",
+  "word": "intend",
+  "letter": "I",
+  "level": "B1",
+  "turkish_explanation": "Bir şeyi yapmayı planlamak veya amaçlamak."
+ },
+ {
+  "id": "n-b1-investment",
+  "word": "investment",
+  "letter": "I",
+  "level": "B1",
+  "turkish_explanation": "Gelecekte kazanç sağlamak için kaynak ayırma."
+ },
+ {
+  "id": "n-b1-labor",
+  "word": "labor",
+  "letter": "L",
+  "level": "B1",
+  "turkish_explanation": "Üretim veya hizmet için harcanan fiziksel ya da zihinsel emek."
+ },
+ {
+  "id": "n-b1-neighbourhood",
+  "word": "neighbourhood",
+  "letter": "N",
+  "level": "B1",
+  "turkish_explanation": "Bir şehir veya kasabada insanların yaşadığı yerel çevre ve bölge."
+ },
+ {
+  "id": "n-b1-percent",
+  "word": "percent",
+  "letter": "P",
+  "level": "B1",
+  "turkish_explanation": "Yüzde biriminden ifade edilen oran."
+ },
+ {
+  "id": "n-b1-process",
+  "word": "process",
+  "letter": "P",
+  "level": "B1",
+  "turkish_explanation": "Bir sonuca ulaşmak için gerçekleşen aşamalar dizisi."
+ },
+ {
+  "id": "n-b1-unemployment",
+  "word": "unemployment",
+  "letter": "U",
+  "level": "B1",
+  "turkish_explanation": "Çalışmak isteyen kişinin iş bulamaması durumu."
+ },
+ {
+  "id": "n-b1-union",
+  "word": "union",
+  "letter": "U",
+  "level": "B1",
+  "turkish_explanation": "Ortak amaç veya haklar için bir araya gelmiş grup; işçi sendikası."
+ },
+ {
+  "id": "n-b1-volume",
+  "word": "volume",
+  "letter": "V",
+  "level": "B1",
+  "turkish_explanation": "Bir cismin kapladığı üç boyutlu alan veya bir yayının cildi."
+ },
+ {
+  "id": "n-b1-wildlife",
+  "word": "wildlife",
+  "letter": "W",
+  "level": "B1",
+  "turkish_explanation": "İnsan tarafından evcilleştirilmemiş, doğal ortamında yaşayan hayvan ve bitkiler."
+ },
+ {
+  "id": "n-b1-willingness",
+  "word": "willingness",
+  "letter": "W",
+  "level": "B1",
+  "turkish_explanation": "Bir işi yapmaya veya bir durumu kabul etmeye istekli olma hâli."
+ },
+ {
+  "id": "n-b1-worthy",
+  "word": "worthy",
+  "letter": "W",
+  "level": "B1",
+  "turkish_explanation": "Değerli, saygıyı veya dikkate alınmayı hak eden."
+ },
+ {
+  "id": "n-b1-wound",
+  "word": "wound",
+  "letter": "W",
+  "level": "B1",
+  "turkish_explanation": "Darbe, kesik veya başka bir etki sonucunda vücutta oluşan yaralanma."
+ },
+ {
+  "id": "n-b2-activate",
+  "word": "activate",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Bir sistemi veya süreci çalışır duruma getirmek."
+ },
+ {
+  "id": "n-b2-analyst",
+  "word": "analyst",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Verileri veya olayları inceleyerek sonuç çıkaran uzman."
+ },
+ {
+  "id": "n-b2-applicant",
+  "word": "applicant",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Bir iş, okul veya hizmet için resmî başvuru yapan kişi."
+ },
+ {
+  "id": "n-b2-appropriately",
+  "word": "appropriately",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Duruma veya amaca uygun şekilde."
+ },
+ {
+  "id": "n-b2-asset",
+  "word": "asset",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Bir kişi veya kurumun sahip olduğu ekonomik değeri olan kaynak."
+ },
+ {
+  "id": "n-b2-assumption",
+  "word": "assumption",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Kanıtlanmadan doğru kabul edilen düşünce."
+ },
+ {
+  "id": "n-b2-assure",
+  "word": "assure",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Bir kişiye bir şeyin doğru veya güvenli olduğunu güvence vermek."
+ },
+ {
+  "id": "n-b2-awareness",
+  "word": "awareness",
+  "letter": "A",
+  "level": "B2",
+  "turkish_explanation": "Bir konu hakkında bilgi sahibi olma ve farkındalık durumu."
+ },
+ {
+  "id": "n-b2-biological",
+  "word": "biological",
+  "letter": "B",
+  "level": "B2",
+  "turkish_explanation": "Canlıların yapısı, işlevleri veya yaşam süreçleriyle ilgili."
+ },
+ {
+  "id": "n-b2-carbon",
+  "word": "carbon",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Canlıların yapısında bulunan ve atom numarası altı olan kimyasal element."
+ },
+ {
+  "id": "n-b2-casual",
+  "word": "casual",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Resmî olmayan, rahat veya gündelik nitelikte."
+ },
+ {
+  "id": "n-b2-certainty",
+  "word": "certainty",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Bir şeyin doğru olduğuna ilişkin kuşku bulunmaması."
+ },
+ {
+  "id": "n-b2-certificate",
+  "word": "certificate",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Bir başarıyı, niteliği veya durumu belgeleyen resmî evrak."
+ },
+ {
+  "id": "n-b2-challenging",
+  "word": "challenging",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Beceri, emek veya düşünme gerektiren zorlayıcı."
+ },
+ {
+  "id": "n-b2-circuit",
+  "word": "circuit",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Elektrik akımının dolaşabildiği kapalı yol veya elektronik devre."
+ },
+ {
+  "id": "n-b2-civilization",
+  "word": "civilization",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Gelişmiş toplumsal kurum, teknoloji ve kültüre sahip insan topluluğu."
+ },
+ {
+  "id": "n-b2-clarify",
+  "word": "clarify",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Bir konuyu daha açık ve anlaşılır hâle getirmek."
+ },
+ {
+  "id": "n-b2-classify",
+  "word": "classify",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Nesne veya bilgileri ortak özelliklerine göre gruplara ayırmak."
+ },
+ {
+  "id": "n-b2-coincidence",
+  "word": "coincidence",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "İki olayın planlanmadan aynı zamanda veya yerde gerçekleşmesi."
+ },
+ {
+  "id": "n-b2-colony",
+  "word": "colony",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Başka bir devletin kontrolündeki bölge veya birlikte yaşayan canlı topluluğu."
+ },
+ {
+  "id": "n-b2-comparative",
+  "word": "comparative",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "İki veya daha fazla şeyi karşılaştırmaya dayanan."
+ },
+ {
+  "id": "n-b2-compulsory",
+  "word": "compulsory",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Yasa veya kural gereği yapılması zorunlu olan."
+ },
+ {
+  "id": "n-b2-concrete",
+  "word": "concrete",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Soyut olmayan, gerçek ve belirgin; ayrıca yapı malzemesi olan betonla ilgili."
+ },
+ {
+  "id": "n-b2-conservation",
+  "word": "conservation",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Doğal kaynakları veya kültürel varlıkları koruma ve sürdürme çalışması."
+ },
+ {
+  "id": "n-b2-consistently",
+  "word": "consistently",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Zaman içinde aynı biçimde ve düzenli olarak."
+ },
+ {
+  "id": "n-b2-convey",
+  "word": "convey",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Bir düşünceyi, duyguyu veya bilgiyi iletmek."
+ },
+ {
+  "id": "n-b2-cope",
+  "word": "cope",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Zor bir durumla başa çıkmak."
+ },
+ {
+  "id": "n-b2-corporation",
+  "word": "corporation",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Büyük ölçekli ve ayrı tüzel kişiliği olan şirket."
+ },
+ {
+  "id": "n-b2-creativity",
+  "word": "creativity",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Özgün fikir ve çözümler üretme yeteneği."
+ },
+ {
+  "id": "n-b2-critically",
+  "word": "critically",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Dikkatli değerlendirme ve sorgulama yaparak."
+ },
+ {
+  "id": "n-b2-curriculum",
+  "word": "curriculum",
+  "letter": "C",
+  "level": "B2",
+  "turkish_explanation": "Bir eğitim programında yer alan ders ve öğrenme içeriği bütünü."
+ },
+ {
+  "id": "n-b2-database",
+  "word": "database",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Bilgilerin düzenli biçimde saklandığı ve yönetildiği elektronik veri koleksiyonu."
+ },
+ {
+  "id": "n-b2-deadline",
+  "word": "deadline",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Bir işin tamamlanması gereken son tarih veya saat."
+ },
+ {
+  "id": "n-b2-democracy",
+  "word": "democracy",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Halkın yönetime doğrudan veya seçilmiş temsilciler aracılığıyla katıldığı yönetim biçimi."
+ },
+ {
+  "id": "n-b2-demonstration",
+  "word": "demonstration",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Bir yöntemin nasıl çalıştığını gösteren uygulama veya toplu protesto."
+ },
+ {
+  "id": "n-b2-dependent",
+  "word": "dependent",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Varlığı veya sonucu başka bir şeye bağlı olan."
+ },
+ {
+  "id": "n-b2-determination",
+  "word": "determination",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Bir hedefe ulaşma konusunda güçlü kararlılık."
+ },
+ {
+  "id": "n-b2-devote",
+  "word": "devote",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Zaman, enerji veya kaynakları belirli bir amaca ayırmak."
+ },
+ {
+  "id": "n-b2-disability",
+  "word": "disability",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Kişinin bazı günlük faaliyetleri gerçekleştirmesini etkileyen fiziksel veya zihinsel durum."
+ },
+ {
+  "id": "n-b2-discourage",
+  "word": "discourage",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Bir kişinin bir şeyi yapma isteğini azaltmak."
+ },
+ {
+  "id": "n-b2-disorder",
+  "word": "disorder",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Düzenin bozulması veya sağlıkla ilgili işlev bozukluğu."
+ },
+ {
+  "id": "n-b2-distinct",
+  "word": "distinct",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Diğerlerinden açıkça ayrılan ve kolayca ayırt edilebilen."
+ },
+ {
+  "id": "n-b2-dramatically",
+  "word": "dramatically",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Çok büyük veya dikkat çekici bir değişimle."
+ },
+ {
+  "id": "n-b2-drought",
+  "word": "drought",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Uzun süre yağış olmaması nedeniyle oluşan ciddi su kıtlığı."
+ },
+ {
+  "id": "n-b2-dynamic",
+  "word": "dynamic",
+  "letter": "D",
+  "level": "B2",
+  "turkish_explanation": "Sürekli değişen, hareketli veya enerji dolu."
+ },
+ {
+  "id": "n-b2-economics",
+  "word": "economics",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Üretim, tüketim, dağıtım ve kaynak kullanımını inceleyen sosyal bilim."
+ },
+ {
+  "id": "n-b2-efficiently",
+  "word": "efficiently",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Az kaynak ve zaman kullanarak iyi sonuç verecek biçimde."
+ },
+ {
+  "id": "n-b2-emission",
+  "word": "emission",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Gaz, ışık veya parçacık gibi maddelerin çevreye salınması."
+ },
+ {
+  "id": "n-b2-evaluation",
+  "word": "evaluation",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir şeyin niteliğini veya başarısını ölçütlere göre değerlendirme."
+ },
+ {
+  "id": "n-b2-exceed",
+  "word": "exceed",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir sınırı, miktarı veya beklentiyi aşmak."
+ },
+ {
+  "id": "n-b2-exception",
+  "word": "exception",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Genel kuralın dışında kalan özel durum."
+ },
+ {
+  "id": "n-b2-excessive",
+  "word": "excessive",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Gerekli veya makul olandan çok daha fazla."
+ },
+ {
+  "id": "n-b2-exclude",
+  "word": "exclude",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Birini veya bir şeyi grubun dışında bırakmak."
+ },
+ {
+  "id": "n-b2-exhibit",
+  "word": "exhibit",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir şeyi halka göstermek veya sergilemek."
+ },
+ {
+  "id": "n-b2-expansion",
+  "word": "expansion",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir şeyin boyut, kapsam veya faaliyet bakımından büyümesi."
+ },
+ {
+  "id": "n-b2-expertise",
+  "word": "expertise",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Belirli bir alanda edinilmiş ileri düzey bilgi ve beceri."
+ },
+ {
+  "id": "n-b2-exploit",
+  "word": "exploit",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir kaynağı veya fırsatı yoğun biçimde kullanmak; bazen kötüye kullanmak."
+ },
+ {
+  "id": "n-b2-exposure",
+  "word": "exposure",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Bir şeye maruz kalma veya bir konunun görünür hâle gelmesi."
+ },
+ {
+  "id": "n-b2-extensive",
+  "word": "extensive",
+  "letter": "E",
+  "level": "B2",
+  "turkish_explanation": "Alan, miktar veya kapsam bakımından geniş."
+ },
+ {
+  "id": "n-b2-federal",
+  "word": "federal",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "Yetkilerin merkezi yönetim ile bölgesel yönetimler arasında paylaşıldığı sistemle ilgili."
+ },
+ {
+  "id": "n-b2-fraud",
+  "word": "fraud",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "Aldatma yoluyla haksız kazanç elde etmeye yönelik yasa dışı eylem."
+ },
+ {
+  "id": "n-b2-fundamentally",
+  "word": "fundamentally",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "Bir şeyin en temel yönü veya özü bakımından."
+ },
+ {
+  "id": "n-b2-governor",
+  "word": "governor",
+  "letter": "G",
+  "level": "B2",
+  "turkish_explanation": "Bir eyalet veya bölgenin yönetiminden sorumlu üst düzey yetkili."
+ },
+ {
+  "id": "n-b2-headquarters",
+  "word": "headquarters",
+  "letter": "H",
+  "level": "B2",
+  "turkish_explanation": "Bir kurum veya şirketin ana yönetim merkezinin bulunduğu yer."
+ },
+ {
+  "id": "n-b2-illustrate",
+  "word": "illustrate",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Bir düşünceyi örnek veya görselle açıklamak."
+ },
+ {
+  "id": "n-b2-independent",
+  "word": "independent",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Başka birinin kontrolüne veya yardımına bağlı olmayan."
+ },
+ {
+  "id": "n-b2-initially",
+  "word": "initially",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Bir sürecin başlangıç aşamasında."
+ },
+ {
+  "id": "n-b2-insight",
+  "word": "insight",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Bir konunun özünü veya ilişkilerini derinlemesine kavrama."
+ },
+ {
+  "id": "n-b2-interaction",
+  "word": "interaction",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "İki veya daha fazla kişi ya da sistem arasındaki karşılıklı etkileşim."
+ },
+ {
+  "id": "n-b2-interpretation",
+  "word": "interpretation",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Bir metin, olay veya bilginin anlamına ilişkin açıklama."
+ },
+ {
+  "id": "n-b2-intervention",
+  "word": "intervention",
+  "letter": "I",
+  "level": "B2",
+  "turkish_explanation": "Bir sürece yön vermek veya durumu değiştirmek amacıyla yapılan müdahale."
+ },
+ {
+  "id": "n-b2-label",
+  "word": "label",
+  "letter": "L",
+  "level": "B2",
+  "turkish_explanation": "Bir nesnenin üzerine bilgi veya ad yazılan etiket."
+ },
+ {
+  "id": "n-b2-minority",
+  "word": "minority",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "Bir grubun sayıca daha az olan bölümü."
+ },
+ {
+  "id": "n-b2-motivation",
+  "word": "motivation",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "Bir kişiyi harekete geçiren istek veya neden."
+ },
+ {
+  "id": "n-b2-ongoing",
+  "word": "ongoing",
+  "letter": "O",
+  "level": "B2",
+  "turkish_explanation": "Hâlen devam etmekte olan."
+ },
+ {
+  "id": "n-b2-professional",
+  "word": "professional",
+  "letter": "P",
+  "level": "B2",
+  "turkish_explanation": "Bir mesleğe veya uzmanlık gerektiren işe ait."
+ },
+ {
+  "id": "n-b2-regulate",
+  "word": "regulate",
+  "letter": "R",
+  "level": "B2",
+  "turkish_explanation": "Bir faaliyeti yasa veya kurallarla düzenlemek ve denetlemek."
+ },
+ {
+  "id": "n-b2-requirement",
+  "word": "requirement",
+  "letter": "R",
+  "level": "B2",
+  "turkish_explanation": "Bir işin yapılması için gerekli koşul veya ihtiyaç."
+ },
+ {
+  "id": "n-b2-resilience",
+  "word": "resilience",
+  "letter": "R",
+  "level": "B2",
+  "turkish_explanation": "Zorluk veya kriz sonrasında toparlanabilme ve uyum sağlama kapasitesi."
+ },
+ {
+  "id": "n-b2-universal",
+  "word": "universal",
+  "letter": "U",
+  "level": "B2",
+  "turkish_explanation": "Her yerde, herkes için veya bütün durumlarda geçerli olan."
+ },
+ {
+  "id": "n-b2-yacht",
+  "word": "yacht",
+  "letter": "Y",
+  "level": "B2",
+  "turkish_explanation": "Gezi, dinlenme veya spor amacıyla kullanılan büyük ve donanımlı özel tekne."
+ },
+ {
+  "id": "n-c1-abound",
+  "word": "abound",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir yerde veya durumda çok sayıda bulunmak."
+ },
+ {
+  "id": "n-c1-acre",
+  "word": "acre",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Arazi yüzölçümünü ölçmekte kullanılan, yaklaşık 4.047 metrekarelik alan birimi."
+ },
+ {
+  "id": "n-c1-adversary",
+  "word": "adversary",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir mücadele, tartışma veya yarışmada karşı tarafta bulunan rakip."
+ },
+ {
+  "id": "n-c1-amateur",
+  "word": "amateur",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir işi meslek olarak değil, ilgi veya hobi amacıyla yapan kişi."
+ },
+ {
+  "id": "n-c1-anthropologist",
+  "word": "anthropologist",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "İnsan topluluklarını ve kültürlerini antropoloji yöntemleriyle inceleyen araştırmacı."
+ },
+ {
+  "id": "n-c1-anthropology",
+  "word": "anthropology",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "İnsan topluluklarını, kültürlerini ve biyolojik gelişimini inceleyen bilim dalı."
+ },
+ {
+  "id": "n-c1-apprehensive",
+  "word": "apprehensive",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Olacaklar konusunda kaygı veya endişe duyan."
+ },
+ {
+  "id": "n-c1-apt",
+  "word": "apt",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir duruma uygun düşen veya bir şeyi yapmaya yatkın."
+ },
+ {
+  "id": "n-c1-assertion",
+  "word": "assertion",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyin doğru olduğunu güçlü biçimde ileri süren ifade."
+ },
+ {
+  "id": "n-c1-avid",
+  "word": "avid",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Bir etkinliğe veya konuya büyük heves ve ilgi duyan."
+ },
+ {
+  "id": "n-c1-awe",
+  "word": "awe",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Çok etkileyici bir şey karşısında duyulan derin hayranlık ve şaşkınlık."
+ },
+ {
+  "id": "n-c1-benign",
+  "word": "benign",
+  "letter": "B",
+  "level": "C1",
+  "turkish_explanation": "Zararlı veya kötü huylu olmayan; tıpta kanser niteliği taşımayan."
+ },
+ {
+  "id": "n-c1-bliss",
+  "word": "bliss",
+  "letter": "B",
+  "level": "C1",
+  "turkish_explanation": "Çok yoğun ve kusursuz mutluluk durumu."
+ },
+ {
+  "id": "n-c1-bribe",
+  "word": "bribe",
+  "letter": "B",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi uygunsuz biçimde etkilemek için verilen para veya çıkar."
+ },
+ {
+  "id": "n-c1-bulk",
+  "word": "bulk",
+  "letter": "B",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyin büyük hacmi, kütlesi veya toplam miktarı."
+ },
+ {
+  "id": "n-c1-candid",
+  "word": "candid",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Düşüncelerini açık, dürüst ve saklamadan ifade eden."
+ },
+ {
+  "id": "n-c1-cavity",
+  "word": "cavity",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir yapı veya dokunun içinde bulunan boşluk; dişte çürükle oluşan oyuk."
+ },
+ {
+  "id": "n-c1-ceaseless",
+  "word": "ceaseless",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Hiç durmadan devam eden."
+ },
+ {
+  "id": "n-c1-cessation",
+  "word": "cessation",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir faaliyetin, sürecin veya durumun sona ermesi."
+ },
+ {
+  "id": "n-c1-chisel",
+  "word": "chisel",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Keski kullanarak sert bir yüzeye şekil vermek veya onu oymak."
+ },
+ {
+  "id": "n-c1-clan",
+  "word": "clan",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Ortak bir atadan geldiğine inanan, güçlü akrabalık bağı taşıyan topluluk."
+ },
+ {
+  "id": "n-c1-claustrophobia",
+  "word": "claustrophobia",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Kapalı veya dar alanlarda bulunmaya karşı duyulan yoğun korku."
+ },
+ {
+  "id": "n-c1-climax",
+  "word": "climax",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir olayın, hikâyenin veya sürecin en yüksek gerilim ya da etki noktası."
+ },
+ {
+  "id": "n-c1-collaboration",
+  "word": "collaboration",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "İki veya daha fazla tarafın ortak çalışma yürütmesi."
+ },
+ {
+  "id": "n-c1-commend",
+  "word": "commend",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir kişinin davranışını veya başarısını açıkça takdir etmek."
+ },
+ {
+  "id": "n-c1-compel",
+  "word": "compel",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi baskı veya güçlü nedenlerle bir şeyi yapmaya zorlamak."
+ },
+ {
+  "id": "n-c1-complexity",
+  "word": "complexity",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir sistemin çok sayıda bağlantılı unsur içermesinden doğan karmaşıklık."
+ },
+ {
+  "id": "n-c1-comprise",
+  "word": "comprise",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir bütünün belirli parçalardan oluşması veya onları içermesi."
+ },
+ {
+  "id": "n-c1-conform",
+  "word": "conform",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir kural, standart veya toplumsal beklentiye uygun davranmak."
+ },
+ {
+  "id": "n-c1-conformity",
+  "word": "conformity",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Belirlenmiş kurallara veya yaygın davranış kalıplarına uyma durumu."
+ },
+ {
+  "id": "n-c1-congregate",
+  "word": "congregate",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "İnsanların bir yerde grup hâlinde toplanması."
+ },
+ {
+  "id": "n-c1-connoisseur",
+  "word": "connoisseur",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir sanat veya uzmanlık alanını derinlemesine bilen seçkin kişi."
+ },
+ {
+  "id": "n-c1-conscientious",
+  "word": "conscientious",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Görevlerini dikkatle, özenle ve sorumluluk bilinciyle yapan."
+ },
+ {
+  "id": "n-c1-conscientiously",
+  "word": "conscientiously",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Sorumluluk ve özen göstererek."
+ },
+ {
+  "id": "n-c1-contextual",
+  "word": "contextual",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir ifadenin veya olayın içinde bulunduğu bağlamla ilgili."
+ },
+ {
+  "id": "n-c1-corps",
+  "word": "corps",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir görev için örgütlenmiş askerî veya mesleki birlik."
+ },
+ {
+  "id": "n-c1-coverage",
+  "word": "coverage",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir konunun, olayın veya alanın ne ölçüde ele alındığı."
+ },
+ {
+  "id": "n-c1-crave",
+  "word": "crave",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyi çok güçlü biçimde arzulamak."
+ },
+ {
+  "id": "n-c1-curator",
+  "word": "curator",
+  "letter": "C",
+  "level": "C1",
+  "turkish_explanation": "Müze veya sanat koleksiyonunu seçen, düzenleyen ve koruyan uzman."
+ },
+ {
+  "id": "n-c1-debut",
+  "word": "debut",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir sanatçının, ürünün veya kişinin ilk kez kamu önüne çıkışı."
+ },
+ {
+  "id": "n-c1-deceit",
+  "word": "deceit",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Birini yanıltmak amacıyla gerçeği gizleme veya çarpıtma."
+ },
+ {
+  "id": "n-c1-depict",
+  "word": "depict",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi, olayı veya düşünceyi yazı ya da görselle tasvir etmek."
+ },
+ {
+  "id": "n-c1-deprivation",
+  "word": "deprivation",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Temel ihtiyaç, hak veya olanaklardan yoksun bırakılma durumu."
+ },
+ {
+  "id": "n-c1-detest",
+  "word": "detest",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyden son derece nefret etmek."
+ },
+ {
+  "id": "n-c1-disdain",
+  "word": "disdain",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiye veya şeye karşı küçümseyici saygısızlık duygusu."
+ },
+ {
+  "id": "n-c1-dismal",
+  "word": "dismal",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Kasvetli, iç karartıcı veya umut vermeyen."
+ },
+ {
+  "id": "n-c1-dissect",
+  "word": "dissect",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir organizmayı veya konuyu parçalarına ayırarak ayrıntılı incelemek."
+ },
+ {
+  "id": "n-c1-diverge",
+  "word": "diverge",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Birbirinden ayrılmak veya farklı yönlere doğru gelişmek."
+ },
+ {
+  "id": "n-c1-diversity",
+  "word": "diversity",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir grup içindeki farklılıkların ve çeşitliliğin bütünü."
+ },
+ {
+  "id": "n-c1-dominant",
+  "word": "dominant",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Diğerleri üzerinde en güçlü etkiye veya kontrole sahip olan."
+ },
+ {
+  "id": "n-c1-duration",
+  "word": "duration",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Bir olayın veya etkinliğin devam ettiği süre."
+ },
+ {
+  "id": "n-c1-eccentric",
+  "word": "eccentric",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Alışılmış davranış ve düşüncelerden belirgin biçimde ayrılan."
+ },
+ {
+  "id": "n-c1-ecstasy",
+  "word": "ecstasy",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Çok yoğun sevinç veya coşku durumu."
+ },
+ {
+  "id": "n-c1-ego",
+  "word": "ego",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Kişinin kendine ilişkin benlik ve kimlik algısı."
+ },
+ {
+  "id": "n-c1-elevate",
+  "word": "elevate",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyi daha yüksek bir konuma veya düzeye çıkarmak."
+ },
+ {
+  "id": "n-c1-elongate",
+  "word": "elongate",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir nesnenin veya yapının uzunluğunu artırmak; uzatmak."
+ },
+ {
+  "id": "n-c1-embark",
+  "word": "embark",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Yeni ve çoğu zaman uzun sürecek bir işe, yolculuğa veya projeye başlamak."
+ },
+ {
+  "id": "n-c1-embody",
+  "word": "embody",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir düşünceyi veya niteliği somut biçimde temsil etmek."
+ },
+ {
+  "id": "n-c1-enviable",
+  "word": "enviable",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Başkalarının sahip olmayı isteyeceği kadar arzu edilen."
+ },
+ {
+  "id": "n-c1-evoke",
+  "word": "evoke",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir duygu, anı veya düşünceyi zihinde canlandırmak."
+ },
+ {
+  "id": "n-c1-exert",
+  "word": "exert",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Güç, etki veya çaba uygulamak."
+ },
+ {
+  "id": "n-c1-exhilarate",
+  "word": "exhilarate",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Birini büyük bir heyecan, enerji veya coşkuyla doldurmak."
+ },
+ {
+  "id": "n-c1-exotic",
+  "word": "exotic",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Uzak veya farklı bir kültürden geldiği için alışılmadık ve ilgi çekici olan."
+ },
+ {
+  "id": "n-c1-expedite",
+  "word": "expedite",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir sürecin daha hızlı ve verimli ilerlemesini sağlamak."
+ },
+ {
+  "id": "n-c1-expedition",
+  "word": "expedition",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir keşif veya araştırma amacıyla yapılan uzun yolculuk."
+ },
+ {
+  "id": "n-c1-exterior",
+  "word": "exterior",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Bir yapının veya nesnenin dış yüzeyi ya da dış görünüşü."
+ },
+ {
+  "id": "n-c1-extortion",
+  "word": "extortion",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Tehdit veya baskı yoluyla para ya da çıkar elde etme suçu."
+ },
+ {
+  "id": "n-c1-faction",
+  "word": "faction",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Daha büyük bir örgüt veya grup içindeki ayrı görüşlü alt grup."
+ },
+ {
+  "id": "n-c1-farce",
+  "word": "farce",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Abartılı ve gülünç olaylara dayanan komedi türü; ayrıca saçma durum."
+ },
+ {
+  "id": "n-c1-fatality",
+  "word": "fatality",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Bir kaza veya felaket sonucunda meydana gelen ölüm."
+ },
+ {
+  "id": "n-c1-ferocious",
+  "word": "ferocious",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Son derece saldırgan, vahşi veya şiddetli."
+ },
+ {
+  "id": "n-c1-fixture",
+  "word": "fixture",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Bir yere sabitlenmiş donanım veya düzenek; ayrıca belirlenmiş karşılaşma."
+ },
+ {
+  "id": "n-c1-flattery",
+  "word": "flattery",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Birinden çıkar sağlamak veya onu memnun etmek için yapılan aşırı övgü."
+ },
+ {
+  "id": "n-c1-folktale",
+  "word": "folktale",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Kuşaktan kuşağa sözlü olarak aktarılan geleneksel halk hikâyesi."
+ },
+ {
+  "id": "n-c1-formality",
+  "word": "formality",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Resmî bir işlem veya davranış kuralı."
+ },
+ {
+  "id": "n-c1-fossil",
+  "word": "fossil",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Eski jeolojik dönemlerden kalmış canlı kalıntısı veya izi."
+ },
+ {
+  "id": "n-c1-fracture",
+  "word": "fracture",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Bir kemiğin kırılması veya bir yapıda meydana gelen çatlak."
+ },
+ {
+  "id": "n-c1-fusion",
+  "word": "fusion",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "İki veya daha fazla unsurun birleşerek tek bir bütün oluşturması."
+ },
+ {
+  "id": "n-c1-gadget",
+  "word": "gadget",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir işi kolaylaştıran küçük ve kullanışlı teknik cihaz."
+ },
+ {
+  "id": "n-c1-gape",
+  "word": "gape",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Şaşkınlıkla ağzı açık biçimde bakakalmak."
+ },
+ {
+  "id": "n-c1-gem",
+  "word": "gem",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Takı yapımında kullanılan değerli veya yarı değerli taş."
+ },
+ {
+  "id": "n-c1-genome",
+  "word": "genome",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Bir organizmanın sahip olduğu genetik bilginin tamamı."
+ },
+ {
+  "id": "n-c1-geological",
+  "word": "geological",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Dünya'nın yapısı, tarihi ve kayaçlarıyla ilgili."
+ },
+ {
+  "id": "n-c1-glean",
+  "word": "glean",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Dağınık bilgilerden veya küçük ipuçlarından sonuç çıkarmak."
+ },
+ {
+  "id": "n-c1-gnaw",
+  "word": "gnaw",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyi dişlerle tekrar tekrar kemirerek aşındırmak."
+ },
+ {
+  "id": "n-c1-gruelling",
+  "word": "gruelling",
+  "letter": "G",
+  "level": "C1",
+  "turkish_explanation": "Fiziksel veya zihinsel açıdan son derece yorucu."
+ },
+ {
+  "id": "n-c1-haggle",
+  "word": "haggle",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Bir malın fiyatı üzerinde karşılıklı pazarlık yapmak."
+ },
+ {
+  "id": "n-c1-harass",
+  "word": "harass",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi sürekli rahatsız etmek, tehdit etmek veya baskı altına almak."
+ },
+ {
+  "id": "n-c1-headstrong",
+  "word": "headstrong",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Başkalarının önerilerini dikkate almadan kendi kararında ısrar eden."
+ },
+ {
+  "id": "n-c1-heighten",
+  "word": "heighten",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Bir duygu, etki veya düzeyin yoğunluğunu artırmak."
+ },
+ {
+  "id": "n-c1-humble",
+  "word": "humble",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Kendini başkalarından üstün görmeyen, alçakgönüllü."
+ },
+ {
+  "id": "n-c1-hypocrisy",
+  "word": "hypocrisy",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Kişinin savunduğunu söylediği değerlerle gerçek davranışlarının çelişmesi."
+ },
+ {
+  "id": "n-c1-hypocrite",
+  "word": "hypocrite",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Savunduğu ilkelere kendisi uymayan veya olduğundan farklı görünen kişi."
+ },
+ {
+  "id": "n-c1-immense",
+  "word": "immense",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Olağanüstü büyük veya geniş."
+ },
+ {
+  "id": "n-c1-implicate",
+  "word": "implicate",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi bir olay veya suçla bağlantılı göstermek."
+ },
+ {
+  "id": "n-c1-incision",
+  "word": "incision",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Cerrahi işlem sırasında dokuya yapılan kesik."
+ },
+ {
+  "id": "n-c1-incisor",
+  "word": "incisor",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Kesici diş; yiyecekleri koparmak için kullanılan ön diş."
+ },
+ {
+  "id": "n-c1-indefinite",
+  "word": "indefinite",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Kesin sınırları, süresi veya anlamı belirlenmemiş."
+ },
+ {
+  "id": "n-c1-inexplicable",
+  "word": "inexplicable",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Nedenleri veya açıklaması anlaşılamayan."
+ },
+ {
+  "id": "n-c1-ingenious",
+  "word": "ingenious",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Yaratıcı, zekice ve özgün bir çözüm veya düzenek içeren."
+ },
+ {
+  "id": "n-c1-ingenuity",
+  "word": "ingenuity",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Yeni ve etkili çözümler üretme becerisi; yaratıcılık ve pratik zekâ."
+ },
+ {
+  "id": "n-c1-insightful",
+  "word": "insightful",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Bir konunun derin anlamını ve önemli ilişkilerini kavrayan."
+ },
+ {
+  "id": "n-c1-instinctive",
+  "word": "instinctive",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Öğrenmeden, doğal içgüdüyle yapılan."
+ },
+ {
+  "id": "n-c1-insubordinate",
+  "word": "insubordinate",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Yetkili kişilerin talimatlarına uymayan veya otoriteye başkaldıran."
+ },
+ {
+  "id": "n-c1-intellect",
+  "word": "intellect",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "Akıl yürütme, anlama ve düşünme yetisi."
+ },
+ {
+  "id": "n-c1-lethargy",
+  "word": "lethargy",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Aşırı halsizlik ve hareket etmek için isteksizlik durumu."
+ },
+ {
+  "id": "n-c1-liaison",
+  "word": "liaison",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "İki kişi veya kurum arasında iletişimi ve iş birliğini sağlayan bağlantı."
+ },
+ {
+  "id": "n-c1-lust",
+  "word": "lust",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Bir şeye yönelik yoğun ve güçlü arzu."
+ },
+ {
+  "id": "n-c1-malfunction",
+  "word": "malfunction",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Bir cihazın veya sistemin düzgün çalışmaması."
+ },
+ {
+  "id": "n-c1-manipulation",
+  "word": "manipulation",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Birini veya bir süreci çoğu zaman gizlice kendi amacı doğrultusunda yönlendirme."
+ },
+ {
+  "id": "n-c1-marvel",
+  "word": "marvel",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Hayranlık uyandıran olağanüstü kişi veya şey."
+ },
+ {
+  "id": "n-c1-midwife",
+  "word": "midwife",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Gebelik, doğum ve doğum sonrası süreçte anneye destek olan sağlık uzmanı."
+ },
+ {
+  "id": "n-c1-minutiae",
+  "word": "minutiae",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Bir konunun çok küçük ve çoğu zaman önemsiz ayrıntıları."
+ },
+ {
+  "id": "n-c1-monotonous",
+  "word": "monotonous",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "Tekdüze olduğu için sıkıcı veya ilgi çekiciliği az olan."
+ },
+ {
+  "id": "n-c1-neutralize",
+  "word": "neutralize",
+  "letter": "N",
+  "level": "C1",
+  "turkish_explanation": "Bir etkinin, tehdidin veya kimyasal özelliğin etkisini ortadan kaldırmak."
+ },
+ {
+  "id": "n-c1-niche",
+  "word": "niche",
+  "letter": "N",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir uzmanlık, pazar veya ekolojik işlev için ayrılan dar alan."
+ },
+ {
+  "id": "n-c1-oddity",
+  "word": "oddity",
+  "letter": "O",
+  "level": "C1",
+  "turkish_explanation": "Alışılmadık veya tuhaf özellik taşıyan şey."
+ },
+ {
+  "id": "n-c1-offspring",
+  "word": "offspring",
+  "letter": "O",
+  "level": "C1",
+  "turkish_explanation": "Bir insanın veya hayvanın çocukları ya da yavruları."
+ },
+ {
+  "id": "n-c1-orchard",
+  "word": "orchard",
+  "letter": "O",
+  "level": "C1",
+  "turkish_explanation": "Meyve ağaçlarının düzenli biçimde yetiştirildiği tarım alanı."
+ },
+ {
+  "id": "n-c1-oversee",
+  "word": "oversee",
+  "letter": "O",
+  "level": "C1",
+  "turkish_explanation": "Bir işin doğru yürütülmesini denetlemek ve gözetmek."
+ },
+ {
+  "id": "n-c1-panorama",
+  "word": "panorama",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Geniş bir alanı kapsayan kesintisiz manzara veya genel görünüm."
+ },
+ {
+  "id": "n-c1-parasite",
+  "word": "parasite",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Başka bir canlı üzerinde veya içinde yaşayarak ondan beslenen organizma."
+ },
+ {
+  "id": "n-c1-peninsula",
+  "word": "peninsula",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Üç tarafı suyla çevrili, bir tarafı karaya bağlı kara parçası."
+ },
+ {
+  "id": "n-c1-perpetuate",
+  "word": "perpetuate",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir durumu veya uygulamayı uzun süre devam ettirmek."
+ },
+ {
+  "id": "n-c1-physicality",
+  "word": "physicality",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir sanat eseri veya performansta bedenin ve fiziksel hareketin belirgin rolü."
+ },
+ {
+  "id": "n-c1-pinnacle",
+  "word": "pinnacle",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir gelişmenin veya başarının ulaşabileceği en yüksek nokta."
+ },
+ {
+  "id": "n-c1-placid",
+  "word": "placid",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Sakin, huzurlu ve kolayca heyecanlanmayan."
+ },
+ {
+  "id": "n-c1-plaque",
+  "word": "plaque",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Diş yüzeyinde biriken bakteri tabakası; ayrıca anı levhası."
+ },
+ {
+  "id": "n-c1-ploy",
+  "word": "ploy",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir amacı gerçekleştirmek için kullanılan planlı ve çoğu zaman kurnazca yöntem."
+ },
+ {
+  "id": "n-c1-plunge",
+  "word": "plunge",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Ani ve hızlı biçimde bir yere dalmak veya düşmek."
+ },
+ {
+  "id": "n-c1-poise",
+  "word": "poise",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Zor durumda bile korunan sakinlik, denge ve kendine güven."
+ },
+ {
+  "id": "n-c1-portray",
+  "word": "portray",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiyi, olayı veya durumu sanat ya da anlatım yoluyla betimlemek."
+ },
+ {
+  "id": "n-c1-pounce",
+  "word": "pounce",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir hedefin üzerine aniden ve hızla atılmak."
+ },
+ {
+  "id": "n-c1-predecessor",
+  "word": "predecessor",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir görevde veya konumda başka birinden önce bulunan kişi ya da şey."
+ },
+ {
+  "id": "n-c1-protagonist",
+  "word": "protagonist",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Bir hikâyenin veya oyunun ana karakteri."
+ },
+ {
+  "id": "n-c1-provocative",
+  "word": "provocative",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "Güçlü tepki, tartışma veya düşünce uyandıran."
+ },
+ {
+  "id": "n-c1-quirk",
+  "word": "quirk",
+  "letter": "Q",
+  "level": "C1",
+  "turkish_explanation": "Bir kişiye özgü küçük, sıra dışı alışkanlık veya özellik."
+ },
+ {
+  "id": "n-c1-rapport",
+  "word": "rapport",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "İki kişi arasında gelişen uyumlu ve güvene dayalı ilişki."
+ },
+ {
+  "id": "n-c1-relinquish",
+  "word": "relinquish",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Bir hak, görev veya sahip olunan şeyden vazgeçmek."
+ },
+ {
+  "id": "n-c1-resin",
+  "word": "resin",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Bazı bitkilerden salgılanan yapışkan organik madde."
+ },
+ {
+  "id": "n-c1-resonate",
+  "word": "resonate",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Bir düşünce veya olayın güçlü duygusal etki yaratması."
+ },
+ {
+  "id": "n-c1-respite",
+  "word": "respite",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Zor veya yorucu bir dönem içinde verilen kısa dinlenme arası."
+ },
+ {
+  "id": "n-c1-riveting",
+  "word": "riveting",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Dikkati güçlü biçimde üzerinde tutan, son derece ilgi çekici."
+ },
+ {
+  "id": "n-c1-rustle",
+  "word": "rustle",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Yaprak veya kâğıt gibi hafif nesnelerin sürtünürken hışırdaması."
+ },
+ {
+  "id": "n-c1-ruthless",
+  "word": "ruthless",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "Amacına ulaşmak için başkalarının zarar görmesini umursamayan."
+ },
+ {
+  "id": "n-c1-sanctity",
+  "word": "sanctity",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Kutsal veya dokunulmaz kabul edilme niteliği."
+ },
+ {
+  "id": "n-c1-scathing",
+  "word": "scathing",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Çok sert, yıkıcı ve ağır biçimde eleştiren."
+ },
+ {
+  "id": "n-c1-scrutiny",
+  "word": "scrutiny",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Bir şeyi hata veya ayrıntı bulmak amacıyla çok dikkatli inceleme."
+ },
+ {
+  "id": "n-c1-sedentary",
+  "word": "sedentary",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Uzun süre oturarak geçirilen, az hareket içeren."
+ },
+ {
+  "id": "n-c1-seedling",
+  "word": "seedling",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Tohumdan yeni gelişmeye başlamış genç bitki."
+ },
+ {
+  "id": "n-c1-somersault",
+  "word": "somersault",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Vücudun öne veya arkaya doğru takla atarak dönme hareketi."
+ },
+ {
+  "id": "n-c1-specimen",
+  "word": "specimen",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "İnceleme veya analiz için seçilmiş örnek."
+ },
+ {
+  "id": "n-c1-speculation",
+  "word": "speculation",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Kesin kanıt olmadan yapılan tahmin veya varsayım."
+ },
+ {
+  "id": "n-c1-spontaneous",
+  "word": "spontaneous",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Önceden planlanmadan, kendiliğinden gerçekleşen."
+ },
+ {
+  "id": "n-c1-sprout",
+  "word": "sprout",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Tohumun filizlenmesi veya bitkinin yeni sürgün vermesi."
+ },
+ {
+  "id": "n-c1-stamina",
+  "word": "stamina",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Uzun süre fiziksel veya zihinsel çaba gösterebilme gücü."
+ },
+ {
+  "id": "n-c1-staple",
+  "word": "staple",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Temel ve vazgeçilmez ürün; kâğıtları tutturmak için kullanılan küçük metal parça."
+ },
+ {
+  "id": "n-c1-structural",
+  "word": "structural",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Bir yapının veya sistemin temel düzeniyle ilgili."
+ },
+ {
+  "id": "n-c1-subordinate",
+  "word": "subordinate",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Hiyerarşik yapıda daha üst bir kişiye bağlı olarak çalışan kişi."
+ },
+ {
+  "id": "n-c1-suburban",
+  "word": "suburban",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Bir şehrin merkezinin dışındaki yerleşim bölgeleriyle ilgili."
+ },
+ {
+  "id": "n-c1-succession",
+  "word": "succession",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Bir olayın veya kişinin ardından başka birinin gelmesi sırası."
+ },
+ {
+  "id": "n-c1-succulent",
+  "word": "succulent",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Etli, sulu dokulu; özellikle su depolayan bitkiler için kullanılır."
+ },
+ {
+  "id": "n-c1-suffice",
+  "word": "suffice",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Bir ihtiyacı karşılamaya veya amaca ulaşmaya yetmek."
+ },
+ {
+  "id": "n-c1-synthetic",
+  "word": "synthetic",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Doğal yolla değil, kimyasal veya endüstriyel yöntemlerle üretilmiş."
+ },
+ {
+  "id": "n-c1-tact",
+  "word": "tact",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "İnsanlarla ilişkilerde kırmadan ve uygun biçimde davranma becerisi."
+ },
+ {
+  "id": "n-c1-tedious",
+  "word": "tedious",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Uzun sürdüğü veya tekrar içerdiği için sıkıcı ve yorucu."
+ },
+ {
+  "id": "n-c1-testament",
+  "word": "testament",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Bir niteliğin veya gerçeğin kanıtı sayılan şey; ayrıca vasiyetname."
+ },
+ {
+  "id": "n-c1-tolerance",
+  "word": "tolerance",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Farklı düşünce veya davranışlara anlayış gösterme durumu."
+ },
+ {
+  "id": "n-c1-torment",
+  "word": "torment",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Çok büyük fiziksel veya zihinsel acı ve sıkıntı."
+ },
+ {
+  "id": "n-c1-tract",
+  "word": "tract",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir işlevi olan organ, doku veya arazi bölümü."
+ },
+ {
+  "id": "n-c1-tranquil",
+  "word": "tranquil",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Sessiz, sakin ve huzurlu olan."
+ },
+ {
+  "id": "n-c1-trauma",
+  "word": "trauma",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Ağır fiziksel yaralanma veya derin psikolojik sarsıntı."
+ },
+ {
+  "id": "n-c1-turmoil",
+  "word": "turmoil",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "Büyük karışıklık, belirsizlik veya huzursuzluk durumu."
+ },
+ {
+  "id": "n-c1-unconventional",
+  "word": "unconventional",
+  "letter": "U",
+  "level": "C1",
+  "turkish_explanation": "Alışılmış yöntem ve kurallardan farklı olan."
+ },
+ {
+  "id": "n-c1-uniformity",
+  "word": "uniformity",
+  "letter": "U",
+  "level": "C1",
+  "turkish_explanation": "Bir grup veya sistemde biçim, özellik ya da uygulamaların aynı olması."
+ },
+ {
+  "id": "n-c1-upheaval",
+  "word": "upheaval",
+  "letter": "U",
+  "level": "C1",
+  "turkish_explanation": "Toplumda veya sistemde büyük ve sarsıcı değişim."
+ },
+ {
+  "id": "n-c1-vegetation",
+  "word": "vegetation",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "Belirli bir bölgede doğal olarak yetişen bitki örtüsü."
+ },
+ {
+  "id": "n-c1-verdict",
+  "word": "verdict",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "Mahkeme veya jüri tarafından verilen resmî karar."
+ },
+ {
+  "id": "n-c1-vicious",
+  "word": "vicious",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "Son derece acımasız, saldırgan veya zarar verici."
+ },
+ {
+  "id": "n-c1-vitality",
+  "word": "vitality",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "Canlılık, enerji ve yaşam gücü."
+ },
+ {
+  "id": "n-c1-wares",
+  "word": "wares",
+  "letter": "W",
+  "level": "C1",
+  "turkish_explanation": "Satışa sunulan mallar veya ürünler."
+ },
+ {
+  "id": "n-c1-wary",
+  "word": "wary",
+  "letter": "W",
+  "level": "C1",
+  "turkish_explanation": "Olası tehlikeye karşı dikkatli ve temkinli olan."
+ },
+ {
+  "id": "n-c2-abhorrent",
+  "word": "abhorrent",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Ahlaken kabul edilemez olduğu için güçlü tiksinti veya nefret uyandıran."
+ },
+ {
+  "id": "n-c2-accessibility",
+  "word": "accessibility",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Bir hizmete, mekâna veya bilgiye farklı kullanıcılar tarafından erişilebilme niteliği."
+ },
+ {
+  "id": "n-c2-additive",
+  "word": "additive",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Bir maddenin özelliklerini değiştirmek için başka bir maddeye eklenen bileşen."
+ },
+ {
+  "id": "n-c2-adhere",
+  "word": "adhere",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Bir kurala, ilkeye veya plana sıkı biçimde bağlı kalmak."
+ },
+ {
+  "id": "n-c2-allegory",
+  "word": "allegory",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Karakter ve olayların soyut fikirleri veya ahlaki ilkeleri temsil ettiği anlatı."
+ },
+ {
+  "id": "n-c2-annex",
+  "word": "annex",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Ana binaya veya belgeye eklenen bölüm; bir bölgeyi topraklara katmak."
+ },
+ {
+  "id": "n-c2-apostle",
+  "word": "apostle",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Bir dinî öğretinin kurucusunun yakın takipçisi veya yayıcısı."
+ },
+ {
+  "id": "n-c2-aptitude",
+  "word": "aptitude",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Belirli bir beceriyi öğrenme veya bir işi başarıyla yapma yönündeki doğal yatkınlık."
+ },
+ {
+  "id": "n-c2-arduous",
+  "word": "arduous",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Çok çaba, dayanıklılık veya uzun süreli emek gerektiren."
+ },
+ {
+  "id": "n-c2-artifact",
+  "word": "artifact",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "İnsan tarafından yapılmış, özellikle tarihî veya arkeolojik değeri olan nesne."
+ },
+ {
+  "id": "n-c2-authenticity",
+  "word": "authenticity",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyin sahte değil, gerçek ve kaynağına uygun olma niteliği."
+ },
+ {
+  "id": "n-c2-autonomous",
+  "word": "autonomous",
+  "letter": "A",
+  "level": "C2",
+  "turkish_explanation": "Dışarıdan yönetilmeden kendi kararlarını verebilen."
+ },
+ {
+  "id": "n-c2-banish",
+  "word": "banish",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Bir kişiyi bir yerden uzaklaştırmak veya sürgüne göndermek."
+ },
+ {
+  "id": "n-c2-belligerence",
+  "word": "belligerence",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Saldırgan, kavgacı veya çatışmaya hazır olma durumu."
+ },
+ {
+  "id": "n-c2-besiege",
+  "word": "besiege",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Bir yeri kuşatarak giriş çıkışı engellemek; birini yoğun taleplerle bunaltmak."
+ },
+ {
+  "id": "n-c2-blight",
+  "word": "blight",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Bitkilere zarar veren hastalık veya bir alanın gelişimini bozan yıkıcı etki."
+ },
+ {
+  "id": "n-c2-blubber",
+  "word": "blubber",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Balina ve fok gibi deniz memelilerinin derisinin altındaki kalın yağ tabakası."
+ },
+ {
+  "id": "n-c2-bogus",
+  "word": "bogus",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Sahte, gerçek olmayan veya insanları aldatmak amacıyla hazırlanmış."
+ },
+ {
+  "id": "n-c2-bout",
+  "word": "bout",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Kısa süreli mücadele, nöbet veya yoğun etkinlik dönemi."
+ },
+ {
+  "id": "n-c2-breadwinner",
+  "word": "breadwinner",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Ailesinin veya hanesinin geçimini sağlayan kişi."
+ },
+ {
+  "id": "n-c2-brood",
+  "word": "brood",
+  "letter": "B",
+  "level": "C2",
+  "turkish_explanation": "Bir konu üzerinde uzun süre kaygılı veya karamsar biçimde düşünmek."
+ },
+ {
+  "id": "n-c2-callous",
+  "word": "callous",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Başkalarının acılarına veya duygularına karşı duyarsız ve merhametsiz olan."
+ },
+ {
+  "id": "n-c2-cascade",
+  "word": "cascade",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Birbirini izleyen, çoğu zaman hızla gelişen olaylar veya basamaklı akış."
+ },
+ {
+  "id": "n-c2-cloister",
+  "word": "cloister",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Özellikle manastırlarda bulunan, üstü kapalı ve avluyu çevreleyen geçit."
+ },
+ {
+  "id": "n-c2-coax",
+  "word": "coax",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Birini nazikçe ikna ederek veya teşvik ederek bir şey yapmasını sağlamak."
+ },
+ {
+  "id": "n-c2-cognitive",
+  "word": "cognitive",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Algılama, öğrenme, hatırlama ve düşünme süreçleriyle ilgili."
+ },
+ {
+  "id": "n-c2-commensurate",
+  "word": "commensurate",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Büyüklük, önem veya ölçü bakımından başka bir şeyle orantılı olan."
+ },
+ {
+  "id": "n-c2-commodity",
+  "word": "commodity",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Ticarette alınıp satılan, çoğunlukla standartlaştırılmış ham madde veya ürün."
+ },
+ {
+  "id": "n-c2-concurrence",
+  "word": "concurrence",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Bir konuda aynı görüşte olma veya olayların aynı zamanda gerçekleşmesi."
+ },
+ {
+  "id": "n-c2-confection",
+  "word": "confection",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Şekerleme veya tatlı yiyeceklerin hazırlanmış ürünü."
+ },
+ {
+  "id": "n-c2-constrained",
+  "word": "constrained",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Koşullar, kurallar veya sınırlamalar nedeniyle hareket alanı daralmış olan."
+ },
+ {
+  "id": "n-c2-corpse",
+  "word": "corpse",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Ölmüş bir insanın bedeni; özellikle resmî veya adli bağlamda kullanılan sözcük."
+ },
+ {
+  "id": "n-c2-corpus",
+  "word": "corpus",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Dil araştırmalarında kullanılan, elektronik ortamda toplanmış metinler bütünü."
+ },
+ {
+  "id": "n-c2-counsel",
+  "word": "counsel",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Hukuki veya kişisel konularda verilen uzman tavsiyesi."
+ },
+ {
+  "id": "n-c2-counterproductive",
+  "word": "counterproductive",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Amaçlanan yararın tersine sonuç doğurarak durumu kötüleştiren."
+ },
+ {
+  "id": "n-c2-curate",
+  "word": "curate",
+  "letter": "C",
+  "level": "C2",
+  "turkish_explanation": "Bir sergi, koleksiyon veya içerik seçkisini uzmanlıkla düzenlemek."
+ },
+ {
+  "id": "n-c2-deliberate",
+  "word": "deliberate",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bir konu hakkında dikkatlice düşünüp tartışarak karar vermek."
+ },
+ {
+  "id": "n-c2-denote",
+  "word": "denote",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bir sözcük veya işaretin belirli bir şeyi ifade etmesi."
+ },
+ {
+  "id": "n-c2-denounce",
+  "word": "denounce",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bir davranışı veya kişiyi açıkça ve sert biçimde kınamak."
+ },
+ {
+  "id": "n-c2-derelict",
+  "word": "derelict",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bakım görmediği için terk edilmiş, harap veya kullanılmaz durumda olan."
+ },
+ {
+  "id": "n-c2-derision",
+  "word": "derision",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bir kişiyi veya düşünceyi küçümseyerek alaya alma davranışı."
+ },
+ {
+  "id": "n-c2-derisive",
+  "word": "derisive",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Küçümseyen veya alaycı bir tavır taşıyan."
+ },
+ {
+  "id": "n-c2-diminish",
+  "word": "diminish",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Miktar, güç veya önem bakımından azalmak ya da azaltmak."
+ },
+ {
+  "id": "n-c2-disdainful",
+  "word": "disdainful",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Birini veya bir şeyi değersiz görerek küçümseyen."
+ },
+ {
+  "id": "n-c2-disperse",
+  "word": "disperse",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Bir topluluğu veya maddeyi farklı yönlere dağıtmak."
+ },
+ {
+  "id": "n-c2-dwarf",
+  "word": "dwarf",
+  "letter": "D",
+  "level": "C2",
+  "turkish_explanation": "Boyut veya önem bakımından başka bir şeyi çok küçük göstererek geride bırakmak."
+ },
+ {
+  "id": "n-c2-eccentricity",
+  "word": "eccentricity",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Alışılmışın dışında, tuhaf veya sıra dışı davranış ya da özellik."
+ },
+ {
+  "id": "n-c2-echo",
+  "word": "echo",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Bir sesin yüzeyden yansıyarak tekrar duyulması."
+ },
+ {
+  "id": "n-c2-edifice",
+  "word": "edifice",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Büyük, görkemli veya önemli bir bina; mecazen karmaşık düşünce sistemi."
+ },
+ {
+  "id": "n-c2-electrode",
+  "word": "electrode",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Elektrik akımının bir ortama girip çıktığı iletken uç."
+ },
+ {
+  "id": "n-c2-emulate",
+  "word": "emulate",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Başarılı bir kişiyi veya sistemi örnek alarak benzerini yapmaya çalışmak."
+ },
+ {
+  "id": "n-c2-emulsify",
+  "word": "emulsify",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Birbirine normalde karışmayan iki sıvıdan kararlı bir karışım oluşturmak."
+ },
+ {
+  "id": "n-c2-encumber",
+  "word": "encumber",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyi yük, engel veya sorumlulukla ağırlaştırmak."
+ },
+ {
+  "id": "n-c2-encumbrance",
+  "word": "encumbrance",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "İlerlemeyi zorlaştıran yük, engel veya hukuki kısıtlama."
+ },
+ {
+  "id": "n-c2-equilibrium",
+  "word": "equilibrium",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Bir sistemde karşıt etkilerin birbirini dengelediği durum."
+ },
+ {
+  "id": "n-c2-etch",
+  "word": "etch",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Asit, kesici araç veya benzeri yöntemle bir yüzeye desen ya da yazı kazımak."
+ },
+ {
+  "id": "n-c2-ethos",
+  "word": "ethos",
+  "letter": "E",
+  "level": "C2",
+  "turkish_explanation": "Bir topluluğu, kurumu veya dönemi karakterize eden temel değerler ve inançlar bütünü."
+ },
+ {
+  "id": "n-c2-fabricate",
+  "word": "fabricate",
+  "letter": "F",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyi üretmek veya gerçeğe aykırı bir hikâye uydurmak."
+ },
+ {
+  "id": "n-c2-facsimile",
+  "word": "facsimile",
+  "letter": "F",
+  "level": "C2",
+  "turkish_explanation": "Bir belgenin veya görselin biçim ve ayrıntılarını koruyan birebir kopyası."
+ },
+ {
+  "id": "n-c2-feign",
+  "word": "feign",
+  "letter": "F",
+  "level": "C2",
+  "turkish_explanation": "Gerçekte hissedilmeyen bir duygu veya sahip olunmayan bir durumu varmış gibi göstermek."
+ },
+ {
+  "id": "n-c2-ferocity",
+  "word": "ferocity",
+  "letter": "F",
+  "level": "C2",
+  "turkish_explanation": "Şiddetli, vahşi veya acımasız olma niteliği."
+ },
+ {
+  "id": "n-c2-forlorn",
+  "word": "forlorn",
+  "letter": "F",
+  "level": "C2",
+  "turkish_explanation": "Yalnız, terk edilmiş veya umutsuz görünen."
+ },
+ {
+  "id": "n-c2-gale",
+  "word": "gale",
+  "letter": "G",
+  "level": "C2",
+  "turkish_explanation": "Çok kuvvetli ve şiddetli rüzgâr."
+ },
+ {
+  "id": "n-c2-hamper",
+  "word": "hamper",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Bir işin ilerlemesini zorlaştırmak veya engellemek."
+ },
+ {
+  "id": "n-c2-helm",
+  "word": "helm",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Bir geminin yönünü kontrol eden dümen veya yönetim konumu."
+ },
+ {
+  "id": "n-c2-herald",
+  "word": "herald",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Önemli bir olayın yaklaştığını haber vermek veya duyurmak."
+ },
+ {
+  "id": "n-c2-hoist",
+  "word": "hoist",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyi halat, vinç veya benzeri araçla yukarı kaldırmak."
+ },
+ {
+  "id": "n-c2-hover",
+  "word": "hover",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Bir noktada havada asılı kalmak veya çevresinde dolaşmak."
+ },
+ {
+  "id": "n-c2-hypothesize",
+  "word": "hypothesize",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Bir olguyu açıklamak üzere sınanabilir bir varsayım öne sürmek."
+ },
+ {
+  "id": "n-c2-hysteria",
+  "word": "hysteria",
+  "letter": "H",
+  "level": "C2",
+  "turkish_explanation": "Yoğun ve kontrol edilmesi güç duygusal heyecan veya panik durumu."
+ },
+ {
+  "id": "n-c2-incumbent",
+  "word": "incumbent",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Hâlen belirli bir makam veya görevi elinde bulunduran kişi."
+ },
+ {
+  "id": "n-c2-indignant",
+  "word": "indignant",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Haksızlık veya adaletsizlik karşısında öfke duyan."
+ },
+ {
+  "id": "n-c2-individualism",
+  "word": "individualism",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Bireyin bağımsızlığını ve kişisel haklarını topluluk çıkarlarının önünde tutan düşünce."
+ },
+ {
+  "id": "n-c2-induce",
+  "word": "induce",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Bir sonuca veya davranışa neden olmak; ikna ederek yaptırmak."
+ },
+ {
+  "id": "n-c2-instantaneous",
+  "word": "instantaneous",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Hiç gecikme olmadan, neredeyse aynı anda gerçekleşen."
+ },
+ {
+  "id": "n-c2-integration",
+  "word": "integration",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Ayrı parçaların veya grupların uyumlu bir bütün hâline gelmesi."
+ },
+ {
+  "id": "n-c2-interrogation",
+  "word": "interrogation",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Bir kişiye özellikle resmî soruşturma sırasında ayrıntılı sorular yöneltme."
+ },
+ {
+  "id": "n-c2-interweave",
+  "word": "interweave",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "İki veya daha fazla unsuru birbirinin içinden geçirerek birleştirmek."
+ },
+ {
+  "id": "n-c2-intrinsically",
+  "word": "intrinsically",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyin kendi doğası veya içsel özellikleri bakımından."
+ },
+ {
+  "id": "n-c2-ironic",
+  "word": "ironic",
+  "letter": "I",
+  "level": "C2",
+  "turkish_explanation": "Söylenen veya gerçekleşen şeyin beklenenin tersine bir anlam taşıdığı durumla ilgili."
+ },
+ {
+  "id": "n-c2-jarring",
+  "word": "jarring",
+  "letter": "J",
+  "level": "C2",
+  "turkish_explanation": "Uyumsuzluğu veya sert etkisi nedeniyle rahatsızlık veren."
+ },
+ {
+  "id": "n-c2-laryngitis",
+  "word": "laryngitis",
+  "letter": "L",
+  "level": "C2",
+  "turkish_explanation": "Gırtlak ve ses tellerinin iltihaplanmasıyla ortaya çıkan hastalık."
+ },
+ {
+  "id": "n-c2-legion",
+  "word": "legion",
+  "letter": "L",
+  "level": "C2",
+  "turkish_explanation": "Antik Roma ordusunda büyük askerî birlik; çok büyük kalabalık."
+ },
+ {
+  "id": "n-c2-locomotion",
+  "word": "locomotion",
+  "letter": "L",
+  "level": "C2",
+  "turkish_explanation": "Canlıların veya nesnelerin bir yerden başka bir yere hareket etmesi."
+ },
+ {
+  "id": "n-c2-locomotive",
+  "word": "locomotive",
+  "letter": "L",
+  "level": "C2",
+  "turkish_explanation": "Vagonları ray üzerinde çeken motorlu demiryolu aracı."
+ },
+ {
+  "id": "n-c2-maelstrom",
+  "word": "maelstrom",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Güçlü girdap; mecazen karmaşa ve yıkıcı olaylar bütünü."
+ },
+ {
+  "id": "n-c2-malicious",
+  "word": "malicious",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Başkasına bilerek zarar vermeyi amaçlayan."
+ },
+ {
+  "id": "n-c2-mariner",
+  "word": "mariner",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Denizcilikle uğraşan veya gemide çalışan kişi."
+ },
+ {
+  "id": "n-c2-materialism",
+  "word": "materialism",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Maddi varlıkları ve fiziksel gerçekliği temel alan felsefi görüş veya yaşama eğilimi."
+ },
+ {
+  "id": "n-c2-maverick",
+  "word": "maverick",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Bağımsız düşünen ve geleneksel kurallara uymayan kişi."
+ },
+ {
+  "id": "n-c2-menace",
+  "word": "menace",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Tehdit oluşturan kişi, durum veya tehlike."
+ },
+ {
+  "id": "n-c2-merger",
+  "word": "merger",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "İki veya daha fazla şirketin ya da kuruluşun tek yapı altında birleşmesi."
+ },
+ {
+  "id": "n-c2-mesh",
+  "word": "mesh",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Ağ biçiminde birbirine geçmiş yapı veya örgü."
+ },
+ {
+  "id": "n-c2-mien",
+  "word": "mien",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Bir kişinin dış görünüşü, tavrı veya yüz ifadesi."
+ },
+ {
+  "id": "n-c2-moor",
+  "word": "moor",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Bir tekneyi halatla kıyıya veya sabit bir noktaya bağlamak."
+ },
+ {
+  "id": "n-c2-myriad",
+  "word": "myriad",
+  "letter": "M",
+  "level": "C2",
+  "turkish_explanation": "Sayılamayacak kadar çok veya çok çeşitli olan."
+ },
+ {
+  "id": "n-c2-nostalgia",
+  "word": "nostalgia",
+  "letter": "N",
+  "level": "C2",
+  "turkish_explanation": "Geçmişe veya eski günlere duyulan özlem."
+ },
+ {
+  "id": "n-c2-oblique",
+  "word": "oblique",
+  "letter": "O",
+  "level": "C2",
+  "turkish_explanation": "Dolaylı, eğik veya doğrudan ifade edilmeyen."
+ },
+ {
+  "id": "n-c2-ordain",
+  "word": "ordain",
+  "letter": "O",
+  "level": "C2",
+  "turkish_explanation": "Resmî veya dinî yetkiyle bir göreve atamak; bir şeyi hükme bağlamak."
+ },
+ {
+  "id": "n-c2-ore",
+  "word": "ore",
+  "letter": "O",
+  "level": "C2",
+  "turkish_explanation": "İçinden ekonomik değer taşıyan metal çıkarılabilen doğal kayaç."
+ },
+ {
+  "id": "n-c2-outpatient",
+  "word": "outpatient",
+  "letter": "O",
+  "level": "C2",
+  "turkish_explanation": "Hastanede yatmadan muayene veya tedavi hizmeti alan hasta."
+ },
+ {
+  "id": "n-c2-paramount",
+  "word": "paramount",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Önem veya öncelik bakımından diğer her şeyden üstün."
+ },
+ {
+  "id": "n-c2-parasitic",
+  "word": "parasitic",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Başka bir canlıdan veya sistemden yarar sağlayarak ona zarar veren."
+ },
+ {
+  "id": "n-c2-perch",
+  "word": "perch",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Bir kuşun veya kişinin yüksek ya da dar bir yere konması."
+ },
+ {
+  "id": "n-c2-practitioner",
+  "word": "practitioner",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Bir mesleği veya uzmanlık alanını fiilen uygulayan kişi."
+ },
+ {
+  "id": "n-c2-predilection",
+  "word": "predilection",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Bir kişi veya şeye karşı belirgin ve özel eğilim ya da tercih."
+ },
+ {
+  "id": "n-c2-proliferation",
+  "word": "proliferation",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Bir şeyin hızlı ve çoğu zaman kontrolsüz biçimde çoğalması."
+ },
+ {
+  "id": "n-c2-prolong",
+  "word": "prolong",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Bir olayın veya sürecin süresini uzatmak."
+ },
+ {
+  "id": "n-c2-proposition",
+  "word": "proposition",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Tartışmaya veya değerlendirmeye sunulan önerme ya da teklif."
+ },
+ {
+  "id": "n-c2-proprietary",
+  "word": "proprietary",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Belirli bir kişi veya kuruma ait olan ve kullanım hakkı sınırlı bulunan."
+ },
+ {
+  "id": "n-c2-provincial",
+  "word": "provincial",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Başkent veya büyük merkezler dışındaki taşra bölgesiyle ilgili."
+ },
+ {
+  "id": "n-c2-proximal",
+  "word": "proximal",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Anatomide gövdeye veya bir referans noktasına daha yakın olan."
+ },
+ {
+  "id": "n-c2-punitive",
+  "word": "punitive",
+  "letter": "P",
+  "level": "C2",
+  "turkish_explanation": "Ceza vermeyi veya cezalandırmayı amaçlayan."
+ },
+ {
+  "id": "n-c2-rapture",
+  "word": "rapture",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Yoğun mutluluk, coşku veya kendinden geçme hâli."
+ },
+ {
+  "id": "n-c2-rebound",
+  "word": "rebound",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Bir yüzeye çarptıktan sonra geri sıçramak; gerilemeden sonra toparlanmak."
+ },
+ {
+  "id": "n-c2-rebuke",
+  "word": "rebuke",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Birini yaptığı yanlış nedeniyle sert biçimde azarlamak veya eleştirmek."
+ },
+ {
+  "id": "n-c2-regulatory",
+  "word": "regulatory",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Kurallar koyma ve bunların uygulanmasını denetlemeyle ilgili."
+ },
+ {
+  "id": "n-c2-requisition",
+  "word": "requisition",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Bir ihtiyacı karşılamak için resmî olarak talep edilen malzeme veya kaynak."
+ },
+ {
+  "id": "n-c2-residue",
+  "word": "residue",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Bir işlemden sonra geriye kalan madde veya iz."
+ },
+ {
+  "id": "n-c2-resuscitate",
+  "word": "resuscitate",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Solunumu veya kalp dolaşımı durmuş kişiyi yeniden hayata döndürmeye çalışmak."
+ },
+ {
+  "id": "n-c2-rift",
+  "word": "rift",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "İki kişi veya grup arasında oluşan ciddi anlaşmazlık ya da ayrılık."
+ },
+ {
+  "id": "n-c2-ruminate",
+  "word": "ruminate",
+  "letter": "R",
+  "level": "C2",
+  "turkish_explanation": "Bir konu üzerinde tekrar tekrar ve derinlemesine düşünmek."
+ },
+ {
+  "id": "n-c2-scholarly",
+  "word": "scholarly",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bilimsel araştırmaya, akademik çalışmaya ve derin bilgiye dayanan."
+ },
+ {
+  "id": "n-c2-secular",
+  "word": "secular",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Dinî kurum veya inançlardan bağımsız, dünyevi nitelikte olan."
+ },
+ {
+  "id": "n-c2-shoal",
+  "word": "shoal",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Deniz veya gölde su yüzeyine yakın bulunan kum ya da sığlık alanı."
+ },
+ {
+  "id": "n-c2-slab",
+  "word": "slab",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Kalın ve düz biçimli taş, beton veya başka malzeme parçası."
+ },
+ {
+  "id": "n-c2-smattering",
+  "word": "smattering",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bir konu hakkında sınırlı miktarda bilgi veya küçük bir miktar."
+ },
+ {
+  "id": "n-c2-solitary",
+  "word": "solitary",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Tek başına olan veya yalnız yaşamayı tercih eden."
+ },
+ {
+  "id": "n-c2-spatial",
+  "word": "spatial",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Uzay, konum, mesafe ve fiziksel yerleşimle ilgili."
+ },
+ {
+  "id": "n-c2-standing",
+  "word": "standing",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bir kişinin toplum, kurum veya meslek içindeki statüsü ve itibarı."
+ },
+ {
+  "id": "n-c2-stoicism",
+  "word": "stoicism",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Acı ve zorluklar karşısında duyguları denetim altında tutmayı öğütleyen felsefi yaklaşım."
+ },
+ {
+  "id": "n-c2-stratosphere",
+  "word": "stratosphere",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Atmosferin troposferin üzerinde bulunan, ozon tabakasını da içeren katmanı."
+ },
+ {
+  "id": "n-c2-subsidize",
+  "word": "subsidize",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bir faaliyeti veya ürünü devlet ya da kurum desteğiyle finanse etmek."
+ },
+ {
+  "id": "n-c2-subsidy",
+  "word": "subsidy",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bir kurum veya devlet tarafından sağlanan mali destek."
+ },
+ {
+  "id": "n-c2-suffuse",
+  "word": "suffuse",
+  "letter": "S",
+  "level": "C2",
+  "turkish_explanation": "Bir alanı veya kişiyi duygu, renk ya da ışıkla bütünüyle kaplamak."
+ },
+ {
+  "id": "n-c2-tactic",
+  "word": "tactic",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Bir hedefe ulaşmak için kullanılan belirli yöntem veya hamle."
+ },
+ {
+  "id": "n-c2-tactical",
+  "word": "tactical",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Belirli bir hedefe ulaşmak için kısa vadeli yöntem ve hamlelerle ilgili."
+ },
+ {
+  "id": "n-c2-tantalize",
+  "word": "tantalize",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Ulaşılması zor bir şeyi göstererek birinde güçlü arzu veya beklenti uyandırmak."
+ },
+ {
+  "id": "n-c2-teem",
+  "word": "teem",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Bir yerin çok sayıda insan, hayvan veya şeyle dolu olması."
+ },
+ {
+  "id": "n-c2-torrential",
+  "word": "torrential",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Yağmur veya akışın son derece şiddetli ve yoğun olduğu."
+ },
+ {
+  "id": "n-c2-transmitter",
+  "word": "transmitter",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Radyo, televizyon veya veri sinyalini gönderen cihaz."
+ },
+ {
+  "id": "n-c2-trifle",
+  "word": "trifle",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Önemsiz veya küçük şey; ayrıca hafif bir tatlı türü."
+ },
+ {
+  "id": "n-c2-turret",
+  "word": "turret",
+  "letter": "T",
+  "level": "C2",
+  "turkish_explanation": "Bir kalenin veya yapının üzerine eklenmiş küçük kule."
+ },
+ {
+  "id": "n-c2-unobtrusive",
+  "word": "unobtrusive",
+  "letter": "U",
+  "level": "C2",
+  "turkish_explanation": "Dikkat çekmeyen, göze batmayan ve kendini öne çıkarmayan."
+ },
+ {
+  "id": "n-c2-unravel",
+  "word": "unravel",
+  "letter": "U",
+  "level": "C2",
+  "turkish_explanation": "Düğümlenmiş veya karmaşık bir şeyi çözmek; gizli yönlerini açığa çıkarmak."
+ },
+ {
+  "id": "n-c2-utilize",
+  "word": "utilize",
+  "letter": "U",
+  "level": "C2",
+  "turkish_explanation": "Bir araç veya kaynağı belirli bir amaç için kullanmak."
+ },
+ {
+  "id": "n-c2-vandal",
+  "word": "vandal",
+  "letter": "V",
+  "level": "C2",
+  "turkish_explanation": "Kamuya veya başkasına ait mala kasıtlı zarar veren kişi."
+ },
+ {
+  "id": "n-c2-verbatim",
+  "word": "verbatim",
+  "letter": "V",
+  "level": "C2",
+  "turkish_explanation": "Bir sözü veya metni hiçbir değişiklik yapmadan, kelimesi kelimesine."
+ },
+ {
+  "id": "n-c2-vicinity",
+  "word": "vicinity",
+  "letter": "V",
+  "level": "C2",
+  "turkish_explanation": "Bir yerin yakın çevresindeki alan."
+ },
+ {
+  "id": "n-c2-vocational",
+  "word": "vocational",
+  "letter": "V",
+  "level": "C2",
+  "turkish_explanation": "Belirli bir mesleğe yönelik pratik eğitim veya beceriyle ilgili."
+ },
+ {
+  "id": "n-c2-vortex",
+  "word": "vortex",
+  "letter": "V",
+  "level": "C2",
+  "turkish_explanation": "Sıvı veya gazın dönerek oluşturduğu güçlü girdap."
+ },
+ {
+  "id": "n-c2-wheeze",
+  "word": "wheeze",
+  "letter": "W",
+  "level": "C2",
+  "turkish_explanation": "Nefes alırken hırıltılı ve ıslık benzeri ses çıkarmak."
+ },
+ {
+  "id": "n-c2-whir",
+  "word": "whir",
+  "letter": "W",
+  "level": "C2",
+  "turkish_explanation": "Bir makinenin veya nesnenin hızla dönerken vınlama sesi çıkarması."
+ },
+ {
+  "id": "n-c2-wholly",
+  "word": "wholly",
+  "letter": "W",
+  "level": "C2",
+  "turkish_explanation": "Tamamen veya bütünüyle."
  }
 ]
