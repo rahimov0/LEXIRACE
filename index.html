@@ -61,6 +61,14 @@ select,input[type=text]{width:100%;padding:11px;border-radius:12px;border:1px so
 .ib{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);display:grid;place-items:center;cursor:pointer}
 .dl{position:absolute;top:16px;z-index:2;font:800 12px Outfit,sans-serif;letter-spacing:1px;padding:5px 10px;border-radius:8px;opacity:0;transition:opacity .1s;pointer-events:none}.dl.l{left:16px;color:var(--acc);border:2px solid var(--acc);transform:rotate(-8deg)}.dl.r{right:16px;color:var(--green);border:2px solid var(--green);transform:rotate(8deg)}.stage[data-s=l] .dl.l,.stage[data-s=r] .dl.r{opacity:1}
 .rbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.rbtns .btn{padding:13px 6px;white-space:nowrap}
+body{overscroll-behavior:none}
+#stage{--rs:150px}#stage.kb{--rs:96px}
+.pill{font-size:13px;padding:6px 11px}.ibtn{width:38px;height:38px}
+.abc{gap:5px;margin:2px 0}.abc span{width:26px;height:26px;font-size:11.5px}#stage.kb .abc{display:flex}#stage.kb .abc span{width:24px;height:24px;font-size:11px}
+.mid{justify-content:center;gap:10px}.sec{font-size:22px}.def{font-size:20px;min-height:0}#stage.kb .def{font-size:16.5px}
+.bx{--w:min(48px,calc((min(100vw,460px) - 44px)/var(--n) - 5px))}#stage.kb .bx{--w:min(44px,calc((min(100vw,460px) - 44px)/var(--n) - 5px))}
+.stat{min-height:44px;font-size:14.5px;width:100%}.fb{font-size:15px;min-height:0}.bxwrap{width:100%}
+#stage{--rs:clamp(150px,26vh,230px)}#stage.kb{--rs:96px}.mid{gap:16px}.def{font-size:clamp(20px,2.9vh,24px)}#stage.kb .def{font-size:16.5px}#stage.kb .mid{gap:10px}.sec{font-size:clamp(22px,3.2vh,30px)}.bx{--w:min(54px,calc((min(100vw,460px) - 44px)/var(--n) - 5px))}#stage.kb .bx{--w:min(44px,calc((min(100vw,460px) - 44px)/var(--n) - 5px))}.stat{min-height:52px}
 </style></head>
 <body><main id="app"></main>
 <script>
@@ -84,8 +92,11 @@ function bestVoice(){loadV();if(db.settings.voice){const v=VOICES.find(x=>x.voic
  const want=db.settings.accent==="UK"?"en-GB":"en-US";
  const sc=v=>(v.lang.replace("_","-")===want?100:20)+(/natural|online|neural/i.test(v.name)?30:0)+(FEM.test(v.name)?25:0)-(MALE.test(v.name)&&!/female/i.test(v.name)?60:0);
  return[...VOICES].sort((a,b)=>sc(b)-sc(a))[0]}
-let UT=null,spk=0;
-function speak(t,again=true){try{const ss=speechSynthesis;ss.cancel();const id=++spk;setTimeout(()=>{if(id!==spk)return;const u=UT=new SpeechSynthesisUtterance(t),v=bestVoice();if(v){u.voice=v;u.lang=v.lang}else u.lang=db.settings.accent==="UK"?"en-GB":"en-US";u.rate=.9;let ok=false;u.onstart=()=>{ok=true};u.onend=()=>{if(UT===u)UT=null};u.onerror=e=>{if(again&&e.error!=="canceled"&&e.error!=="interrupted")setTimeout(()=>speak(t,false),150)};try{ss.resume()}catch(e){}ss.speak(u);setTimeout(()=>{if(id===spk&&!ok&&again&&!ss.speaking)speak(t,false)},1000)},90)}catch(e){}}
+let UT=null,spk=0,lastSp=0;
+function speakNow(t,again,id){if(id!==spk)return;const ss=speechSynthesis,u=UT=new SpeechSynthesisUtterance(t),v=bestVoice();if(v){u.voice=v;u.lang=v.lang}else u.lang=db.settings.accent==="UK"?"en-GB":"en-US";u.rate=.9;let ok=false;u.onstart=()=>{ok=true;lastSp=Date.now()};u.onend=()=>{lastSp=Date.now();if(UT===u)UT=null};u.onerror=e=>{if(again&&e.error!=="canceled"&&e.error!=="interrupted")setTimeout(()=>speak(t,false,true),150)};try{ss.resume()}catch(e){}ss.speak(u);setTimeout(()=>{if(id===spk&&!ok&&again&&!ss.speaking)speak(t,false,true)},1000)}
+function speak(t,again=true,warm=false){try{const ss=speechSynthesis;ss.cancel();const id=++spk;
+ if(!warm&&Date.now()-lastSp>5000){const w=new SpeechSynthesisUtterance(" ");w.volume=0;let go=false;const nx=()=>{if(go)return;go=true;setTimeout(()=>speakNow(t,again,id),80)};w.onend=nx;w.onerror=nx;setTimeout(()=>{if(id===spk){try{ss.speak(w)}catch(e){nx()}}},90);setTimeout(nx,700)}
+ else setTimeout(()=>speakNow(t,again,id),90)}catch(e){}}
 // ---- answer validator (strict, no fuzzy matching)
 const DIG=["zero","one","two","three","four","five","six","seven","eight","nine","ten"];
 const norm=s=>s.toLowerCase().replace(/['’]/g,"").replace(/\b(\d+)\b/g,(m,n)=>" "+(DIG[+n]||"")+" ").replace(/[^a-z ]/g," ").replace(/\s+/g," ").trim(),sq=s=>norm(s).replace(/ /g,"");
@@ -158,7 +169,7 @@ const KNOWN=new Set(WORDS.map(w=>norm(w.word)));Object.keys(HOM).forEach(k=>{KNO
 function lev(a,b){const d=[...Array(b.length+1).keys()];for(let i=1;i<=a.length;i++){let p=d[0];d[0]=i;for(let j=1;j<=b.length;j++){const t=d[j];d[j]=Math.min(d[j]+1,d[j-1]+1,p+(a[i-1]===b[j-1]?0:1));p=t}}return d[b.length]}
 // döner: ok | pass | wrong | unclear | none
 function judge(h0,w,conf,typed){const h=h0.map(norm).filter(Boolean);if(!h.length)return"none";
- const t=norm(w.word),T=sq(w.word),okset=new Set([t,T,...(HOM[t]||[])]),toks=h.flatMap(x=>[x,sq(x),...x.split(" ")]);
+ const t=norm(w.word),T=sq(w.word),okset=new Set([t,T,...(typed?[]:(HOM[t]||[]))]),toks=h.flatMap(x=>[x,sq(x),...x.split(" ")]);
  if(toks.some(x=>okset.has(x)))return"ok";
  if(typed)return"wrong";
  if(h.some(x=>x.split(" ").some(p=>p==="pas"||p==="pass")))return"pass";
@@ -168,7 +179,7 @@ function judge(h0,w,conf,typed){const h=h0.map(norm).filter(Boolean);if(!h.lengt
  return"wrong"}
 // ---- mikrofon servisi: tek oturum, kapanışı beklenebilir
 const Mic={rec:null,
- start(lang,h){const r=new SR();r.lang=lang;r.interimResults=true;r.maxAlternatives=5;r.continuous=true;r.onstart=h.start;r.onspeechstart=h.speech;r.onresult=h.result;r.onerror=h.error;r.onend=()=>{if(Mic.rec===r){Mic.rec=null;h.end()}};Mic.rec=r;try{r.start()}catch(e){Mic.rec=null;h.error({error:"start"})}},
+ start(lang,h){lastSp=0;const r=new SR();r.lang=lang;r.interimResults=true;r.maxAlternatives=5;r.continuous=true;r.onstart=h.start;r.onspeechstart=h.speech;r.onresult=h.result;r.onerror=h.error;r.onend=()=>{if(Mic.rec===r){Mic.rec=null;h.end()}};Mic.rec=r;try{r.start()}catch(e){Mic.rec=null;h.error({error:"start"})}},
  stop(){const r=this.rec;this.rec=null;if(!r)return Promise.resolve();return new Promise(res=>{const t=setTimeout(res,600),d=()=>{clearTimeout(t);res()};r.onend=d;r.onerror=d;r.onresult=r.onspeechstart=null;try{r.abort()}catch(e){d()}})}};
 function block(msg){const o=document.createElement("div");o.className="ov";o.id="ov";o.innerHTML=`<div class="card"><h2>Sesli mod kullanılamıyor</h2><p class="note">${msg}</p><button class="btn" id="tw">${I("pen",16)} Yazılı Modda Başla</button><button class="btn alt" id="cx" style="margin-top:8px">Vazgeç</button></div>`;document.body.appendChild(o);$("#tw").onclick=()=>{o.remove();db.settings.mode="type";save();start("type")};$("#cx").onclick=()=>o.remove()}
 async function begin(){micOK=false;micErr="";const md=db.settings.mode;tone(1,.01);
@@ -177,48 +188,54 @@ async function begin(){micOK=false;micErr="";const md=db.settings.mode;tone(1,.0
  start(md)}
 const stat=(k,t)=>{const e=$("#stat");if(e){e.className="stat "+k;$("#stx").textContent=t}};
 const boxHtml=w=>{const ch=[...w.word];return`<div class="boxes" id="bxs" style="--n:${ch.filter(c=>/[a-z]/i.test(c)).length}">${ch.map(c=>/[a-z]/i.test(c)?`<i class="bx"></i>`:c==="-"?`<u>-</u>`:`<u></u>`).join("")}</div>`};
-function fillBoxes(txt){const L=(txt||"").replace(/[^a-z]/gi,"").toUpperCase(),w=G.seq[G.i],B=[...document.querySelectorAll("#bxs .bx")],typed=G.mode==="type"||G.dead;let r=L;if(typed&&L.length===B.length&&L[0]===w.letter)r=L.slice(1);
+function typedParts(txt,w){const L=(txt||"").replace(/[^a-z]/gi,"").toUpperCase(),t=w.word.replace(/[^a-z]/gi,"").toUpperCase(),rest=t.slice(1);const full=L.length>0&&(rest.startsWith(L)?false:t.startsWith(L)?true:(L[0]===w.letter&&L.length>1));return{L,t,full,r:full?L.slice(1):L,ans:full?L:w.letter+L}}
+function fillBoxes(txt){const w=G.seq[G.i],B=[...document.querySelectorAll("#bxs .bx")],typed=G.mode==="type"||G.dead,p=typedParts(txt,w),L=p.L,r=p.r;
  B.forEach((e,i)=>{e.className="bx";e.textContent="";if(typed){if(i===0){e.textContent=w.letter;e.className="bx hint"}else e.textContent=r[i-1]||""}else if(L[i])e.textContent=L[i];else if(i===0&&!L){e.textContent=w.letter;e.className="bx hint"}});
  if(typed&&G.phase!=="feedback"){const c=B[Math.min(r.length+1,B.length-1)];if(c&&!c.textContent)c.classList.add("cur")}}
 function reveal(w,cls){const L=w.word.replace(/[^a-z]/gi,"").toUpperCase();[...document.querySelectorAll("#bxs .bx")].forEach((e,i)=>{e.textContent=L[i]||"";e.className="bx "+cls})}
 function enableTyping(){if($("#tin")||!G)return;const bw=$("#bw"),i=document.createElement("input");i.type="text";i.id="tin";i.maxLength=40;i.autocomplete="off";i.autocapitalize="off";i.spellcheck=false;i.name="lx"+Math.random().toString(36).slice(2,7);["autocorrect:off","enterkeyhint:send","inputmode:text","aria-label:Cevabın","data-lpignore:true","data-form-type:other"].forEach(x=>{const k=x.split(":");i.setAttribute(k[0],k[1])});bw.appendChild(i);
- const go=()=>{const g=G;if(!g||g.lock||!/^(listen|hear)$/.test(g.phase)||!i.value.trim())return;finish(judge([i.value,g.seq[g.i].letter+i.value],g.seq[g.i],0,true)==="ok"?"ok":"wrong",i.value)};i.oninput=()=>fillBoxes(i.value);i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();go()}};bw.onclick=()=>i.focus({preventScroll:true});i.focus({preventScroll:true})}
-function stop(){document.body.style.overflow="";const o=document.getElementById("ov");if(o)o.remove();if(!G)return;clearInterval(G.tm);clearTimeout(G.nx);clearTimeout(G.gt);Mic.stop();G=null}
+ const act=()=>{const g=G;return g&&!g.lock&&/^(listen|hear)$/.test(g.phase)},submit=()=>{if(!act()||!i.value.trim())return;const g=G,w=g.seq[g.i];clearTimeout(g.at);finish(judge([i.value,w.letter+i.value],w,0,true)==="ok"?"ok":"wrong",i.value)};
+ i.oninput=()=>{const g=G;if(!g)return;fillBoxes(i.value);if(!act())return;clearTimeout(g.at);const w=g.seq[g.i],p=typedParts(i.value,w);if(p.ans===p.t){submit();return}if(p.r.length>=p.t.length-1)g.at=setTimeout(submit,700)};
+ i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();submit()}};bw.onclick=()=>i.focus({preventScroll:true});i.focus({preventScroll:true})}
+function stop(){document.body.style.overflow="";const o=document.getElementById("ov");if(o)o.remove();if(!G)return;clearInterval(G.tm);clearTimeout(G.nx);clearTimeout(G.gt);clearTimeout(G.at);Mic.stop();G=null}
 function pause(){const g=G;if(!g||g.lock||!/^(listen|hear)$/.test(g.phase))return;g.phase="pause";g.left=Math.max(0,g.end-performance.now());clearInterval(g.tm);Mic.stop();stat("check","Duraklatıldı");const sx=$("#stat");if(sx)sx.className="stat";
  const o=document.createElement("div");o.className="ov";o.id="ov";o.innerHTML=`<div class="card"><h2>Duraklatıldı</h2><p class="note">Kalan süre: ${Math.ceil(g.left/1000)} sn</p><button class="btn" id="rs">${I("play",16)} Devam Et</button><button class="btn alt" id="rt" style="margin-top:8px">${I("refresh",16)} Yeniden Başla</button><button class="btn alt" id="mn" style="margin-top:8px">${I("home",16)} Ana Menüye Çık</button></div>`;document.body.appendChild(o);
  $("#rs").onclick=resume;$("#rt").onclick=()=>{o.remove();start(g.mode)};$("#mn").onclick=()=>{o.remove();menu()}}
 function resume(){const g=G;if(!g||g.phase!=="pause")return;const o=$("#ov");if(o)o.remove();g.phase="listen";g.end=performance.now()+g.left;tick();if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");listen(g.rid)}}
 function start(md){stop();const seq=pick(db.settings.lv);save();G={seq,i:0,res:[],t0:Date.now(),mode:md,rid:0,phase:"idle",lock:false};document.body.style.overflow="hidden";
- app.innerHTML=`<div id="stage"><div class="top"><button class="ibtn" id="pz" aria-label="Duraklat">${I("pause",16)}</button><span class="pill">${db.settings.lv}</span><span class="pill">${MODE(md)}</span><span class="sp"></span><span class="pill" id="sc"></span><button class="pill pasb" id="pas">${I("skip",13)} PAS</button></div>
+ app.innerHTML=`<div id="stage"><div class="top"><button class="ibtn" id="pz" aria-label="Duraklat">${I("pause",17)}</button><span class="pill">${db.settings.lv}</span><span class="pill">${MODE(md)}</span><span class="sp"></span><span class="pill" id="sc"></span><button class="pill pasb" id="pas">${I("skip",14)} PAS</button></div>
  <div class="abc" id="abc">${LANG.alphabet.map(L=>`<span>${L}</span>`).join("")}</div>
- <div class="mid"><div class="ringw"><svg viewBox="0 0 140 140"><circle class="rb" cx="70" cy="70" r="58"/><circle class="rf" id="ring" cx="70" cy="70" r="58"/></svg><div class="big" id="big"></div></div><div class="sec" id="sec">10</div><div class="def" id="def" aria-live="polite"></div></div>
- <div class="bxwrap" id="bw"><div id="bxh"></div></div>${md==="voice"?`<div class="stat" id="stat"><span class="ic"><i></i><i></i><i></i></span><span id="stx"></span></div>`:""}<div class="fb" id="fb"></div></div>`;
- $("#pas").onclick=()=>{const g=G;if(g&&/^(listen|hear)$/.test(g.phase))finish("pass")};$("#pz").onclick=pause;fit();round()}
+ <div class="mid"><div class="ringw"><svg viewBox="0 0 140 140"><circle class="rb" cx="70" cy="70" r="58"/><circle class="rf" id="ring" cx="70" cy="70" r="58"/></svg><div class="big" id="big"></div></div><div class="sec" id="sec">10</div><div class="def" id="def" aria-live="polite"></div>
+ <div class="bxwrap" id="bw"><div id="bxh"></div></div>${md==="voice"?`<div class="stat" id="stat"><span class="ic"><i></i><i></i><i></i></span><span id="stx"></span></div>`:""}<div class="fb" id="fb"></div></div></div>`;
+ $("#pas").onclick=()=>{const g=G;if(g&&/^(listen|hear)$/.test(g.phase))finish("pass")};$("#pz").onclick=pause;fit();if(md==="type")enableTyping();round()}
 function paint(){const c={ok:0,pass:0,wrong:0,time:0};G.res.forEach(r=>c[r.r]++);$("#sc").innerHTML=`<b class="cg">${c.ok}</b><b class="cy">${c.pass}</b><b class="cr">${c.wrong+c.time}</b>`;
  [...$("#abc").children].forEach((e,k)=>{const r=G.res[k];e.className=r?({ok:"g",pass:"y"}[r.r]||"r"):k===G.i?"cur":""})}
 const anim=(id,c)=>{const e=$(id);if(e){e.classList.remove(c);void e.offsetWidth;e.classList.add(c)}};
-async function round(){const g=G,rid=++g.rid;g.phase="wait";g.lock=true;g.late=false;g.ls=null;await Mic.stop();if(G!==g||g.rid!==rid)return;
+async function round(){const g=G,rid=++g.rid;g.phase="wait";g.lock=true;g.late=false;g.ls=null;g.heard={};clearTimeout(g.at);await Mic.stop();if(G!==g||g.rid!==rid)return;
  try{speechSynthesis.cancel()}catch(e){}const w=g.seq[g.i];g.lock=false;$("#big").className="big";$("#big").textContent=w.letter;$("#def").textContent=w.def;$("#bxh").innerHTML=boxHtml(w);$("#fb").textContent="";$("#pas").disabled=false;anim("#big","swap");anim("#def","swap");
- const t=$("#tin");if(t)t.value="";fillBoxes("");paint();g.phase="listen";g.end=performance.now()+10000;tick();
- if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");listen(rid)}else{enableTyping();const t2=$("#tin");if(t2){t2.value="";t2.focus({preventScroll:true})}}}
+ const t=$("#tin");if(t)t.value="";fillBoxes("");paint();g.phase="listen";g.end=performance.now()+10000;$("#sec").textContent=10;$("#ring").style.strokeDashoffset=0;$("#stage").classList.remove("warn");
+ if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");await new Promise(res=>{g.ready=res;listen(rid);setTimeout(res,900)});g.ready=null;if(G!==g||g.rid!==rid||g.lock)return;g.end=performance.now()+10000}
+ else{enableTyping();const t2=$("#tin");if(t2){t2.value="";t2.focus({preventScroll:true})}}
+ tick()}
 function tick(){const g=G;clearInterval(g.tm);g.tm=setInterval(()=>{const left=Math.max(0,g.end-performance.now()),s=Math.ceil(left/1000);if(s!==g.ls){g.ls=s;$("#sec").textContent=s;if(s<=3&&s>0)sfx.tick()}$("#ring").style.strokeDashoffset=364.4*(1-left/10000);$("#stage").classList.toggle("warn",left<=3000);
  if(left<=0){if(g.phase==="hear"){clearInterval(g.tm);g.phase="grace";g.late=true;stat("check","Son sözün işleniyor…");g.gt=setTimeout(()=>{if(G===g&&g.phase==="grace")finish("time")},1500)}else if(g.phase==="listen"){clearInterval(g.tm);finish("time")}}},60)}
 function listen(rid){const g=G,live=()=>G===g&&g.rid===rid&&/^(listen|hear|grace)$/.test(g.phase),hear=()=>{if(g.phase==="listen"){g.phase="hear";stat("hear","Konuşmanız algılanıyor…")}};
  Mic.start(db.settings.accent==="UK"?"en-GB":"en-US",{
-  start(){if(live()&&g.phase==="listen")stat("listen","Dinleniyor…")},
+  start(){if(g.ready)g.ready();if(live()&&g.phase==="listen")stat("listen","Dinleniyor…")},
   speech(){if(live())hear()},
   result(e){if(!live())return;hear();const w=g.seq[g.i],r=e.results[e.results.length-1],alts=[...r].map(a=>a.transcript),c=r[0].confidence||0;fillBoxes(alts[0]);const sx=$("#stx");if(sx)sx.textContent="Duydum: “"+alts[0]+"”";
    const j=judge(alts,w,c);
    if(j==="ok"&&(r.isFinal||alts.map(sq).includes(sq(w.word)))){finish("ok",alts[0]);return}
    if(!r.isFinal)return;
-   if(j==="ok"||j==="pass"||j==="wrong"){finish(j,alts[0]);return}
+   if(j==="ok"||j==="pass"){finish(j,alts[0]);return}
+   const tk=norm(alts[0]),T=sq(w.word);if(tk){g.heard[tk]=(g.heard[tk]||0)+1;if(g.heard[tk]>=2&&sq(tk)[0]===T[0]&&lev(sq(tk),T)<=Math.ceil(T.length*.6)){finish("ok",alts[0]);return}}
    if(g.late){finish("time",alts[0]);return}
-   g.phase="listen";stat("retry","Tam anlayamadım, tekrar söyle.");fillBoxes("")},
+   g.phase="listen";stat("retry","Duydum: “"+alts[0]+"”. Tekrar söyle.");fillBoxes("")},
   error(e){if(!live())return;const m={"not-allowed":"Mikrofon izni reddedildi.","service-not-allowed":"Mikrofon izni reddedildi.","audio-capture":"Mikrofon bulunamadı.",network:"Ağ hatası: tanıma servisine ulaşılamadı.",start:"Mikrofon başlatılamadı."}[e.error];if(m){g.dead=true;Mic.stop();stat("retry",m+" Yazarak cevap verebilirsin.");enableTyping()}},
   end(){if(live()&&g.phase!=="grace"&&!g.dead)setTimeout(()=>{if(live()&&g.phase!=="grace"&&!Mic.rec)listen(rid)},100)}})}
 const MSG={ok:"Harika! Doğru cevap!",pass:"Pas geçildi.",wrong:"Bu sefer olmadı!",time:"Süre doldu!"};
 function finish(r,heard){const g=G;if(!g||g.lock||!r)return;g.lock=true;g.phase="feedback";clearInterval(g.tm);clearTimeout(g.gt);const mp=Mic.stop();const w=g.seq[g.i],tt=Math.min(10,Math.max(0,(10000-(g.end-performance.now()))/1000));
- const ti=$("#tin");if(ti)ti.blur();$("#pas").disabled=true;g.res.push({r,w,heard:heard||"",t:tt});
+ clearTimeout(g.at);$("#pas").disabled=true;g.res.push({r,w,heard:heard||"",t:tt});
  const n=db.notebook[w.id]=db.notebook[w.id]||{word:w.word,level:w.level,s:"Yeni",ok:0};
  if(r==="ok"){n.ok++;n.s=n.ok>=2?"Öğrenildi":"Öğreniliyor"}else{n.ok=0;n.s="Tekrar Edilmeli"}
  $("#big").className="big "+({ok:"g",pass:"y"}[r]||"r");reveal(w,{ok:"ok",pass:"pss"}[r]||"bad");stat(r,MSG[r]);anim(r==="ok"?"#big":"#bxs",r==="ok"?"pop":"shake");
@@ -246,8 +263,10 @@ function results(){const md=G.mode,res=G.res,c=k=>res.filter(x=>x.r===k).length,
  draw("all");bindNav();app.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{app.querySelectorAll("[data-f]").forEach(x=>x.classList.toggle("on",x===b));draw(b.dataset.f)});
  $("#again").onclick=start;$("#hm").onclick=menu;$("#lv").onclick=menu;
  $("#add").onclick=()=>{let a=0;miss.forEach(x=>{if(!db.deck.some(d=>d.id===x.w.id)){db.deck.unshift({id:x.w.id,word:x.w.word,level:x.w.level,exp:x.w.def});a++}});save();$("#add").textContent=`✓ ${a} yeni kelime eklendi · Kartlar sekmesinden aç`;$("#add").disabled=true}}
-function fit(){const st=$("#stage");if(!st)return;const v=window.visualViewport,h=v?v.height:innerHeight;st.style.height=h+"px";st.style.top=(v?v.offsetTop:0)+"px";st.classList.toggle("kb",h<560);if(v&&v.offsetTop)window.scrollTo(0,0)}
+function fit(){const st=$("#stage");if(!st)return;const v=window.visualViewport,h=v?v.height:innerHeight;st.style.height=h+"px";st.style.top=(v?v.offsetTop:0)+"px";st.classList.toggle("kb",h<560||(G&&G.mode==="type"));if(v&&v.offsetTop)window.scrollTo(0,0)}
 if(window.visualViewport){visualViewport.addEventListener("resize",fit);visualViewport.addEventListener("scroll",fit)}addEventListener("resize",fit);
+try{history.scrollRestoration="manual"}catch(e){}
+const toTop=()=>{window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0};new MutationObserver(toTop).observe(app,{childList:true});addEventListener("load",toTop);addEventListener("pageshow",toTop);
 document.addEventListener("visibilitychange",()=>{if(document.hidden)pause()});
 menu();
 </script></body></html>
