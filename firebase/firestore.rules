@@ -47,5 +47,35 @@ service cloud.firestore {
         && request.auth.uid in request.resource.data.owners;
       allow delete: if false;
     }
+
+    // ---- Günlük mücadele sıralaması ----
+    function pdata(pid) { return get(playerDoc(pid)).data; }
+    function todayNum() {
+      let t = request.time + duration.value(3, 'h');
+      return t.year() * 10000 + t.month() * 100 + t.day();
+    }
+    // Her oyuncu, her gün, her seviye için TEK kayıt. Oluşturulur, sonra değiştirilemez / silinemez.
+    match /daily/{id} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['pid', 'nick', 'avatar', 'date', 'lv', 'c', 'p', 'w', 't', 'dur', 'at'])
+        && request.resource.data.pid is string
+        && isOwner(request.resource.data.pid)
+        && request.resource.data.lv in ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+        && request.resource.data.date is int
+        && request.resource.data.date == todayNum()
+        && id == string(request.resource.data.date) + '_' + request.resource.data.lv + '_' + request.resource.data.pid
+        && request.resource.data.nick == pdata(request.resource.data.pid).nick
+        && request.resource.data.avatar == pdata(request.resource.data.pid).avatar
+        && request.resource.data.c is int && request.resource.data.p is int
+        && request.resource.data.w is int && request.resource.data.t is int
+        && request.resource.data.c >= 0 && request.resource.data.p >= 0
+        && request.resource.data.w >= 0 && request.resource.data.t >= 0
+        && request.resource.data.c + request.resource.data.p + request.resource.data.w + request.resource.data.t == 26
+        && request.resource.data.dur is int
+        && request.resource.data.dur >= 8 && request.resource.data.dur <= 260
+        && request.resource.data.at == request.time;
+      allow update, delete: if false;
+    }
   }
 }
