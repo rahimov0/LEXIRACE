@@ -335,8 +335,8 @@ async function duelCreate(lv,rnd){duelWait("Oda kuruluyor…");const R=await rt(
  for(let a=0;a<4;a++){const code=roomCode();try{await R.m.set(rr("rooms/"+code),{host:me,lv,seed:Math.floor(Math.random()*1e9),status:"wait",created:R.m.serverTimestamp(),players:{[me]:{nick:ACC.nick,avatar:ACC.avatar,on:true}}});await R.m.onDisconnect(rr("rooms/"+code)).remove();if(rnd)return code;await duelOpen(code,true,{rnd:false});return code}catch(e){if(e.code==="PERMISSION_DENIED"&&a<3)continue;throw e}}}
 async function duelJoin(code,quiet){duelWait("Odaya giriliyor…");const R=await rt(),me=R.F.A.currentUser.uid,s=await R.m.get(rr("rooms/"+code)),v=s.val();
  if(!v){if(quiet)return false;return duelHome("Oda bulunamadı. Kodu kontrol et.")}
- const n=Object.keys(v.players||{});if(v.status!=="wait"||(n.length>=2&&!n.includes(me))){if(quiet)return false;return duelHome("Oda dolu veya oyun başlamış.")}
- try{await R.m.set(rr(`rooms/${code}/players/${me}`),{nick:ACC.nick,avatar:ACC.avatar,on:true});await R.m.onDisconnect(rr(`rooms/${code}/players/${me}`)).remove()}catch(e){if(quiet)return false;return duelHome("Odaya girilemedi.")}
+ const n=Object.keys(v.players||{});if(v.status!=="wait"||(n.length>=2&&!n.includes(me))||(v.guest&&v.guest!==me)){if(quiet)return false;return duelHome("Oda dolu veya oyun başlamış.")}
+ try{await R.m.set(rr(`rooms/${code}/guest`),me);await R.m.onDisconnect(rr(`rooms/${code}/guest`)).remove();await R.m.set(rr(`rooms/${code}/players/${me}`),{nick:ACC.nick,avatar:ACC.avatar,on:true});await R.m.onDisconnect(rr(`rooms/${code}/players/${me}`)).remove()}catch(e){if(quiet)return false;return duelHome("Odaya girilemedi.")}
  await duelOpen(code,false,{});return true}
 async function duelFind(lv){duelWait("Rakip aranıyor…");const R=await rt(),me=R.F.A.currentUser.uid;
  for(let a=0;a<3;a++){const code=await duelCreate(lv,true);let took=null;const qr=rr("queue/"+lv);
@@ -369,7 +369,7 @@ function duelLobbyView(v){const D=DU,pl=v.players||{},oid=D.oid,sig=Object.keys(
  <button class="btn alt" id="dx" style="margin-top:10px">Vazgeç</button></div>`;
  $("#dx").onclick=()=>duelHome();const cp=$("#dcp");if(cp)cp.onclick=()=>{try{navigator.clipboard.writeText(D.code);cp.textContent="Kopyalandı ✓"}catch(e){cp.textContent=D.code}}}
 function duelBegin(v){const D=DU;if(D.started)return;D.started=true;clearTimeout(D.qt);D.startAt=v.startAt;D.lv=v.lv;
- try{RT.m.onDisconnect(D.rf).cancel();RT.m.onDisconnect(rr(`rooms/${D.code}/players/${D.uid}`)).cancel()}catch(e){}duelPresence();
+ try{RT.m.onDisconnect(D.rf).cancel();RT.m.onDisconnect(rr(`rooms/${D.code}/players/${D.uid}`)).cancel();RT.m.onDisconnect(rr(`rooms/${D.code}/guest`)).cancel()}catch(e){}duelPresence();
  const seq=duelSeq(v.seed,v.lv);if(seq.some(x=>!x)){duelHome("Bu seviyede yeterli kelime yok.");return}
  if(srv()>v.startAt+26*SLOT+3000){duelHome("Bu oyun bitmiş.");return}
  micOK=D.micOK;start(D.mode,false,{seq,startAt:v.startAt,rs:i=>v.startAt+i*SLOT,code:D.code})}
@@ -395,7 +395,8 @@ function duelQuitAsk(){if(!G||!G.mp||$("#ov"))return;const o=document.createElem
 async function duelDrop(){const D=DU;if(!D)return;DU=null;clearTimeout(D.qt);clearTimeout(D.rt);clearTimeout(D.offT);try{localStorage.removeItem("lexirace:duel")}catch(e){}
  try{D.unsub&&D.unsub();const m=RT.m;await m.onDisconnect(D.rf).cancel().catch(()=>{});
   if(D.rnd&&!D.started){await m.runTransaction(rr("queue/"+D.lv),c=>c&&c.code===D.code?null:undefined).catch(()=>{})}
-  if(D.host&&(!D.started||D.ended)){await m.remove(D.rf)}
+  if(!D.host&&!D.started){await m.remove(rr(`rooms/${D.code}/players/${D.uid}`)).catch(()=>{});await m.remove(rr(`rooms/${D.code}/guest`)).catch(()=>{})}
+  else if(D.host&&(!D.started||D.ended)){await m.remove(D.rf)}
   else{const s=(await m.get(rr(`rooms/${D.code}/players`))).val()||{};if(Object.keys(s).filter(k=>k!==D.uid).length)await m.remove(rr(`rooms/${D.code}/players/${D.uid}`));else await m.remove(D.rf)}}catch(e){}}
 async function duelResume(){if(DRES||!ACC)return;DRES=true;let s=null;try{s=JSON.parse(localStorage.getItem("lexirace:duel")||"null")}catch(e){}if(!s||Date.now()-s.t>7*60000){try{localStorage.removeItem("lexirace:duel")}catch(e){}return}
  try{const R=await rt(),me=R.F.A.currentUser.uid,v=(await R.m.get(rr("rooms/"+s.code))).val();if(!v||v.status!=="play"||!(v.players||{})[me]||srv()>(v.startAt||0)+26*SLOT+3000){localStorage.removeItem("lexirace:duel");return}
