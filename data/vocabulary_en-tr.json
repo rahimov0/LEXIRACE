@@ -39863,5 +39863,817 @@
   "letter": "W",
   "level": "C1",
   "turkish_explanation": "İbadet etmek; tapınmak; ibadet"
+ },
+ {
+  "id": "a-a1-05428",
+  "word": "August",
+  "letter": "A",
+  "level": "A1",
+  "turkish_explanation": "Ağustos"
+ },
+ {
+  "id": "b-a1-05429",
+  "word": "bar",
+  "letter": "B",
+  "level": "A1",
+  "turkish_explanation": "içki veya kahve servis edilen yer; uzun çubuk"
+ },
+ {
+  "id": "b-a1-05430",
+  "word": "because of",
+  "letter": "B",
+  "level": "A1",
+  "turkish_explanation": "Yüzünden; nedeniyle"
+ },
+ {
+  "id": "b-a1-05431",
+  "word": "blog",
+  "letter": "B",
+  "level": "A1",
+  "turkish_explanation": "kişilerin internette yazı paylaştığı günlük sayfası"
+ },
+ {
+  "id": "d-a1-05432",
+  "word": "December",
+  "letter": "D",
+  "level": "A1",
+  "turkish_explanation": "Aralık"
+ },
+ {
+  "id": "e-a1-05433",
+  "word": "euro",
+  "letter": "E",
+  "level": "A1",
+  "turkish_explanation": "Avrupa'nın birçok ülkesinde kullanılan para birimi"
+ },
+ {
+  "id": "f-a1-05434",
+  "word": "February",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "Şubat"
+ },
+ {
+  "id": "f-a1-05435",
+  "word": "film",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "sinemada veya televizyonda izlenen hareketli görüntülü hikâye"
+ },
+ {
+  "id": "f-a1-05436",
+  "word": "final",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "en son bölüm; yarışmanın son aşaması"
+ },
+ {
+  "id": "f-a1-05437",
+  "word": "form",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "doldurulan yazılı belge; şekil vermek"
+ },
+ {
+  "id": "f-a1-05438",
+  "word": "Friday",
+  "letter": "F",
+  "level": "A1",
+  "turkish_explanation": "Cuma"
+ },
+ {
+  "id": "h-a1-05439",
+  "word": "have to",
+  "letter": "H",
+  "level": "A1",
+  "turkish_explanation": "Zorunda olmak; mecbur olmak"
+ },
+ {
+  "id": "h-a1-05440",
+  "word": "hey",
+  "letter": "H",
+  "level": "A1",
+  "turkish_explanation": "dikkat çekmek için kullanılan kısa seslenme"
+ },
+ {
+  "id": "i-a1-05441",
+  "word": "ice cream",
+  "letter": "I",
+  "level": "A1",
+  "turkish_explanation": "Dondurma"
+ },
+ {
+  "id": "k-a1-05442",
+  "word": "kilometre",
+  "letter": "K",
+  "level": "A1",
+  "turkish_explanation": "bin metreye eşit uzaklık ölçüsü"
+ },
+ {
+  "id": "m-a1-05443",
+  "word": "March",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Mart; yürümek; yürüyüş"
+ },
+ {
+  "id": "m-a1-05444",
+  "word": "May",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Mayıs; -ebilir (olasılık/izin)"
+ },
+ {
+  "id": "m-a1-05445",
+  "word": "metre",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "yüz santimetreye eşit uzunluk ölçüsü"
+ },
+ {
+  "id": "m-a1-05446",
+  "word": "model",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "örnek alınan şey; giysi tanıtan kişi"
+ },
+ {
+  "id": "m-a1-05447",
+  "word": "Monday",
+  "letter": "M",
+  "level": "A1",
+  "turkish_explanation": "Pazartesi"
+ },
+ {
+  "id": "n-a1-05448",
+  "word": "next to",
+  "letter": "N",
+  "level": "A1",
+  "turkish_explanation": "Yanında; bitişiğinde"
+ },
+ {
+  "id": "n-a1-05449",
+  "word": "no one",
+  "letter": "N",
+  "level": "A1",
+  "turkish_explanation": "Hiç kimse"
+ },
+ {
+  "id": "o-a1-05450",
+  "word": "o'clock",
+  "letter": "O",
+  "level": "A1",
+  "turkish_explanation": "Saat (tam saat bildiriminde)"
+ },
+ {
+  "id": "p-a1-05451",
+  "word": "pay",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "karşılığında para vermek; maaş"
+ },
+ {
+  "id": "p-a1-05452",
+  "word": "plan",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "önceden hazırlanan yol haritası; tasarlamak"
+ },
+ {
+  "id": "p-a1-05453",
+  "word": "pound",
+  "letter": "P",
+  "level": "A1",
+  "turkish_explanation": "İngiltere'nin para birimi; ağırlık ölçüsü; yumruklamak"
+ },
+ {
+  "id": "s-a1-05454",
+  "word": "Saturday",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Cumartesi"
+ },
+ {
+  "id": "s-a1-05455",
+  "word": "September",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Eylül"
+ },
+ {
+  "id": "s-a1-05456",
+  "word": "Sunday",
+  "letter": "S",
+  "level": "A1",
+  "turkish_explanation": "Pazar"
+ },
+ {
+  "id": "t-a1-05457",
+  "word": "T-shirt",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Tişört"
+ },
+ {
+  "id": "t-a1-05458",
+  "word": "Thursday",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Perşembe"
+ },
+ {
+  "id": "t-a1-05459",
+  "word": "Tuesday",
+  "letter": "T",
+  "level": "A1",
+  "turkish_explanation": "Salı"
+ },
+ {
+  "id": "w-a1-05460",
+  "word": "Wednesday",
+  "letter": "W",
+  "level": "A1",
+  "turkish_explanation": "Çarşamba"
+ },
+ {
+  "id": "a-a2-05461",
+  "word": "according to",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "-e göre; uyarınca"
+ },
+ {
+  "id": "a-a2-05462",
+  "word": "all right",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Tamam; iyi; peki"
+ },
+ {
+  "id": "a-a2-05463",
+  "word": "any more",
+  "letter": "A",
+  "level": "A2",
+  "turkish_explanation": "Artık; daha fazla"
+ },
+ {
+  "id": "d-a2-05464",
+  "word": "drama",
+  "letter": "D",
+  "level": "A2",
+  "turkish_explanation": "sahnede oynanan ciddi, duygusal oyun"
+ },
+ {
+  "id": "g-a2-05465",
+  "word": "golf",
+  "letter": "G",
+  "level": "A2",
+  "turkish_explanation": "küçük topu çubukla deliğe sokma sporu"
+ },
+ {
+  "id": "h-a2-05466",
+  "word": "hit",
+  "letter": "H",
+  "level": "A2",
+  "turkish_explanation": "vurmak; çok tutulan şarkı veya ürün"
+ },
+ {
+  "id": "i-a2-05467",
+  "word": "instead of",
+  "letter": "I",
+  "level": "A2",
+  "turkish_explanation": "Yerine; -mek yerine"
+ },
+ {
+  "id": "m-a2-05468",
+  "word": "metal",
+  "letter": "M",
+  "level": "A2",
+  "turkish_explanation": "demir, bakır gibi sert ve parlak madde"
+ },
+ {
+  "id": "p-a2-05469",
+  "word": "per cent",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "Yüzde; her yüz başına"
+ },
+ {
+  "id": "p-a2-05470",
+  "word": "pilot",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "uçağı kullanan kişi; deneme niteliğinde"
+ },
+ {
+  "id": "p-a2-05471",
+  "word": "platform",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "yüksek düz zemin; hizmetin sunulduğu internet ortamı"
+ },
+ {
+  "id": "p-a2-05472",
+  "word": "pop",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "hafif ve ritmik müzik türü; küçük patlama sesi çıkarmak"
+ },
+ {
+  "id": "p-a2-05473",
+  "word": "poster",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "duvara asılan büyük resim veya ilan"
+ },
+ {
+  "id": "p-a2-05474",
+  "word": "program",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "bilgisayar yazılımı; yayın veya etkinlik planı"
+ },
+ {
+  "id": "p-a2-05475",
+  "word": "pub",
+  "letter": "P",
+  "level": "A2",
+  "turkish_explanation": "İngiltere'de içki servis edilen mahalle mekânı"
+ },
+ {
+  "id": "r-a2-05476",
+  "word": "rock",
+  "letter": "R",
+  "level": "A2",
+  "turkish_explanation": "büyük taş; gitarlı sert müzik türü"
+ },
+ {
+  "id": "t-a2-05477",
+  "word": "tablet",
+  "letter": "T",
+  "level": "A2",
+  "turkish_explanation": "ilaç hapı; dokunmatik ekranlı küçük bilgisayar"
+ },
+ {
+  "id": "u-a2-05478",
+  "word": "used to",
+  "letter": "U",
+  "level": "A2",
+  "turkish_explanation": "Eskiden ... yapardı; ... alışkındı"
+ },
+ {
+  "id": "a-b1-05479",
+  "word": "alarm",
+  "letter": "A",
+  "level": "B1",
+  "turkish_explanation": "tehlike anında çalan uyarı sesi; uyarmak"
+ },
+ {
+  "id": "n-b1-05480",
+  "word": "net",
+  "letter": "N",
+  "level": "B1",
+  "turkish_explanation": "balık veya top tutan ağ; açık ve belirgin"
+ },
+ {
+  "id": "o-b1-05481",
+  "word": "old-fashioned",
+  "letter": "O",
+  "level": "B1",
+  "turkish_explanation": "Modası geçmiş; eski moda"
+ },
+ {
+  "id": "p-b1-05482",
+  "word": "podcast",
+  "letter": "P",
+  "level": "B1",
+  "turkish_explanation": "internetten dinlenen konuşma yayını"
+ },
+ {
+  "id": "r-b1-05483",
+  "word": "risk",
+  "letter": "R",
+  "level": "B1",
+  "turkish_explanation": "zarar görme ihtimali"
+ },
+ {
+  "id": "r-b1-05484",
+  "word": "robot",
+  "letter": "R",
+  "level": "B1",
+  "turkish_explanation": "insan gibi iş yapan programlı makine"
+ },
+ {
+  "id": "w-b1-05485",
+  "word": "Wi-Fi",
+  "letter": "W",
+  "level": "B1",
+  "turkish_explanation": "Kablosuz internet bağlantısı"
+ },
+ {
+  "id": "f-b2-05486",
+  "word": "format",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "bir şeyin düzeni ve biçimi; diski silip hazırlamak"
+ },
+ {
+  "id": "f-b2-05487",
+  "word": "forum",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "insanların fikir tartıştığı açık platform"
+ },
+ {
+  "id": "f-b2-05488",
+  "word": "full-time",
+  "letter": "F",
+  "level": "B2",
+  "turkish_explanation": "Tam zamanlı; tam gün"
+ },
+ {
+  "id": "j-b2-05489",
+  "word": "jet",
+  "letter": "J",
+  "level": "B2",
+  "turkish_explanation": "çok hızlı giden uçak; fışkıran su akışı"
+ },
+ {
+  "id": "l-b2-05490",
+  "word": "lens",
+  "letter": "L",
+  "level": "B2",
+  "turkish_explanation": "gözlükte veya fotoğraf makinesinde ışığı toplayan cam"
+ },
+ {
+  "id": "l-b2-05491",
+  "word": "litre",
+  "letter": "L",
+  "level": "B2",
+  "turkish_explanation": "sıvıların ölçüldüğü birim"
+ },
+ {
+  "id": "l-b2-05492",
+  "word": "logo",
+  "letter": "L",
+  "level": "B2",
+  "turkish_explanation": "bir firmayı temsil eden işaret veya simge"
+ },
+ {
+  "id": "l-b2-05493",
+  "word": "lord",
+  "letter": "L",
+  "level": "B2",
+  "turkish_explanation": "İngiltere'de soylu unvanı; efendi"
+ },
+ {
+  "id": "m-b2-05494",
+  "word": "make-up",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "Makyaj; yapı; telafi"
+ },
+ {
+  "id": "m-b2-05495",
+  "word": "mineral",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "yer altında doğal olarak bulunan katı madde"
+ },
+ {
+  "id": "m-b2-05496",
+  "word": "minimum",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "olabilecek en az miktar"
+ },
+ {
+  "id": "m-b2-05497",
+  "word": "moral",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "doğru ve yanlışla ilgili; insanın ruh hâli"
+ },
+ {
+  "id": "m-b2-05498",
+  "word": "motor",
+  "letter": "M",
+  "level": "B2",
+  "turkish_explanation": "aracı çalıştıran makine"
+ },
+ {
+  "id": "n-b2-05499",
+  "word": "norm",
+  "letter": "N",
+  "level": "B2",
+  "turkish_explanation": "herkesin uyduğu genel kural"
+ },
+ {
+  "id": "o-b2-05500",
+  "word": "opera",
+  "letter": "O",
+  "level": "B2",
+  "turkish_explanation": "şarkıyla anlatılan büyük sahne eseri"
+ },
+ {
+  "id": "o-b2-05501",
+  "word": "organ",
+  "letter": "O",
+  "level": "B2",
+  "turkish_explanation": "vücudun kalp, böbrek gibi görevli parçası"
+ },
+ {
+  "id": "p-b2-05502",
+  "word": "panel",
+  "letter": "P",
+  "level": "B2",
+  "turkish_explanation": "konuşmacıların tartıştığı toplantı; düz levha"
+ },
+ {
+  "id": "p-b2-05503",
+  "word": "part-time",
+  "letter": "P",
+  "level": "B2",
+  "turkish_explanation": "Yarı zamanlı"
+ },
+ {
+  "id": "p-b2-05504",
+  "word": "protein",
+  "letter": "P",
+  "level": "B2",
+  "turkish_explanation": "et, yumurta ve baklagillerde bulunan besin maddesi"
+ },
+ {
+  "id": "p-b2-05505",
+  "word": "punk",
+  "letter": "P",
+  "level": "B2",
+  "turkish_explanation": "sert ve hızlı müzik türü; isyankâr gençlik tarzı"
+ },
+ {
+  "id": "s-b2-05506",
+  "word": "short-term",
+  "letter": "S",
+  "level": "B2",
+  "turkish_explanation": "Kısa vadeli"
+ },
+ {
+  "id": "s-b2-05507",
+  "word": "slogan",
+  "letter": "S",
+  "level": "B2",
+  "turkish_explanation": "akılda kalan kısa reklam sözü"
+ },
+ {
+  "id": "s-b2-05508",
+  "word": "so-called",
+  "letter": "S",
+  "level": "B2",
+  "turkish_explanation": "Sözde; denilen"
+ },
+ {
+  "id": "s-b2-05509",
+  "word": "sponsor",
+  "letter": "S",
+  "level": "B2",
+  "turkish_explanation": "bir etkinliğe para desteği veren kuruluş"
+ },
+ {
+  "id": "t-b2-05510",
+  "word": "tank",
+  "letter": "T",
+  "level": "B2",
+  "turkish_explanation": "zırhlı savaş aracı; sıvı veya gaz deposu"
+ },
+ {
+  "id": "t-b2-05511",
+  "word": "terminal",
+  "letter": "T",
+  "level": "B2",
+  "turkish_explanation": "otobüs veya uçakların son durağı; son aşamadaki"
+ },
+ {
+  "id": "t-b2-05512",
+  "word": "ton",
+  "letter": "T",
+  "level": "B2",
+  "turkish_explanation": "bin kilogramlık ağırlık birimi"
+ },
+ {
+  "id": "t-b2-05513",
+  "word": "tsunami",
+  "letter": "T",
+  "level": "B2",
+  "turkish_explanation": "deprem sonucu oluşan dev deniz dalgası"
+ },
+ {
+  "id": "v-b2-05514",
+  "word": "vitamin",
+  "letter": "V",
+  "level": "B2",
+  "turkish_explanation": "vücudun sağlıklı kalması için gereken besin öğesi"
+ },
+ {
+  "id": "a-c1-05515",
+  "word": "all-time",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "Tüm zamanların; şimdiye kadarki"
+ },
+ {
+  "id": "a-c1-05516",
+  "word": "arena",
+  "letter": "A",
+  "level": "C1",
+  "turkish_explanation": "spor veya gösteri yapılan büyük açık alan"
+ },
+ {
+  "id": "d-c1-05517",
+  "word": "decision-making",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "Karar verme"
+ },
+ {
+  "id": "d-c1-05518",
+  "word": "diplomat",
+  "letter": "D",
+  "level": "C1",
+  "turkish_explanation": "devletini yurt dışında temsil eden görevli"
+ },
+ {
+  "id": "e-c1-05519",
+  "word": "e-commerce",
+  "letter": "E",
+  "level": "C1",
+  "turkish_explanation": "Elektronik ticaret; e-ticaret"
+ },
+ {
+  "id": "f-c1-05520",
+  "word": "feminist",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "kadın erkek eşitliğini savunan kişi"
+ },
+ {
+  "id": "f-c1-05521",
+  "word": "film-maker",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Film yapımcısı; sinemacı"
+ },
+ {
+  "id": "f-c1-05522",
+  "word": "follow-up",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "Takip; devam; sonraki işlem"
+ },
+ {
+  "id": "f-c1-05523",
+  "word": "franchise",
+  "letter": "F",
+  "level": "C1",
+  "turkish_explanation": "bir markanın adıyla şube açma hakkı"
+ },
+ {
+  "id": "h-c1-05524",
+  "word": "high-profile",
+  "letter": "H",
+  "level": "C1",
+  "turkish_explanation": "Tanınmış; göz önünde olan"
+ },
+ {
+  "id": "i-c1-05525",
+  "word": "integral",
+  "letter": "I",
+  "level": "C1",
+  "turkish_explanation": "bütünün ayrılmaz bir parçası olan"
+ },
+ {
+  "id": "l-c1-05526",
+  "word": "large-scale",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Geniş çaplı; büyük ölçekli"
+ },
+ {
+  "id": "l-c1-05527",
+  "word": "line-up",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Kadrodaki kişiler; sıralama; program"
+ },
+ {
+  "id": "l-c1-05528",
+  "word": "long-standing",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Uzun süredir var olan; köklü"
+ },
+ {
+  "id": "l-c1-05529",
+  "word": "long-time",
+  "letter": "L",
+  "level": "C1",
+  "turkish_explanation": "Uzun süredir; uzun zamandır tanıdık"
+ },
+ {
+  "id": "m-c1-05530",
+  "word": "mentor",
+  "letter": "M",
+  "level": "C1",
+  "turkish_explanation": "tecrübesiyle başkasına yol gösteren kişi"
+ },
+ {
+  "id": "n-c1-05531",
+  "word": "non-profit",
+  "letter": "N",
+  "level": "C1",
+  "turkish_explanation": "Kâr amacı gütmeyen"
+ },
+ {
+  "id": "p-c1-05532",
+  "word": "patent",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "bir buluşun yasal olarak korunması"
+ },
+ {
+  "id": "p-c1-05533",
+  "word": "propaganda",
+  "letter": "P",
+  "level": "C1",
+  "turkish_explanation": "fikir yaymak için yapılan yönlendirici tanıtım"
+ },
+ {
+  "id": "r-c1-05534",
+  "word": "radar",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "uzaktaki cisimleri dalgayla bulan cihaz"
+ },
+ {
+  "id": "r-c1-05535",
+  "word": "reform",
+  "letter": "R",
+  "level": "C1",
+  "turkish_explanation": "bir sistemi daha iyi hâle getiren köklü değişiklik"
+ },
+ {
+  "id": "s-c1-05536",
+  "word": "set-up",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Kurulum; düzenek; tuzak"
+ },
+ {
+  "id": "s-c1-05537",
+  "word": "slam",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "çok sert çarpmak; kapıyı gürültüyle kapatmak"
+ },
+ {
+  "id": "s-c1-05538",
+  "word": "solo",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "başkası olmadan tek başına yapılan"
+ },
+ {
+  "id": "s-c1-05539",
+  "word": "start-up",
+  "letter": "S",
+  "level": "C1",
+  "turkish_explanation": "Yeni girişim; başlangıç şirketi"
+ },
+ {
+  "id": "t-c1-05540",
+  "word": "trans",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "bir yerden başka yere geçişi anlatan ön ek; cinsiyet geçişi yapmış kişi"
+ },
+ {
+  "id": "t-c1-05541",
+  "word": "transit",
+  "letter": "T",
+  "level": "C1",
+  "turkish_explanation": "bir yerden sadece geçip gitme; aktarma"
+ },
+ {
+  "id": "v-c1-05542",
+  "word": "vegan",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "et, süt ve yumurta tüketmeyen kişi"
+ },
+ {
+  "id": "v-c1-05543",
+  "word": "viral",
+  "letter": "V",
+  "level": "C1",
+  "turkish_explanation": "internette çok hızlı yayılan"
  }
 ]
