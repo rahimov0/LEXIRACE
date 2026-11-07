@@ -14,6 +14,7 @@
           ".validate": "newData.isString()"
         },
         "lv":      { ".validate": "newData.isString() && newData.val().matches(/^(A1|A2|B1|B2|C1|C2|ALL)$/)" },
+        "hard":    { ".validate": "newData.isBoolean()" },
         "seed":    { ".validate": "newData.isNumber()" },
         "created": { ".validate": "newData.isNumber()" },
         "status": {
@@ -60,7 +61,7 @@
     "queue": {
       "$lv": {
         ".read": "auth != null",
-        ".write": "auth != null && $lv.matches(/^(A1|A2|B1|B2|C1|C2|ALL)$/)",
+        ".write": "auth != null && $lv.matches(/^(A1|A2|B1|B2|C1|C2|ALL)H?$/)",
         ".validate": "!newData.exists() || newData.hasChildren(['code', 'uid', 'ts'])",
         "code": { ".validate": "newData.isString() && newData.val().length == 5" },
         "uid":  { ".validate": "newData.isString()" },

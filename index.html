@@ -325,19 +325,25 @@ async function board(){stop();if(!ACC)return gateView();const lv=BD.lv&&UL.inclu
 let BDQ=0;
 /* ===== 1v1 DÜELLO (Realtime Database) ===== */
 const SLOT=12500,RND=10000,lvName=k=>k==="ALL"?"TÜMÜ":k;
-let RT=null,DU=null,DUL="A1",DRES=false;
+let RT=null,DU=null,DUL="A1",DUH=false,DRES=false;
 async function rt(){if(RT)return RT;const F=await fb(),b="https://www.gstatic.com/firebasejs/10.14.1/",m=await import(b+"firebase-database.js"),d=m.getDatabase(F.a);RT={m,d,F,off:0,conn:true};
  m.onValue(m.ref(d,".info/serverTimeOffset"),s=>{RT.off=s.val()||0});m.onValue(m.ref(d,".info/connected"),s=>{RT.conn=!!s.val();if(RT.conn&&DU&&DU.started&&!DU.ended)duelPresence()});return RT}
 const srv=()=>Date.now()+(RT?RT.off:0);
 const roomCode=()=>{let s="";for(let i=0;i<5;i++)s+=ALPH[Math.floor(Math.random()*ALPH.length)];return s};
 const rr=p=>RT.m.ref(RT.d,p);
-function duelSeq(seed,lv){const r=rng("duel|"+seed+"|"+lv),o={};WORDS.filter(w=>lv==="ALL"||w.level===lv).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return LANG.alphabet.map(L=>{const a=(o[L]||[]).sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
+function duelSeqHard(seed,lv){const r=rng("duelH|"+seed+"|"+lv),ws=WORDS.filter(w=>lv==="ALL"||w.level===lv).sort((x,y)=>x.id<y.id?-1:1);
+ return LANG.alphabet.map(L=>{const l=L.toLowerCase(),cl={s:[],m:[],e:[]};ws.forEach(w=>{const a=w.word.toLowerCase().replace(/[^a-z]/g,"");if(!a.includes(l))return;(a[0]===l?cl.s:a[a.length-1]===l?cl.e:cl.m).push(w)});
+  const ks=["s","m","e"].filter(k=>cl[k].length);if(!ks.length)return undefined;const all=cl[ks[Math.floor(r()*ks.length)]],w=all[Math.floor(r()*all.length)],a=w.word.replace(/[^a-z]/gi,"").toLowerCase(),pos=[];[...a].forEach((ch,i)=>{if(ch===l)pos.push(i)});
+  return Object.assign({},w,{letter:L,pos,hard:true})})}
+function duelSeq(seed,lv,hard){if(hard)return duelSeqHard(seed,lv);const r=rng("duel|"+seed+"|"+lv),o={};WORDS.filter(w=>lv==="ALL"||w.level===lv).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return LANG.alphabet.map(L=>{const a=(o[L]||[]).sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
 async function micEnsure(){if(MICSESS)return true;try{let st="";try{st=(await navigator.permissions.query({name:"microphone"})).state}catch(_){}if(st!=="granted"){const s=await navigator.mediaDevices.getUserMedia({audio:true});s.getTracks().forEach(t=>t.stop())}MICSESS=true;return true}catch(e){return false}}
 const dBox=(t,sub)=>`<div class="card" style="text-align:center"><p class="note">${t}</p>${sub||""}</div>`;
 function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const md=db.settings.mode;
  app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}
- <p class="note" style="margin:0 2px 8px">İki oyuncu, aynı 26 harf, harf başına 10 sn. PAS yok. Skorlar oda kapanınca silinir, seviye kilidi ve istatistiklerini etkilemez.</p>
+ <p class="note" style="margin:0 2px 8px">İki oyuncu, aynı 26 harf (Klasik ya da Zorlu kural), harf başına 10 sn. PAS yok. Skorlar oda kapanınca silinir, seviye kilidi ve istatistiklerini etkilemez.</p>
  <h2>Seviye</h2><div class="fl" id="dlv">${[...UL,"ALL"].map(k=>`<button data-l="${k}" class="${k===DUL?"on":""}">${lvName(k)}</button>`).join("")}</div>
+ <h2>Kural</h2><div class="segc">${[[0,"Klasik"],[1,"Zorlu"]].map(([k,t])=>`<button data-h="${k}" class="${(DUH?1:0)===k?"on":""}">${t}</button>`).join("")}</div>
+ <p class="note" id="drn" style="margin:6px 2px 0">${DUH?"Zorlu: harf kelimenin başında, ortasında ya da sonunda olabilir.":"Klasik: kelime verilen harfle başlar."}</p>
  <h2>Oyun modu</h2><div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${md===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
  ${msg?`<p class="note lkm" style="margin-top:10px">${esc(msg)}</p>`:""}
  <button class="btn cta" id="dq" style="margin-top:14px">${I("bolt",17)}Rastgele Rakip Bul</button>
@@ -346,21 +352,22 @@ function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const m
  <button class="btn alt" id="dbk" style="margin-top:10px">Geri</button></div>${nav("m")}`;bindNav();
  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{DUL=b.dataset.l;app.querySelectorAll("[data-l]").forEach(x=>x.classList.toggle("on",x===b))});
  app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();duelHome(msg)});
+ app.querySelectorAll("[data-h]").forEach(b=>b.onclick=()=>{DUH=b.dataset.h==="1";app.querySelectorAll("[data-h]").forEach(x=>x.classList.toggle("on",x===b));$("#drn").textContent=DUH?"Zorlu: harf kelimenin başında, ortasında ya da sonunda olabilir.":"Klasik: kelime verilen harfle başlar."});
  const busy=f=>async()=>{if(duelHome.b)return;duelHome.b=1;try{await f()}catch(e){duelHome(duelErr(e))}duelHome.b=0};
- $("#dq").onclick=busy(()=>duelFind(DUL));$("#dc").onclick=busy(()=>duelCreate(DUL,false));
+ $("#dq").onclick=busy(()=>duelFind(DUL,DUH));$("#dc").onclick=busy(()=>duelCreate(DUL,false,DUH));
  $("#djb").onclick=busy(()=>{const c=$("#dj").value.trim().toUpperCase();if(c.length!==5)return duelHome("Kod 5 karakter olmalı.");return duelJoin(c)});
  $("#dbk").onclick=menu}
 const duelErr=e=>{console.error("duel",e);return e&&/PERMISSION_DENIED|permission_denied/i.test(e.code+" "+e.message)?"Düello şu an kullanılamıyor: veritabanı kuralları yayınlanmamış olabilir.":"Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene. ("+String((e&&(e.code||e.message))||e).slice(0,70)+")"};
 function duelWait(t){app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center;margin-top:40px"><p class="note">${t}</p></div></div>`}
-async function duelCreate(lv,rnd){duelWait("Oda kuruluyor…");const R=await rt(),me=R.F.A.currentUser.uid;
- for(let a=0;a<4;a++){const code=roomCode();try{await R.m.set(rr("rooms/"+code),{host:me,lv,seed:Math.floor(Math.random()*1e9),status:"wait",created:R.m.serverTimestamp(),players:{[me]:{nick:ACC.nick,avatar:ACC.avatar,on:true}}});await R.m.onDisconnect(rr("rooms/"+code)).remove();if(rnd)return code;await duelOpen(code,true,{rnd:false});return code}catch(e){if(e.code==="PERMISSION_DENIED"&&a<3)continue;throw e}}}
+async function duelCreate(lv,rnd,hard){duelWait("Oda kuruluyor…");const R=await rt(),me=R.F.A.currentUser.uid;
+ for(let a=0;a<4;a++){const code=roomCode();try{await R.m.set(rr("rooms/"+code),{host:me,lv,hard:!!hard,seed:Math.floor(Math.random()*1e9),status:"wait",created:R.m.serverTimestamp(),players:{[me]:{nick:ACC.nick,avatar:ACC.avatar,on:true}}});await R.m.onDisconnect(rr("rooms/"+code)).remove();if(rnd)return code;await duelOpen(code,true,{rnd:false});return code}catch(e){if(e.code==="PERMISSION_DENIED"&&a<3)continue;throw e}}}
 async function duelJoin(code,quiet){duelWait("Odaya giriliyor…");const R=await rt(),me=R.F.A.currentUser.uid,s=await R.m.get(rr("rooms/"+code)),v=s.val();
  if(!v){if(quiet)return false;return duelHome("Oda bulunamadı. Kodu kontrol et.")}
  const n=Object.keys(v.players||{});if(v.status!=="wait"||(n.length>=2&&!n.includes(me))||(v.guest&&v.guest!==me)){if(quiet)return false;return duelHome("Oda dolu veya oyun başlamış.")}
  try{await R.m.set(rr(`rooms/${code}/guest`),me);await R.m.onDisconnect(rr(`rooms/${code}/guest`)).remove();await R.m.set(rr(`rooms/${code}/players/${me}`),{nick:ACC.nick,avatar:ACC.avatar,on:true});await R.m.onDisconnect(rr(`rooms/${code}/players/${me}`)).remove()}catch(e){if(quiet)return false;return duelHome("Odaya girilemedi.")}
  await duelOpen(code,false,{});return true}
-async function duelFind(lv){duelWait("Rakip aranıyor…");const R=await rt(),me=R.F.A.currentUser.uid;
- for(let a=0;a<3;a++){const code=await duelCreate(lv,true);let took=null;const qr=rr("queue/"+lv);
+async function duelFind(lv,hard){duelWait("Rakip aranıyor…");const R=await rt(),me=R.F.A.currentUser.uid;
+ for(let a=0;a<3;a++){const code=await duelCreate(lv,true,hard);let took=null;const qr=rr("queue/"+lv+(hard?"H":""));
   await R.m.runTransaction(qr,cur=>{if(cur&&cur.uid!==me&&cur.code&&srv()-cur.ts<40000){took=cur;return null}took=null;return{code,uid:me,ts:srv()}});
   if(took){try{await R.m.onDisconnect(rr("rooms/"+code)).cancel();await R.m.remove(rr("rooms/"+code))}catch(e){}if(await duelJoin(took.code,true))return;continue}
   await duelOpen(code,true,{rnd:true,lv});return}
@@ -385,15 +392,15 @@ function duelSnap(v){const D=DU;if(!D)return;
  if(D.host&&oid&&!D.go&&v.status==="wait"){D.go=true;RT.m.update(D.rf,{status:"play",startAt:srv()+5000}).catch(()=>{});return}
  duelLobbyView(v)}
 function duelLobbyView(v){const D=DU,pl=v.players||{},oid=D.oid,sig=Object.keys(pl).join()+"|"+D.rnd;if(D.sig===sig&&$("#dx"))return;D.sig=sig;const P=(p,me)=>p?`<div class="lbr ${me?"me":""}"><span class="la">${esc(p.avatar)}</span><span class="ln"><b>${esc(p.nick)}${me?" (sen)":""}</b><small>${me?"Hazır":"Hazır"}</small></span></div>`:`<div class="lbr" style="opacity:.55"><span class="la">⏳</span><span class="ln"><b>Rakip bekleniyor…</b><small>${D.rnd?"Eşleşme aranıyor":"Kodu arkadaşınla paylaş"}</small></span></div>`;
- app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center">${D.rnd?`<h2 style="margin-top:0">Rakip aranıyor…</h2>`:`<h2 style="margin-top:0">Oda kodu</h2><div class="dcode">${D.code}</div><button class="btn alt" id="dcp" style="margin-top:8px">Kodu kopyala</button>`}<p class="note" style="margin:10px 0 0">${lvName(v.lv)} · ${D.mode==="voice"?"Sesli":"Yazılı"} mod${D.micFell?" (mikrofon yok, yazılı oynayacaksın)":""}</p></div>
+ app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center">${D.rnd?`<h2 style="margin-top:0">Rakip aranıyor…</h2>`:`<h2 style="margin-top:0">Oda kodu</h2><div class="dcode">${D.code}</div><button class="btn alt" id="dcp" style="margin-top:8px">Kodu kopyala</button>`}<p class="note" style="margin:10px 0 0">${lvName(v.lv)}${v.hard?" · Zorlu":""} · ${D.mode==="voice"?"Sesli":"Yazılı"} mod${D.micFell?" (mikrofon yok, yazılı oynayacaksın)":""}</p></div>
  <div style="margin-top:10px">${P(pl[D.uid],1)}${P(oid&&pl[oid],0)}</div>${oid?`<p class="note" style="text-align:center">Rakip geldi! Oyun başlıyor…</p>`:""}
  <button class="btn alt" id="dx" style="margin-top:10px">Vazgeç</button></div>`;
  $("#dx").onclick=()=>duelHome();const cp=$("#dcp");if(cp)cp.onclick=()=>{try{navigator.clipboard.writeText(D.code);cp.textContent="Kopyalandı ✓"}catch(e){cp.textContent=D.code}}}
 function duelBegin(v){const D=DU;if(D.started)return;D.started=true;clearTimeout(D.qt);D.startAt=v.startAt;D.lv=v.lv;
  try{RT.m.onDisconnect(D.rf).cancel();RT.m.onDisconnect(rr(`rooms/${D.code}/players/${D.uid}`)).cancel();RT.m.onDisconnect(rr(`rooms/${D.code}/guest`)).cancel()}catch(e){}duelPresence();
- const seq=duelSeq(v.seed,v.lv);if(seq.some(x=>!x)){duelHome("Bu seviyede yeterli kelime yok.");return}
+ const seq=duelSeq(v.seed,v.lv,!!v.hard);if(seq.some(x=>!x)){duelHome("Bu seviyede yeterli kelime yok.");return}
  if(srv()>v.startAt+26*SLOT+3000){duelHome("Bu oyun bitmiş.");return}
- micOK=D.micOK;start(D.mode,false,{seq,startAt:v.startAt,rs:i=>v.startAt+i*SLOT,code:D.code})}
+ micOK=D.micOK;start(D.mode,false,{seq,hard:!!v.hard,startAt:v.startAt,rs:i=>v.startAt+i*SLOT,code:D.code})}
 const endT=g=>g.mp?performance.now()+Math.max(0,g.mp.rs(g.i)+RND-srv()):performance.now()+g.secs*1000;
 function mpWait(g){$("#def").textContent="Düello başlıyor…";$("#big").textContent="";const t=()=>{if(G!==g)return;const s=Math.ceil((g.mp.startAt-srv())/1000);if(s<=0){clearInterval(g.tm);round();return}$("#sec").textContent=s};t();g.tm=setInterval(t,100)}
 function mpBar(){const e=$("#vs");if(!e||!G||!DU)return;const me=G.res.filter(x=>x.r==="ok").length,o=DU.oppOk||0,op=DU.opp||{};e.innerHTML=`<span class="${me>=o?"lead":""}">${esc(ACC.avatar)} Sen <b>${me}</b></span><i>VS</i><span class="${o>me?"lead":""}"><b>${o}</b> ${esc(op.nick||"Rakip")} ${esc(op.avatar||"")}${DU.oppOff?" ⚠️":""}</span>`}
@@ -501,7 +508,7 @@ function pause(){const g=G;if(!g||g.daily||g.mp||g.lock||!/^(listen|hear)$/.test
  const o=document.createElement("div");o.className="ov";o.id="ov";o.innerHTML=`<div class="card"><h2>Duraklatıldı</h2><p class="note">Kalan süre: ${Math.ceil(g.left/1000)} sn</p><button class="btn" id="rs">${I("play",16)} Devam Et</button>${g.daily?"":`<button class="btn alt" id="rt" style="margin-top:8px">${I("refresh",16)} Yeniden Başla</button>`}<button class="btn alt" id="mn" style="margin-top:8px">${I("home",16)} Ana Menüye Çık</button></div>`;document.body.appendChild(o);
  $("#rs").onclick=resume;const rt=$("#rt");if(rt)rt.onclick=()=>{o.remove();start(g.mode)};$("#mn").onclick=()=>{o.remove();menu()}}
 function resume(){const g=G;if(!g||g.phase!=="pause")return;const o=$("#ov");if(o)o.remove();g.phase="listen";g.end=performance.now()+g.left;tick();if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");listen(g.rid)}}
-function start(md,dy,mp){stop();let seq,pre=null;const hard=!mp&&!dy&&db.settings.rule==="hard";
+function start(md,dy,mp){stop();let seq,pre=null;const hard=mp?!!mp.hard:(!dy&&db.settings.rule==="hard");
  if(mp)seq=mp.seq;else if(dy){const d=istDate(),lv=db.settings.lv,key=d+"|"+lv,e=db.daily[key]||(db.daily[key]={started:Date.now(),res:[],live:false});if(e.done)return menu();seq=dailySeq(lv,d);pre=e;dy={key,date:d,lv}}else seq=hard?pickHard(db.settings.lv):pick(db.settings.lv);
  save();G={seq,i:0,res:[],t0:pre?pre.started:Date.now(),mode:md,rid:0,phase:"idle",lock:false,daily:dy||null,mp:mp||null,hard,secs:(mp||dy)?10:(db.settings.secs||10)};
  if(mp){const k=Math.min(26,Math.max(0,Math.floor((srv()-mp.startAt)/SLOT)));for(let q=0;q<k;q++)G.res.push({r:(DU&&DU.ans[q])||"time",w:seq[q],heard:"",t:10});G.i=k;if(k>=26){mpEnd();return}}
