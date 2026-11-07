@@ -24,6 +24,7 @@ h2{margin:18px 2px 8px;font-size:11px;letter-spacing:1.6px;text-transform:upperc
 .seg{display:flex;gap:6px}.seg .btn{padding:10px;font-size:13.5px}.seg .on{background:var(--acc);color:var(--accd);border-color:var(--acc)}
 .cta{margin-top:12px;padding:14px;font-size:15.5px}.cta small{opacity:.7;font-weight:500}
 .nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;background:color-mix(in srgb,var(--card) 94%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:6px 10px calc(6px + env(safe-area-inset-bottom,0px));z-index:10}.nav div{display:flex;width:100%;max-width:460px;gap:4px}.nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:none;color:var(--mut);font:600 11px Inter,sans-serif;padding:7px 4px;border-radius:12px;cursor:pointer}.nav .on{color:var(--acc)}
+#stage .top .pill{white-space:nowrap}#stage .top{gap:6px}
 .spk{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--acc);vertical-align:middle;margin-left:4px;cursor:pointer}
 .ov.sh{place-items:end center;padding:0}.sheet{width:min(100%,520px);background:var(--card);border:1px solid var(--line);border-radius:22px 22px 0 0;padding:16px 16px calc(18px + env(safe-area-inset-bottom));max-height:88dvh;overflow:auto;animation:shup .22s ease-out}@keyframes shup{from{transform:translateY(40px);opacity:0}}
 .shh{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.shh b{font:700 17px Outfit,sans-serif}
@@ -118,7 +119,7 @@ const WORDS=RAW.map(([id,word,level,def])=>({id,word,level,def,letter:word[0].to
 const cnt=lv=>WORDS.filter(w=>w.level===lv).length;
 const parse=lv=>{const o={};WORDS.filter(w=>w.level===lv).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return o};
 let CURPID0="";const K="lexirace:v3",KEY=()=>K+(CURPID0?":"+CURPID0:""),S={load(){try{return JSON.parse(localStorage.getItem(KEY()))||{}}catch(e){return{}}},save(d){try{localStorage.setItem(KEY(),JSON.stringify(d))}catch(e){}}};
-const DEF={mode:"voice",lv:"A1",accent:"US",sfx:true,auto:true,voice:"",theme:"auto",secs:10,rec:""};
+const DEF={mode:"voice",lv:"A1",accent:"US",sfx:true,auto:true,voice:"",theme:"auto",secs:10,rec:"",rule:"classic"};
 let db=Object.assign({games:[],recent:{},notebook:{},deck:[],unlocked:{},daily:{}},S.load());db.unlocked=db.unlocked||{};db.daily=db.daily||{};db.settings=Object.assign({},DEF,db.settings);
 const save=()=>{S.save(db);try{schedPush()}catch(e){}};
 // ---- kişisel seviye ilerlemesi: yalnızca tamamlanmış tek oyunculu oyunlar sayılır
@@ -128,8 +129,8 @@ function rng(seed){let a=2166136261;for(const c of seed)a=Math.imul(a^c.charCode
 function dailySeq(lv,date){const r=rng(date+"|"+lv),pool=parse(lv);return LANG.alphabet.map(L=>{const a=[...(pool[L]||[])].sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
 const UL=LEVELS.map(l=>l[0]),NEED=13;
 const isUnlocked=lv=>lv==="A1"||!!db.unlocked[lv];
-function lvStats(lv){const g=db.games.filter(x=>x.lv===lv),n=g.length,c=g.reduce((a,x)=>a+x.c,0),w=g.reduce((a,x)=>a+(x.w||0)+(x.t||0),0),best=Math.max(0,...g.map(x=>x.c));return{n,c,w,best,acc:n?Math.round(c/(n*26)*100):0,bestPct:Math.round(best/26*100)}}
-function checkUnlock(lv){const nx=UL[UL.indexOf(lv)+1];if(!nx||isUnlocked(nx))return null;if(db.games.some(x=>x.lv===lv&&x.c>=NEED)){db.unlocked[nx]=Date.now();return nx}return null}
+function lvStats(lv){const g=db.games.filter(x=>x.lv===lv&&!x.hard),n=g.length,c=g.reduce((a,x)=>a+x.c,0),w=g.reduce((a,x)=>a+(x.w||0)+(x.t||0),0),best=Math.max(0,...g.map(x=>x.c));return{n,c,w,best,acc:n?Math.round(c/(n*26)*100):0,bestPct:Math.round(best/26*100)}}
+function checkUnlock(lv){const nx=UL[UL.indexOf(lv)+1];if(!nx||isUnlocked(nx))return null;if(db.games.some(x=>x.lv===lv&&!x.hard&&x.c>=NEED)){db.unlocked[nx]=Date.now();return nx}return null}
 UL.forEach(l=>checkUnlock(l));if(!isUnlocked(db.settings.lv))db.settings.lv="A1";save();
 
 const applyTheme=()=>{const t=db.settings.theme;t==="auto"?document.documentElement.removeAttribute("data-theme"):document.documentElement.dataset.theme=t};applyTheme();
@@ -155,6 +156,11 @@ const say=t=>new Promise(r=>speak(t,true,false,r));
 const DIG=["zero","one","two","three","four","five","six","seven","eight","nine","ten"];
 const norm=s=>s.toLowerCase().replace(/['’]/g,"").replace(/\b(\d+)\b/g,(m,n)=>" "+(DIG[+n]||"")+" ").replace(/[^a-z ]/g," ").replace(/\s+/g," ").trim(),sq=s=>norm(s).replace(/ /g,"");
 // ---- word selector: unseen first, avoid recent
+function pickHard(lv){const ws=WORDS.filter(w=>w.level===lv),key=lv+"H",hist=db.recent[key]=db.recent[key]||[];
+ const seq=LANG.alphabet.map(L=>{const l=L.toLowerCase(),cl={s:[],m:[],e:[]};ws.forEach(w=>{const a=w.word.toLowerCase().replace(/[^a-z]/g,"");if(!a.includes(l))return;(a[0]===l?cl.s:a[a.length-1]===l?cl.e:cl.m).push(w)});
+  const ks=["s","m","e"].filter(k=>cl[k].length),k=ks[Math.floor(Math.random()*ks.length)],all=cl[k],fresh=all.filter(w=>!hist.includes(w.id)),c=fresh.length?fresh:all,w=c[Math.floor(Math.random()*c.length)],a=w.word.replace(/[^a-z]/gi,"").toLowerCase(),pos=[];[...a].forEach((ch,i)=>{if(ch===l)pos.push(i)});
+  return Object.assign({},w,{letter:L,pos,hard:true})});
+ db.recent[key]=hist.concat(seq.map(w=>w.id)).slice(-600);return seq}
 function pick(lv){const pool=parse(lv),hist=db.recent[lv]=db.recent[lv]||[];
  const seq=LANG.alphabet.map(L=>{const all=pool[L]||[],fresh=all.filter(w=>!hist.includes(w.id)),c=fresh.length?fresh:all;return c[Math.floor(Math.random()*c.length)]});
  db.recent[lv]=hist.concat(seq.map(w=>w.id)).slice(-600);return seq}
@@ -182,11 +188,12 @@ function menu(){if(!ACC)return gateView();stop();if(DU)duelDrop();else duelResum
  <div class="card dly"><span class="mi">${I("trophy",18)}</span><div class="sx"><b>Günlük Mücadele · ${s.lv}</b><span class="note">${DE&&DE.done?`Bugün: ${DE.c}/26 · %${Math.round(DE.c/26*100)}. Yarın yeni mücadele.`:DE&&DE.started?"Devam eden denemen var.":"Bugün herkes aynı 26 kelimeyi oynar. Günde tek hak."}</span></div>${DE&&DE.done?"":`<button class="btn" id="dl" style="width:auto;padding:10px 16px">${DE&&DE.started?"Devam":"Başla"}</button>`}</div>
  <div class="card dly"><span class="mi">${I("bolt",18)}</span><div class="sx"><b>1v1 Düello</b><span class="note">Arkadaşınla özel odada ya da rastgele biriyle yarış. Aynı harfler, canlı skor.</span></div><button class="btn" id="du" style="width:auto;padding:10px 16px">Düello</button></div>
  <h2>Oyun modu</h2><div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${s.mode===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
- <p class="note" style="margin:8px 2px">${s.mode==="voice"?"Kelimeyi İngilizce söyle. Bilmiyorsan “pas” de.":"Kelimeyi kutulara yaz. İlk harf hazır."} · ${cnt(s.lv)} kelime · her harf ${s.secs||10} saniye</p>
+ <h2>Kural</h2><div class="segc">${[["classic","Klasik"],["hard","Zorlu Mod"]].map(([k,t])=>`<button class="${(s.rule||"classic")===k?"on":""}" data-rl="${k}">${k==="hard"?I("bolt",16):I("flag",16)}${t}</button>`).join("")}</div>
+ <p class="note" style="margin:8px 2px">${s.rule==="hard"?"Zorlu: kelime verilen harfi başta, ortada ya da sonda içerir. Harf kutuda işaretli. Skorların seviye açmayı etkilemez. ":""}${s.mode==="voice"?(s.rule==="hard"?"Kelimenin tamamını söyle.":"Kelimeyi İngilizce söyle. Bilmiyorsan “pas” de."):(s.rule==="hard"?"Kelimenin tamamını yaz.":"Kelimeyi kutulara yaz. İlk harf hazır.")} · ${cnt(s.lv)} kelime · her harf ${s.secs||10} saniye</p>
  ${SR?"":`<p class="note"><b>Bu tarayıcı konuşma tanımayı desteklemiyor.</b> Yazılı modda oynayabilir veya Chrome / Edge kullanabilirsin.</p>`}
  <button class="btn cta" id="go">${I("play",17)}${s.lv} Oyununa Başla</button></div>${nav("m")}`;
  bindNav();app.querySelectorAll("[data-lv]").forEach(b=>b.onclick=()=>{const k=b.dataset.lv;if(!isUnlocked(k)){const p=UL[UL.indexOf(k)-1],ps=lvStats(p);LKMSG=`${k} kilitli. Açmak için ${p} seviyesinde en az %50 doğruluk (${NEED}/26) ile bir oyun bitir. Şu anki en iyin: ${ps.best}/26.`;menu();return}LKMSG="";db.settings.lv=k;save();menu()});
- app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();menu()});const dl=$("#dl");if(dl)dl.onclick=()=>begin(true);$("#go").onclick=()=>begin();$("#du").onclick=()=>duelHome()}
+ app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();menu()});app.querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{db.settings.rule=b.dataset.rl;save();menu()});const dl=$("#dl");if(dl)dl.onclick=()=>begin(true);$("#go").onclick=()=>begin();$("#du").onclick=()=>duelHome()}
 const swt=(id,on)=>`<button class="sw" id="${id}" role="switch" aria-pressed="${on}"></button>`;
 const row=(i,t,d,c)=>`<div class="set"><span class="mi sm">${I(i,18)}</span><div class="sx"><b>${t}</b><span class="note">${d}</span></div>${c}</div>`;
 function settings(){if(!ACC)return gateView();stop();const s=db.settings;loadV();
@@ -479,13 +486,14 @@ async function begin(dy){if(!ACC)return gateView();DYF=!!dy;if(!isUnlocked(db.se
  start(md,dy)}
 const stat=(k,t)=>{const e=$("#stat");if(e){e.className="stat "+k;$("#stx").textContent=t}};
 const boxHtml=w=>{const ch=[...w.word];return`<div class="boxes" id="bxs" style="--n:${ch.filter(c=>/[a-z]/i.test(c)).length}">${ch.map(c=>/[a-z]/i.test(c)?`<i class="bx"></i>`:c==="-"?`<u>-</u>`:`<u></u>`).join("")}</div>`};
-function typedParts(txt,w){const L=(txt||"").replace(/[^a-z]/gi,"").toUpperCase(),t=w.word.replace(/[^a-z]/gi,"").toUpperCase(),rest=t.slice(1);const full=L.length>0&&(rest.startsWith(L)?false:t.startsWith(L)?true:(L[0]===w.letter&&L.length>1));return{L,t,full,r:full?L.slice(1):L,ans:full?L:w.letter+L}}
-function fillBoxes(txt){const w=G.seq[G.i],B=[...document.querySelectorAll("#bxs .bx")],typed=G.mode==="type"||G.dead,p=typedParts(txt,w),L=p.L,r=p.r;
+function typedParts(txt,w){const L=(txt||"").replace(/[^a-z]/gi,"").toUpperCase(),t=w.word.replace(/[^a-z]/gi,"").toUpperCase(),rest=t.slice(1);if(w.hard)return{L,t,full:true,r:L,ans:L};const full=L.length>0&&(rest.startsWith(L)?false:t.startsWith(L)?true:(L[0]===w.letter&&L.length>1));return{L,t,full,r:full?L.slice(1):L,ans:full?L:w.letter+L}}
+function fillBoxes(txt){const w0=G.seq[G.i];if(w0&&w0.hard){const Bx=[...document.querySelectorAll("#bxs .bx")],Lt=(txt||"").replace(/[^a-z]/gi,"").toUpperCase();Bx.forEach((e,i)=>{e.className="bx";e.textContent=Lt[i]||"";if(!Lt[i]&&w0.pos.includes(i)){e.textContent=w0.letter;e.className="bx hint"}});const typedM=G.mode==="type"||G.dead;if(typedM&&G.phase!=="feedback"){const c=Bx[Lt.length];if(c)c.classList.add("cur")}return}
+const w=G.seq[G.i],B=[...document.querySelectorAll("#bxs .bx")],typed=G.mode==="type"||G.dead,p=typedParts(txt,w),L=p.L,r=p.r;
  B.forEach((e,i)=>{e.className="bx";e.textContent="";if(typed){if(i===0){e.textContent=w.letter;e.className="bx hint"}else e.textContent=r[i-1]||""}else if(L[i])e.textContent=L[i];else if(i===0&&!L){e.textContent=w.letter;e.className="bx hint"}});
  if(typed&&G.phase!=="feedback"){const c=B[Math.min(r.length+1,B.length-1)];if(c&&!c.textContent)c.classList.add("cur")}}
 function reveal(w,cls){const L=w.word.replace(/[^a-z]/gi,"").toUpperCase();[...document.querySelectorAll("#bxs .bx")].forEach((e,i)=>{e.textContent=L[i]||"";e.className="bx "+cls})}
 function enableTyping(){if($("#tin")||!G)return;const bw=$("#bw"),i=document.createElement("input");i.type="text";i.id="tin";i.maxLength=40;i.autocomplete="off";i.autocapitalize="off";i.spellcheck=false;i.name="lx"+Math.random().toString(36).slice(2,7);["autocorrect:off","enterkeyhint:send","inputmode:text","aria-label:Cevabın","data-lpignore:true","data-form-type:other"].forEach(x=>{const k=x.split(":");i.setAttribute(k[0],k[1])});bw.appendChild(i);
- const act=()=>{const g=G;return g&&!g.lock&&/^(listen|hear)$/.test(g.phase)},submit=()=>{if(!act()||!i.value.trim())return;const g=G,w=g.seq[g.i];clearTimeout(g.at);finish(judge([i.value,w.letter+i.value],w,0,true)==="ok"?"ok":"wrong",i.value)};
+ const act=()=>{const g=G;return g&&!g.lock&&/^(listen|hear)$/.test(g.phase)},submit=()=>{if(!act()||!i.value.trim())return;const g=G,w=g.seq[g.i];clearTimeout(g.at);finish(judge(w.hard?[i.value]:[i.value,w.letter+i.value],w,0,true)==="ok"?"ok":"wrong",i.value)};
  i.oninput=()=>{const g=G;if(!g)return;fillBoxes(i.value);if(!act())return;clearTimeout(g.at);const w=g.seq[g.i],p=typedParts(i.value,w);if(p.ans===p.t){submit();return}if(p.r.length>=p.t.length-1)g.at=setTimeout(submit,700)};
  i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();submit()}};bw.onclick=()=>i.focus({preventScroll:true});i.focus({preventScroll:true})}
 function stop(){document.body.style.overflow="";const o=document.getElementById("ov");if(o)o.remove();if(!G)return;clearInterval(G.tm);clearTimeout(G.nx);clearTimeout(G.gt);clearTimeout(G.at);Mic.stop();G=null}
@@ -493,13 +501,13 @@ function pause(){const g=G;if(!g||g.daily||g.mp||g.lock||!/^(listen|hear)$/.test
  const o=document.createElement("div");o.className="ov";o.id="ov";o.innerHTML=`<div class="card"><h2>Duraklatıldı</h2><p class="note">Kalan süre: ${Math.ceil(g.left/1000)} sn</p><button class="btn" id="rs">${I("play",16)} Devam Et</button>${g.daily?"":`<button class="btn alt" id="rt" style="margin-top:8px">${I("refresh",16)} Yeniden Başla</button>`}<button class="btn alt" id="mn" style="margin-top:8px">${I("home",16)} Ana Menüye Çık</button></div>`;document.body.appendChild(o);
  $("#rs").onclick=resume;const rt=$("#rt");if(rt)rt.onclick=()=>{o.remove();start(g.mode)};$("#mn").onclick=()=>{o.remove();menu()}}
 function resume(){const g=G;if(!g||g.phase!=="pause")return;const o=$("#ov");if(o)o.remove();g.phase="listen";g.end=performance.now()+g.left;tick();if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");listen(g.rid)}}
-function start(md,dy,mp){stop();let seq,pre=null;
- if(mp)seq=mp.seq;else if(dy){const d=istDate(),lv=db.settings.lv,key=d+"|"+lv,e=db.daily[key]||(db.daily[key]={started:Date.now(),res:[],live:false});if(e.done)return menu();seq=dailySeq(lv,d);pre=e;dy={key,date:d,lv}}else seq=pick(db.settings.lv);
- save();G={seq,i:0,res:[],t0:pre?pre.started:Date.now(),mode:md,rid:0,phase:"idle",lock:false,daily:dy||null,mp:mp||null,secs:(mp||dy)?10:(db.settings.secs||10)};
+function start(md,dy,mp){stop();let seq,pre=null;const hard=!mp&&!dy&&db.settings.rule==="hard";
+ if(mp)seq=mp.seq;else if(dy){const d=istDate(),lv=db.settings.lv,key=d+"|"+lv,e=db.daily[key]||(db.daily[key]={started:Date.now(),res:[],live:false});if(e.done)return menu();seq=dailySeq(lv,d);pre=e;dy={key,date:d,lv}}else seq=hard?pickHard(db.settings.lv):pick(db.settings.lv);
+ save();G={seq,i:0,res:[],t0:pre?pre.started:Date.now(),mode:md,rid:0,phase:"idle",lock:false,daily:dy||null,mp:mp||null,hard,secs:(mp||dy)?10:(db.settings.secs||10)};
  if(mp){const k=Math.min(26,Math.max(0,Math.floor((srv()-mp.startAt)/SLOT)));for(let q=0;q<k;q++)G.res.push({r:(DU&&DU.ans[q])||"time",w:seq[q],heard:"",t:10});G.i=k;if(k>=26){mpEnd();return}}
  if(pre){pre.res.forEach((x,k)=>G.res.push({r:x.r,w:seq[k],heard:"",t:x.t}));if(pre.live){pre.res.push({r:"time",t:10});G.res.push({r:"time",w:seq[G.res.length],heard:"",t:10});pre.live=false}G.i=G.res.length;save();if(G.i>=26){results();return}}
  document.body.style.overflow="hidden";
- app.innerHTML=`<div id="stage"><div class="top">${mp?`<button class="ibtn" id="qx" aria-label="Çık">${I("home",17)}</button>`:dy?"":`<button class="ibtn" id="pz" aria-label="Duraklat">${I("pause",17)}</button>`}<span class="pill">${mp?"1v1 · "+lvName(DU.lv||"A1"):db.settings.lv}${dy?" · Günlük":""}</span><span class="pill">${MODE(md)}</span><span class="sp"></span><span class="pill" id="sc"></span><button class="pill pasb" id="pas"${mp?' style="display:none"':""}>${I("skip",14)} PAS</button></div>
+ app.innerHTML=`<div id="stage"><div class="top">${mp?`<button class="ibtn" id="qx" aria-label="Çık">${I("home",17)}</button>`:dy?"":`<button class="ibtn" id="pz" aria-label="Duraklat">${I("pause",17)}</button>`}<span class="pill">${mp?"1v1 · "+lvName(DU.lv||"A1"):db.settings.lv}${dy?" · Günlük":""}${hard?" · Zorlu":""}</span><span class="pill">${MODE(md)}</span><span class="sp"></span><span class="pill" id="sc"></span><button class="pill pasb" id="pas"${mp?' style="display:none"':""}>${I("skip",14)} PAS</button></div>
  <div class="abc" id="abc">${LANG.alphabet.map(L=>`<span>${L}</span>`).join("")}</div>${mp?'<div class="vs" id="vs"></div>':""}
  <div class="mid"><div class="ringw"><svg viewBox="0 0 140 140"><circle class="rb" cx="70" cy="70" r="58"/><circle class="rf" id="ring" cx="70" cy="70" r="58"/></svg><div class="big" id="big"></div></div><div class="sec" id="sec">${(mp||dy)?10:(db.settings.secs||10)}</div><div class="def" id="def" aria-live="polite"></div>
  <div class="bxwrap" id="bw"><div id="bxh"></div></div>${md==="voice"?`<div class="stat" id="stat"><span class="ic"><i></i><i></i><i></i></span><span id="stx"></span></div>`:""}<div class="fb" id="fb"></div></div></div>`;
@@ -543,7 +551,7 @@ function finish(r,heard){const g=G;if(!g||g.lock||!r)return;g.lock=true;g.phase=
 function results(){const md=G.mode,dly=G.daily,res=G.res,c=k=>res.filter(x=>x.r===k).length,ok=c("ok"),ps=c("pass"),wr=c("wrong"),tm=c("time"),acc=Math.round(ok/26*100);
  const secs=Math.round((Date.now()-G.t0)/1000),prev=G.daily?null:db.games[db.games.length-1],pb=Math.max(0,...db.games.map(g=>g.c)),rec=!G.daily&&ok>pb&&db.games.length>0;
  const ans=res.filter(x=>x.r==="ok"||x.r==="wrong"),avg=ans.length?(ans.reduce((a,x)=>a+x.t,0)/ans.length).toFixed(1):"–";
- if(G.daily){Object.assign(db.daily[G.daily.key],{done:true,live:false,c:ok,p:ps,w:wr,t:tm,secs,dur:Math.round(res.reduce((a,x)=>a+(x.t||0),0)),at:Date.now()})}else db.games.push({c:ok,p:ps,w:wr,t:tm,lv:db.settings.lv,mode:md,secs,per:G.secs,at:Date.now()});const nu=G.daily?null:checkUnlock(db.settings.lv);save();const DK=G.daily&&G.daily.key;stop();sfx.end();DPR=DK?pushDaily(DK):null;
+ if(G.daily){Object.assign(db.daily[G.daily.key],{done:true,live:false,c:ok,p:ps,w:wr,t:tm,secs,dur:Math.round(res.reduce((a,x)=>a+(x.t||0),0)),at:Date.now()})}else db.games.push({c:ok,p:ps,w:wr,t:tm,lv:db.settings.lv,mode:md,secs,per:G.secs,hard:!!G.hard,at:Date.now()});const nu=G.daily?null:checkUnlock(db.settings.lv);save();const DK=G.daily&&G.daily.key;stop();sfx.end();DPR=DK?pushDaily(DK):null;
  const col={ok:"var(--green)",pass:"var(--yel)",wrong:"var(--red)",time:"var(--red)"},nm={ok:"Doğru",pass:"Pas",wrong:"Yanlış",time:"Süre doldu"},cl={ok:"g",pass:"y",wrong:"r",time:"r"};
  const title=ok>=22?"Efsane performans!":ok>=16?"Harika iş!":ok>=9?"İyi gidiyorsun!":"Isınma turu tamam!",miss=res.filter(x=>x.r!=="ok"),dl=prev?ok-prev.c:0;
  const C=326.7,draw=f=>{const L=$("#list");L.innerHTML=res.filter(x=>f==="all"||x.r===f).map(x=>`<div class="res"><span class="l ${cl[x.r]}">${x.w.letter}</span><span class="t"><b>${x.w.word}</b><br><span class="note">${x.w.def}</span><br><span class="st ${cl[x.r]}">${nm[x.r]}</span>${x.heard?`<span class="note">duyulan: ${x.heard}</span>`:""}</span><button data-k="${res.indexOf(x)}" aria-label="Dinle">${I("volume",18)}</button></div>`).join("")||`<p class="note">Bu kategoride kelime yok.</p>`;L.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>speak(res[b.dataset.k].w.word))};
