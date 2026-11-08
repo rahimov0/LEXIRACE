@@ -13,7 +13,7 @@
           ".write": "auth != null && ((!data.exists() && newData.val() == auth.uid) || data.val() == auth.uid)",
           ".validate": "newData.isString()"
         },
-        "lv":      { ".validate": "newData.isString() && newData.val().matches(/^(A1|A2|B1|B2|C1|C2|ALL)$/)" },
+        "lv":      { ".validate": "newData.isString() && newData.val().matches(/^(A1|A2|B1|B2|C1|C2|ALL|WMA|WMB|WMC)$/)" },
         "hard":    { ".validate": "newData.isBoolean()" },
         "seed":    { ".validate": "newData.isNumber()" },
         "created": { ".validate": "newData.isNumber()" },
@@ -34,6 +34,20 @@
             "avatar": { ".validate": "newData.isString() && newData.val().length <= 8" },
             "on":     { ".validate": "newData.isBoolean()" },
             "$other": { ".validate": false }
+          }
+        },
+
+        "claims": {
+          "$wid": {
+            ".write": "auth != null && !data.exists() && newData.val() == auth.uid && root.child('rooms').child($code).child('players').child(auth.uid).exists()",
+            ".validate": "newData.isString() && $wid.matches(/^[a-z0-9-]{3,40}$/)"
+          }
+        },
+
+        "wrong": {
+          "$uid": {
+            ".write": "auth != null && auth.uid == $uid && root.child('rooms').child($code).child('players').child(auth.uid).exists()",
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 200"
           }
         },
 
@@ -61,7 +75,7 @@
     "queue": {
       "$lv": {
         ".read": "auth != null",
-        ".write": "auth != null && $lv.matches(/^(A1|A2|B1|B2|C1|C2|ALL)H?$/)",
+        ".write": "auth != null && $lv.matches(/^(A1|A2|B1|B2|C1|C2|ALL|WMA|WMB|WMC)H?$/)",
         ".validate": "!newData.exists() || newData.hasChildren(['code', 'uid', 'ts'])",
         "code": { ".validate": "newData.isString() && newData.val().length == 5" },
         "uid":  { ".validate": "newData.isString()" },
