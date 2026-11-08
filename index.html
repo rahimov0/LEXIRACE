@@ -599,7 +599,7 @@ const wmTime=s=>{s=Math.round(s);return Math.floor(s/60)+":"+String(s%60).padSta
 function wmStop(){if(WM){clearInterval(WM.tm);clearTimeout(WM.nx);clearTimeout(WM.lk);WM=null}}
 function wmHome(){stop();wmStop();if(!ACC)return gateView();const W=WM0(),g=W.g||"A",b=W.best[g];
  app.innerHTML=`<div class="in">${head("WORD MATCH")}
- <p class="note" style="margin:0 2px 10px">Türkçe kelimeye, sonra doğru İngilizce karşılığına dokun. Hepsini eşleştir, sıradaki tura geç.</p>
+ <p class="note" style="margin:0 2px 10px">Bir kelimeye dokun (Türkçe ya da İngilizce), sonra karşı sütundaki doğru karşılığına dokun. Hepsini eşleştir, sıradaki tura geç.</p>
  <h2>Seviye grubu</h2><div class="segc c3">${WMG.map(([k,t,s])=>`<button data-g="${k}" class="${g===k?"on":""}"><span style="display:flex;flex-direction:column;line-height:1.2"><b>${t}</b><small style="font-weight:500;opacity:.75">${s}</small></span></button>`).join("")}</div>
  <div class="card" style="margin-top:12px"><div class="row2"><span>En iyi</span><b>${b?`Aşama ${b[0]} · ${b[1]} eşleşme`:"–"}</b></div>${b?`<div class="row2" style="margin-top:6px"><span>Yanlış / süre</span><span>${b[2]} · ${wmTime(b[3])}</span></div>`:""}</div>
  <div class="card"><b style="font-size:14px">Kurallar</b><ul class="note" style="margin:8px 0 0;padding-left:18px;line-height:1.55"><li>İlk turda 5 kelime, 2 yanlış hakkın var.</li><li>Her yanlış eşleşme 1 hak götürür. Hak bitince oyun biter.</li><li>Turu hatasız bitirirsen +1 hak kazanırsın.</li><li>Her turda bir kelime artar: 5, 6, 7, 8… (en fazla 10).</li><li>Zorlandığın kelimeler zamanla yeniden karşına çıkar.</li></ul></div>
@@ -619,14 +619,14 @@ function wmDraw(){const m=WM;
  $("#wx").onclick=wmExit;app.querySelectorAll(".wmc").forEach(b=>b.onclick=()=>wmTap(b))}
 function wmExit(){const m=WM;if(m&&m.stage>1||m&&m.matches>0)wmRecord();wmStop();wmHome()}
 function wmRecord(){const m=WM,W=WM0(),b=W.best[m.g],cur=[m.stage,m.matches,m.wrong,Math.round(m.el),Date.now()];if(!b||cur[0]>b[0]||(cur[0]===b[0]&&cur[1]>b[1]))W.best[m.g]=cur;save()}
-function wmTap(b){const m=WM;if(!m||m.lock||m.over||b.classList.contains("ok"))return;const l=b.dataset.s==="l",root=app;
- if(l){const was=b.classList.contains("sel");root.querySelectorAll("#wl .wmc.sel").forEach(x=>x.classList.remove("sel"));if(was){m.sel=null}else{b.classList.add("sel");m.sel=b.dataset.id}return}
- if(!m.sel)return;const lb=root.querySelector(`#wl .wmc[data-id="${m.sel}"]`),id=b.dataset.id;
- if(id===m.sel){lb.classList.remove("sel");lb.classList.add("ok");b.classList.add("ok");m.sel=null;m.done++;m.matches++;if(db.settings.sfx)sfx.ok();const w=m.words.find(x=>x.id===id);try{if(w&&db.settings.auto)speak(w.word,false)}catch(e){}
+function wmTap(b){const m=WM;if(!m||m.lock||m.over||b.classList.contains("ok"))return;const sd=b.dataset.s,id=b.dataset.id,root=app,sel=m.sel;
+ if(!sel||sel.s===sd){const was=sel&&sel.id===id&&sel.s===sd;root.querySelectorAll(`#w${sd} .wmc.sel`).forEach(x=>x.classList.remove("sel"));if(was){m.sel=null}else{b.classList.add("sel");m.sel={s:sd,id}}return}
+ const lid=sd==="l"?id:sel.id,rid=sd==="r"?id:sel.id,lb=root.querySelector(`#wl .wmc[data-id="${lid}"]`),rb=root.querySelector(`#wr .wmc[data-id="${rid}"]`);
+ if(lid===rid){lb.classList.remove("sel");rb.classList.remove("sel");lb.classList.add("ok");rb.classList.add("ok");m.sel=null;m.done++;m.matches++;if(db.settings.sfx)sfx.ok();const w=m.words.find(x=>x.id===lid);try{if(w&&db.settings.auto)speak(w.word,false)}catch(e){}
   $("#wpb").style.width=m.done/m.n*100+"%";$("#wpt").textContent=m.done+"/"+m.n;if(m.done===m.n)wmStageEnd()}
- else{m.wrong++;m.sm++;m.bad[m.sel]=1;m.hardSet[m.sel]=1;m.lives--;m.lock=true;if(db.settings.sfx)sfx.bad();const W=WM0(),r=W.w[m.sel]||(W.w[m.sel]=[0,0,Date.now()]);r[1]++;r[2]=Date.now();
-  lb.classList.add("bad");b.classList.add("bad");const e=$("#wml");if(e){e.innerHTML=wmHearts();e.classList.add("shk")}
-  m.lk=setTimeout(()=>{if(WM!==m)return;lb.classList.remove("bad","sel");b.classList.remove("bad");if(e)e.classList.remove("shk");m.sel=null;m.lock=false;if(m.lives<=0)wmOver()},450)}}
+ else{m.wrong++;m.sm++;m.bad[lid]=1;m.hardSet[lid]=1;m.lives--;m.lock=true;if(db.settings.sfx)sfx.bad();const W=WM0(),r=W.w[lid]||(W.w[lid]=[0,0,Date.now()]);r[1]++;r[2]=Date.now();
+  lb.classList.add("bad");rb.classList.add("bad");const e=$("#wml");if(e){e.innerHTML=wmHearts();e.classList.add("shk")}
+  m.lk=setTimeout(()=>{if(WM!==m)return;lb.classList.remove("bad","sel");rb.classList.remove("bad","sel");if(e)e.classList.remove("shk");m.sel=null;m.lock=false;if(m.lives<=0)wmOver()},450)}}
 function wmStageEnd(){const m=WM,W=WM0(),now=Date.now();m.words.forEach(w=>{const r=W.w[w.id]||(W.w[w.id]=[0,0,now]);if(!m.bad[w.id])r[0]++;r[2]=now});
  const keys=Object.keys(W.w);if(keys.length>2500){keys.sort((a,b)=>W.w[a][2]-W.w[b][2]).slice(0,keys.length-2000).forEach(k=>delete W.w[k])}
  const clean=m.sm===0;if(clean)m.lives++;m.stage++;wmRecord();m.lock=true;
