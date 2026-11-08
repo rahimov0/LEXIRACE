@@ -13,7 +13,7 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 Inter,system-ui,"Segoe UI",sans-serif}
 body{display:flex;justify-content:center;min-height:100vh}main{width:100%;max-width:460px;padding:18px 16px 92px}
 .logo,.num,.w,h1,h2,h3,.sec,.big{font-family:Outfit,Inter,system-ui,sans-serif}
-.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;margin:0;line-height:1}.logo b{color:var(--acc)}img.lg-l{display:none!important}@media(prefers-color-scheme:light){:root:not([data-theme="dark"]) img.lg-d{display:none!important}:root:not([data-theme="dark"]) img.lg-l{display:block!important}}:root[data-theme="light"] img.lg-d{display:none!important}:root[data-theme="light"] img.lg-l{display:block!important}.tag{font-size:10px;letter-spacing:2.4px;color:var(--mut);font-weight:600;margin-top:6px}.hdr{margin-bottom:14px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;margin:0;line-height:1}.logo b{color:var(--acc)}.segc.c3{grid-template-columns:repeat(3,1fr)}.wmtop{display:flex;align-items:center;gap:8px;margin:4px 0 10px}.wmtop .sp{flex:1}.pill.wml,#wml{color:var(--red)!important;font-weight:700;letter-spacing:1px}.wml.shk{animation:shake .35s}.wmp{display:flex;align-items:center;gap:10px;margin-bottom:12px}.wmp span{font:600 12px Inter,sans-serif;color:var(--mut);min-width:34px;text-align:right}.wmh{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}.wmh span{font:700 10.5px Inter,sans-serif;letter-spacing:1.6px;color:var(--mut);text-align:center}.wmg{display:grid;grid-template-columns:1fr 1fr;gap:10px}.wmcol{display:flex;flex-direction:column;gap:8px}.wmc{min-height:48px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 8px;font:600 15px Inter,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center;word-break:break-word;transition:background .15s,border-color .15s,transform .1s;-webkit-tap-highlight-color:transparent}.wmc:active{transform:scale(.97)}.wmc.sel{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 16%,var(--card))}.wmc.ok{background:var(--green);border-color:var(--green);color:#0c1a12;pointer-events:none}.wmc.bad{background:var(--red);border-color:var(--red);color:#fff;animation:shake .35s}.wmmsg{text-align:center;min-height:22px;margin:12px 0 0;font:700 15px Inter,sans-serif;opacity:0}.wmmsg.on{opacity:1}.wmmsg.g{color:var(--green)}.wmmsg.y{color:var(--yel)}img.lg-l{display:none!important}@media(prefers-color-scheme:light){:root:not([data-theme="dark"]) img.lg-d{display:none!important}:root:not([data-theme="dark"]) img.lg-l{display:block!important}}:root[data-theme="light"] img.lg-d{display:none!important}:root[data-theme="light"] img.lg-l{display:block!important}.tag{font-size:10px;letter-spacing:2.4px;color:var(--mut);font-weight:600;margin-top:6px}.hdr{margin-bottom:14px}
 h2{margin:18px 2px 8px;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut);font-weight:600}h3{margin:0 0 4px;font-size:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:10px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:12px;padding:12px 16px;font:600 14.5px Inter,sans-serif;cursor:pointer;background:var(--acc);color:var(--accd);width:100%;transition:transform .1s,filter .15s}.btn:active{transform:scale(.98)}.btn:hover{filter:brightness(1.05)}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.know{background:var(--green);color:#0c1a12}.btn.again{color:var(--acc)}.btn:disabled{opacity:.45;cursor:default}.danger{color:var(--red)}
@@ -187,13 +187,14 @@ function menu(){if(!ACC)return gateView();stop();if(DU)duelDrop();else duelResum
  <div class="card" style="margin-top:10px;padding:12px"><div class="row2"><span>${s.lv} ilerleme</span><span>${nx?(isUnlocked(nx)?nx+" açık":nx+" için %"+st.bestPct+" / %50"):"Son seviye"}</span></div><div class="pb" style="margin-top:8px"><div style="width:${nx?pr:100}%"></div></div></div>
  <div class="card dly"><span class="mi">${I("trophy",18)}</span><div class="sx"><b>Günlük Mücadele · ${s.lv}</b><span class="note">${DE&&DE.done?`Bugün: ${DE.c}/26 · %${Math.round(DE.c/26*100)}. Yarın yeni mücadele.`:DE&&DE.started?"Devam eden denemen var.":"Bugün herkes aynı 26 kelimeyi oynar. Günde tek hak."}</span></div>${DE&&DE.done?"":`<button class="btn" id="dl" style="width:auto;padding:10px 16px">${DE&&DE.started?"Devam":"Başla"}</button>`}</div>
  <div class="card dly"><span class="mi">${I("bolt",18)}</span><div class="sx"><b>1v1 Düello</b><span class="note">Arkadaşınla özel odada ya da rastgele biriyle yarış. Aynı harfler, canlı skor.</span></div><button class="btn" id="du" style="width:auto;padding:10px 16px">Düello</button></div>
+ <div class="card dly"><span class="mi">${I("layers",18)}</span><div class="sx"><b>Word Match</b><span class="note">Türkçe–İngilizce kelime eşleştirme. Her tur bir kelime artar, zorlandıkların geri gelir.</span></div><button class="btn" id="wmb" style="width:auto;padding:10px 16px">Oyna</button></div>
  <h2>Oyun modu</h2><div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${s.mode===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
  <h2>Kural</h2><div class="segc">${[["classic","Klasik"],["hard","Zorlu Mod"]].map(([k,t])=>`<button class="${(s.rule||"classic")===k?"on":""}" data-rl="${k}">${k==="hard"?I("bolt",16):I("flag",16)}${t}</button>`).join("")}</div>
  <p class="note" style="margin:8px 2px">${s.rule==="hard"?"Zorlu: kelime verilen harfi başta, ortada ya da sonda içerir. Harf kutuda işaretli. Skorların seviye açmayı etkilemez. ":""}${s.mode==="voice"?(s.rule==="hard"?"Kelimenin tamamını söyle.":"Kelimeyi İngilizce söyle. Bilmiyorsan “pas” de."):(s.rule==="hard"?"Kelimenin tamamını yaz.":"Kelimeyi kutulara yaz. İlk harf hazır.")} · ${cnt(s.lv)} kelime · her harf ${s.secs||10} saniye</p>
  ${SR?"":`<p class="note"><b>Bu tarayıcı konuşma tanımayı desteklemiyor.</b> Yazılı modda oynayabilir veya Chrome / Edge kullanabilirsin.</p>`}
  <button class="btn cta" id="go">${I("play",17)}${s.lv} Oyununa Başla</button></div>${nav("m")}`;
  bindNav();app.querySelectorAll("[data-lv]").forEach(b=>b.onclick=()=>{const k=b.dataset.lv;if(!isUnlocked(k)){const p=UL[UL.indexOf(k)-1],ps=lvStats(p);LKMSG=`${k} kilitli. Açmak için ${p} seviyesinde en az %50 doğruluk (${NEED}/26) ile bir oyun bitir. Şu anki en iyin: ${ps.best}/26.`;menu();return}LKMSG="";db.settings.lv=k;save();menu()});
- app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();menu()});app.querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{db.settings.rule=b.dataset.rl;save();menu()});const dl=$("#dl");if(dl)dl.onclick=()=>begin(true);$("#go").onclick=()=>begin();$("#du").onclick=()=>duelHome()}
+ app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();menu()});app.querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{db.settings.rule=b.dataset.rl;save();menu()});const dl=$("#dl");if(dl)dl.onclick=()=>begin(true);$("#go").onclick=()=>begin();$("#du").onclick=()=>duelHome();$("#wmb").onclick=()=>wmHome()}
 const swt=(id,on)=>`<button class="sw" id="${id}" role="switch" aria-pressed="${on}"></button>`;
 const row=(i,t,d,c)=>`<div class="set"><span class="mi sm">${I(i,18)}</span><div class="sx"><b>${t}</b><span class="note">${d}</span></div>${c}</div>`;
 function settings(){if(!ACC)return gateView();stop();const s=db.settings;loadV();
@@ -431,7 +432,7 @@ async function duelResume(){if(DRES||!ACC)return;DRES=true;let s=null;try{s=JSON
   if(G||DU)return;await duelOpen(s.code,v.host===me,{lv:v.lv})}catch(e){}}
 /* ===== Bulut senkronu: ilerleme hesaba bağlı (Firestore progress/{pid}) ===== */
 let PULLED="",PULLP=null,SYNCT=null,LASTP="";
-const slim=()=>{const dl=Date.now()-14*864e5,daily={};Object.keys(db.daily).forEach(k=>{const e=db.daily[k];if(e&&(e.at||e.started||0)>dl)daily[k]=e});return{v:1,games:db.games.slice(-300),recent:db.recent,notebook:db.notebook,deck:db.deck,unlocked:db.unlocked,daily,settings:db.settings}};
+const slim=()=>{const dl=Date.now()-14*864e5,daily={};Object.keys(db.daily).forEach(k=>{const e=db.daily[k];if(e&&(e.at||e.started||0)>dl)daily[k]=e});return{v:1,games:db.games.slice(-300),recent:db.recent,notebook:db.notebook,deck:db.deck,unlocked:db.unlocked,daily,settings:db.settings,wm:db.wm}};
 function mergeRemote(r,fresh){if(!r||typeof r!=="object")return;
  const seen=new Set(),all=[...(db.games||[]),...(r.games||[])].filter(g=>g&&typeof g.c==="number"&&!seen.has(g.at)&&seen.add(g.at));all.sort((a,b)=>(a.at||0)-(b.at||0));db.games=all.slice(-300);
  Object.keys(r.unlocked||{}).forEach(k=>{if(r.unlocked[k])db.unlocked[k]=true});
@@ -439,6 +440,7 @@ function mergeRemote(r,fresh){if(!r||typeof r!=="object")return;
  const ids=new Set((db.deck||[]).map(d=>d.id));(r.deck||[]).forEach(d=>{if(d&&!ids.has(d.id)){db.deck.push(d);ids.add(d.id)}});
  Object.keys(r.daily||{}).forEach(k=>{const a=db.daily[k],b=r.daily[k];if(!a||(b&&b.done&&!a.done))db.daily[k]=b});
  Object.keys(r.recent||{}).forEach(l=>{const a=db.recent[l]||[];db.recent[l]=[...new Set([...a,...(r.recent[l]||[])])].slice(-150)});
+ if(r.wm&&typeof r.wm==="object"){const W=WM0(),R=r.wm;Object.keys(R.w||{}).forEach(id=>{const a=W.w[id],b=R.w[id];if(!Array.isArray(b))return;W.w[id]=a?[Math.max(a[0],b[0]),Math.max(a[1],b[1]),Math.max(a[2],b[2])]:b});Object.keys(R.best||{}).forEach(g=>{const a=W.best[g],b=R.best[g];if(Array.isArray(b)&&(!a||b[0]>a[0]||(b[0]===a[0]&&b[1]>a[1])))W.best[g]=b});W.recent=[...new Set([...(W.recent||[]),...(R.recent||[])])].slice(-120);if(!W.g&&R.g)W.g=R.g}
  if(fresh&&r.settings)db.settings=Object.assign({},DEF,r.settings);
  UL.forEach(l=>checkUnlock(l));if(!isUnlocked(db.settings.lv))db.settings.lv="A1";applyTheme()}
 async function pushNow(){if(!ACC||PULLED!==ACC.pid)return;const d=JSON.stringify(slim());if(d===LASTP||d.length>900000)return;try{const F=await fb();await F.fs.setDoc(dref(F,"progress",ACC.pid),{d,at:F.fs.serverTimestamp()});LASTP=d}catch(e){}}
@@ -503,7 +505,7 @@ function enableTyping(){if($("#tin")||!G)return;const bw=$("#bw"),i=document.cre
  const act=()=>{const g=G;return g&&!g.lock&&/^(listen|hear)$/.test(g.phase)},submit=()=>{if(!act()||!i.value.trim())return;const g=G,w=g.seq[g.i];clearTimeout(g.at);finish(judge(w.hard?[i.value]:[i.value,w.letter+i.value],w,0,true)==="ok"?"ok":"wrong",i.value)};
  i.oninput=()=>{const g=G;if(!g)return;fillBoxes(i.value);if(!act())return;clearTimeout(g.at);const w=g.seq[g.i],p=typedParts(i.value,w);if(p.ans===p.t){submit();return}if(p.r.length>=p.t.length-1)g.at=setTimeout(submit,700)};
  i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();submit()}};bw.onclick=()=>i.focus({preventScroll:true});i.focus({preventScroll:true})}
-function stop(){document.body.style.overflow="";const o=document.getElementById("ov");if(o)o.remove();if(!G)return;clearInterval(G.tm);clearTimeout(G.nx);clearTimeout(G.gt);clearTimeout(G.at);Mic.stop();G=null}
+function stop(){try{wmStop()}catch(e){}document.body.style.overflow="";const o=document.getElementById("ov");if(o)o.remove();if(!G)return;clearInterval(G.tm);clearTimeout(G.nx);clearTimeout(G.gt);clearTimeout(G.at);Mic.stop();G=null}
 function pause(){const g=G;if(!g||g.daily||g.mp||g.lock||!/^(listen|hear)$/.test(g.phase))return;g.phase="pause";g.left=Math.max(0,g.end-performance.now());clearInterval(g.tm);Mic.stop();stat("check","Duraklatıldı");const sx=$("#stat");if(sx)sx.className="stat";
  const o=document.createElement("div");o.className="ov";o.id="ov";o.innerHTML=`<div class="card"><h2>Duraklatıldı</h2><p class="note">Kalan süre: ${Math.ceil(g.left/1000)} sn</p><button class="btn" id="rs">${I("play",16)} Devam Et</button>${g.daily?"":`<button class="btn alt" id="rt" style="margin-top:8px">${I("refresh",16)} Yeniden Başla</button>`}<button class="btn alt" id="mn" style="margin-top:8px">${I("home",16)} Ana Menüye Çık</button></div>`;document.body.appendChild(o);
  $("#rs").onclick=resume;const rt=$("#rt");if(rt)rt.onclick=()=>{o.remove();start(g.mode)};$("#mn").onclick=()=>{o.remove();menu()}}
@@ -580,6 +582,63 @@ if(window.visualViewport){visualViewport.addEventListener("resize",fit);visualVi
 try{history.scrollRestoration="manual"}catch(e){}
 const toTop=()=>{window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0};new MutationObserver(toTop).observe(app,{childList:true});addEventListener("load",toTop);addEventListener("pageshow",toTop);
 document.addEventListener("visibilitychange",()=>{if(document.hidden)pause()});
+// ---- Word Match: Türkçe ↔ İngilizce eşleştirme mini oyunu
+const WMG=[["A","A1 + A2","Başlangıç",["A1","A2"]],["B","B1 + B2","Orta",["B1","B2"]],["C","C1 + C2","İleri",["C1","C2"]]];
+const WM0=()=>db.wm||(db.wm={w:{},best:{},recent:[],g:"A"});
+let WM=null;
+const wmCap=s=>s?s.charAt(0).toLocaleUpperCase("tr")+s.slice(1):s;
+function wmLabel(w){const t=(w.def||"").split(";")[0].trim();if(!t||t.length>22||t.split(/\s+/).length>3||/[()]/.test(t))return"";const a=w.word.toLowerCase().replace(/[^a-z]/g,"");if(a&&t.toLowerCase().replace(/[^a-z]/g,"").includes(a)&&a.length>2)return"";return wmCap(t)}
+const wmPool=g=>{const L=(WMG.find(x=>x[0]===g)||WMG[0])[3];return WORDS.filter(w=>L.includes(w.level)&&w.word.length<=16&&wmLabel(w))};
+function wmWeight(w,now,rec){const r=WM0().w[w.id];let x=1.3;if(r){const[c,m,t]=r;x=m>c?3+Math.min(7,(m-c)*2):(m>0?1.5:1);x*=1+Math.min(14,(now-t)/864e5)*.1}if(rec.has(w.id))x*=.03;return x}
+function wmSample(cands,k,used,now,rec){const out=[],c=cands.slice();while(out.length<k&&c.length){let tot=0;const ws=c.map(w=>{const x=wmWeight(w,now,rec);tot+=x;return x});let r=Math.random()*tot,i=0;for(;i<c.length-1;i++){r-=ws[i];if(r<=0)break}const w=c.splice(i,1)[0],l=wmLabel(w);if(used.has(l))continue;used.add(l);out.push(w)}return out}
+function wmPick(g,n){const now=Date.now(),W=WM0(),rec=new Set(W.recent||[]),pool=wmPool(g),used=new Set(),hard=pool.filter(w=>{const r=W.w[w.id];return r&&r[1]>r[0]&&!(W.recent||[]).slice(-12).includes(w.id)}),
+ a=wmSample(hard,Math.min(hard.length,Math.ceil(n*.3)),used,now,rec),ids=new Set(a.map(w=>w.id)),b=wmSample(pool.filter(w=>!ids.has(w.id)),n-a.length,used,now,rec),all=a.concat(b);
+ W.recent=(W.recent||[]).concat(all.map(w=>w.id)).slice(-120);return all}
+const wmShuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const wmTime=s=>{s=Math.round(s);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+function wmStop(){if(WM){clearInterval(WM.tm);clearTimeout(WM.nx);clearTimeout(WM.lk);WM=null}}
+function wmHome(){stop();wmStop();if(!ACC)return gateView();const W=WM0(),g=W.g||"A",b=W.best[g];
+ app.innerHTML=`<div class="in">${head("WORD MATCH")}
+ <p class="note" style="margin:0 2px 10px">Türkçe kelimeye, sonra doğru İngilizce karşılığına dokun. Hepsini eşleştir, sıradaki tura geç.</p>
+ <h2>Seviye grubu</h2><div class="segc c3">${WMG.map(([k,t,s])=>`<button data-g="${k}" class="${g===k?"on":""}"><span style="display:flex;flex-direction:column;line-height:1.2"><b>${t}</b><small style="font-weight:500;opacity:.75">${s}</small></span></button>`).join("")}</div>
+ <div class="card" style="margin-top:12px"><div class="row2"><span>En iyi</span><b>${b?`Aşama ${b[0]} · ${b[1]} eşleşme`:"–"}</b></div>${b?`<div class="row2" style="margin-top:6px"><span>Yanlış / süre</span><span>${b[2]} · ${wmTime(b[3])}</span></div>`:""}</div>
+ <div class="card"><b style="font-size:14px">Kurallar</b><ul class="note" style="margin:8px 0 0;padding-left:18px;line-height:1.55"><li>İlk turda 5 kelime, 2 yanlış hakkın var.</li><li>Her yanlış eşleşme 1 hak götürür. Hak bitince oyun biter.</li><li>Turu hatasız bitirirsen +1 hak kazanırsın.</li><li>Her turda bir kelime artar: 5, 6, 7, 8… (en fazla 10).</li><li>Zorlandığın kelimeler zamanla yeniden karşına çıkar.</li></ul></div>
+ <button class="btn cta" id="wgo">${I("play",17)}Başla</button><button class="btn alt" id="wbk" style="margin-top:10px">Geri</button></div>${nav("m")}`;bindNav();
+ app.querySelectorAll("[data-g]").forEach(x=>x.onclick=()=>{W.g=x.dataset.g;save();wmHome()});$("#wgo").onclick=()=>wmStart(W.g);$("#wbk").onclick=()=>menu()}
+function wmStart(g){stop();wmStop();const W=WM0();W.g=g;WM={g,stage:1,lives:2,matches:0,wrong:0,el:0,last:performance.now(),hardSet:{},over:false};wmStage();WM.tm=setInterval(wmTick,250)}
+function wmTick(){const m=WM;if(!m||m.over)return;const n=performance.now(),d=Math.min(1000,n-m.last);m.last=n;m.el+=d/1000;const e=$("#wmt");if(e)e.textContent=wmTime(m.el)}
+function wmStage(){const m=WM,n=Math.min(10,4+m.stage),ws=wmPick(m.g,n);if(ws.length<n){wmHome();return}
+ m.n=n;m.words=ws;m.done=0;m.sm=0;m.sel=null;m.lock=false;m.bad={};m.left=wmShuf(ws);m.right=wmShuf(ws);m.msg="";wmDraw()}
+function wmHud(){const m=WM;return `<div class="wmtop"><button class="ibtn" id="wx" aria-label="Çık">${I("home",17)}</button><span class="pill">${m.g==="A"?"A1–A2":m.g==="B"?"B1–B2":"C1–C2"} · Aşama ${m.stage}</span><span class="sp"></span><span class="pill" id="wmt">${wmTime(m.el)}</span><span class="pill wml" id="wml">${wmHearts()}</span></div>`}
+const wmHearts=()=>{const l=WM.lives;return l<=5?"♥".repeat(Math.max(0,l)):"♥ ×"+l};
+function wmDraw(){const m=WM;
+ app.innerHTML=`<div class="in wm">${wmHud()}<div class="wmp"><div class="pb"><div id="wpb" style="width:${m.done/m.n*100}%"></div></div><span id="wpt">${m.done}/${m.n}</span></div>
+ <div class="wmh"><span>TÜRKÇE</span><span>ENGLISH</span></div>
+ <div class="wmg"><div class="wmcol" id="wl">${m.left.map(w=>`<button class="wmc" data-s="l" data-id="${w.id}">${esc(wmLabel(w))}</button>`).join("")}</div><div class="wmcol" id="wr">${m.right.map(w=>`<button class="wmc" data-s="r" data-id="${w.id}">${esc(w.word)}</button>`).join("")}</div></div>
+ <p class="wmmsg" id="wmm"></p></div>`;
+ $("#wx").onclick=wmExit;app.querySelectorAll(".wmc").forEach(b=>b.onclick=()=>wmTap(b))}
+function wmExit(){const m=WM;if(m&&m.stage>1||m&&m.matches>0)wmRecord();wmStop();wmHome()}
+function wmRecord(){const m=WM,W=WM0(),b=W.best[m.g],cur=[m.stage,m.matches,m.wrong,Math.round(m.el),Date.now()];if(!b||cur[0]>b[0]||(cur[0]===b[0]&&cur[1]>b[1]))W.best[m.g]=cur;save()}
+function wmTap(b){const m=WM;if(!m||m.lock||m.over||b.classList.contains("ok"))return;const l=b.dataset.s==="l",root=app;
+ if(l){const was=b.classList.contains("sel");root.querySelectorAll("#wl .wmc.sel").forEach(x=>x.classList.remove("sel"));if(was){m.sel=null}else{b.classList.add("sel");m.sel=b.dataset.id}return}
+ if(!m.sel)return;const lb=root.querySelector(`#wl .wmc[data-id="${m.sel}"]`),id=b.dataset.id;
+ if(id===m.sel){lb.classList.remove("sel");lb.classList.add("ok");b.classList.add("ok");m.sel=null;m.done++;m.matches++;if(db.settings.sfx)sfx.ok();const w=m.words.find(x=>x.id===id);try{if(w&&db.settings.auto)speak(w.word,false)}catch(e){}
+  $("#wpb").style.width=m.done/m.n*100+"%";$("#wpt").textContent=m.done+"/"+m.n;if(m.done===m.n)wmStageEnd()}
+ else{m.wrong++;m.sm++;m.bad[m.sel]=1;m.hardSet[m.sel]=1;m.lives--;m.lock=true;if(db.settings.sfx)sfx.bad();const W=WM0(),r=W.w[m.sel]||(W.w[m.sel]=[0,0,Date.now()]);r[1]++;r[2]=Date.now();
+  lb.classList.add("bad");b.classList.add("bad");const e=$("#wml");if(e){e.innerHTML=wmHearts();e.classList.add("shk")}
+  m.lk=setTimeout(()=>{if(WM!==m)return;lb.classList.remove("bad","sel");b.classList.remove("bad");if(e)e.classList.remove("shk");m.sel=null;m.lock=false;if(m.lives<=0)wmOver()},450)}}
+function wmStageEnd(){const m=WM,W=WM0(),now=Date.now();m.words.forEach(w=>{const r=W.w[w.id]||(W.w[w.id]=[0,0,now]);if(!m.bad[w.id])r[0]++;r[2]=now});
+ const keys=Object.keys(W.w);if(keys.length>2500){keys.sort((a,b)=>W.w[a][2]-W.w[b][2]).slice(0,keys.length-2000).forEach(k=>delete W.w[k])}
+ const clean=m.sm===0;if(clean)m.lives++;m.stage++;wmRecord();m.lock=true;
+ const e=$("#wmm");if(e){e.className="wmmsg on "+(clean?"g":"y");e.textContent=clean?"Hatasız! +1 hak 🎉":"Tur tamam!"}const h=$("#wml");if(h)h.innerHTML=wmHearts();if(db.settings.sfx)sfx.end();
+ m.nx=setTimeout(()=>{if(WM===m){m.lock=false;wmStage()}},1300)}
+function wmOver(){const m=WM;if(!m||m.over)return;m.over=true;clearInterval(m.tm);m.stage;wmRecord();if(db.settings.sfx)sfx.end();
+ const W=WM0(),b=W.best[m.g],reached=m.stage,hs=Object.keys(m.hardSet).map(id=>WORDS.find(w=>w.id===id)).filter(Boolean);
+ app.innerHTML=`<div class="in"><div class="card hero"><h1 style="margin:0 0 4px">Oyun bitti</h1><p class="note" style="margin:0 0 12px">Haklarının hepsini kullandın.</p>
+ <div class="kpis">${[["Aşama",reached],["Doğru",m.matches],["Yanlış",m.wrong],["Süre",wmTime(m.el)]].map(([t,v])=>`<div class="kpi"><b>${v}</b><span>${t}</span></div>`).join("")}</div>${b&&b[0]===reached&&b[1]===m.matches?`<p class="note" style="margin:10px 0 0;color:var(--green)"><b>Yeni rekor!</b></p>`:`<p class="note" style="margin:10px 0 0">En iyi: Aşama ${b?b[0]:reached} · ${b?b[1]:m.matches} eşleşme</p>`}</div>
+ ${hs.length?`<div class="card"><b style="font-size:14px">Zorlandığın kelimeler</b><p class="note" style="margin:2px 0 8px">Bunlar sonraki oyunlarda daha sık gelecek.</p>${hs.map(w=>`<div class="row2" style="padding:5px 0;border-top:1px solid var(--line)"><span>${esc(wmLabel(w))}</span><b>${esc(w.word)}</b></div>`).join("")}</div>`:""}
+ <button class="btn cta" id="wag">${I("refresh",16)}Tekrar Oyna</button><button class="btn alt" id="wmn" style="margin-top:10px">Word Match Ana Sayfa</button></div>${nav("m")}`;bindNav();
+ $("#wag").onclick=()=>wmStart(m.g);$("#wmn").onclick=()=>{wmStop();wmHome()};WM=null}
 authInit();
 menu();
 </script></body></html>
