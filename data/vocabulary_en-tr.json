@@ -3875,7 +3875,7 @@
   "word": "internet",
   "letter": "I",
   "level": "A1",
-  "turkish_explanation": "internet; dünya çapında bilgisayar ağı"
+  "turkish_explanation": "dünya çapında bilgisayar ağı"
  },
  {
   "id": "i-a1-00609",
@@ -4792,7 +4792,7 @@
   "word": "kilogram",
   "letter": "K",
   "level": "A2",
-  "turkish_explanation": "kilogram; kütle ölçü birimi"
+  "turkish_explanation": "kütle ölçü birimi"
  },
  {
   "id": "k-a2-00763",
@@ -5548,7 +5548,7 @@
   "word": "market",
   "letter": "M",
   "level": "A1",
-  "turkish_explanation": "market; ürünlerin satıldığı yer"
+  "turkish_explanation": "ürünlerin satıldığı yer"
  },
  {
   "id": "m-a1-00900",
@@ -5653,7 +5653,7 @@
   "word": "modern",
   "letter": "M",
   "level": "A2",
-  "turkish_explanation": "modern; güncel döneme ait"
+  "turkish_explanation": "güncel döneme ait"
  },
  {
   "id": "m-a2-00916",
@@ -6108,7 +6108,7 @@
   "word": "normal",
   "letter": "N",
   "level": "A2",
-  "turkish_explanation": "normal; olağan ve beklenen"
+  "turkish_explanation": "olağan ve beklenen"
  },
  {
   "id": "n-a2-00986",
@@ -6864,7 +6864,7 @@
   "word": "park",
   "letter": "P",
   "level": "A1",
-  "turkish_explanation": "park; dinlenme ve oyun alanı"
+  "turkish_explanation": "dinlenme ve oyun alanı"
  },
  {
   "id": "p-a1-01118",
@@ -6892,7 +6892,7 @@
   "word": "pizza",
   "letter": "P",
   "level": "A1",
-  "turkish_explanation": "pizza; hamur üzerine malzeme konan yemek"
+  "turkish_explanation": "hamur üzerine malzeme konan yemek"
  },
  {
   "id": "p-a1-01122",
@@ -9475,7 +9475,7 @@
   "word": "video",
   "letter": "V",
   "level": "A1",
-  "turkish_explanation": "video; hareketli görüntü kaydı"
+  "turkish_explanation": "hareketli görüntü kaydı"
  },
  {
   "id": "v-a1-01558",
@@ -10525,7 +10525,7 @@
   "word": "yoga",
   "letter": "Y",
   "level": "A2",
-  "turkish_explanation": "yoga; beden ve zihin egzersizleri"
+  "turkish_explanation": "beden ve zihin egzersizleri"
  },
  {
   "id": "y-a2-01744",
@@ -10728,7 +10728,7 @@
   "word": "zebra",
   "letter": "Z",
   "level": "A1",
-  "turkish_explanation": "zebra; siyah-beyaz çizgili Afrika hayvanı"
+  "turkish_explanation": "siyah-beyaz çizgili Afrika hayvanı"
  },
  {
   "id": "z-a1-01796",
