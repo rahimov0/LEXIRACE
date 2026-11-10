@@ -40146,7 +40146,7 @@
   },
   {
     "id": "m-b2-05494",
-    "word": "make-up",
+    "word": "makeup",
     "letter": "M",
     "level": "B2",
     "turkish_explanation": "Makyaj; yapı; telafi"
@@ -40335,7 +40335,7 @@
   },
   {
     "id": "f-c1-05521",
-    "word": "film-maker",
+    "word": "filmmaker",
     "letter": "F",
     "level": "C1",
     "turkish_explanation": "Film yapımcısı; sinemacı"
@@ -40377,7 +40377,7 @@
   },
   {
     "id": "l-c1-05527",
-    "word": "line-up",
+    "word": "lineup",
     "letter": "L",
     "level": "C1",
     "turkish_explanation": "Kadrodaki kişiler; sıralama; program"
@@ -40391,7 +40391,7 @@
   },
   {
     "id": "l-c1-05529",
-    "word": "long-time",
+    "word": "longtime",
     "letter": "L",
     "level": "C1",
     "turkish_explanation": "Uzun süredir; uzun zamandır tanıdık"
@@ -40405,7 +40405,7 @@
   },
   {
     "id": "n-c1-05531",
-    "word": "non-profit",
+    "word": "nonprofit",
     "letter": "N",
     "level": "C1",
     "turkish_explanation": "Kâr amacı gütmeyen"
@@ -40440,7 +40440,7 @@
   },
   {
     "id": "s-c1-05536",
-    "word": "set-up",
+    "word": "setup",
     "letter": "S",
     "level": "C1",
     "turkish_explanation": "Kurulum; düzenek; tuzak"
@@ -40493,5 +40493,313 @@
     "letter": "V",
     "level": "C1",
     "turkish_explanation": "internette çok hızlı yayılan"
+  },
+  {
+    "id": "a-c1-05544",
+    "word": "apparel",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "giyim; giyim ürünleri; hazır giyim eşyaları"
+  },
+  {
+    "id": "a-b2-05545",
+    "word": "athletic",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "atletik; sporla ilgili; güçlü ve çevik"
+  },
+  {
+    "id": "b-c1-05546",
+    "word": "bankruptcy",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "iflas; borcunu ödeyemez hale gelme"
+  },
+  {
+    "id": "b-c1-05547",
+    "word": "behavioral",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "davranışsal; davranışla ilgili"
+  },
+  {
+    "id": "b-c1-05548",
+    "word": "beverage",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "içecek; su, çay, meyve suyu gibi içilen şey"
+  },
+  {
+    "id": "b-a2-05549",
+    "word": "blank",
+    "letter": "B",
+    "level": "A2",
+    "turkish_explanation": "boş; üzerinde yazı olmayan"
+  },
+  {
+    "id": "b-c1-05550",
+    "word": "bundle",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "deste; demet; birbirine bağlanmış şeyler"
+  },
+  {
+    "id": "c-b2-05551",
+    "word": "chairman",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "başkan; toplantıyı veya kurulu yöneten kişi"
+  },
+  {
+    "id": "c-b2-05552",
+    "word": "cowboy",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "kovboy; at üstünde sığır güden kişi"
+  },
+  {
+    "id": "d-b2-05553",
+    "word": "dime",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "ABD'de on sentlik madeni para"
+  },
+  {
+    "id": "d-b2-05554",
+    "word": "disc",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "disk; yuvarlak ve düz nesne; plak"
+  },
+  {
+    "id": "f-c1-05555",
+    "word": "felony",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "ağır suç; hapisle cezalandırılan büyük suç"
+  },
+  {
+    "id": "f-c1-05556",
+    "word": "fiscal",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "mali; devletin gelir ve giderleriyle ilgili"
+  },
+  {
+    "id": "f-c1-05557",
+    "word": "freshman",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "birinci sınıf öğrencisi; üniversiteye yeni başlayan kişi"
+  },
+  {
+    "id": "g-b1-05558",
+    "word": "gentleman",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "beyefendi; kibar ve nazik erkek"
+  },
+  {
+    "id": "g-c1-05559",
+    "word": "gross",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "brüt; kesinti yapılmadan önceki toplam tutar"
+  },
+  {
+    "id": "h-c1-05560",
+    "word": "homicide",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "cinayet; bir insanın başkası tarafından öldürülmesi"
+  },
+  {
+    "id": "h-b2-05561",
+    "word": "honey",
+    "letter": "H",
+    "level": "B2",
+    "turkish_explanation": "bal; arıların yaptığı tatlı besin"
+  },
+  {
+    "id": "i-c1-05562",
+    "word": "incarcerate",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "hapse atmak; hapiste tutmak"
+  },
+  {
+    "id": "i-c1-05563",
+    "word": "incarceration",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "hapsetme; hapiste tutulma durumu"
+  },
+  {
+    "id": "i-b2-05564",
+    "word": "inevitably",
+    "letter": "I",
+    "level": "B2",
+    "turkish_explanation": "kaçınılmaz olarak; mutlaka"
+  },
+  {
+    "id": "i-c1-05565",
+    "word": "inquire",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "soruşturmak; bilgi istemek"
+  },
+  {
+    "id": "i-c1-05566",
+    "word": "intersection",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "kavşak; iki yolun kesiştiği yer"
+  },
+  {
+    "id": "i-c1-05567",
+    "word": "inventory",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "envanter; eldeki mal ve eşyaların listesi"
+  },
+  {
+    "id": "k-b2-05568",
+    "word": "kindergarten",
+    "letter": "K",
+    "level": "B2",
+    "turkish_explanation": "anaokulu; küçük çocukların gittiği okul öncesi okul"
+  },
+  {
+    "id": "l-c1-05569",
+    "word": "lawmaker",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "kanun yapıcı; yasa çıkaran milletvekili"
+  },
+  {
+    "id": "m-c1-05570",
+    "word": "module",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "modül; bütünün ayrı bir parçası; ders birimi"
+  },
+  {
+    "id": "m-b2-05571",
+    "word": "mosquito",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "sivrisinek; ısırıp kan emen küçük böcek"
+  },
+  {
+    "id": "n-b2-05572",
+    "word": "nickel",
+    "letter": "N",
+    "level": "B2",
+    "turkish_explanation": "nikel; gümüş renkli bir metal; ABD'de beş sentlik para"
+  },
+  {
+    "id": "o-c1-05573",
+    "word": "overtime",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "fazla mesai; normal saatlerin dışında çalışma"
+  },
+  {
+    "id": "p-c1-05574",
+    "word": "pickup",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "küçük kasalı yük aracı; alıp götürme"
+  },
+  {
+    "id": "p-a1-05575",
+    "word": "policeman",
+    "letter": "P",
+    "level": "A1",
+    "turkish_explanation": "polis memuru; suçluları yakalayan ve düzeni koruyan erkek görevli"
+  },
+  {
+    "id": "p-c1-05576",
+    "word": "proceeding",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "işlem; dava süreci; yapılan iş adımları"
+  },
+  {
+    "id": "r-c1-05577",
+    "word": "rookie",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "acemi; yeni başlamış sporcu veya çalışan"
+  },
+  {
+    "id": "r-c1-05578",
+    "word": "roster",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kadro listesi; görev ve takım çizelgesi"
+  },
+  {
+    "id": "s-b1-05579",
+    "word": "sculpture",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "heykel; taş, metal veya kilden yapılmış sanat eseri"
+  },
+  {
+    "id": "s-b2-05580",
+    "word": "sidewalk",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "kaldırım; yolun yanındaki yaya yolu"
+  },
+  {
+    "id": "s-c1-05581",
+    "word": "sophomore",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ikinci sınıf öğrencisi"
+  },
+  {
+    "id": "s-b2-05582",
+    "word": "spice",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "baharat; yemeğe tat veren kurutulmuş bitki"
+  },
+  {
+    "id": "s-b2-05583",
+    "word": "stiff",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "sert; katı; kolay bükülmeyen"
+  },
+  {
+    "id": "t-b1-05584",
+    "word": "tape",
+    "letter": "T",
+    "level": "B1",
+    "turkish_explanation": "bant; yapışkan şerit; kayıt bandı"
+  },
+  {
+    "id": "t-b2-05585",
+    "word": "teen",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "genç; on üç ile on dokuz yaş arasındaki kişi"
+  },
+  {
+    "id": "t-c1-05586",
+    "word": "tumor",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "tümör; vücutta anormal büyüyen doku"
+  },
+  {
+    "id": "w-b2-05587",
+    "word": "wolf",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "kurt; sürüler halinde yaşayan yabani hayvan"
   }
 ]
