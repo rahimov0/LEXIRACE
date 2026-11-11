@@ -257,7 +257,6 @@ body:has(.home,.tab){background:radial-gradient(130% 55% at 50% -8%,color-mix(in
 .prow.dg b{color:var(--red)}.t-set .prow.dg .mi.sm{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)}
 .btn.dng{background:var(--red);border-color:transparent;color:#fff}.btn.dng:disabled,.btn.dgg:disabled{opacity:.4}
 .chk{display:flex;gap:10px;align-items:flex-start;margin:4px 0 12px;font-size:13.5px;line-height:1.4;cursor:pointer}.chk input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--red)}
-.native #ggo,.native .ordiv,.native #gmsg,.native #pgr{display:none!important}
 html.native,html.native body{overscroll-behavior:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 html.native input,html.native textarea{-webkit-user-select:text;user-select:text}
 html.native ::-webkit-scrollbar{display:none;width:0;height:0}
@@ -429,9 +428,13 @@ async function loginAcct(nick,pw){const F=await fb(),ix=await F.fs.getDoc(dref(F
 const GLE=`<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;let GBUSY=false,AMSG="";
 function gProv(F){const p=new F.auth.GoogleAuthProvider();p.setCustomParameters({prompt:"select_account"});return p}
 function gInfo(){const u=FB&&FB.A.currentUser;return(u&&u.providerData.find(p=>p.providerId==="google.com"))||null}
-async function linkGoogle(){if(NATIVE)throw{message:"Uygulamada Google bağlama henüz hazır değil."};const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw{message:"Önce giriş yapmalısın."};await F.auth.linkWithPopup(u,gProv(F));try{await F.fs.setDoc(dref(F,"links",u.uid),{pid:ACC.pid})}catch(e){}}
+const GIOS="97900336713-nbjr52vi7u8rad40ti7unfnkbeabu24d.apps.googleusercontent.com";let SLP=null,SLI=false;
+async function nativeGoogleCred(F){try{if(!SLP)SLP=Capacitor.registerPlugin("SocialLogin");if(!SLI){await SLP.initialize({google:{iOSClientId:GIOS}});SLI=true}
+ const r=await SLP.login({provider:"google",options:{scopes:["email","profile"]}}),t=r&&r.result&&r.result.idToken;if(!t)throw{message:"Google girişi tamamlanmadı."};return F.auth.GoogleAuthProvider.credential(t)}
+ catch(e){const m=String((e&&(e.message||e.code))||"");if(/cancel|-5\b|dismiss/i.test(m))throw{code:"auth/popup-closed-by-user"};throw e}}
+async function linkGoogle(){const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw{message:"Önce giriş yapmalısın."};if(NATIVE)await F.auth.linkWithCredential(u,await nativeGoogleCred(F));else await F.auth.linkWithPopup(u,gProv(F));try{await F.fs.setDoc(dref(F,"links",u.uid),{pid:ACC.pid})}catch(e){}}
 async function unlinkGoogle(){const F=await fb(),u=F.A.currentUser;await F.auth.unlink(u,"google.com");try{await F.fs.deleteDoc(dref(F,"links",u.uid))}catch(e){}}
-async function googleLogin(){if(NATIVE)throw{message:"Uygulamada Google girişi henüz hazır değil. Takma ad ve şifrenle giriş yap."};const F=FB||await fb();GBUSY=true;try{const r=await F.auth.signInWithPopup(F.A,gProv(F)),u=r.user,ai=F.auth.getAdditionalUserInfo(r);
+async function googleLogin(){const F=FB||await fb();GBUSY=true;try{const r=NATIVE?await F.auth.signInWithCredential(F.A,await nativeGoogleCred(F)):await F.auth.signInWithPopup(F.A,gProv(F)),u=r.user,ai=F.auth.getAdditionalUserInfo(r);
  if(ai&&ai.isNewUser){try{await F.auth.deleteUser(u)}catch(e){try{await F.auth.signOut(F.A)}catch(_){}}ACC=null;syncDb();throw{message:"Bu Google hesabı henüz bir LexiRace hesabına bağlı değil. Önce takma adın ve şifrenle giriş yap, sonra Ayarlar’dan Google’ı bağla."}}
  await loadAC(u);if(!ACC){try{await F.auth.signOut(F.A)}catch(e){}throw{message:"Bu Google hesabına bağlı bir LexiRace hesabı bulunamadı."}}}finally{GBUSY=false}}
 async function logoutAcct(){const F=await fb();await F.auth.signOut(F.A);ACC=null;syncDb()}
@@ -447,7 +450,7 @@ async function changeNick(n){const er=nickOk(n);if(er)throw new Error(er);const 
  b.update(dref(F,"players",ACC.pid),{nick:n.trim(),nickKey:key});await b.commit();ACC.nick=n.trim();ACC.nickKey=key}
 async function changePw(cur,np){if((np||"").length<6)throw new Error("Yeni şifre en az 6 karakter olmalı.");const F=await fb(),u=F.A.currentUser;try{await F.auth.reauthenticateWithCredential(u,F.auth.EmailAuthProvider.credential(u.email,cur))}catch(e){throw new Error("Mevcut şifre hatalı.")}await F.auth.updatePassword(u,np)}
 async function deleteAcct(pw){const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw new Error("Önce giriş yapmalısın.");
- try{if(pw===null)await F.auth.reauthenticateWithPopup(u,gProv(F));else await F.auth.reauthenticateWithCredential(u,F.auth.EmailAuthProvider.credential(u.email,pw))}
+ try{if(pw===null){if(NATIVE)await F.auth.reauthenticateWithCredential(u,await nativeGoogleCred(F));else await F.auth.reauthenticateWithPopup(u,gProv(F))}else await F.auth.reauthenticateWithCredential(u,F.auth.EmailAuthProvider.credential(u.email,pw))}
  catch(e){if(pw===null)throw e;throw e.code==="auth/network-request-failed"||e.code==="auth/too-many-requests"?e:new Error("Şifre hatalı.")}
  const pid=ACC.pid,nk=ACC.nickKey,uid=u.uid;clearTimeout(SYNCT);SYNCT=null;try{if(DU)await duelDrop()}catch(e){}
  const qs=await F.fs.getDocs(F.fs.query(F.fs.collection(F.D,"daily"),F.fs.where("pid","==",pid)));

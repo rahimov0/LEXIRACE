@@ -43,6 +43,15 @@
       </array>
     </dict>
 	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.97900336713-nbjr52vi7u8rad40ti7unfnkbeabu24d</string>
+			</array>
+		</dict>
+	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>LexiRace, söylediğin İngilizce kelimeyi algılamak için mikrofonu kullanır.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
