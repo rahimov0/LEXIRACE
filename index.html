@@ -261,6 +261,7 @@ html.native,html.native body{overscroll-behavior:none;-webkit-touch-callout:none
 html.native input,html.native textarea{-webkit-user-select:text;user-select:text}
 html.native ::-webkit-scrollbar{display:none;width:0;height:0}
 html.native{scrollbar-width:none}
+html,body,button,a,input,select,label,.card{touch-action:manipulation}
 .nudge{display:flex;gap:12px;align-items:center;background:color-mix(in srgb,var(--acc) 12%,var(--card));border:1px solid color-mix(in srgb,var(--acc) 45%,transparent);border-radius:16px;padding:12px 14px;margin:0 0 12px}
 .nudge .mi{background:color-mix(in srgb,var(--acc) 20%,transparent);color:var(--acc);flex:none}.nudge .sx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.nudge .sx b{font-size:14.5px}.nudge .sx .note{font-size:12.5px;line-height:1.35}
 .nudge .btn.gb{width:auto;flex:none;padding:9px 14px;min-height:0}
@@ -376,7 +377,7 @@ function settings(){if(!ACC)return gateView();stop();const s=db.settings;loadV()
  app.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{s.theme=b.dataset.t;save();applyTheme();settings()});
  app.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{s.secs=+b.dataset.s;save();settings()});$("#rc").onchange=e=>{s.rec=e.target.value;save()};$("#vl").onclick=async()=>{const t=(db.vlog||[]).map(x=>x.join(" | ")).join("\n")||"Henüz kayıt yok";try{await navigator.clipboard.writeText("hedef | duyulan | güven% | sonuç\n"+t);$("#vl").textContent="Kopyalandı ✓"}catch(e){infoBox("Kayıtlar",t.replace(/\n/g,"<br>"))}};
  $("#vs").onchange=e=>{s.voice=e.target.value;save()};$("#vt").onclick=()=>speak("Think fast. Speak English.");
- $("#rst").onclick=()=>{if(confirm("Tüm oyun geçmişin ve tekrar kartların silinecek. Emin misin?")){db={games:[],recent:{},notebook:{},deck:[],unlocked:{},settings:s};save();settings()}}}
+ $("#rst").onclick=()=>{if(confirm("Tüm oyun geçmişin ve tekrar kartların silinecek. Emin misin?")){s.lv="A1";db={games:[],recent:{},notebook:{},deck:[],unlocked:{},daily:db.daily||{},settings:s};UL.forEach(l=>checkUnlock(l));save();settings()}}}
 // ---- tekrar kartları: dokun-çevir, sola/sağa kaydır, ilerleme çubuğu (Quizlet / Anki deseni)
 const LC={A1:"#58b585",A2:"#8bbf63",B1:"#e8b84a",B2:"#f0a040",C1:"#e56a55",C2:"#b277d9"};
 let RV={known:0,again:0,flt:"",shuf:false,flip:false};
@@ -405,7 +406,7 @@ let FB=null,ACC=null,AUTHREADY=false;
 function gateView(){stop();if(!AUTHREADY){app.innerHTML=`<div class="in" id="ldg">${head("THINK FAST. SPEAK ENGLISH.",1)}<p class="note" style="text-align:center">Yükleniyor…</p></div>`;return}authView()}
 function syncDb(){const p=ACC?ACC.pid:"";if(p!==CURPID0){CURPID0=p;PULLED="";LASTP="";clearTimeout(SYNCT);initDb()}}
 function initDb(){db=Object.assign({games:[],recent:{},notebook:{},deck:[],unlocked:{},daily:{}},S.load());db.unlocked=db.unlocked||{};db.daily=db.daily||{};db.settings=Object.assign({},DEF,db.settings);UL.forEach(l=>checkUnlock(l));if(!isUnlocked(db.settings.lv))db.settings.lv="A1";applyTheme()}
-const NATIVE=/^(capacitor|ionic):$/.test(location.protocol)||!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());if(NATIVE)document.documentElement.classList.add("native");
+const NATIVE=/^(capacitor|ionic):$/.test(location.protocol)||!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());if(NATIVE){document.documentElement.classList.add("native");{const vm=document.querySelector('meta[name=viewport]');if(vm)vm.content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"}["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,e=>e.preventDefault(),{passive:false}))}
 const mkAuth=(auth,app,mem)=>NATIVE?auth.initializeAuth(app,{persistence:mem?[auth.inMemoryPersistence]:[auth.indexedDBLocalPersistence,auth.inMemoryPersistence]}):auth.getAuth(app);
 async function fb(){if(FB)return FB;const b="https://www.gstatic.com/firebasejs/10.14.1/",[app,auth,fs]=await Promise.all([import(b+"firebase-app.js"),import(b+"firebase-auth.js"),import(b+"firebase-firestore.js")]),a=app.initializeApp(FBCFG);return FB={app,a,auth,fs,A:mkAuth(auth,a),D:fs.getFirestore(a)}}
 const AVATARS=["🦊","🐼","🐸","🐱","🐵","🐯","🐨","🐻","🐰","🦁","🐶","🐷","🐙","🦄","🐧","🐺","🐹","🦉"],EMD="lexirace.rahimov.tr",ALPH="ABCDEFGHJKMNPQRSTUVWXYZ23456789";
