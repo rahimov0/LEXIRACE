@@ -258,6 +258,10 @@ body:has(.home,.tab){background:radial-gradient(130% 55% at 50% -8%,color-mix(in
 .btn.dng{background:var(--red);border-color:transparent;color:#fff}.btn.dng:disabled,.btn.dgg:disabled{opacity:.4}
 .chk{display:flex;gap:10px;align-items:flex-start;margin:4px 0 12px;font-size:13.5px;line-height:1.4;cursor:pointer}.chk input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--red)}
 .native #ggo,.native .ordiv,.native #gmsg,.native #pgr{display:none!important}
+html.native,html.native body{overscroll-behavior:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+html.native input,html.native textarea{-webkit-user-select:text;user-select:text}
+html.native ::-webkit-scrollbar{display:none;width:0;height:0}
+html.native{scrollbar-width:none}
 </style></head>
 <body><main id="app"></main>
 <script>
