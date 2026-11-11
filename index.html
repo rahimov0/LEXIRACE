@@ -429,7 +429,7 @@ const GLE=`<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><p
 function gProv(F){const p=new F.auth.GoogleAuthProvider();p.setCustomParameters({prompt:"select_account"});return p}
 function gInfo(){const u=FB&&FB.A.currentUser;return(u&&u.providerData.find(p=>p.providerId==="google.com"))||null}
 const GIOS="97900336713-nbjr52vi7u8rad40ti7unfnkbeabu24d.apps.googleusercontent.com";let SLP=null,SLI=false;
-async function nativeGoogleCred(F){try{if(!SLP)SLP=Capacitor.registerPlugin("SocialLogin");if(!SLI){await SLP.initialize({google:{iOSClientId:GIOS}});SLI=true}
+async function nativeGoogleCred(F){try{if(!SLP)SLP=Capacitor.registerPlugin?Capacitor.registerPlugin("SocialLogin"):{initialize:o=>Capacitor.nativePromise("SocialLogin","initialize",o),login:o=>Capacitor.nativePromise("SocialLogin","login",o)};if(!SLI){await SLP.initialize({google:{iOSClientId:GIOS}});SLI=true}
  const r=await SLP.login({provider:"google",options:{scopes:["email","profile"]}}),t=r&&r.result&&r.result.idToken;if(!t)throw{message:"Google girişi tamamlanmadı."};return F.auth.GoogleAuthProvider.credential(t)}
  catch(e){const m=String((e&&(e.message||e.code))||"");if(/cancel|-5\b|dismiss/i.test(m))throw{code:"auth/popup-closed-by-user"};throw e}}
 async function linkGoogle(){const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw{message:"Önce giriş yapmalısın."};if(NATIVE)await F.auth.linkWithCredential(u,await nativeGoogleCred(F));else await F.auth.linkWithPopup(u,gProv(F));try{await F.fs.setDoc(dref(F,"links",u.uid),{pid:ACC.pid})}catch(e){}}
