@@ -111,6 +111,52 @@ input[type=password]{width:100%;padding:11px;border-radius:12px;border:1px solid
 .lnk{background:none;border:0;color:var(--acc);font:700 13px Inter,sans-serif;cursor:pointer;padding:10px 6px}.alinks{text-align:center;font-size:13.5px;color:var(--mut);margin-top:6px}
 .btn.busy::after{content:"";width:15px;height:15px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp .7s linear infinite}
 .auth{min-height:calc(100dvh - 60px);display:flex;flex-direction:column;justify-content:center;padding-bottom:30px}
+
+/* ===== Home redesign ===== */
+body:has(.home){background:radial-gradient(130% 55% at 50% -8%,color-mix(in srgb,var(--acc) 15%,transparent),transparent 62%),var(--bg);background-attachment:fixed}
+.home{--c-a1:#4cc38a;--c-a2:#35b5cf;--c-b1:#5b8def;--c-b2:#9c7bf2;--c-c1:#f0a040;--c-c2:#ee6b80}
+.home [data-lv=A1]{--lc:var(--c-a1)}.home [data-lv=A2]{--lc:var(--c-a2)}.home [data-lv=B1]{--lc:var(--c-b1)}.home [data-lv=B2]{--lc:var(--c-b2)}.home [data-lv=C1]{--lc:var(--c-c1)}.home [data-lv=C2]{--lc:var(--c-c2)}
+.home .lvs{gap:6px;margin:2px 0 14px}
+.home .sx{text-align:left;min-width:0}.home .hero .h2t .note{display:block;margin-top:2px}
+.home .lv{position:relative;padding:10px 0 9px;border-radius:14px;background:var(--card);border:1px solid var(--line);overflow:hidden;transition:transform .12s,border-color .15s}
+.home .lv::before{content:"";position:absolute;left:30%;right:30%;top:0;height:3px;border-radius:0 0 4px 4px;background:var(--lc);opacity:.85}
+.home .lv b{color:var(--lc)}
+.home .lv.lock{opacity:.6}.home .lv.lock::before{opacity:.25}.home .lv.lock b{color:var(--mut)}
+.home .lv.on{background:linear-gradient(160deg,var(--lc),color-mix(in srgb,var(--lc) 72%,#000));border-color:var(--lc);color:#10100f;box-shadow:0 6px 18px -6px color-mix(in srgb,var(--lc) 70%,transparent);transform:translateY(-1px)}
+.home .lv.on::before{display:none}.home .lv.on b{color:#10100f}.home .lv.on small{color:#10100f;opacity:.75}
+.home .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.home .stt{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:9px 6px 8px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1px}
+.home .stt b{font:800 21px Outfit,sans-serif;line-height:1.15;margin-top:5px}
+.home .stt>span:last-child{font-size:11px;color:var(--mut);font-weight:500}
+.home .sti{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--acc) 16%,transparent);color:var(--acc)}
+.home .stt:nth-child(2) .sti{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--green)}
+.home .stt:nth-child(3) .sti{background:color-mix(in srgb,var(--gold) 18%,transparent);color:var(--gold)}
+.home .prg{margin-top:8px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.home .prt{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.home .prt .sx b{font-size:13.5px}.home .prt .note{font-size:12px}
+.home .pct{font:800 15px Outfit,sans-serif;color:var(--green)}
+.home .pb{height:7px;background:var(--grey)}.home .pb div{background:linear-gradient(90deg,var(--green),color-mix(in srgb,var(--green) 55%,#fff))}
+.home .lvb{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font:800 13px Outfit,sans-serif;color:#10100f;background:linear-gradient(160deg,var(--lc),color-mix(in srgb,var(--lc) 70%,#000))}
+.home .lvb.xl{width:46px;height:46px;border-radius:14px;font-size:17px;box-shadow:0 6px 16px -6px color-mix(in srgb,var(--lc) 70%,transparent)}
+.home .hero{margin-top:14px;padding:16px;border:1px solid color-mix(in srgb,var(--lc,var(--acc)) 50%,var(--line));background:linear-gradient(165deg,color-mix(in srgb,var(--acc) 11%,var(--card)),var(--card) 60%);box-shadow:0 14px 34px -18px color-mix(in srgb,var(--acc) 55%,transparent)}
+.home .hero .h2t{margin-bottom:14px}.home .hero .h2t b{font:700 17px Outfit,sans-serif}
+.home .lbl{font:700 10px Inter,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);margin:0 2px 6px;text-align:left}
+.home .hero .segc{background:color-mix(in srgb,var(--bg) 70%,var(--card));margin-bottom:12px}
+.home .hero .segc .on{background:linear-gradient(160deg,var(--acc),color-mix(in srgb,var(--acc) 78%,#000));box-shadow:0 4px 12px -4px color-mix(in srgb,var(--acc) 70%,transparent)}
+.home .hint{margin:0 0 2px;padding:9px 11px;border-radius:11px;background:color-mix(in srgb,var(--acc) 7%,transparent);border:1px dashed color-mix(in srgb,var(--acc) 28%,var(--line));font-size:12.3px}
+.home .cta{margin-top:14px;padding:16px;font:800 16.5px Outfit,sans-serif;letter-spacing:.3px;border-radius:14px;background:linear-gradient(160deg,color-mix(in srgb,var(--acc) 88%,#fff),var(--acc) 55%,color-mix(in srgb,var(--acc) 80%,#000));box-shadow:0 12px 26px -10px color-mix(in srgb,var(--acc) 85%,transparent),inset 0 1px 0 rgba(255,255,255,.25)}
+.home h2.sect{display:flex;align-items:center;gap:8px;margin:24px 2px 10px}
+.home h2.sect::after{content:"";flex:1;height:1px;background:var(--line)}
+.home .mc{position:relative;gap:14px;padding:14px;margin:0 0 10px;border-radius:16px;overflow:hidden}
+.home .mc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--mc)}
+.home .mc.gold{--mc:var(--gold)}.home .mc.vio{--mc:#9c7bf2}
+.home .mc .mi{width:44px;height:44px;border-radius:13px;background:color-mix(in srgb,var(--mc) 17%,transparent);color:var(--mc)}
+.home .mc .sx b{font:700 15px Outfit,sans-serif}.home .mc .note{display:block;margin-top:2px;font-size:12px}
+.home .mc .btn{background:color-mix(in srgb,var(--mc) 16%,transparent);color:var(--mc);border:1px solid color-mix(in srgb,var(--mc) 40%,transparent);font-weight:700;border-radius:11px}
+.home .mc .tg{color:var(--mc);background:color-mix(in srgb,var(--mc) 12%,transparent);padding:3px 8px;border-radius:20px;margin-top:6px;font-size:10.5px}
+.home .lkm{padding:9px 11px;border-radius:12px;background:color-mix(in srgb,var(--yel) 10%,transparent);margin:0 0 10px}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]) .home .lv.on,:root:not([data-theme="dark"]) .home .lvb{color:#fff}:root:not([data-theme="dark"]) .home .lv.on b,:root:not([data-theme="dark"]) .home .lv.on small{color:#fff}}
+:root[data-theme="light"] .home .lv.on,:root[data-theme="light"] .home .lvb{color:#fff}:root[data-theme="light"] .home .lv.on b,:root[data-theme="light"] .home .lv.on small{color:#fff}
 </style></head>
 <body><main id="app"></main>
 <script>
@@ -183,19 +229,20 @@ const LOGO={lk:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAEACAYAAAA+8U
 const head=(t,big)=>big?`<div class="hdr c"><img class="lk lg-d" src="${LOGO.lk}" alt="LexiRace"><img class="lk lg-l" src="${LOGO.lkL}" alt=""><div class="tag">${t}</div></div>`:`<div class="hdr hs"><img class="mk lg-d" src="${LOGO.mk}" alt=""><img class="mk lg-l" src="${LOGO.mkL}" alt=""><div><img class="wm lg-d" src="${LOGO.wm}" alt="LexiRace"><img class="wm lg-l" src="${LOGO.wmL}" alt=""><div class="tag">${t}</div></div></div>`;
 let LKMSG="";
 function menu(){if(!ACC)return gateView();stop();if(DU)duelDrop();else duelResume();pullProgress();dailyRefresh();{const k=istDate()+"|"+db.settings.lv;if(db.daily[k]&&db.daily[k].done&&!db.daily[k].sent)pushDaily(k)}const s=db.settings,DE=db.daily[istDate()+"|"+db.settings.lv],st=lvStats(s.lv),nx=UL[UL.indexOf(s.lv)+1],pr=nx&&!isUnlocked(nx)?Math.min(100,Math.round(st.bestPct/50*100)):100;
- app.innerHTML=`<div class="in">${head("THINK FAST. SPEAK ENGLISH.",1)}
- <div class="lvs" style="margin-top:6px">${LEVELS.map(([k,t])=>{const lk=!isUnlocked(k);return`<button class="lv ${s.lv===k?"on":""} ${lk?"lock":""}" data-lv="${k}" aria-label="${k}${lk?" kilitli":""}"><b>${k}</b><small>${lk?I("lock",12):t}</small></button>`}).join("")}</div>
+ app.innerHTML=`<div class="in home">${head("THINK FAST. SPEAK ENGLISH.",1)}
+ <div class="lvs">${LEVELS.map(([k,t])=>{const lk=!isUnlocked(k);return`<button class="lv ${s.lv===k?"on":""} ${lk?"lock":""}" data-lv="${k}" aria-label="${k}${lk?" kilitli":""}"><b>${k}</b><small>${lk?I("lock",12):t}</small></button>`}).join("")}</div>
  ${LKMSG?`<p class="note lkm">${I("lock",13)} ${LKMSG}</p>`:""}
- <div class="card sumc"><div class="sm3">${[["Oyun",st.n],["Doğruluk",st.n?st.acc+"%":"–"],["En iyi",st.n?st.best+"/26":"–"]].map(([t,v])=>`<div><b>${v}</b><span>${t}</span></div>`).join("")}</div><div class="row2"><span>${s.lv} ilerleme</span><span>${nx?(isUnlocked(nx)?nx+" açık":nx+" için %"+st.bestPct+" / %50"):"Son seviye"}</span></div><div class="pb" style="margin-top:7px"><div style="width:${nx?pr:100}%"></div></div></div>
- <div class="card gcard"><div class="h2t"><span class="mi">${I("flag",18)}</span><div class="sx"><b>${s.lv} Oyunu · A–Z</b><span class="note">26 harf · harf başına ${s.secs||10} sn · ${cnt(s.lv)} kelime</span></div></div>
- <div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${s.mode===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
- <div class="segc" style="margin-top:6px">${[["classic","Klasik"],["hard","Zorlu Mod"]].map(([k,t])=>`<button class="${(s.rule||"classic")===k?"on":""}" data-rl="${k}">${k==="hard"?I("bolt",16):I("flag",16)}${t}</button>`).join("")}</div>
- <p class="note" style="margin:8px 2px 0">${s.rule==="hard"?"Zorlu: harf kelimenin başında, ortasında ya da sonunda. Seviye açmayı etkilemez. ":"Klasik: kelime verilen harfle başlar. "}${s.mode==="voice"?(s.rule==="hard"?"Kelimenin tamamını söyle.":"İngilizce söyle, bilmiyorsan “pas” de."):(s.rule==="hard"?"Kelimenin tamamını yaz.":"Kutulara yaz, ilk harf hazır.")}</p>
+ <div class="stats">${[["play","Oyun",st.n],["target","Doğruluk",st.n?st.acc+"%":"–"],["trophy","En iyi",st.n?st.best+"/26":"–"]].map(([i,t,v])=>`<div class="stt"><span class="sti">${I(i,16)}</span><b>${v}</b><span>${t}</span></div>`).join("")}</div>
+ <div class="prg"><div class="prt"><span class="lvb" data-lv="${s.lv}">${s.lv}</span><div class="sx"><b>${s.lv} ilerleme</b><span class="note">${nx?(isUnlocked(nx)?nx+" seviyesi açık":nx+" için %"+st.bestPct+" / %50"):"Son seviye"}</span></div><span class="pct">${nx?(isUnlocked(nx)?"✓":pr+"%"):"★"}</span></div><div class="pb"><div style="width:${nx?pr:100}%"></div></div></div>
+ <div class="card gcard hero"><div class="h2t"><span class="lvb xl" data-lv="${s.lv}">${s.lv}</span><div class="sx"><b>${s.lv} Oyunu · A–Z</b><span class="note">26 harf · harf başına ${s.secs||10} sn · ${cnt(s.lv)} kelime</span></div></div>
+ <div class="lbl">Cevap şekli</div><div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${s.mode===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
+ <div class="lbl">Oyun kuralı</div><div class="segc">${[["classic","Klasik"],["hard","Zorlu Mod"]].map(([k,t])=>`<button class="${(s.rule||"classic")===k?"on":""}" data-rl="${k}">${k==="hard"?I("bolt",16):I("flag",16)}${t}</button>`).join("")}</div>
+ <p class="note hint">${s.rule==="hard"?"Zorlu: harf kelimenin başında, ortasında ya da sonunda. Seviye açmayı etkilemez. ":"Klasik: kelime verilen harfle başlar. "}${s.mode==="voice"?(s.rule==="hard"?"Kelimenin tamamını söyle.":"İngilizce söyle, bilmiyorsan “pas” de."):(s.rule==="hard"?"Kelimenin tamamını yaz.":"Kutulara yaz, ilk harf hazır.")}</p>
  ${SR?"":`<p class="note"><b>Bu tarayıcı konuşma tanımayı desteklemiyor.</b> Yazılı modda oynayabilir veya Chrome / Edge kullanabilirsin.</p>`}
- <button class="btn cta" id="go">${I("play",17)}Başla</button></div>
- <h2>Diğer modlar</h2>
- <div class="card dly" style="margin-top:0"><span class="mi">${I("trophy",18)}</span><div class="sx"><b>Günlük Mücadele · ${s.lv}</b><span class="note">${DE&&DE.done?`Bugün: ${DE.c}/26 · %${Math.round(DE.c/26*100)}. Yarın yeni mücadele.`:DE&&DE.started?"Devam eden denemen var.":"Herkes aynı 26 kelimeyi oynar. Günde tek hak."}</span>${DE&&DE.done?"":`<span class="tg">${MODE(s.mode)}</span>`}</div>${DE&&DE.done?"":`<button class="btn" id="dl" style="width:auto;padding:10px 16px">${DE&&DE.started?"Devam":"Başla"}</button>`}</div>
- <div class="card dly"><span class="mi">${I("layers",18)}</span><div class="sx"><b>Word Match</b><span class="note">Türkçe–İngilizce kelime eşleştirme. Süreye karşı, her tur bir kelime artar.</span></div><button class="btn" id="wmb" style="width:auto;padding:10px 16px">Oyna</button></div>
+ <button class="btn cta" id="go">${I("play",18)}Başla</button></div>
+ <h2 class="sect">Diğer modlar</h2>
+ <div class="card dly mc gold"><span class="mi">${I("trophy",20)}</span><div class="sx"><b>Günlük Mücadele · ${s.lv}</b><span class="note">${DE&&DE.done?`Bugün: ${DE.c}/26 · %${Math.round(DE.c/26*100)}. Yarın yeni mücadele.`:DE&&DE.started?"Devam eden denemen var.":"Herkes aynı 26 kelimeyi oynar. Günde tek hak."}</span>${DE&&DE.done?"":`<span class="tg">${MODE(s.mode)}</span>`}</div>${DE&&DE.done?"":`<button class="btn" id="dl" style="width:auto;padding:10px 16px">${DE&&DE.started?"Devam":"Başla"}</button>`}</div>
+ <div class="card dly mc vio"><span class="mi">${I("layers",20)}</span><div class="sx"><b>Word Match</b><span class="note">Türkçe–İngilizce kelime eşleştirme. Süreye karşı, her tur bir kelime artar.</span></div><button class="btn" id="wmb" style="width:auto;padding:10px 16px">Oyna</button></div>
  ${SR?"":`<p class="note"><b>Bu tarayıcı konuşma tanımayı desteklemiyor.</b> Yazılı modda oynayabilir veya Chrome / Edge kullanabilirsin.</p>`}
  </div>${nav("m")}`;
  bindNav();app.querySelectorAll("[data-lv]").forEach(b=>b.onclick=()=>{const k=b.dataset.lv;if(!isUnlocked(k)){const p=UL[UL.indexOf(k)-1],ps=lvStats(p);LKMSG=`${k} kilitli. Açmak için ${p} seviyesinde en az %50 doğruluk (${NEED}/26) ile bir oyun bitir. Şu anki en iyin: ${ps.best}/26.`;menu();return}LKMSG="";db.settings.lv=k;save();menu()});
