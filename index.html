@@ -414,8 +414,9 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 const dref=(F,...p)=>F.fs.doc(F.D,...p);
 async function secAuth(){const F=await fb();if(!F.sec)F.sec=mkAuth(F.auth,F.app.initializeApp(FBCFG,"sec"),1);return F.sec}
 async function loadAC(u){const F=await fb(),m=/^(?:p|r\d+)_([a-z0-9]+)@/.exec((u&&u.email)||"");let pid=m&&m[1];if(!pid&&u){try{const l=await F.fs.getDoc(dref(F,"links",u.uid));if(l.exists())pid=l.data().pid}catch(e){}}if(!pid){ACC=null;syncDb();return}const d=await F.fs.getDoc(dref(F,"players",pid));ACC=d.exists()?{pid,uid:u.uid,...d.data()}:null;syncDb()}
+let AIERR="";const tmo=(p,ms)=>Promise.race([p,new Promise((_,r)=>setTimeout(()=>r({message:"Bağlantı zaman aşımına uğradı"+(AIERR?" ("+AIERR+")":"")+". İnternetini kontrol edip tekrar dene."}),ms||25000))]);
 async function authInit(){setTimeout(()=>{if(!AUTHREADY){AUTHREADY=true;if($("#ldg"))authView()}},6000);
- try{const F=await fb();F.auth.onAuthStateChanged(F.A,async u=>{try{if(u)await loadAC(u);else{ACC=null;syncDb()}}catch(e){ACC=null}AUTHREADY=true;if(!GBUSY&&($("#ldg")||$("#acform")))ACC?menu():authView();else if($("#acprof"))profile()})}catch(e){AUTHREADY=true;if($("#ldg"))authView()}}
+ try{const F=await fb();F.auth.onAuthStateChanged(F.A,async u=>{try{if(u)await loadAC(u);else{ACC=null;syncDb()}}catch(e){ACC=null}AUTHREADY=true;if(!GBUSY&&($("#ldg")||$("#acform")))ACC?menu():authView();else if($("#acprof"))profile()})}catch(e){AIERR=String((e&&(e.code||e.message))||"hata").slice(0,80);AUTHREADY=true;if($("#ldg"))authView()}}
 async function registerAcct(nick,pw){const er=nickOk(nick);if(er)throw new Error(er);if((pw||"").length<6)throw new Error("Şifre en az 6 karakter olmalı.");
  const F=await fb(),key=nickKey(nick),ix=dref(F,"usernames",key);if((await F.fs.getDoc(ix)).exists())throw new Error("Bu nickname alınmış.");
  const pid=rnd(12,"abcdefghijklmnopqrstuvwxyz0123456789"),code=newCode(),pe=`p_${pid}@${EMD}`,u1=(await F.auth.createUserWithEmailAndPassword(F.A,pe,pw)).user,s=await secAuth();
@@ -474,7 +475,7 @@ function authView(){stop();const m=AMODE,T={login:["Tekrar hoş geldin","Hesabı
  const msg=t=>{$("#amsg").textContent=t},v=i=>($("#a"+i)||{}).value||"";let busy=false;
  if(m==="reg"){let tm=0,seq=0;$("#a1").oninput=()=>{clearTimeout(tm);const el=$("#nk"),n=v(1).trim();if(!n){el.textContent="";el.className="hint";return}const er=nickOk(n);if(er){el.className="hint bad";el.textContent=er;return}el.className="hint";el.textContent="Kontrol ediliyor…";const my=++seq;tm=setTimeout(async()=>{try{const F=await fb(),d=await F.fs.getDoc(dref(F,"usernames",nickKey(n)));if(my!==seq)return;el.className="hint "+(d.exists()?"bad":"ok");el.textContent=d.exists()?"Bu nickname alınmış":"Müsait"}catch(e){if(my===seq){el.className="hint";el.textContent=""}}},450)}}
  const go=async()=>{if(busy)return;busy=true;const bt=$("#ago");bt.disabled=true;bt.classList.add("busy");msg("");try{
-   if(m==="login"){if(!v(1).trim()||!v(2))throw new Error("Nickname ve şifreni yaz.");await loginAcct(v(1),v(2));return menu()}
+   if(m==="login"){if(!v(1).trim()||!v(2))throw new Error("Nickname ve şifreni yaz.");await tmo(loginAcct(v(1),v(2)));return menu()}
    if(m==="reg"){if(v(2)!==v(3))throw new Error("Şifreler aynı değil.");return codeView((await registerAcct(v(1),v(2))).code,"Hesabın hazır!")}
    return codeView((await recoverAcct(v(1),v(2),v(3))).code,"Şifren yenilendi!")}catch(e){msg(aerr(e));busy=false;bt.disabled=false;bt.classList.remove("busy")}};
  $("#ago").onclick=go;app.querySelectorAll("#acform input").forEach(i=>i.onkeydown=e=>{if(e.key==="Enter")go()})}
