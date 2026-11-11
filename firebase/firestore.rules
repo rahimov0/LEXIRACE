@@ -89,5 +89,16 @@ service cloud.firestore {
         && request.resource.data.at == request.time;
       allow delete: if false;
     }
+
+    // ---- Google bağlantısı: Firebase kullanıcısı (uid) -> oyuncu (pid). Sadece kendi kaydını okur/yazar. ----
+    match /links/{uid} {
+      allow get: if signedIn() && request.auth.uid == uid;
+      allow list: if false;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['pid'])
+        && request.resource.data.pid is string
+        && isOwner(request.resource.data.pid);
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
   }
 }
