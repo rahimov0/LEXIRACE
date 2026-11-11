@@ -40801,5 +40801,7663 @@
     "letter": "W",
     "level": "B2",
     "turkish_explanation": "kurt; sürüler halinde yaşayan yabani hayvan"
+  },
+  {
+    "id": "a-c1-05588",
+    "word": "abdomen",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "karın; vücudun göğüs ile kalça arasındaki bölümü"
+  },
+  {
+    "id": "a-c1-05589",
+    "word": "abdominal",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "karınla ilgili; karın bölgesine ait"
+  },
+  {
+    "id": "a-c1-05590",
+    "word": "abide",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "katlanmak; dayanmak; uymak"
+  },
+  {
+    "id": "a-b2-05591",
+    "word": "aboard",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "gemide; uçakta; trende; bir taşıtın içinde"
+  },
+  {
+    "id": "a-c1-05592",
+    "word": "abolition",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "kaldırma; bir yasanın veya uygulamanın tamamen sona erdirilmesi"
+  },
+  {
+    "id": "a-c1-05593",
+    "word": "absorption",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "emme; çekme; bir şeyin içine çekilmesi"
+  },
+  {
+    "id": "a-c1-05594",
+    "word": "abundant",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "bol; çok miktarda bulunan"
+  },
+  {
+    "id": "a-c1-05595",
+    "word": "abusive",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "hakaret içeren; kötü davranan"
+  },
+  {
+    "id": "a-c1-05596",
+    "word": "accidental",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "tesadüfi; kazara olan"
+  },
+  {
+    "id": "a-c1-05597",
+    "word": "accustomed",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "alışmış; alışkın"
+  },
+  {
+    "id": "a-b2-05598",
+    "word": "ace",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "birinci sınıf; as; oyun kartlarında bir"
+  },
+  {
+    "id": "a-c1-05599",
+    "word": "addict",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "bağımlı; bir şeyi bırakamayan kişi"
+  },
+  {
+    "id": "a-c1-05600",
+    "word": "addictive",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "bağımlılık yapan"
+  },
+  {
+    "id": "a-b2-05601",
+    "word": "admiral",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "amiral; donanmada en yüksek rütbeli subay"
+  },
+  {
+    "id": "a-c1-05602",
+    "word": "admiration",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "hayranlık; beğeni"
+  },
+  {
+    "id": "a-c1-05603",
+    "word": "adore",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "çok sevmek; tapmak"
+  },
+  {
+    "id": "a-c1-05604",
+    "word": "advent",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "gelişi; bir şeyin başlaması"
+  },
+  {
+    "id": "a-b2-05605",
+    "word": "aerial",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "havadaki; havadan çekilen; anten"
+  },
+  {
+    "id": "a-c1-05606",
+    "word": "affinity",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "yakınlık; benzerlik; doğal ilgi"
+  },
+  {
+    "id": "a-b2-05607",
+    "word": "aging",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "yaşlanma; yaşlanan"
+  },
+  {
+    "id": "a-c1-05608",
+    "word": "agony",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "şiddetli acı; ıstırap"
+  },
+  {
+    "id": "a-c1-05609",
+    "word": "akin",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "benzer; yakın"
+  },
+  {
+    "id": "a-c1-05610",
+    "word": "algebra",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "cebir; harflerle yapılan matematik işlemleri"
+  },
+  {
+    "id": "a-c1-05611",
+    "word": "allegiance",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "bağlılık; sadakat"
+  },
+  {
+    "id": "a-c1-05612",
+    "word": "allergy",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "alerji; vücudun bir maddeye aşırı tepki vermesi"
+  },
+  {
+    "id": "a-c1-05613",
+    "word": "alley",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "dar sokak; ara yol"
+  },
+  {
+    "id": "a-c1-05614",
+    "word": "almond",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "badem"
+  },
+  {
+    "id": "a-c1-05615",
+    "word": "aloud",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "sesli olarak; yüksek sesle"
+  },
+  {
+    "id": "a-a2-05616",
+    "word": "alphabet",
+    "letter": "A",
+    "level": "A2",
+    "turkish_explanation": "alfabe; bir dilin harfleri dizisi"
+  },
+  {
+    "id": "a-b2-05617",
+    "word": "alternate",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "sırayla gelen; birbirini izleyen"
+  },
+  {
+    "id": "a-b2-05618",
+    "word": "altitude",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "yükseklik; deniz seviyesinden yükseklik"
+  },
+  {
+    "id": "a-b2-05619",
+    "word": "amber",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "kehribar; sarımsı turuncu renk"
+  },
+  {
+    "id": "a-c1-05620",
+    "word": "ambiguous",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "belirsiz; birden fazla anlama gelebilen"
+  },
+  {
+    "id": "a-c1-05621",
+    "word": "ambush",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "pusu; saklanıp saldırma"
+  },
+  {
+    "id": "a-c1-05622",
+    "word": "amnesty",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "af; suçluların cezasının bağışlanması"
+  },
+  {
+    "id": "a-c1-05623",
+    "word": "ample",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "bol; fazlasıyla yeterli"
+  },
+  {
+    "id": "a-c1-05624",
+    "word": "amusement",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "eğlence; hoşça vakit geçirme"
+  },
+  {
+    "id": "a-b2-05625",
+    "word": "animated",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "canlı; hareketli; çizgi film gibi"
+  },
+  {
+    "id": "a-b1-05626",
+    "word": "ant",
+    "letter": "A",
+    "level": "B1",
+    "turkish_explanation": "karınca"
+  },
+  {
+    "id": "a-c1-05627",
+    "word": "antique",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "antika; eski ve değerli eşya"
+  },
+  {
+    "id": "a-c1-05628",
+    "word": "apparatus",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "araç gereç; alet takımı"
+  },
+  {
+    "id": "a-c1-05629",
+    "word": "appendix",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "ek; kitabın sonundaki ek bölüm; apandis"
+  },
+  {
+    "id": "a-c1-05630",
+    "word": "applause",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "alkış"
+  },
+  {
+    "id": "a-c1-05631",
+    "word": "apprentice",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "çırak; yanında çalışarak meslek öğrenen kişi"
+  },
+  {
+    "id": "a-c1-05632",
+    "word": "approximate",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "yaklaşık; kesin olmayan"
+  },
+  {
+    "id": "a-c1-05633",
+    "word": "aquatic",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "suda yaşayan; suyla ilgili"
+  },
+  {
+    "id": "a-c1-05634",
+    "word": "arbitrary",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "keyfi; rastgele; kurala dayanmayan"
+  },
+  {
+    "id": "a-b2-05635",
+    "word": "arch",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "kemer; yay biçiminde yapı"
+  },
+  {
+    "id": "a-c1-05636",
+    "word": "arrogant",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "kibirli; kendini üstün gören"
+  },
+  {
+    "id": "a-b1-05637",
+    "word": "arsenal",
+    "letter": "A",
+    "level": "B1",
+    "turkish_explanation": "cephanelik; silah deposu"
+  },
+  {
+    "id": "a-c1-05638",
+    "word": "artery",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "atardamar; kalpten kan taşıyan damar"
+  },
+  {
+    "id": "a-c1-05639",
+    "word": "arthritis",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "eklem iltihabı; romatizma"
+  },
+  {
+    "id": "a-b2-05640",
+    "word": "artillery",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "top ve ağır silahlarla donatılmış birlik; topçu"
+  },
+  {
+    "id": "a-c1-05641",
+    "word": "asthma",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "astım; solunum yollarının daralması hastalığı"
+  },
+  {
+    "id": "a-c1-05642",
+    "word": "atheist",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "ateist; tanrıya inanmayan kişi"
+  },
+  {
+    "id": "a-c1-05643",
+    "word": "atmospheric",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "atmosferle ilgili; havayla ilgili"
+  },
+  {
+    "id": "a-c1-05644",
+    "word": "attendant",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "görevli; hizmet eden kişi"
+  },
+  {
+    "id": "a-c1-05645",
+    "word": "attic",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "çatı katı; tavan arası"
+  },
+  {
+    "id": "a-c1-05646",
+    "word": "audition",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "seçme; oyuncu veya müzisyen deneme gösterisi"
+  },
+  {
+    "id": "a-c1-05647",
+    "word": "auditorium",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "salon; konferans ve gösteri salonu"
+  },
+  {
+    "id": "a-c1-05648",
+    "word": "aurora",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "şafak; kutup ışıkları"
+  },
+  {
+    "id": "a-b2-05649",
+    "word": "automotive",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "otomobille ilgili"
+  },
+  {
+    "id": "a-b1-05650",
+    "word": "avenue",
+    "letter": "A",
+    "level": "B1",
+    "turkish_explanation": "cadde; geniş yol"
+  },
+  {
+    "id": "a-c1-05651",
+    "word": "avoidance",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "kaçınma; uzak durma"
+  },
+  {
+    "id": "a-b2-05652",
+    "word": "awake",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "uyanık; uyanmak"
+  },
+  {
+    "id": "a-c1-05653",
+    "word": "axe",
+    "letter": "A",
+    "level": "C1",
+    "turkish_explanation": "balta"
+  },
+  {
+    "id": "a-b2-05654",
+    "word": "axis",
+    "letter": "A",
+    "level": "B2",
+    "turkish_explanation": "eksen; dönme çizgisi"
+  },
+  {
+    "id": "b-b2-05655",
+    "word": "bachelor",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "bekâr erkek; lisans derecesi sahibi"
+  },
+  {
+    "id": "b-c1-05656",
+    "word": "backbone",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "omurga; bir şeyin ana desteği"
+  },
+  {
+    "id": "b-c1-05657",
+    "word": "backlash",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "tepki; ani ve sert karşı çıkış"
+  },
+  {
+    "id": "b-b1-05658",
+    "word": "backpack",
+    "letter": "B",
+    "level": "B1",
+    "turkish_explanation": "sırt çantası"
+  },
+  {
+    "id": "b-c1-05659",
+    "word": "backward",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "geriye doğru; geri kalmış"
+  },
+  {
+    "id": "b-c1-05660",
+    "word": "baggage",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "bagaj; yolculukta taşınan eşyalar"
+  },
+  {
+    "id": "b-c1-05661",
+    "word": "bait",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "yem; tuzak için kullanılan şey"
+  },
+  {
+    "id": "b-b1-05662",
+    "word": "balcony",
+    "letter": "B",
+    "level": "B1",
+    "turkish_explanation": "balkon"
+  },
+  {
+    "id": "b-c1-05663",
+    "word": "bald",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kel; saçsız"
+  },
+  {
+    "id": "b-c1-05664",
+    "word": "ballroom",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "balo salonu; dans salonu"
+  },
+  {
+    "id": "b-c1-05665",
+    "word": "bankrupt",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "iflas etmiş; borcunu ödeyemeyen"
+  },
+  {
+    "id": "b-c1-05666",
+    "word": "banquet",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "ziyafet; büyük resmî yemek"
+  },
+  {
+    "id": "b-c1-05667",
+    "word": "barber",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "berber; erkek saçı kesen kişi"
+  },
+  {
+    "id": "b-c1-05668",
+    "word": "barge",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "mavna; yük taşıyan düz tabanlı tekne"
+  },
+  {
+    "id": "b-b2-05669",
+    "word": "barn",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "ahır; çiftlikte hayvan ve ot barınağı"
+  },
+  {
+    "id": "b-b2-05670",
+    "word": "basin",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "leğen; lavabo; havza"
+  },
+  {
+    "id": "b-c1-05671",
+    "word": "battalion",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "tabur; askerî birlik"
+  },
+  {
+    "id": "b-c1-05672",
+    "word": "beacon",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "işaret ışığı; fener"
+  },
+  {
+    "id": "b-c1-05673",
+    "word": "beaver",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kunduz; ağaç kemirip baraj yapan hayvan"
+  },
+  {
+    "id": "b-c1-05674",
+    "word": "beetle",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "böcek; kınkanatlı böcek"
+  },
+  {
+    "id": "b-c1-05675",
+    "word": "beforehand",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "önceden; öncesinde"
+  },
+  {
+    "id": "b-b2-05676",
+    "word": "belly",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "karın; göbek"
+  },
+  {
+    "id": "b-c1-05677",
+    "word": "belongings",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "eşyalar; kişiye ait şeyler"
+  },
+  {
+    "id": "b-b2-05678",
+    "word": "berry",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "böğürtlen gibi küçük yumuşak meyve"
+  },
+  {
+    "id": "b-c1-05679",
+    "word": "bilateral",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "iki taraflı; ikili"
+  },
+  {
+    "id": "b-c1-05680",
+    "word": "bilingual",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "iki dilli; iki dil konuşan"
+  },
+  {
+    "id": "b-b2-05681",
+    "word": "binary",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "ikili; sıfır ve birden oluşan"
+  },
+  {
+    "id": "b-c1-05682",
+    "word": "binge",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "aşırıya kaçma; kısa sürede çok yeme veya izleme"
+  },
+  {
+    "id": "b-c1-05683",
+    "word": "bipolar",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "iki kutuplu; ruh hali ani değişen"
+  },
+  {
+    "id": "b-c1-05684",
+    "word": "birch",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "huş ağacı"
+  },
+  {
+    "id": "b-c1-05685",
+    "word": "bland",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "tatsız; hafif ve etkisiz"
+  },
+  {
+    "id": "b-c1-05686",
+    "word": "bleach",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "çamaşır suyu; ağartmak"
+  },
+  {
+    "id": "b-c1-05687",
+    "word": "blink",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "göz kırpmak"
+  },
+  {
+    "id": "b-c1-05688",
+    "word": "blockade",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "abluka; yolu kapatma"
+  },
+  {
+    "id": "b-b2-05689",
+    "word": "bloom",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "çiçek açmak; çiçeklenme"
+  },
+  {
+    "id": "b-c1-05690",
+    "word": "blossom",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "çiçek; çiçek açmak"
+  },
+  {
+    "id": "b-c1-05691",
+    "word": "bluff",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "blöf; kandırma; dik yamaç"
+  },
+  {
+    "id": "b-b2-05692",
+    "word": "blunt",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "kör; keskin olmayan; açık sözlü"
+  },
+  {
+    "id": "b-c1-05693",
+    "word": "blush",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "utanıp kızarmak"
+  },
+  {
+    "id": "b-b2-05694",
+    "word": "bolt",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "cıvata; sürgü; ani kaçış"
+  },
+  {
+    "id": "b-c1-05695",
+    "word": "booklet",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kitapçık"
+  },
+  {
+    "id": "b-b2-05696",
+    "word": "booth",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "kabin; küçük bölme"
+  },
+  {
+    "id": "b-b2-05697",
+    "word": "bore",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "sıkmak; sıkıcı kişi"
+  },
+  {
+    "id": "b-c1-05698",
+    "word": "borough",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kasaba; büyük şehrin bir bölgesi"
+  },
+  {
+    "id": "b-c1-05699",
+    "word": "boulder",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "büyük kaya parçası"
+  },
+  {
+    "id": "b-c1-05700",
+    "word": "boulevard",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "bulvar; ağaçlı geniş cadde"
+  },
+  {
+    "id": "b-c1-05701",
+    "word": "bounty",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "ödül; cömertlik; bolluk"
+  },
+  {
+    "id": "b-c1-05702",
+    "word": "boutique",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "butik; şık küçük mağaza"
+  },
+  {
+    "id": "b-c1-05703",
+    "word": "boycott",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "boykot; bir şeyi toplu olarak reddetme"
+  },
+  {
+    "id": "b-c1-05704",
+    "word": "brace",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "destek; ateller; kuvvetlendirmek"
+  },
+  {
+    "id": "b-c1-05705",
+    "word": "brandy",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "konyak; üzümden yapılan sert içki"
+  },
+  {
+    "id": "b-b2-05706",
+    "word": "brass",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "pirinç; bakır ve çinko alaşımı"
+  },
+  {
+    "id": "b-c1-05707",
+    "word": "brawl",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kavga; arbede"
+  },
+  {
+    "id": "b-c1-05708",
+    "word": "breeze",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "esinti; hafif rüzgâr"
+  },
+  {
+    "id": "b-c1-05709",
+    "word": "brew",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "demlemek; bira yapmak"
+  },
+  {
+    "id": "b-b2-05710",
+    "word": "brigade",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "tugay; askerî birlik"
+  },
+  {
+    "id": "b-c1-05711",
+    "word": "broker",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "komisyoncu; aracı kişi"
+  },
+  {
+    "id": "b-c1-05712",
+    "word": "brook",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "dere; küçük akarsu"
+  },
+  {
+    "id": "b-c1-05713",
+    "word": "brow",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kaş; alın"
+  },
+  {
+    "id": "b-c1-05714",
+    "word": "browse",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "göz gezdirmek; internette dolaşmak"
+  },
+  {
+    "id": "b-b2-05715",
+    "word": "bucket",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "kova"
+  },
+  {
+    "id": "b-c1-05716",
+    "word": "buckle",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "toka; tokalamak"
+  },
+  {
+    "id": "b-b2-05717",
+    "word": "bud",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "tomurcuk; çiçek başlangıcı"
+  },
+  {
+    "id": "b-c1-05718",
+    "word": "buffet",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "açık büfe; yemek masası"
+  },
+  {
+    "id": "b-c1-05719",
+    "word": "bulb",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "ampul; soğan biçimli bitki kökü"
+  },
+  {
+    "id": "b-b1-05720",
+    "word": "bull",
+    "letter": "B",
+    "level": "B1",
+    "turkish_explanation": "boğa; erkek sığır"
+  },
+  {
+    "id": "b-c1-05721",
+    "word": "bulletin",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "bülten; kısa haber duyurusu"
+  },
+  {
+    "id": "b-c1-05722",
+    "word": "bully",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "zorba; güçsüzü ezen kişi"
+  },
+  {
+    "id": "b-b2-05723",
+    "word": "bump",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "çarpmak; yumru; çarpma"
+  },
+  {
+    "id": "b-c1-05724",
+    "word": "bumper",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "tampon; araç çarpma koruması"
+  },
+  {
+    "id": "b-c1-05725",
+    "word": "bun",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "çörek; küçük yuvarlak ekmek; topuz saç"
+  },
+  {
+    "id": "b-b1-05726",
+    "word": "bureau",
+    "letter": "B",
+    "level": "B1",
+    "turkish_explanation": "büro; ofis; çekmeceli yazı masası"
+  },
+  {
+    "id": "b-b2-05727",
+    "word": "bust",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "büst; göğüs heykeli; kırmak"
+  },
+  {
+    "id": "b-c1-05728",
+    "word": "butcher",
+    "letter": "B",
+    "level": "C1",
+    "turkish_explanation": "kasap; et satan kişi"
+  },
+  {
+    "id": "b-b2-05729",
+    "word": "butler",
+    "letter": "B",
+    "level": "B2",
+    "turkish_explanation": "uşak; evin baş hizmetlisi"
+  },
+  {
+    "id": "c-b2-05730",
+    "word": "cab",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "taksi"
+  },
+  {
+    "id": "c-c1-05731",
+    "word": "cabbage",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "lahana"
+  },
+  {
+    "id": "c-b2-05732",
+    "word": "cage",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "kafes"
+  },
+  {
+    "id": "c-c1-05733",
+    "word": "calculus",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kalkülüs; matematikte türev ve integral dalı"
+  },
+  {
+    "id": "c-a2-05734",
+    "word": "calendar",
+    "letter": "C",
+    "level": "A2",
+    "turkish_explanation": "takvim"
+  },
+  {
+    "id": "c-c1-05735",
+    "word": "calf",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "buzağı; baldır"
+  },
+  {
+    "id": "c-b1-05736",
+    "word": "camel",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "deve"
+  },
+  {
+    "id": "c-c1-05737",
+    "word": "cane",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "baston; şeker kamışı"
+  },
+  {
+    "id": "c-b2-05738",
+    "word": "cannon",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "top; ağır silah"
+  },
+  {
+    "id": "c-c1-05739",
+    "word": "canoe",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kano; küçük kürekli tekne"
+  },
+  {
+    "id": "c-c1-05740",
+    "word": "canopy",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "gölgelik; ağaç tepeleri; örtü"
+  },
+  {
+    "id": "c-b1-05741",
+    "word": "cape",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "pelerin; burun; denize uzanan kara parçası"
+  },
+  {
+    "id": "c-c1-05742",
+    "word": "capsule",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kapsül; ilaç kabı; uzay aracı bölümü"
+  },
+  {
+    "id": "c-c1-05743",
+    "word": "captive",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "esir; tutsak"
+  },
+  {
+    "id": "c-c1-05744",
+    "word": "captivity",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "esaret; tutsaklık"
+  },
+  {
+    "id": "c-c1-05745",
+    "word": "caravan",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "karavan; kervan"
+  },
+  {
+    "id": "c-c1-05746",
+    "word": "carnival",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "karnaval; maskeli şenlik"
+  },
+  {
+    "id": "c-c1-05747",
+    "word": "carpenter",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "marangoz; ahşap işleri yapan usta"
+  },
+  {
+    "id": "c-b1-05748",
+    "word": "carrier",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "taşıyıcı; taşıyan kişi veya araç"
+  },
+  {
+    "id": "c-b2-05749",
+    "word": "cart",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "el arabası; at arabası"
+  },
+  {
+    "id": "c-c1-05750",
+    "word": "cartridge",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "fişek; kartuş"
+  },
+  {
+    "id": "c-c1-05751",
+    "word": "caste",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kast; toplumda katı sınıf ayrımı"
+  },
+  {
+    "id": "c-c1-05752",
+    "word": "catalyst",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "katalizör; bir değişimi hızlandıran etken"
+  },
+  {
+    "id": "c-c1-05753",
+    "word": "catastrophe",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "felaket; büyük yıkım"
+  },
+  {
+    "id": "c-c1-05754",
+    "word": "cellar",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bodrum; mahzen"
+  },
+  {
+    "id": "c-b2-05755",
+    "word": "cement",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "çimento"
+  },
+  {
+    "id": "c-c1-05756",
+    "word": "censorship",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "sansür; yayınların denetlenip engellenmesi"
+  },
+  {
+    "id": "c-c1-05757",
+    "word": "cereal",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tahıl; mısır gevreği gibi kahvaltılık"
+  },
+  {
+    "id": "c-c1-05758",
+    "word": "chalk",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tebeşir; kireç taşı"
+  },
+  {
+    "id": "c-b2-05759",
+    "word": "champagne",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "şampanya; köpüklü şarap"
+  },
+  {
+    "id": "c-b2-05760",
+    "word": "chancellor",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "şansölye; üniversite veya devlet yöneticisi"
+  },
+  {
+    "id": "c-c1-05761",
+    "word": "chant",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "ilahi; ritimle tekrarlanan söz"
+  },
+  {
+    "id": "c-c1-05762",
+    "word": "chaotic",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "karmakarışık; düzensiz"
+  },
+  {
+    "id": "c-b2-05763",
+    "word": "chapel",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "şapel; küçük kilise"
+  },
+  {
+    "id": "c-b2-05764",
+    "word": "charitable",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "yardımsever; hayırsever"
+  },
+  {
+    "id": "c-c1-05765",
+    "word": "cheeky",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "yüzsüz; ukala; arsız"
+  },
+  {
+    "id": "c-c1-05766",
+    "word": "cherish",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "çok değer vermek; sevgiyle korumak"
+  },
+  {
+    "id": "c-b1-05767",
+    "word": "cherry",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "kiraz"
+  },
+  {
+    "id": "c-b2-05768",
+    "word": "chess",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "satranç"
+  },
+  {
+    "id": "c-c1-05769",
+    "word": "chic",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "şık; zarif"
+  },
+  {
+    "id": "c-c1-05770",
+    "word": "chilly",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "serin; soğuk"
+  },
+  {
+    "id": "c-c1-05771",
+    "word": "chimney",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "baca"
+  },
+  {
+    "id": "c-b2-05772",
+    "word": "chin",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "çene"
+  },
+  {
+    "id": "c-a2-05773",
+    "word": "china",
+    "letter": "C",
+    "level": "A2",
+    "turkish_explanation": "porselen; Çin"
+  },
+  {
+    "id": "c-c1-05774",
+    "word": "choke",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "boğulmak; nefesi kesilmek"
+  },
+  {
+    "id": "c-c1-05775",
+    "word": "chord",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "akor; birlikte çalınan notalar"
+  },
+  {
+    "id": "c-b2-05776",
+    "word": "chorus",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "koro; şarkı nakaratı"
+  },
+  {
+    "id": "c-b2-05777",
+    "word": "chuck",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "fırlatmak; atmak"
+  },
+  {
+    "id": "c-c1-05778",
+    "word": "chuckle",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kısık sesle gülmek"
+  },
+  {
+    "id": "c-c1-05779",
+    "word": "cider",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "elma şırası; elma suyundan yapılan içecek"
+  },
+  {
+    "id": "c-c1-05780",
+    "word": "cigar",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "puro"
+  },
+  {
+    "id": "c-b2-05781",
+    "word": "circular",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "dairesel; yuvarlak"
+  },
+  {
+    "id": "c-b2-05782",
+    "word": "circus",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "sirk"
+  },
+  {
+    "id": "c-c1-05783",
+    "word": "citation",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "alıntı; ödül belgesi; ceza tutanağı"
+  },
+  {
+    "id": "c-c1-05784",
+    "word": "clap",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "alkışlamak; el çırpmak"
+  },
+  {
+    "id": "c-c1-05785",
+    "word": "classy",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kaliteli; zarif"
+  },
+  {
+    "id": "c-c1-05786",
+    "word": "claw",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "pençe; tırnak"
+  },
+  {
+    "id": "c-b1-05787",
+    "word": "clay",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "kil; çamur; balçık"
+  },
+  {
+    "id": "c-b2-05788",
+    "word": "clearance",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "izin; temizleme; boşluk"
+  },
+  {
+    "id": "c-c1-05789",
+    "word": "clergy",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "din adamları"
+  },
+  {
+    "id": "c-b2-05790",
+    "word": "closet",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "dolap; gardırop"
+  },
+  {
+    "id": "c-b2-05791",
+    "word": "clown",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "palyaço"
+  },
+  {
+    "id": "c-c1-05792",
+    "word": "clueless",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bilgisiz; hiçbir fikri olmayan"
+  },
+  {
+    "id": "c-c1-05793",
+    "word": "clutch",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "sımsıkı tutmak; debriyaj"
+  },
+  {
+    "id": "c-c1-05794",
+    "word": "coastline",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kıyı şeridi"
+  },
+  {
+    "id": "c-c1-05795",
+    "word": "cocoa",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kakao"
+  },
+  {
+    "id": "c-c1-05796",
+    "word": "coconut",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "hindistan cevizi"
+  },
+  {
+    "id": "c-c1-05797",
+    "word": "coffin",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tabut"
+  },
+  {
+    "id": "c-c1-05798",
+    "word": "coil",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bobin; sarmal; sarmak"
+  },
+  {
+    "id": "c-b2-05799",
+    "word": "collar",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "yaka; tasma"
+  },
+  {
+    "id": "c-c1-05800",
+    "word": "collateral",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "teminat; güvence"
+  },
+  {
+    "id": "c-b1-05801",
+    "word": "colonel",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "albay; subay rütbesi"
+  },
+  {
+    "id": "c-c1-05802",
+    "word": "coma",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "koma; derin bilinç kaybı"
+  },
+  {
+    "id": "c-c1-05803",
+    "word": "comb",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tarak; taramak"
+  },
+  {
+    "id": "c-c1-05804",
+    "word": "combustion",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "yanma; yakma"
+  },
+  {
+    "id": "c-c1-05805",
+    "word": "comet",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kuyruklu yıldız"
+  },
+  {
+    "id": "c-c1-05806",
+    "word": "comfy",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "rahat; konforlu"
+  },
+  {
+    "id": "c-c1-05807",
+    "word": "communal",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "ortak; topluluğa ait"
+  },
+  {
+    "id": "c-c1-05808",
+    "word": "communion",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "paylaşma; ortak duygu; kutsal ayin"
+  },
+  {
+    "id": "c-c1-05809",
+    "word": "commute",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "işe gidip gelmek; evle iş arasında yolculuk"
+  },
+  {
+    "id": "c-b2-05810",
+    "word": "compact",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "sıkı; küçük ve yoğun"
+  },
+  {
+    "id": "c-c1-05811",
+    "word": "compartment",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bölme; kompartıman"
+  },
+  {
+    "id": "c-c1-05812",
+    "word": "compass",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "pusula"
+  },
+  {
+    "id": "c-b2-05813",
+    "word": "compliment",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "iltifat; güzel söz"
+  },
+  {
+    "id": "c-b2-05814",
+    "word": "composite",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "bileşik; birkaç parçadan oluşan"
+  },
+  {
+    "id": "c-c1-05815",
+    "word": "comprehend",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kavramak; anlamak"
+  },
+  {
+    "id": "c-c1-05816",
+    "word": "compression",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "sıkıştırma; basınç"
+  },
+  {
+    "id": "c-c1-05817",
+    "word": "concussion",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "beyin sarsıntısı"
+  },
+  {
+    "id": "c-c1-05818",
+    "word": "condolences",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "başsağlığı; taziye"
+  },
+  {
+    "id": "c-c1-05819",
+    "word": "conductor",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "orkestra şefi; biletçi; iletken madde"
+  },
+  {
+    "id": "c-c1-05820",
+    "word": "cone",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "koni; külah"
+  },
+  {
+    "id": "c-c1-05821",
+    "word": "consolation",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "teselli; avunma"
+  },
+  {
+    "id": "c-c1-05822",
+    "word": "contagious",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bulaşıcı"
+  },
+  {
+    "id": "c-c1-05823",
+    "word": "convertible",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "üstü açılabilir araba; dönüştürülebilir"
+  },
+  {
+    "id": "c-b2-05824",
+    "word": "cookie",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "kurabiye; çerez"
+  },
+  {
+    "id": "c-c1-05825",
+    "word": "coral",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "mercan"
+  },
+  {
+    "id": "c-b2-05826",
+    "word": "cord",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "ip; kordon; kablo"
+  },
+  {
+    "id": "c-c1-05827",
+    "word": "cork",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "mantar; şişe tıpası"
+  },
+  {
+    "id": "c-b2-05828",
+    "word": "corn",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "mısır; nasır"
+  },
+  {
+    "id": "c-c1-05829",
+    "word": "corporal",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "onbaşı; bedensel"
+  },
+  {
+    "id": "c-c1-05830",
+    "word": "cosmetic",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kozmetik; güzellik ürünü"
+  },
+  {
+    "id": "c-b2-05831",
+    "word": "couch",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "kanepe"
+  },
+  {
+    "id": "c-b2-05832",
+    "word": "cough",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "öksürük; öksürmek"
+  },
+  {
+    "id": "c-c1-05833",
+    "word": "countdown",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "geri sayım"
+  },
+  {
+    "id": "c-c1-05834",
+    "word": "countess",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kontes"
+  },
+  {
+    "id": "c-c1-05835",
+    "word": "coupon",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kupon; indirim fişi"
+  },
+  {
+    "id": "c-c1-05836",
+    "word": "courageous",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "cesur; yürekli"
+  },
+  {
+    "id": "c-c1-05837",
+    "word": "covert",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "gizli; örtülü"
+  },
+  {
+    "id": "c-c1-05838",
+    "word": "coward",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "korkak"
+  },
+  {
+    "id": "c-c1-05839",
+    "word": "cradle",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "beşik"
+  },
+  {
+    "id": "c-b2-05840",
+    "word": "crane",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "vinç; turna kuşu"
+  },
+  {
+    "id": "c-c1-05841",
+    "word": "crank",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tahrik kolu; garip kişi"
+  },
+  {
+    "id": "c-b2-05842",
+    "word": "creepy",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "ürkütücü; tüyler ürpertici"
+  },
+  {
+    "id": "c-c1-05843",
+    "word": "crest",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "tepe; ibik; arma"
+  },
+  {
+    "id": "c-b1-05844",
+    "word": "cricket",
+    "letter": "C",
+    "level": "B1",
+    "turkish_explanation": "cırcır böceği; kriket oyunu"
+  },
+  {
+    "id": "c-c1-05845",
+    "word": "crimson",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "koyu kırmızı"
+  },
+  {
+    "id": "c-c1-05846",
+    "word": "cringe",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "ürpermek; utançtan büzülmek"
+  },
+  {
+    "id": "c-c1-05847",
+    "word": "crippled",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "sakat; sakatlanmış"
+  },
+  {
+    "id": "c-c1-05848",
+    "word": "crisp",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "gevrek; çıtır"
+  },
+  {
+    "id": "c-c1-05849",
+    "word": "crow",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "karga"
+  },
+  {
+    "id": "c-c1-05850",
+    "word": "cruelty",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "zalimlik; acımasızlık"
+  },
+  {
+    "id": "c-c1-05851",
+    "word": "crunch",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "çıtırdatmak; çıtırtı"
+  },
+  {
+    "id": "c-c1-05852",
+    "word": "crust",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kabuk; ekmek kabuğu"
+  },
+  {
+    "id": "c-c1-05853",
+    "word": "cube",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "küp"
+  },
+  {
+    "id": "c-c1-05854",
+    "word": "cuff",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "manşet; kol ağzı; kelepçe"
+  },
+  {
+    "id": "c-c1-05855",
+    "word": "cuisine",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "mutfak; bir ülkenin yemek kültürü"
+  },
+  {
+    "id": "c-c1-05856",
+    "word": "curb",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kaldırım kenarı; dizginlemek"
+  },
+  {
+    "id": "c-c1-05857",
+    "word": "curl",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bukle; kıvırmak"
+  },
+  {
+    "id": "c-b2-05858",
+    "word": "curry",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "körili yemek; baharat karışımı"
+  },
+  {
+    "id": "c-b2-05859",
+    "word": "curse",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "lanet; küfür; lanetlemek"
+  },
+  {
+    "id": "c-c1-05860",
+    "word": "cushion",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "minder; yastık"
+  },
+  {
+    "id": "c-c1-05861",
+    "word": "customary",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "alışılmış; geleneksel"
+  },
+  {
+    "id": "c-c1-05862",
+    "word": "cyclist",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "bisikletçi"
+  },
+  {
+    "id": "c-b2-05863",
+    "word": "cylinder",
+    "letter": "C",
+    "level": "B2",
+    "turkish_explanation": "silindir"
+  },
+  {
+    "id": "c-c1-05864",
+    "word": "cynical",
+    "letter": "C",
+    "level": "C1",
+    "turkish_explanation": "kuşkucu; her şeyde kötülük arayan"
+  },
+  {
+    "id": "d-c1-05865",
+    "word": "dagger",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "hançer; kısa bıçak"
+  },
+  {
+    "id": "d-c1-05866",
+    "word": "daisy",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "papatya"
+  },
+  {
+    "id": "d-c1-05867",
+    "word": "damp",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "nemli; rutubetli"
+  },
+  {
+    "id": "d-b2-05868",
+    "word": "darling",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "sevgili; canım"
+  },
+  {
+    "id": "d-c1-05869",
+    "word": "dart",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "ok; atılma; hızla fırlamak"
+  },
+  {
+    "id": "d-b2-05870",
+    "word": "dash",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "ani koşu; fırlamak; tire işareti"
+  },
+  {
+    "id": "d-b2-05871",
+    "word": "deaf",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "sağır"
+  },
+  {
+    "id": "d-c1-05872",
+    "word": "decay",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çürümek; bozulmak"
+  },
+  {
+    "id": "d-c1-05873",
+    "word": "decency",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "terbiye; ahlaki uygunluk"
+  },
+  {
+    "id": "d-c1-05874",
+    "word": "deception",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "aldatma; kandırma"
+  },
+  {
+    "id": "d-c1-05875",
+    "word": "decorative",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "süs olarak kullanılan; dekoratif"
+  },
+  {
+    "id": "d-b1-05876",
+    "word": "deer",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "geyik"
+  },
+  {
+    "id": "d-b2-05877",
+    "word": "defendant",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "sanık; davalı"
+  },
+  {
+    "id": "d-c1-05878",
+    "word": "deity",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "tanrı; ilah"
+  },
+  {
+    "id": "d-c1-05879",
+    "word": "delightful",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çok hoş; ferahlatıcı"
+  },
+  {
+    "id": "d-c1-05880",
+    "word": "delusional",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "hayal görüp gerçek sanan"
+  },
+  {
+    "id": "d-c1-05881",
+    "word": "demise",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "ölüm; çöküş"
+  },
+  {
+    "id": "d-c1-05882",
+    "word": "dent",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çukur; göçük"
+  },
+  {
+    "id": "d-c1-05883",
+    "word": "dependency",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "bağımlılık"
+  },
+  {
+    "id": "d-c1-05884",
+    "word": "deportation",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "sınır dışı etme"
+  },
+  {
+    "id": "d-c1-05885",
+    "word": "despair",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "umutsuzluk; çaresizlik"
+  },
+  {
+    "id": "d-c1-05886",
+    "word": "desperation",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çaresizlik; umutsuz hal"
+  },
+  {
+    "id": "d-c1-05887",
+    "word": "despise",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "küçümsemek; nefret etmek"
+  },
+  {
+    "id": "d-b2-05888",
+    "word": "destiny",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "kader; yazgı"
+  },
+  {
+    "id": "d-c1-05889",
+    "word": "detrimental",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "zararlı; kötü etkisi olan"
+  },
+  {
+    "id": "d-c1-05890",
+    "word": "devotion",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "bağlılık; adanmışlık"
+  },
+  {
+    "id": "d-c1-05891",
+    "word": "dew",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çiy; sabah nemi"
+  },
+  {
+    "id": "d-b2-05892",
+    "word": "dial",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "kadran; numara çevirmek"
+  },
+  {
+    "id": "d-c1-05893",
+    "word": "dialect",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "lehçe; şive"
+  },
+  {
+    "id": "d-b2-05894",
+    "word": "diameter",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "çap; dairenin iki yanı arasındaki uzunluk"
+  },
+  {
+    "id": "d-c1-05895",
+    "word": "dice",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "zar; küp doğramak"
+  },
+  {
+    "id": "d-c1-05896",
+    "word": "dictator",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "diktatör; mutlak güçle yöneten kişi"
+  },
+  {
+    "id": "d-b2-05897",
+    "word": "diesel",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "dizel; mazot"
+  },
+  {
+    "id": "d-c1-05898",
+    "word": "diligence",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çalışkanlık; titizlik"
+  },
+  {
+    "id": "d-c1-05899",
+    "word": "dim",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "loş; hafif ışıklı"
+  },
+  {
+    "id": "d-c1-05900",
+    "word": "diploma",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "mezuniyet belgesi; okulu bitirenlere verilen belge"
+  },
+  {
+    "id": "d-b2-05901",
+    "word": "directory",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "rehber; dizin"
+  },
+  {
+    "id": "d-c1-05902",
+    "word": "disco",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "disko; dans müziği ve mekânı"
+  },
+  {
+    "id": "d-c1-05903",
+    "word": "discomfort",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "rahatsızlık; sıkıntı"
+  },
+  {
+    "id": "d-c1-05904",
+    "word": "disgrace",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "rezalet; utanç"
+  },
+  {
+    "id": "d-c1-05905",
+    "word": "disguise",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "kılık değiştirmek; gizlemek"
+  },
+  {
+    "id": "d-c1-05906",
+    "word": "disgust",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "iğrenme; tiksinti"
+  },
+  {
+    "id": "d-b1-05907",
+    "word": "disgusting",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "iğrenç; tiksindirici"
+  },
+  {
+    "id": "d-c1-05908",
+    "word": "disregard",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "aldırmamak; saymamak"
+  },
+  {
+    "id": "d-c1-05909",
+    "word": "dissent",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "karşı çıkma; muhalefet"
+  },
+  {
+    "id": "d-c1-05910",
+    "word": "distorted",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çarpık; bozulmuş"
+  },
+  {
+    "id": "d-c1-05911",
+    "word": "distortion",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "bozulma; çarpıtma"
+  },
+  {
+    "id": "d-c1-05912",
+    "word": "distraction",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "dikkat dağıtıcı şey; oyalanma"
+  },
+  {
+    "id": "d-c1-05913",
+    "word": "disturbance",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "rahatsızlık; kargaşa"
+  },
+  {
+    "id": "d-b2-05914",
+    "word": "ditch",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "hendek; çukur"
+  },
+  {
+    "id": "d-c1-05915",
+    "word": "diversion",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "yön değiştirme; oyalanma"
+  },
+  {
+    "id": "d-b1-05916",
+    "word": "divine",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "ilahi; tanrısal"
+  },
+  {
+    "id": "d-b2-05917",
+    "word": "dock",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "rıhtım; iskele"
+  },
+  {
+    "id": "d-b2-05918",
+    "word": "dodge",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "kıvrılıp kaçmak; sıyrılmak"
+  },
+  {
+    "id": "d-b2-05919",
+    "word": "doll",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "bebek; oyuncak bebek"
+  },
+  {
+    "id": "d-b2-05920",
+    "word": "dome",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "kubbe"
+  },
+  {
+    "id": "d-b1-05921",
+    "word": "donkey",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "eşek"
+  },
+  {
+    "id": "d-c1-05922",
+    "word": "dough",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "hamur"
+  },
+  {
+    "id": "d-c1-05923",
+    "word": "downhill",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "yokuş aşağı; aşağı doğru"
+  },
+  {
+    "id": "d-c1-05924",
+    "word": "downward",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "aşağıya doğru"
+  },
+  {
+    "id": "d-b1-05925",
+    "word": "dragon",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "ejderha"
+  },
+  {
+    "id": "d-c1-05926",
+    "word": "drainage",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "su tahliyesi; akıtma sistemi"
+  },
+  {
+    "id": "d-c1-05927",
+    "word": "drastic",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "sert; köklü; çok etkili"
+  },
+  {
+    "id": "d-c1-05928",
+    "word": "drastically",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "çok büyük ölçüde; sert biçimde"
+  },
+  {
+    "id": "d-c1-05929",
+    "word": "dreadful",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "korkunç; berbat"
+  },
+  {
+    "id": "d-b2-05930",
+    "word": "drill",
+    "letter": "D",
+    "level": "B2",
+    "turkish_explanation": "matkap; delmek; tekrarlı alıştırma"
+  },
+  {
+    "id": "d-c1-05931",
+    "word": "drip",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "damlamak; damla"
+  },
+  {
+    "id": "d-c1-05932",
+    "word": "driveway",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "ev girişindeki araba yolu"
+  },
+  {
+    "id": "d-b1-05933",
+    "word": "duck",
+    "letter": "D",
+    "level": "B1",
+    "turkish_explanation": "ördek; eğilmek"
+  },
+  {
+    "id": "d-c1-05934",
+    "word": "duel",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "düello; iki kişinin karşılıklı çarpışması"
+  },
+  {
+    "id": "d-c1-05935",
+    "word": "dunk",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "batırmak; basketbolda smaç"
+  },
+  {
+    "id": "d-c1-05936",
+    "word": "dwell",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "yaşamak; oturmak; takılıp kalmak"
+  },
+  {
+    "id": "d-c1-05937",
+    "word": "dye",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "boya; boyamak"
+  },
+  {
+    "id": "d-c1-05938",
+    "word": "dynamite",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "dinamit; patlayıcı madde"
+  },
+  {
+    "id": "d-c1-05939",
+    "word": "dynasty",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "hanedan; aynı soydan gelen yöneticiler"
+  },
+  {
+    "id": "d-c1-05940",
+    "word": "dysfunction",
+    "letter": "D",
+    "level": "C1",
+    "turkish_explanation": "işlev bozukluğu"
+  },
+  {
+    "id": "e-b1-05941",
+    "word": "eagle",
+    "letter": "E",
+    "level": "B1",
+    "turkish_explanation": "kartal"
+  },
+  {
+    "id": "e-c1-05942",
+    "word": "economical",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "tasarruflu; ucuza gelen"
+  },
+  {
+    "id": "e-c1-05943",
+    "word": "edible",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "yenilebilir"
+  },
+  {
+    "id": "e-c1-05944",
+    "word": "elastic",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "esnek; lastik gibi uzayan"
+  },
+  {
+    "id": "e-b2-05945",
+    "word": "elder",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "yaşça büyük; yaşlı kişi"
+  },
+  {
+    "id": "e-c1-05946",
+    "word": "electorate",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "seçmenler; oy kullanan halk"
+  },
+  {
+    "id": "e-b2-05947",
+    "word": "elevation",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "yükseklik; yükselme"
+  },
+  {
+    "id": "e-c1-05948",
+    "word": "elf",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "cüce peri; masallardaki küçük yaratık"
+  },
+  {
+    "id": "e-b2-05949",
+    "word": "elimination",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "eleme; ortadan kaldırma"
+  },
+  {
+    "id": "e-c1-05950",
+    "word": "emblem",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "amblem; simge"
+  },
+  {
+    "id": "e-c1-05951",
+    "word": "eminent",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "ünlü; saygın"
+  },
+  {
+    "id": "e-c1-05952",
+    "word": "endurance",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "dayanıklılık; sabır"
+  },
+  {
+    "id": "e-c1-05953",
+    "word": "energetic",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "enerjik; hareketli"
+  },
+  {
+    "id": "e-c1-05954",
+    "word": "ensemble",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "topluluk; takım; uyumlu kıyafet"
+  },
+  {
+    "id": "e-c1-05955",
+    "word": "envy",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "kıskançlık; imrenme"
+  },
+  {
+    "id": "e-c1-05956",
+    "word": "erosion",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "aşınma; erozyon"
+  },
+  {
+    "id": "e-c1-05957",
+    "word": "eruption",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "patlama; püskürme"
+  },
+  {
+    "id": "e-b2-05958",
+    "word": "escort",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "eşlik etmek; refakatçi"
+  },
+  {
+    "id": "e-b2-05959",
+    "word": "esteem",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "saygı; itibar"
+  },
+  {
+    "id": "e-b2-05960",
+    "word": "eternal",
+    "letter": "E",
+    "level": "B2",
+    "turkish_explanation": "sonsuz; ebedi"
+  },
+  {
+    "id": "e-b1-05961",
+    "word": "eve",
+    "letter": "E",
+    "level": "B1",
+    "turkish_explanation": "arife; bir günün öncesi"
+  },
+  {
+    "id": "e-c1-05962",
+    "word": "excel",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "üstün olmak; başarılı olmak"
+  },
+  {
+    "id": "e-c1-05963",
+    "word": "excerpt",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "alıntı; kitaptan bir parça"
+  },
+  {
+    "id": "e-c1-05964",
+    "word": "exhaust",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "tüketmek; egzoz; yormak"
+  },
+  {
+    "id": "e-c1-05965",
+    "word": "exposition",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "sergi; açıklama"
+  },
+  {
+    "id": "e-c1-05966",
+    "word": "exquisite",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "zarif; mükemmel işlenmiş"
+  },
+  {
+    "id": "e-c1-05967",
+    "word": "extinct",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "nesli tükenmiş; sönmüş"
+  },
+  {
+    "id": "e-c1-05968",
+    "word": "extinction",
+    "letter": "E",
+    "level": "C1",
+    "turkish_explanation": "yok oluş; neslin tükenmesi"
+  },
+  {
+    "id": "f-c1-05969",
+    "word": "factual",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "gerçeklere dayanan"
+  },
+  {
+    "id": "f-c1-05970",
+    "word": "faint",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "baygınlık geçirmek; silik; zayıf"
+  },
+  {
+    "id": "f-b2-05971",
+    "word": "faithful",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "sadık; vefalı"
+  },
+  {
+    "id": "f-c1-05972",
+    "word": "fallout",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "radyoaktif toz; kötü sonuç"
+  },
+  {
+    "id": "f-c1-05973",
+    "word": "farewell",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "veda; hoşça kal"
+  },
+  {
+    "id": "f-c1-05974",
+    "word": "fatigue",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "yorgunluk; bitkinlik"
+  },
+  {
+    "id": "f-c1-05975",
+    "word": "faulty",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "hatalı; bozuk"
+  },
+  {
+    "id": "f-c1-05976",
+    "word": "fearful",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "korkmuş; ürkek"
+  },
+  {
+    "id": "f-b2-05977",
+    "word": "feast",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "ziyafet; şölen"
+  },
+  {
+    "id": "f-b2-05978",
+    "word": "ferry",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "vapur; araba vapuru"
+  },
+  {
+    "id": "f-c1-05979",
+    "word": "fertile",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "verimli; bereketli"
+  },
+  {
+    "id": "f-c1-05980",
+    "word": "fertility",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "doğurganlık; verimlilik"
+  },
+  {
+    "id": "f-c1-05981",
+    "word": "fetch",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "gidip getirmek"
+  },
+  {
+    "id": "f-c1-05982",
+    "word": "feud",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "uzun süren kan davası; düşmanlık"
+  },
+  {
+    "id": "f-c1-05983",
+    "word": "fidelity",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "bağlılık; sadakat"
+  },
+  {
+    "id": "f-c1-05984",
+    "word": "fiery",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "ateşli; alev gibi"
+  },
+  {
+    "id": "f-b2-05985",
+    "word": "fig",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "incir"
+  },
+  {
+    "id": "f-c1-05986",
+    "word": "filthy",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "çok kirli; pis"
+  },
+  {
+    "id": "f-c1-05987",
+    "word": "fin",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "yüzgeç"
+  },
+  {
+    "id": "f-c1-05988",
+    "word": "fist",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "yumruk"
+  },
+  {
+    "id": "f-c1-05989",
+    "word": "flair",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "yetenek; doğal beceri"
+  },
+  {
+    "id": "f-c1-05990",
+    "word": "flank",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "yan taraf; kanat"
+  },
+  {
+    "id": "f-c1-05991",
+    "word": "flare",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "alev; parlama; işaret fişeği"
+  },
+  {
+    "id": "f-c1-05992",
+    "word": "flawless",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "kusursuz"
+  },
+  {
+    "id": "f-c1-05993",
+    "word": "flex",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "bükmek; kası kasmak"
+  },
+  {
+    "id": "f-c1-05994",
+    "word": "flick",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "fiske; hafifçe vurmak"
+  },
+  {
+    "id": "f-b1-05995",
+    "word": "flip",
+    "letter": "F",
+    "level": "B1",
+    "turkish_explanation": "çevirmek; ters yüz etmek"
+  },
+  {
+    "id": "f-c1-05996",
+    "word": "flirt",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "flört etmek; gönül eğlendirmek"
+  },
+  {
+    "id": "f-c1-05997",
+    "word": "flock",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "sürü; koyun veya kuş sürüsü"
+  },
+  {
+    "id": "f-c1-05998",
+    "word": "flop",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "başarısızlık; yere yığılmak"
+  },
+  {
+    "id": "f-c1-05999",
+    "word": "fluent",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "akıcı; rahat konuşan"
+  },
+  {
+    "id": "f-c1-06000",
+    "word": "fluffy",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "kabarık; yumuşak tüylü"
+  },
+  {
+    "id": "f-c1-06001",
+    "word": "flush",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "kızarmak; sifon çekmek; ani akış"
+  },
+  {
+    "id": "f-c1-06002",
+    "word": "flute",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "flüt; ince borulu çalgı"
+  },
+  {
+    "id": "f-c1-06003",
+    "word": "flux",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "sürekli değişim; akış"
+  },
+  {
+    "id": "f-c1-06004",
+    "word": "foam",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "köpük"
+  },
+  {
+    "id": "f-c1-06005",
+    "word": "foe",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "düşman"
+  },
+  {
+    "id": "f-b2-06006",
+    "word": "fog",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "sis"
+  },
+  {
+    "id": "f-c1-06007",
+    "word": "foolish",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "akılsızca; aptalca"
+  },
+  {
+    "id": "f-c1-06008",
+    "word": "forehead",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "alın"
+  },
+  {
+    "id": "f-b2-06009",
+    "word": "foul",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "pis; kötü; faul"
+  },
+  {
+    "id": "f-b2-06010",
+    "word": "fountain",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "çeşme; fıskiye"
+  },
+  {
+    "id": "f-b1-06011",
+    "word": "fox",
+    "letter": "F",
+    "level": "B1",
+    "turkish_explanation": "tilki"
+  },
+  {
+    "id": "f-c1-06012",
+    "word": "fragrance",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "güzel koku; parfüm kokusu"
+  },
+  {
+    "id": "f-a2-06013",
+    "word": "frank",
+    "letter": "F",
+    "level": "A2",
+    "turkish_explanation": "açık sözlü; dürüst"
+  },
+  {
+    "id": "f-c1-06014",
+    "word": "fraudulent",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "hileli; sahte"
+  },
+  {
+    "id": "f-b2-06015",
+    "word": "freight",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "yük; nakliyat"
+  },
+  {
+    "id": "f-c1-06016",
+    "word": "friction",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "sürtünme; anlaşmazlık"
+  },
+  {
+    "id": "f-b2-06017",
+    "word": "frontier",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "sınır; ülkenin uç bölgesi"
+  },
+  {
+    "id": "f-c1-06018",
+    "word": "fugitive",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "kaçak; firari"
+  },
+  {
+    "id": "f-c1-06019",
+    "word": "furry",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "tüylü"
+  },
+  {
+    "id": "f-b2-06020",
+    "word": "fury",
+    "letter": "F",
+    "level": "B2",
+    "turkish_explanation": "büyük öfke; hiddet"
+  },
+  {
+    "id": "f-c1-06021",
+    "word": "fuse",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "sigorta; kaynaştırmak; fitil"
+  },
+  {
+    "id": "f-c1-06022",
+    "word": "fuss",
+    "letter": "F",
+    "level": "C1",
+    "turkish_explanation": "gereksiz telaş; yaygara"
+  },
+  {
+    "id": "g-c1-06023",
+    "word": "gag",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "ağız bağı; şaka; kusmak gibi olmak"
+  },
+  {
+    "id": "g-c1-06024",
+    "word": "gamble",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "kumar oynamak; riske girmek"
+  },
+  {
+    "id": "g-b2-06025",
+    "word": "garbage",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "çöp; atık"
+  },
+  {
+    "id": "g-b1-06026",
+    "word": "garlic",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "sarımsak"
+  },
+  {
+    "id": "g-c1-06027",
+    "word": "garment",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "giysi; kıyafet"
+  },
+  {
+    "id": "g-c1-06028",
+    "word": "gateway",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "giriş kapısı; geçit"
+  },
+  {
+    "id": "g-c1-06029",
+    "word": "generosity",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "cömertlik"
+  },
+  {
+    "id": "g-b2-06030",
+    "word": "ginger",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "zencefil; kızıl renk"
+  },
+  {
+    "id": "g-c1-06031",
+    "word": "glacier",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "buzul"
+  },
+  {
+    "id": "g-c1-06032",
+    "word": "glamour",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "göz alıcı güzellik"
+  },
+  {
+    "id": "g-c1-06033",
+    "word": "glitter",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "parıldamak; ışıltı"
+  },
+  {
+    "id": "g-b2-06034",
+    "word": "glow",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "parlamak; hafif ışık vermek"
+  },
+  {
+    "id": "g-c1-06035",
+    "word": "glue",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "yapıştırıcı; yapıştırmak"
+  },
+  {
+    "id": "g-b1-06036",
+    "word": "goat",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "keçi"
+  },
+  {
+    "id": "g-c1-06037",
+    "word": "goodwill",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "iyi niyet"
+  },
+  {
+    "id": "g-b1-06038",
+    "word": "goose",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "kaz"
+  },
+  {
+    "id": "g-c1-06039",
+    "word": "gossip",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "dedikodu"
+  },
+  {
+    "id": "g-c1-06040",
+    "word": "gown",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "uzun elbise; önlük"
+  },
+  {
+    "id": "g-c1-06041",
+    "word": "gracious",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "nazik; zarif"
+  },
+  {
+    "id": "g-c1-06042",
+    "word": "graffiti",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "duvar yazıları ve resimleri"
+  },
+  {
+    "id": "g-b1-06043",
+    "word": "grape",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "üzüm"
+  },
+  {
+    "id": "g-b2-06044",
+    "word": "graph",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "grafik; çizelge"
+  },
+  {
+    "id": "g-b2-06045",
+    "word": "gratitude",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "minnet; şükran"
+  },
+  {
+    "id": "g-c1-06046",
+    "word": "gravel",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "çakıl"
+  },
+  {
+    "id": "g-c1-06047",
+    "word": "graveyard",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "mezarlık"
+  },
+  {
+    "id": "g-c1-06048",
+    "word": "greed",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "açgözlülük"
+  },
+  {
+    "id": "g-c1-06049",
+    "word": "greedy",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "açgözlü"
+  },
+  {
+    "id": "g-c1-06050",
+    "word": "grill",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "ızgara; ızgarada pişirmek"
+  },
+  {
+    "id": "g-c1-06051",
+    "word": "grim",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "ciddi; kasvetli"
+  },
+  {
+    "id": "g-c1-06052",
+    "word": "grin",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "sırıtmak; geniş gülümseme"
+  },
+  {
+    "id": "g-c1-06053",
+    "word": "groom",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "damat; tımar etmek"
+  },
+  {
+    "id": "g-c1-06054",
+    "word": "groove",
+    "letter": "G",
+    "level": "C1",
+    "turkish_explanation": "oluk; yiv"
+  },
+  {
+    "id": "g-b2-06055",
+    "word": "grove",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "ağaçlık; küçük orman"
+  },
+  {
+    "id": "g-b1-06056",
+    "word": "gulf",
+    "letter": "G",
+    "level": "B1",
+    "turkish_explanation": "körfez; büyük aralık"
+  },
+  {
+    "id": "g-b2-06057",
+    "word": "gum",
+    "letter": "G",
+    "level": "B2",
+    "turkish_explanation": "sakız; diş eti"
+  },
+  {
+    "id": "h-c1-06058",
+    "word": "hallway",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "koridor"
+  },
+  {
+    "id": "h-c1-06059",
+    "word": "halo",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "hâle; başın çevresindeki ışık halkası"
+  },
+  {
+    "id": "h-b2-06060",
+    "word": "ham",
+    "letter": "H",
+    "level": "B2",
+    "turkish_explanation": "jambon"
+  },
+  {
+    "id": "h-c1-06061",
+    "word": "handicap",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "engel; dezavantaj; sakatlık"
+  },
+  {
+    "id": "h-b1-06062",
+    "word": "handsome",
+    "letter": "H",
+    "level": "B1",
+    "turkish_explanation": "yakışıklı"
+  },
+  {
+    "id": "h-c1-06063",
+    "word": "handwriting",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "el yazısı"
+  },
+  {
+    "id": "h-c1-06064",
+    "word": "harden",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "sertleşmek; sertleştirmek"
+  },
+  {
+    "id": "h-c1-06065",
+    "word": "hardship",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "zorluk; sıkıntı"
+  },
+  {
+    "id": "h-c1-06066",
+    "word": "hare",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "yaban tavşanı"
+  },
+  {
+    "id": "h-c1-06067",
+    "word": "hassle",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "dert; zahmet; uğraştırmak"
+  },
+  {
+    "id": "h-c1-06068",
+    "word": "hatch",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "yumurtadan çıkmak; kapak"
+  },
+  {
+    "id": "h-c1-06069",
+    "word": "hateful",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "nefret dolu; iğrenç"
+  },
+  {
+    "id": "h-c1-06070",
+    "word": "haul",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "çekmek; sürüklemek; taşımak"
+  },
+  {
+    "id": "h-c1-06071",
+    "word": "havoc",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "yıkım; kargaşa"
+  },
+  {
+    "id": "h-c1-06072",
+    "word": "hawk",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "şahin"
+  },
+  {
+    "id": "h-b2-06073",
+    "word": "hay",
+    "letter": "H",
+    "level": "B2",
+    "turkish_explanation": "saman; kuru ot"
+  },
+  {
+    "id": "h-c1-06074",
+    "word": "heap",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "yığın; öbek"
+  },
+  {
+    "id": "h-c1-06075",
+    "word": "heartbeat",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "kalp atışı"
+  },
+  {
+    "id": "h-c1-06076",
+    "word": "hedge",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "çit; çalı sırası"
+  },
+  {
+    "id": "h-c1-06077",
+    "word": "heir",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "varis; mirasçı"
+  },
+  {
+    "id": "h-b1-06078",
+    "word": "hen",
+    "letter": "H",
+    "level": "B1",
+    "turkish_explanation": "tavuk"
+  },
+  {
+    "id": "h-c1-06079",
+    "word": "heroic",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "kahramanca; yiğit"
+  },
+  {
+    "id": "h-c1-06080",
+    "word": "heroine",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "kadın kahraman"
+  },
+  {
+    "id": "h-c1-06081",
+    "word": "hesitation",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "tereddüt; duraksama"
+  },
+  {
+    "id": "h-c1-06082",
+    "word": "hoax",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "şaka; aldatmaca; asılsız haber"
+  },
+  {
+    "id": "h-c1-06083",
+    "word": "hog",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "domuz; açgözlü kişi"
+  },
+  {
+    "id": "h-c1-06084",
+    "word": "homecoming",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "eve dönüş; geri gelme"
+  },
+  {
+    "id": "h-c1-06085",
+    "word": "honeymoon",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "balayı"
+  },
+  {
+    "id": "h-b1-06086",
+    "word": "hood",
+    "letter": "H",
+    "level": "B1",
+    "turkish_explanation": "kapüşon; araba kaputu"
+  },
+  {
+    "id": "h-b1-06087",
+    "word": "hop",
+    "letter": "H",
+    "level": "B1",
+    "turkish_explanation": "sekmek; zıplamak"
+  },
+  {
+    "id": "h-c1-06088",
+    "word": "hopeless",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "umutsuz; çaresiz"
+  },
+  {
+    "id": "h-b2-06089",
+    "word": "horizontal",
+    "letter": "H",
+    "level": "B2",
+    "turkish_explanation": "yatay"
+  },
+  {
+    "id": "h-c1-06090",
+    "word": "hose",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "hortum"
+  },
+  {
+    "id": "h-c1-06091",
+    "word": "hum",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "mırıldanmak; uğultu"
+  },
+  {
+    "id": "h-c1-06092",
+    "word": "humane",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "insancıl; merhametli"
+  },
+  {
+    "id": "h-c1-06093",
+    "word": "humid",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "nemli; rutubetli"
+  },
+  {
+    "id": "h-c1-06094",
+    "word": "humility",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "alçakgönüllülük"
+  },
+  {
+    "id": "h-c1-06095",
+    "word": "hut",
+    "letter": "H",
+    "level": "C1",
+    "turkish_explanation": "kulübe"
+  },
+  {
+    "id": "i-c1-06096",
+    "word": "icy",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "buz gibi; buzlu"
+  },
+  {
+    "id": "i-c1-06097",
+    "word": "idle",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "işsiz; boş duran; tembel"
+  },
+  {
+    "id": "i-b2-06098",
+    "word": "idol",
+    "letter": "I",
+    "level": "B2",
+    "turkish_explanation": "put; hayranlık duyulan kişi"
+  },
+  {
+    "id": "i-c1-06099",
+    "word": "ignition",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "ateşleme; kontak"
+  },
+  {
+    "id": "i-b2-06100",
+    "word": "ignorant",
+    "letter": "I",
+    "level": "B2",
+    "turkish_explanation": "cahil; habersiz"
+  },
+  {
+    "id": "i-c1-06101",
+    "word": "impairment",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "bozukluk; zayıflama"
+  },
+  {
+    "id": "i-c1-06102",
+    "word": "imperative",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "zorunlu; kaçınılmaz"
+  },
+  {
+    "id": "i-c1-06103",
+    "word": "improper",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "uygunsuz; yanlış"
+  },
+  {
+    "id": "i-c1-06104",
+    "word": "impulse",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "dürtü; ani istek"
+  },
+  {
+    "id": "i-c1-06105",
+    "word": "inferior",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "aşağı; daha kötü"
+  },
+  {
+    "id": "i-b2-06106",
+    "word": "infinite",
+    "letter": "I",
+    "level": "B2",
+    "turkish_explanation": "sonsuz"
+  },
+  {
+    "id": "i-c1-06107",
+    "word": "infinity",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "sonsuzluk"
+  },
+  {
+    "id": "i-c1-06108",
+    "word": "inflated",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "şişirilmiş; abartılı"
+  },
+  {
+    "id": "i-c1-06109",
+    "word": "influx",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "akın; yoğun giriş"
+  },
+  {
+    "id": "i-c1-06110",
+    "word": "informative",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "bilgi veren; öğretici"
+  },
+  {
+    "id": "i-c1-06111",
+    "word": "infrared",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "kızılötesi"
+  },
+  {
+    "id": "i-c1-06112",
+    "word": "inheritance",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "miras"
+  },
+  {
+    "id": "i-c1-06113",
+    "word": "initiation",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "başlatma; törenle kabul"
+  },
+  {
+    "id": "i-b2-06114",
+    "word": "inn",
+    "letter": "I",
+    "level": "B2",
+    "turkish_explanation": "han; küçük otel; meyhane"
+  },
+  {
+    "id": "i-c1-06115",
+    "word": "innocence",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "masumiyet; suçsuzluk"
+  },
+  {
+    "id": "i-b1-06116",
+    "word": "insane",
+    "letter": "I",
+    "level": "B1",
+    "turkish_explanation": "deli; çılgınca"
+  },
+  {
+    "id": "i-c1-06117",
+    "word": "inscription",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "yazıt; üzerine kazınmış yazı"
+  },
+  {
+    "id": "i-c1-06118",
+    "word": "insecure",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "güvensiz; emin olmayan"
+  },
+  {
+    "id": "i-c1-06119",
+    "word": "intimacy",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "yakınlık; samimiyet"
+  },
+  {
+    "id": "i-c1-06120",
+    "word": "intricate",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "girift; ayrıntılı ve karmaşık"
+  },
+  {
+    "id": "i-c1-06121",
+    "word": "intuition",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "sezgi; önsezi"
+  },
+  {
+    "id": "i-c1-06122",
+    "word": "intuitive",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "sezgisel; içgüdüsel"
+  },
+  {
+    "id": "i-c1-06123",
+    "word": "invalid",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "geçersiz; hasta ve çaresiz kişi"
+  },
+  {
+    "id": "i-c1-06124",
+    "word": "invasive",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "istilacı; müdahaleci"
+  },
+  {
+    "id": "i-c1-06125",
+    "word": "irrational",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "mantıksız; akıl dışı"
+  },
+  {
+    "id": "i-c1-06126",
+    "word": "irregular",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "düzensiz; kurala uymayan"
+  },
+  {
+    "id": "i-c1-06127",
+    "word": "ivory",
+    "letter": "I",
+    "level": "C1",
+    "turkish_explanation": "fildişi"
+  },
+  {
+    "id": "j-a2-06128",
+    "word": "jack",
+    "letter": "J",
+    "level": "A2",
+    "turkish_explanation": "kriko; iskambilde vale"
+  },
+  {
+    "id": "j-c1-06129",
+    "word": "jaguar",
+    "letter": "J",
+    "level": "C1",
+    "turkish_explanation": "Amerika'daki büyük benekli yırtıcı kedi"
+  },
+  {
+    "id": "j-b2-06130",
+    "word": "jar",
+    "letter": "J",
+    "level": "B2",
+    "turkish_explanation": "kavanoz"
+  },
+  {
+    "id": "j-b2-06131",
+    "word": "jaw",
+    "letter": "J",
+    "level": "B2",
+    "turkish_explanation": "çene"
+  },
+  {
+    "id": "j-c1-06132",
+    "word": "jelly",
+    "letter": "J",
+    "level": "C1",
+    "turkish_explanation": "jöle; pelte"
+  },
+  {
+    "id": "j-c1-06133",
+    "word": "jewel",
+    "letter": "J",
+    "level": "C1",
+    "turkish_explanation": "mücevher; değerli taş"
+  },
+  {
+    "id": "j-c1-06134",
+    "word": "jockey",
+    "letter": "J",
+    "level": "C1",
+    "turkish_explanation": "jokey; at yarışçısı"
+  },
+  {
+    "id": "j-c1-06135",
+    "word": "jolly",
+    "letter": "J",
+    "level": "C1",
+    "turkish_explanation": "neşeli; şen"
+  },
+  {
+    "id": "k-c1-06136",
+    "word": "karma",
+    "letter": "K",
+    "level": "C1",
+    "turkish_explanation": "yapılan işin kişiye geri dönmesi inancı"
+  },
+  {
+    "id": "k-c1-06137",
+    "word": "kin",
+    "letter": "K",
+    "level": "C1",
+    "turkish_explanation": "akrabalar; yakın aile"
+  },
+  {
+    "id": "k-b1-06138",
+    "word": "knight",
+    "letter": "K",
+    "level": "B1",
+    "turkish_explanation": "şövalye"
+  },
+  {
+    "id": "l-c1-06139",
+    "word": "lace",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "dantel; ayakkabı bağı"
+  },
+  {
+    "id": "l-b1-06140",
+    "word": "lamb",
+    "letter": "L",
+    "level": "B1",
+    "turkish_explanation": "kuzu"
+  },
+  {
+    "id": "l-b2-06141",
+    "word": "lame",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "topal; etkisiz"
+  },
+  {
+    "id": "l-c1-06142",
+    "word": "lantern",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "fener"
+  },
+  {
+    "id": "l-c1-06143",
+    "word": "latitude",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "enlem; hareket özgürlüğü"
+  },
+  {
+    "id": "l-b2-06144",
+    "word": "laundry",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "çamaşır; çamaşırhane"
+  },
+  {
+    "id": "l-c1-06145",
+    "word": "laurel",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "defne"
+  },
+  {
+    "id": "l-c1-06146",
+    "word": "lawful",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "yasal; kanuna uygun"
+  },
+  {
+    "id": "l-b2-06147",
+    "word": "lease",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "kiralamak; kira sözleşmesi"
+  },
+  {
+    "id": "l-b1-06148",
+    "word": "lettuce",
+    "letter": "L",
+    "level": "B1",
+    "turkish_explanation": "marul"
+  },
+  {
+    "id": "l-c1-06149",
+    "word": "lever",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "manivela; kaldıraç"
+  },
+  {
+    "id": "l-b2-06150",
+    "word": "liar",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "yalancı"
+  },
+  {
+    "id": "l-c1-06151",
+    "word": "lick",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "yalamak"
+  },
+  {
+    "id": "l-c1-06152",
+    "word": "lid",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "kapak"
+  },
+  {
+    "id": "l-c1-06153",
+    "word": "lime",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "misket limonu; kireç"
+  },
+  {
+    "id": "l-c1-06154",
+    "word": "linen",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "keten; yatak çarşafı ve masa örtüsü"
+  },
+  {
+    "id": "l-c1-06155",
+    "word": "linguistic",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "dil bilimine ait; dille ilgili"
+  },
+  {
+    "id": "l-c1-06156",
+    "word": "literal",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "kelimesi kelimesine; gerçek anlamıyla"
+  },
+  {
+    "id": "l-c1-06157",
+    "word": "lobster",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "ıstakoz"
+  },
+  {
+    "id": "l-b2-06158",
+    "word": "lodge",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "küçük dağ evi; konaklamak"
+  },
+  {
+    "id": "l-b1-06159",
+    "word": "log",
+    "letter": "L",
+    "level": "B1",
+    "turkish_explanation": "kütük; kayıt defteri"
+  },
+  {
+    "id": "l-c1-06160",
+    "word": "longevity",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "uzun ömür"
+  },
+  {
+    "id": "l-b2-06161",
+    "word": "lounge",
+    "letter": "L",
+    "level": "B2",
+    "turkish_explanation": "salon; dinlenme yeri"
+  },
+  {
+    "id": "l-c1-06162",
+    "word": "luggage",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "bagaj; valiz"
+  },
+  {
+    "id": "l-c1-06163",
+    "word": "lumber",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "kereste; ağır adım atmak"
+  },
+  {
+    "id": "l-c1-06164",
+    "word": "lump",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "yumru; topak"
+  },
+  {
+    "id": "l-c1-06165",
+    "word": "lure",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "cezbetmek; yem"
+  },
+  {
+    "id": "l-c1-06166",
+    "word": "lush",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "gür; yemyeşil"
+  },
+  {
+    "id": "l-c1-06167",
+    "word": "luxurious",
+    "letter": "L",
+    "level": "C1",
+    "turkish_explanation": "lüks; görkemli"
+  },
+  {
+    "id": "m-c1-06168",
+    "word": "madam",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "hanımefendi"
+  },
+  {
+    "id": "m-c1-06169",
+    "word": "magician",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "sihirbaz; büyücü"
+  },
+  {
+    "id": "m-c1-06170",
+    "word": "magnet",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "mıknatıs"
+  },
+  {
+    "id": "m-c1-06171",
+    "word": "maid",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "hizmetçi; temizlik görevlisi kadın"
+  },
+  {
+    "id": "m-c1-06172",
+    "word": "maiden",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "bakire kız; ilk kez yapılan"
+  },
+  {
+    "id": "m-c1-06173",
+    "word": "majestic",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "görkemli; heybetli"
+  },
+  {
+    "id": "m-b2-06174",
+    "word": "mansion",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "büyük köşk; malikâne"
+  },
+  {
+    "id": "m-c1-06175",
+    "word": "mantra",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "kutsal söz; sürekli tekrarlanan söz"
+  },
+  {
+    "id": "m-b1-06176",
+    "word": "manual",
+    "letter": "M",
+    "level": "B1",
+    "turkish_explanation": "el kitabı; elle yapılan"
+  },
+  {
+    "id": "m-b2-06177",
+    "word": "manuscript",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "el yazması; yayına hazır metin"
+  },
+  {
+    "id": "m-b2-06178",
+    "word": "marble",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "mermer; misket"
+  },
+  {
+    "id": "m-c1-06179",
+    "word": "marital",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "evlilikle ilgili"
+  },
+  {
+    "id": "m-c1-06180",
+    "word": "marsh",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "bataklık"
+  },
+  {
+    "id": "m-c1-06181",
+    "word": "marvelous",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "harika; olağanüstü"
+  },
+  {
+    "id": "m-c1-06182",
+    "word": "masculine",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "erkeksi; eril"
+  },
+  {
+    "id": "m-c1-06183",
+    "word": "mash",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "ezmek; püre yapmak"
+  },
+  {
+    "id": "m-c1-06184",
+    "word": "mat",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "paspas; hasır; ışığı yansıtmayan yüzey"
+  },
+  {
+    "id": "m-c1-06185",
+    "word": "maternal",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "anneye ait; annece"
+  },
+  {
+    "id": "m-c1-06186",
+    "word": "mattress",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "şilte; yatak"
+  },
+  {
+    "id": "m-c1-06187",
+    "word": "maturity",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "olgunluk"
+  },
+  {
+    "id": "m-c1-06188",
+    "word": "meadow",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "çayır"
+  },
+  {
+    "id": "m-c1-06189",
+    "word": "mediocre",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "vasat; sıradan"
+  },
+  {
+    "id": "m-c1-06190",
+    "word": "membrane",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "zar; ince doku tabakası"
+  },
+  {
+    "id": "m-c1-06191",
+    "word": "merry",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "neşeli; şen"
+  },
+  {
+    "id": "m-c1-06192",
+    "word": "messy",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "dağınık; kirli"
+  },
+  {
+    "id": "m-c1-06193",
+    "word": "midway",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "yarı yolda; ortada"
+  },
+  {
+    "id": "m-c1-06194",
+    "word": "mileage",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "kat edilen mil sayısı; yol miktarı"
+  },
+  {
+    "id": "m-c1-06195",
+    "word": "millionaire",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "milyoner"
+  },
+  {
+    "id": "m-b2-06196",
+    "word": "mint",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "nane; darphane; mükemmel durumda"
+  },
+  {
+    "id": "m-b2-06197",
+    "word": "minus",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "eksi; çıkarma işareti"
+  },
+  {
+    "id": "m-c1-06198",
+    "word": "missionary",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "misyoner; din yayıcı"
+  },
+  {
+    "id": "m-c1-06199",
+    "word": "mistress",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "metres; kadın öğretmen; hanım"
+  },
+  {
+    "id": "m-c1-06200",
+    "word": "misuse",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "kötüye kullanma"
+  },
+  {
+    "id": "m-c1-06201",
+    "word": "mock",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "alay etmek; taklidini yapmak; sahte"
+  },
+  {
+    "id": "m-b2-06202",
+    "word": "moisture",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "nem; rutubet"
+  },
+  {
+    "id": "m-c1-06203",
+    "word": "mole",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "ben; köstebek"
+  },
+  {
+    "id": "m-b2-06204",
+    "word": "monetary",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "paraya ait; parasal"
+  },
+  {
+    "id": "m-c1-06205",
+    "word": "moody",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "dalgın; ruh hali sık değişen"
+  },
+  {
+    "id": "m-c1-06206",
+    "word": "morale",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "moral; ruhsal durum"
+  },
+  {
+    "id": "m-b2-06207",
+    "word": "mortality",
+    "letter": "M",
+    "level": "B2",
+    "turkish_explanation": "ölümlülük; ölüm oranı"
+  },
+  {
+    "id": "m-c1-06208",
+    "word": "mosaic",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "mozaik"
+  },
+  {
+    "id": "m-c1-06209",
+    "word": "moss",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "yosun"
+  },
+  {
+    "id": "m-c1-06210",
+    "word": "motto",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "slogan; özdeyiş"
+  },
+  {
+    "id": "m-c1-06211",
+    "word": "mound",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "tümsek; küçük tepe"
+  },
+  {
+    "id": "m-c1-06212",
+    "word": "mug",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "kupa; büyük fincan"
+  },
+  {
+    "id": "m-c1-06213",
+    "word": "multitude",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "çokluk; büyük kalabalık"
+  },
+  {
+    "id": "m-c1-06214",
+    "word": "muse",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "ilham perisi; derin düşünmek"
+  },
+  {
+    "id": "m-b1-06215",
+    "word": "mushroom",
+    "letter": "M",
+    "level": "B1",
+    "turkish_explanation": "mantar"
+  },
+  {
+    "id": "m-c1-06216",
+    "word": "mustard",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "hardal"
+  },
+  {
+    "id": "m-c1-06217",
+    "word": "mute",
+    "letter": "M",
+    "level": "C1",
+    "turkish_explanation": "dilsiz; sessiz; sesini kapatmak"
+  },
+  {
+    "id": "n-c1-06218",
+    "word": "nanny",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "dadı; çocuk bakıcısı"
+  },
+  {
+    "id": "n-c1-06219",
+    "word": "naughty",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "yaramaz; haylaz"
+  },
+  {
+    "id": "n-c1-06220",
+    "word": "nausea",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "mide bulantısı"
+  },
+  {
+    "id": "n-c1-06221",
+    "word": "needless",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "gereksiz"
+  },
+  {
+    "id": "n-c1-06222",
+    "word": "negligence",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "ihmal; dikkatsizlik"
+  },
+  {
+    "id": "n-b2-06223",
+    "word": "nephew",
+    "letter": "N",
+    "level": "B2",
+    "turkish_explanation": "erkek yeğen"
+  },
+  {
+    "id": "n-c1-06224",
+    "word": "neural",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "sinirle ilgili"
+  },
+  {
+    "id": "n-b2-06225",
+    "word": "nickname",
+    "letter": "N",
+    "level": "B2",
+    "turkish_explanation": "lakap; takma ad"
+  },
+  {
+    "id": "n-c1-06226",
+    "word": "niece",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "kız yeğen"
+  },
+  {
+    "id": "n-b1-06227",
+    "word": "noble",
+    "letter": "N",
+    "level": "B1",
+    "turkish_explanation": "soylu; asil"
+  },
+  {
+    "id": "n-c1-06228",
+    "word": "notch",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "çentik; kertik"
+  },
+  {
+    "id": "n-c1-06229",
+    "word": "nuisance",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "baş belası; sıkıntı veren şey"
+  },
+  {
+    "id": "n-c1-06230",
+    "word": "numb",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "uyuşmuş; hissiz"
+  },
+  {
+    "id": "n-c1-06231",
+    "word": "nutrient",
+    "letter": "N",
+    "level": "C1",
+    "turkish_explanation": "besin maddesi"
+  },
+  {
+    "id": "o-b2-06232",
+    "word": "oak",
+    "letter": "O",
+    "level": "B2",
+    "turkish_explanation": "meşe"
+  },
+  {
+    "id": "o-c1-06233",
+    "word": "oasis",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "vaha"
+  },
+  {
+    "id": "o-c1-06234",
+    "word": "obstruction",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "engel; tıkanıklık"
+  },
+  {
+    "id": "o-c1-06235",
+    "word": "oppressed",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "ezilmiş; baskı altındaki"
+  },
+  {
+    "id": "o-c1-06236",
+    "word": "oppression",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "baskı; zulüm"
+  },
+  {
+    "id": "o-b2-06237",
+    "word": "orbit",
+    "letter": "O",
+    "level": "B2",
+    "turkish_explanation": "yörünge"
+  },
+  {
+    "id": "o-c1-06238",
+    "word": "ounce",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "ons; küçük ağırlık birimi"
+  },
+  {
+    "id": "o-c1-06239",
+    "word": "outlaw",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "kanun kaçağı; yasaklamak"
+  },
+  {
+    "id": "o-c1-06240",
+    "word": "outrageous",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "rezil; akıl almaz; çok aşırı"
+  },
+  {
+    "id": "o-c1-06241",
+    "word": "outright",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "doğrudan; tamamen; açıkça"
+  },
+  {
+    "id": "o-c1-06242",
+    "word": "outskirts",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "şehrin dış mahalleleri"
+  },
+  {
+    "id": "o-c1-06243",
+    "word": "outward",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "dışa doğru; dıştan görünen"
+  },
+  {
+    "id": "o-b2-06244",
+    "word": "oval",
+    "letter": "O",
+    "level": "B2",
+    "turkish_explanation": "yumurta biçimli; uzatılmış yuvarlak"
+  },
+  {
+    "id": "o-c1-06245",
+    "word": "overdue",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "vadesi geçmiş; gecikmiş"
+  },
+  {
+    "id": "o-c1-06246",
+    "word": "overhaul",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "baştan sona elden geçirme"
+  },
+  {
+    "id": "o-b2-06247",
+    "word": "overhead",
+    "letter": "O",
+    "level": "B2",
+    "turkish_explanation": "tepede; baş üstünde"
+  },
+  {
+    "id": "o-c1-06248",
+    "word": "oversight",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "gözden kaçırma; denetim"
+  },
+  {
+    "id": "o-c1-06249",
+    "word": "overthrow",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "devirmek; iktidardan indirmek"
+  },
+  {
+    "id": "o-c1-06250",
+    "word": "overweight",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "fazla kilolu"
+  },
+  {
+    "id": "o-c1-06251",
+    "word": "oyster",
+    "letter": "O",
+    "level": "C1",
+    "turkish_explanation": "istiridye"
+  },
+  {
+    "id": "p-c1-06252",
+    "word": "pact",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "anlaşma; pakt"
+  },
+  {
+    "id": "p-b2-06253",
+    "word": "pal",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "arkadaş; dost"
+  },
+  {
+    "id": "p-c1-06254",
+    "word": "parachute",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "paraşüt"
+  },
+  {
+    "id": "p-b2-06255",
+    "word": "paradise",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "cennet"
+  },
+  {
+    "id": "p-c1-06256",
+    "word": "parcel",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "paket; koli"
+  },
+  {
+    "id": "p-c1-06257",
+    "word": "pardon",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "af; bağışlamak"
+  },
+  {
+    "id": "p-c1-06258",
+    "word": "parody",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "parodi; taklit ederek alay etme"
+  },
+  {
+    "id": "p-b1-06259",
+    "word": "pasta",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "makarna"
+  },
+  {
+    "id": "p-b2-06260",
+    "word": "paste",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "macun; yapıştırmak"
+  },
+  {
+    "id": "p-c1-06261",
+    "word": "pastoral",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çobanlarla ilgili; kırsal"
+  },
+  {
+    "id": "p-b1-06262",
+    "word": "pat",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "hafifçe vurmak; okşamak"
+  },
+  {
+    "id": "p-b2-06263",
+    "word": "pathetic",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "acınası; zavallı"
+  },
+  {
+    "id": "p-c1-06264",
+    "word": "patriotic",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "vatansever"
+  },
+  {
+    "id": "p-c1-06265",
+    "word": "patriotism",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "vatanseverlik"
+  },
+  {
+    "id": "p-c1-06266",
+    "word": "pavement",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kaldırım"
+  },
+  {
+    "id": "p-c1-06267",
+    "word": "pea",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "bezelye"
+  },
+  {
+    "id": "p-b1-06268",
+    "word": "peach",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "şeftali"
+  },
+  {
+    "id": "p-b1-06269",
+    "word": "peanut",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "yer fıstığı"
+  },
+  {
+    "id": "p-b2-06270",
+    "word": "pearl",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "inci"
+  },
+  {
+    "id": "p-c1-06271",
+    "word": "peasant",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "köylü"
+  },
+  {
+    "id": "p-c1-06272",
+    "word": "peculiar",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "tuhaf; kendine özgü"
+  },
+  {
+    "id": "p-c1-06273",
+    "word": "pedal",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "ayakla basılan kol; bisikleti çevirmeye yarayan parça"
+  },
+  {
+    "id": "p-c1-06274",
+    "word": "pedestrian",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "yaya"
+  },
+  {
+    "id": "p-c1-06275",
+    "word": "peel",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kabuk; soymak"
+  },
+  {
+    "id": "p-b2-06276",
+    "word": "pending",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "beklemede; henüz sonuçlanmamış"
+  },
+  {
+    "id": "p-c1-06277",
+    "word": "penetrate",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "içine girmek; delip geçmek"
+  },
+  {
+    "id": "p-c1-06278",
+    "word": "perfume",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "parfüm"
+  },
+  {
+    "id": "p-c1-06279",
+    "word": "perimeter",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çevre uzunluğu; dış sınır"
+  },
+  {
+    "id": "p-c1-06280",
+    "word": "peripheral",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çevresel; ikincil"
+  },
+  {
+    "id": "p-c1-06281",
+    "word": "perpetual",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "sürekli; hiç bitmeyen"
+  },
+  {
+    "id": "p-c1-06282",
+    "word": "persecution",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "zulüm; baskı"
+  },
+  {
+    "id": "p-c1-06283",
+    "word": "persistence",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "ısrar; direnç"
+  },
+  {
+    "id": "p-c1-06284",
+    "word": "persona",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kişilik; dışa gösterilen imaj"
+  },
+  {
+    "id": "p-c1-06285",
+    "word": "pest",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "zararlı böcek; baş belası"
+  },
+  {
+    "id": "p-b2-06286",
+    "word": "petty",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "önemsiz; küçük"
+  },
+  {
+    "id": "p-c1-06287",
+    "word": "phenomena",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "olaylar; olgular"
+  },
+  {
+    "id": "p-c1-06288",
+    "word": "phenomenal",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "olağanüstü; harika"
+  },
+  {
+    "id": "p-b1-06289",
+    "word": "picnic",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "piknik"
+  },
+  {
+    "id": "p-c1-06290",
+    "word": "picturesque",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "resim gibi güzel; manzarası hoş"
+  },
+  {
+    "id": "p-b2-06291",
+    "word": "pie",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "turta; börek benzeri pasta"
+  },
+  {
+    "id": "p-c1-06292",
+    "word": "pier",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "iskele; denize uzanan rıhtım"
+  },
+  {
+    "id": "p-b2-06293",
+    "word": "pierce",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "delmek; içine işlemek"
+  },
+  {
+    "id": "p-c1-06294",
+    "word": "piercing",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "delici; keskin; vücut delme süsü"
+  },
+  {
+    "id": "p-b1-06295",
+    "word": "pigeon",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "güvercin"
+  },
+  {
+    "id": "p-c1-06296",
+    "word": "pike",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "mızrak; turna balığı"
+  },
+  {
+    "id": "p-c1-06297",
+    "word": "pilgrimage",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "hac; kutsal yere yolculuk"
+  },
+  {
+    "id": "p-b2-06298",
+    "word": "pillow",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "yastık"
+  },
+  {
+    "id": "p-c1-06299",
+    "word": "pinch",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çimdik; kıstırmak"
+  },
+  {
+    "id": "p-b2-06300",
+    "word": "pine",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "çam"
+  },
+  {
+    "id": "p-b1-06301",
+    "word": "pineapple",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "ananas"
+  },
+  {
+    "id": "p-c1-06302",
+    "word": "pint",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "yarım litreye yakın sıvı ölçüsü"
+  },
+  {
+    "id": "p-c1-06303",
+    "word": "piracy",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "korsanlık"
+  },
+  {
+    "id": "p-b2-06304",
+    "word": "pistol",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "tabanca"
+  },
+  {
+    "id": "p-c1-06305",
+    "word": "pivot",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "eksen; merkez nokta"
+  },
+  {
+    "id": "p-c1-06306",
+    "word": "pivotal",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çok önemli; belirleyici"
+  },
+  {
+    "id": "p-c1-06307",
+    "word": "plague",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "veba; salgın; belâ"
+  },
+  {
+    "id": "p-c1-06308",
+    "word": "plaster",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "sıva; alçı; yara bandı"
+  },
+  {
+    "id": "p-c1-06309",
+    "word": "plateau",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "yayla; düzlük"
+  },
+  {
+    "id": "p-c1-06310",
+    "word": "playful",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "oyunbaz; şakacı"
+  },
+  {
+    "id": "p-c1-06311",
+    "word": "playground",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "oyun alanı"
+  },
+  {
+    "id": "p-c1-06312",
+    "word": "plum",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "erik"
+  },
+  {
+    "id": "p-c1-06313",
+    "word": "plumbing",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "tesisat; su boruları"
+  },
+  {
+    "id": "p-c1-06314",
+    "word": "pneumonia",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "zatürre"
+  },
+  {
+    "id": "p-c1-06315",
+    "word": "poetic",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "şiir gibi; şiirsel"
+  },
+  {
+    "id": "p-c1-06316",
+    "word": "pointless",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "anlamsız; boşuna"
+  },
+  {
+    "id": "p-c1-06317",
+    "word": "poke",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "dürtmek; sokmak"
+  },
+  {
+    "id": "p-b1-06318",
+    "word": "polish",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "cila; parlatmak"
+  },
+  {
+    "id": "p-c1-06319",
+    "word": "poppy",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "gelincik; haşhaş"
+  },
+  {
+    "id": "p-c1-06320",
+    "word": "porcelain",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "porselen"
+  },
+  {
+    "id": "p-c1-06321",
+    "word": "porch",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "veranda; giriş sundurması"
+  },
+  {
+    "id": "p-b2-06322",
+    "word": "pork",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "domuz eti"
+  },
+  {
+    "id": "p-c1-06323",
+    "word": "postage",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "posta ücreti"
+  },
+  {
+    "id": "p-c1-06324",
+    "word": "posture",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "duruş; vücut pozisyonu"
+  },
+  {
+    "id": "p-c1-06325",
+    "word": "potent",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "güçlü; etkili"
+  },
+  {
+    "id": "p-c1-06326",
+    "word": "pottery",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "çömlekçilik; seramik"
+  },
+  {
+    "id": "p-c1-06327",
+    "word": "poultry",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kümes hayvanları"
+  },
+  {
+    "id": "p-c1-06328",
+    "word": "prairie",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "bozkır; geniş otlak"
+  },
+  {
+    "id": "p-c1-06329",
+    "word": "prank",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "şaka; muziplik"
+  },
+  {
+    "id": "p-c1-06330",
+    "word": "preach",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "vaaz vermek; öğüt vermek"
+  },
+  {
+    "id": "p-c1-06331",
+    "word": "preacher",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "vaiz"
+  },
+  {
+    "id": "p-c1-06332",
+    "word": "precinct",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "bölge; karakol çevresi"
+  },
+  {
+    "id": "p-c1-06333",
+    "word": "prevalent",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "yaygın; çok görülen"
+  },
+  {
+    "id": "p-c1-06334",
+    "word": "prick",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "iğneyle delmek; batma"
+  },
+  {
+    "id": "p-c1-06335",
+    "word": "primitive",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "ilkel"
+  },
+  {
+    "id": "p-c1-06336",
+    "word": "probation",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "denetimli serbestlik; deneme süresi"
+  },
+  {
+    "id": "p-c1-06337",
+    "word": "procedural",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "usule ait; işlemsel"
+  },
+  {
+    "id": "p-c1-06338",
+    "word": "procession",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "geçit alayı; tören yürüyüşü"
+  },
+  {
+    "id": "p-c1-06339",
+    "word": "procurement",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "tedarik; satın alma"
+  },
+  {
+    "id": "p-b2-06340",
+    "word": "progression",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "ilerleme; gelişim"
+  },
+  {
+    "id": "p-c1-06341",
+    "word": "prolific",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "üretken; çok eser veren"
+  },
+  {
+    "id": "p-c1-06342",
+    "word": "prominence",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "öne çıkma; tanınmışlık"
+  },
+  {
+    "id": "p-b2-06343",
+    "word": "prone",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "eğilimli; yüzü yere dönük"
+  },
+  {
+    "id": "p-c1-06344",
+    "word": "prosperous",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "zengin; refah içinde"
+  },
+  {
+    "id": "p-c1-06345",
+    "word": "pudding",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "puding"
+  },
+  {
+    "id": "p-c1-06346",
+    "word": "puff",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "üflemek; nefes; kabarık parça"
+  },
+  {
+    "id": "p-c1-06347",
+    "word": "pulp",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "posa; meyve eti; hamur"
+  },
+  {
+    "id": "p-b1-06348",
+    "word": "pumpkin",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "balkabağı"
+  },
+  {
+    "id": "p-c1-06349",
+    "word": "pun",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kelime oyunu"
+  },
+  {
+    "id": "p-c1-06350",
+    "word": "puppet",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "kukla; kuklacı oyuncağı"
+  },
+  {
+    "id": "p-b1-06351",
+    "word": "puppy",
+    "letter": "P",
+    "level": "B1",
+    "turkish_explanation": "köpek yavrusu"
+  },
+  {
+    "id": "p-c1-06352",
+    "word": "purge",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "temizlemek; tasfiye etmek"
+  },
+  {
+    "id": "p-c1-06353",
+    "word": "purity",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "saflık; temizlik"
+  },
+  {
+    "id": "p-b2-06354",
+    "word": "purse",
+    "letter": "P",
+    "level": "B2",
+    "turkish_explanation": "el çantası; para kesesi"
+  },
+  {
+    "id": "p-c1-06355",
+    "word": "pyramid",
+    "letter": "P",
+    "level": "C1",
+    "turkish_explanation": "piramit"
+  },
+  {
+    "id": "q-b2-06356",
+    "word": "quantum",
+    "letter": "Q",
+    "level": "B2",
+    "turkish_explanation": "kuantum; en küçük miktar"
+  },
+  {
+    "id": "q-c1-06357",
+    "word": "quirky",
+    "letter": "Q",
+    "level": "C1",
+    "turkish_explanation": "tuhaf ve ilginç; kendine özgü"
+  },
+  {
+    "id": "r-b1-06358",
+    "word": "rabbit",
+    "letter": "R",
+    "level": "B1",
+    "turkish_explanation": "tavşan"
+  },
+  {
+    "id": "r-b2-06359",
+    "word": "rack",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "raf; askılık"
+  },
+  {
+    "id": "r-b1-06360",
+    "word": "railroad",
+    "letter": "R",
+    "level": "B1",
+    "turkish_explanation": "demiryolu"
+  },
+  {
+    "id": "r-b1-06361",
+    "word": "rainbow",
+    "letter": "R",
+    "level": "B1",
+    "turkish_explanation": "gökkuşağı"
+  },
+  {
+    "id": "r-c1-06362",
+    "word": "rainfall",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yağış miktarı"
+  },
+  {
+    "id": "r-b2-06363",
+    "word": "ram",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "koç; çarpmak"
+  },
+  {
+    "id": "r-c1-06364",
+    "word": "ramp",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "rampa; eğimli yol"
+  },
+  {
+    "id": "r-c1-06365",
+    "word": "rampant",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kontrolsüz yayılan; çılgın"
+  },
+  {
+    "id": "r-c1-06366",
+    "word": "ransom",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "fidye"
+  },
+  {
+    "id": "r-c1-06367",
+    "word": "rant",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "bağırıp çağırarak sızlanmak"
+  },
+  {
+    "id": "r-b2-06368",
+    "word": "rap",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "hafifçe vurmak; ritimle konuşarak söylenen müzik türü"
+  },
+  {
+    "id": "r-c1-06369",
+    "word": "rash",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "döküntü; düşüncesiz; aceleci"
+  },
+  {
+    "id": "r-c1-06370",
+    "word": "razor",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "ustura; tıraş bıçağı"
+  },
+  {
+    "id": "r-c1-06371",
+    "word": "recess",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "ara; teneffüs; girinti"
+  },
+  {
+    "id": "r-c1-06372",
+    "word": "reckless",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "pervasız; dikkatsiz"
+  },
+  {
+    "id": "r-c1-06373",
+    "word": "recreate",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yeniden yaratmak"
+  },
+  {
+    "id": "r-b2-06374",
+    "word": "recreation",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "eğlence; dinlenme etkinliği"
+  },
+  {
+    "id": "r-c1-06375",
+    "word": "redeem",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kurtarmak; bedelini ödeyip geri almak"
+  },
+  {
+    "id": "r-c1-06376",
+    "word": "reef",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "resif; sualtı kayalığı"
+  },
+  {
+    "id": "r-c1-06377",
+    "word": "reel",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "makara; makaraya sarmak"
+  },
+  {
+    "id": "r-c1-06378",
+    "word": "referral",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yönlendirme; sevk"
+  },
+  {
+    "id": "r-c1-06379",
+    "word": "relay",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "aktarmak; bayrak yarışı"
+  },
+  {
+    "id": "r-c1-06380",
+    "word": "relentless",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "acımasız; durmadan süren"
+  },
+  {
+    "id": "r-c1-06381",
+    "word": "reliance",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "güven; bağımlılık"
+  },
+  {
+    "id": "r-c1-06382",
+    "word": "relocation",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yer değiştirme; taşınma"
+  },
+  {
+    "id": "r-c1-06383",
+    "word": "remarkably",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "dikkat çekici derecede"
+  },
+  {
+    "id": "r-c1-06384",
+    "word": "remembrance",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "anma; hatıra"
+  },
+  {
+    "id": "r-c1-06385",
+    "word": "renovation",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yenileme; onarım"
+  },
+  {
+    "id": "r-c1-06386",
+    "word": "repay",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "geri ödemek; karşılık vermek"
+  },
+  {
+    "id": "r-c1-06387",
+    "word": "repeal",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "yürürlükten kaldırmak"
+  },
+  {
+    "id": "r-c1-06388",
+    "word": "resemblance",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "benzerlik"
+  },
+  {
+    "id": "r-c1-06389",
+    "word": "resentment",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "içerleme; kırgınlık"
+  },
+  {
+    "id": "r-c1-06390",
+    "word": "residency",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "ikamet; uzmanlık eğitimi dönemi"
+  },
+  {
+    "id": "r-c1-06391",
+    "word": "respectable",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "saygın; ciddi"
+  },
+  {
+    "id": "r-c1-06392",
+    "word": "respectful",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "saygılı"
+  },
+  {
+    "id": "r-c1-06393",
+    "word": "restless",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "huzursuz; yerinde duramayan"
+  },
+  {
+    "id": "r-c1-06394",
+    "word": "retaliation",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "karşılık verme; misilleme"
+  },
+  {
+    "id": "r-c1-06395",
+    "word": "retention",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "alıkoyma; elde tutma"
+  },
+  {
+    "id": "r-b2-06396",
+    "word": "reunion",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "yeniden buluşma"
+  },
+  {
+    "id": "r-c1-06397",
+    "word": "reversal",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "tersine dönme; geri alma"
+  },
+  {
+    "id": "r-c1-06398",
+    "word": "revolt",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "isyan; ayaklanmak"
+  },
+  {
+    "id": "r-c1-06399",
+    "word": "rib",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kaburga"
+  },
+  {
+    "id": "r-c1-06400",
+    "word": "ribbon",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kurdele; şerit"
+  },
+  {
+    "id": "r-b2-06401",
+    "word": "ridge",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "sırt; dağ silsilesi"
+  },
+  {
+    "id": "r-c1-06402",
+    "word": "rig",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "donanım; sondaj kulesi; hileyle düzenlemek"
+  },
+  {
+    "id": "r-c1-06403",
+    "word": "rigid",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "katı; sert; esnemeyen"
+  },
+  {
+    "id": "r-c1-06404",
+    "word": "rim",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kenar; çerçeve"
+  },
+  {
+    "id": "r-c1-06405",
+    "word": "ripe",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "olgun; pişmiş meyve"
+  },
+  {
+    "id": "r-c1-06406",
+    "word": "rivalry",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "rekabet"
+  },
+  {
+    "id": "r-c1-06407",
+    "word": "roar",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kükremek; gürlemek"
+  },
+  {
+    "id": "r-c1-06408",
+    "word": "roast",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "fırında kızartmak; kavurmak"
+  },
+  {
+    "id": "r-b2-06409",
+    "word": "rod",
+    "letter": "R",
+    "level": "B2",
+    "turkish_explanation": "çubuk; olta sapı"
+  },
+  {
+    "id": "r-c1-06410",
+    "word": "rot",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "çürümek; çürüme"
+  },
+  {
+    "id": "r-c1-06411",
+    "word": "rotary",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "dönen; döner"
+  },
+  {
+    "id": "r-c1-06412",
+    "word": "rotten",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "çürük; bozulmuş"
+  },
+  {
+    "id": "r-c1-06413",
+    "word": "rug",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "halı; küçük kilim"
+  },
+  {
+    "id": "r-c1-06414",
+    "word": "runaway",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "kaçak; kaçmış"
+  },
+  {
+    "id": "r-c1-06415",
+    "word": "rust",
+    "letter": "R",
+    "level": "C1",
+    "turkish_explanation": "pas"
+  },
+  {
+    "id": "s-c1-06416",
+    "word": "sabotage",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "sabotaj; zarar verme"
+  },
+  {
+    "id": "s-c1-06417",
+    "word": "saddle",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "eyer"
+  },
+  {
+    "id": "s-c1-06418",
+    "word": "safari",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "vahşi hayvanları görmeye çıkılan gezi"
+  },
+  {
+    "id": "s-b2-06419",
+    "word": "salmon",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "som balığı"
+  },
+  {
+    "id": "s-c1-06420",
+    "word": "salute",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "selam vermek; selamlamak"
+  },
+  {
+    "id": "s-c1-06421",
+    "word": "salvage",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kurtarmak; batıktan çıkarmak"
+  },
+  {
+    "id": "s-b2-06422",
+    "word": "salvation",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "kurtuluş"
+  },
+  {
+    "id": "s-c1-06423",
+    "word": "sane",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "akıllı; aklı yerinde"
+  },
+  {
+    "id": "s-c1-06424",
+    "word": "sarcasm",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "alay; iğneleyici söz"
+  },
+  {
+    "id": "s-c1-06425",
+    "word": "sarcastic",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "iğneleyici; alaycı"
+  },
+  {
+    "id": "s-c1-06426",
+    "word": "satire",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "taşlama; toplumu eleştiren mizah"
+  },
+  {
+    "id": "s-b1-06427",
+    "word": "sausage",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "sosis; sucuk"
+  },
+  {
+    "id": "s-b2-06428",
+    "word": "savage",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "vahşi; yabani"
+  },
+  {
+    "id": "s-c1-06429",
+    "word": "savvy",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "bilgili; işini bilen"
+  },
+  {
+    "id": "s-c1-06430",
+    "word": "scar",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "yara izi"
+  },
+  {
+    "id": "s-c1-06431",
+    "word": "scarce",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "az bulunan; kıt"
+  },
+  {
+    "id": "s-c1-06432",
+    "word": "scarf",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şal; atkı"
+  },
+  {
+    "id": "s-c1-06433",
+    "word": "scarlet",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "al kırmızı"
+  },
+  {
+    "id": "s-c1-06434",
+    "word": "scenery",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "manzara; doğa görünümü"
+  },
+  {
+    "id": "s-c1-06435",
+    "word": "scent",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "koku; parfüm"
+  },
+  {
+    "id": "s-b1-06436",
+    "word": "scissors",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "makas"
+  },
+  {
+    "id": "s-c1-06437",
+    "word": "scoop",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kepçe; küçük kürek; ilk haber"
+  },
+  {
+    "id": "s-c1-06438",
+    "word": "scripture",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kutsal kitap"
+  },
+  {
+    "id": "s-c1-06439",
+    "word": "scrub",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "fırçalamak; ovmak"
+  },
+  {
+    "id": "s-b1-06440",
+    "word": "seaside",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "deniz kıyısı"
+  },
+  {
+    "id": "s-c1-06441",
+    "word": "secrecy",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gizlilik"
+  },
+  {
+    "id": "s-c1-06442",
+    "word": "segregation",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ayrımcılık; ayrı tutma"
+  },
+  {
+    "id": "s-c1-06443",
+    "word": "seizure",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ele geçirme; ani nöbet"
+  },
+  {
+    "id": "s-c1-06444",
+    "word": "seldom",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "nadiren; pek az"
+  },
+  {
+    "id": "s-b2-06445",
+    "word": "selfish",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "bencil"
+  },
+  {
+    "id": "s-a2-06446",
+    "word": "senate",
+    "letter": "S",
+    "level": "A2",
+    "turkish_explanation": "senato"
+  },
+  {
+    "id": "s-c1-06447",
+    "word": "sentimental",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "duygusal; hassas"
+  },
+  {
+    "id": "s-c1-06448",
+    "word": "sewage",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "pis su"
+  },
+  {
+    "id": "s-c1-06449",
+    "word": "sewer",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "lağım; kanalizasyon"
+  },
+  {
+    "id": "s-c1-06450",
+    "word": "shady",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gölgeli; şüpheli"
+  },
+  {
+    "id": "s-c1-06451",
+    "word": "shameful",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "utanç verici"
+  },
+  {
+    "id": "s-c1-06452",
+    "word": "shampoo",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şampuan"
+  },
+  {
+    "id": "s-b1-06453",
+    "word": "shark",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "köpekbalığı"
+  },
+  {
+    "id": "s-c1-06454",
+    "word": "shave",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "tıraş olmak"
+  },
+  {
+    "id": "s-b2-06455",
+    "word": "shepherd",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "çoban"
+  },
+  {
+    "id": "s-b1-06456",
+    "word": "shield",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "kalkan; korumak"
+  },
+  {
+    "id": "s-c1-06457",
+    "word": "shin",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "incik"
+  },
+  {
+    "id": "s-c1-06458",
+    "word": "shove",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "itmek; hızla itmek"
+  },
+  {
+    "id": "s-c1-06459",
+    "word": "shovel",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kürek"
+  },
+  {
+    "id": "s-b2-06460",
+    "word": "showcase",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "vitrin; sergilemek"
+  },
+  {
+    "id": "s-c1-06461",
+    "word": "shrine",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "türbe; kutsal mekân"
+  },
+  {
+    "id": "s-b2-06462",
+    "word": "shuttle",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "servis aracı; gidip gelen araç"
+  },
+  {
+    "id": "s-c1-06463",
+    "word": "simplicity",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "sadelik; basitlik"
+  },
+  {
+    "id": "s-c1-06464",
+    "word": "singular",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "tekil; eşsiz"
+  },
+  {
+    "id": "s-c1-06465",
+    "word": "sinister",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "uğursuz; kötü niyetli"
+  },
+  {
+    "id": "s-c1-06466",
+    "word": "sip",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "yudumlamak; küçük yudum"
+  },
+  {
+    "id": "s-c1-06467",
+    "word": "skate",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "paten; patenle kaymak"
+  },
+  {
+    "id": "s-c1-06468",
+    "word": "skeleton",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "iskelet"
+  },
+  {
+    "id": "s-c1-06469",
+    "word": "slack",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gevşek; işlemeyen"
+  },
+  {
+    "id": "s-c1-06470",
+    "word": "slang",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "argo"
+  },
+  {
+    "id": "s-c1-06471",
+    "word": "slate",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kayağantaş; kara tahta; liste"
+  },
+  {
+    "id": "s-c1-06472",
+    "word": "slaughter",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kesmek; katliam"
+  },
+  {
+    "id": "s-c1-06473",
+    "word": "sleepy",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "uykulu"
+  },
+  {
+    "id": "s-b2-06474",
+    "word": "sleeve",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "kol"
+  },
+  {
+    "id": "s-c1-06475",
+    "word": "slender",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ince; narin"
+  },
+  {
+    "id": "s-c1-06476",
+    "word": "slick",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kaygan; ustaca"
+  },
+  {
+    "id": "s-b2-06477",
+    "word": "slim",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "ince; zayıf"
+  },
+  {
+    "id": "s-c1-06478",
+    "word": "slippery",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kaygan"
+  },
+  {
+    "id": "s-c1-06479",
+    "word": "sloppy",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "özensiz; baştan savma"
+  },
+  {
+    "id": "s-c1-06480",
+    "word": "smack",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şaplak atmak; şaplak sesi"
+  },
+  {
+    "id": "s-b2-06481",
+    "word": "snack",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "atıştırmalık; ara yemek"
+  },
+  {
+    "id": "s-b1-06482",
+    "word": "snail",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "salyangoz"
+  },
+  {
+    "id": "s-c1-06483",
+    "word": "snatch",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kapmak; kaptığı gibi almak"
+  },
+  {
+    "id": "s-b2-06484",
+    "word": "sneak",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "gizlice yaklaşmak"
+  },
+  {
+    "id": "s-c1-06485",
+    "word": "sneakers",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "spor ayakkabı"
+  },
+  {
+    "id": "s-c1-06486",
+    "word": "sneaky",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "sinsi; gizlice yapan"
+  },
+  {
+    "id": "s-b2-06487",
+    "word": "sober",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "ayık; ağırbaşlı"
+  },
+  {
+    "id": "s-c1-06488",
+    "word": "socket",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "priz; yuva"
+  },
+  {
+    "id": "s-b1-06489",
+    "word": "soda",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "gazlı maden suyu; gazlı içecek"
+  },
+  {
+    "id": "s-b1-06490",
+    "word": "sofa",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "kanepe"
+  },
+  {
+    "id": "s-b2-06491",
+    "word": "sore",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "ağrıyan; acıyan"
+  },
+  {
+    "id": "s-c1-06492",
+    "word": "sorrow",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "keder; acı"
+  },
+  {
+    "id": "s-c1-06493",
+    "word": "sour",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ekşi"
+  },
+  {
+    "id": "s-b2-06494",
+    "word": "sovereign",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "egemen; bağımsız"
+  },
+  {
+    "id": "s-c1-06495",
+    "word": "specs",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gözlük; teknik özellikler"
+  },
+  {
+    "id": "s-b2-06496",
+    "word": "spike",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "sivri uç; ani yükseliş"
+  },
+  {
+    "id": "s-c1-06497",
+    "word": "spiral",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "sarmal; kıvrılarak yükselen biçim"
+  },
+  {
+    "id": "s-c1-06498",
+    "word": "spit",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "tükürmek; şiş"
+  },
+  {
+    "id": "s-c1-06499",
+    "word": "splash",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "su sıçratmak; sıçrama"
+  },
+  {
+    "id": "s-c1-06500",
+    "word": "splendid",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "muhteşem; harika"
+  },
+  {
+    "id": "s-c1-06501",
+    "word": "spooky",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ürkütücü; korkutucu"
+  },
+  {
+    "id": "s-c1-06502",
+    "word": "spree",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "çılgınca eğlence; kısa süreli aşırılık"
+  },
+  {
+    "id": "s-c1-06503",
+    "word": "spun",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "dönmüş; eğrilmiş"
+  },
+  {
+    "id": "s-c1-06504",
+    "word": "spur",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "mahmuz; teşvik etmek"
+  },
+  {
+    "id": "s-c1-06505",
+    "word": "squadron",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "filo; hava birliği"
+  },
+  {
+    "id": "s-c1-06506",
+    "word": "squash",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "ezmek; kabak türü; skuoş sporu"
+  },
+  {
+    "id": "s-b2-06507",
+    "word": "stack",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "yığın; üst üste koymak"
+  },
+  {
+    "id": "s-c1-06508",
+    "word": "stain",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "leke; lekelemek"
+  },
+  {
+    "id": "s-b1-06509",
+    "word": "staircase",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "merdiven"
+  },
+  {
+    "id": "s-c1-06510",
+    "word": "starvation",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "açlık"
+  },
+  {
+    "id": "s-c1-06511",
+    "word": "starve",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "açlıktan ölmek; çok aç kalmak"
+  },
+  {
+    "id": "s-c1-06512",
+    "word": "stationary",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "hareketsiz; durağan"
+  },
+  {
+    "id": "s-c1-06513",
+    "word": "statute",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "yasa; tüzük"
+  },
+  {
+    "id": "s-b2-06514",
+    "word": "steak",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "biftek"
+  },
+  {
+    "id": "s-c1-06515",
+    "word": "stealth",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gizlilik; sessiz davranma"
+  },
+  {
+    "id": "s-c1-06516",
+    "word": "stellar",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "yıldızlara ait; mükemmel"
+  },
+  {
+    "id": "s-b2-06517",
+    "word": "stern",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "ciddi; sert"
+  },
+  {
+    "id": "s-c1-06518",
+    "word": "stimulation",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "uyarım; canlandırma"
+  },
+  {
+    "id": "s-c1-06519",
+    "word": "sting",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "iğnelemek; arı sokması"
+  },
+  {
+    "id": "s-c1-06520",
+    "word": "stint",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "belirli bir çalışma süresi"
+  },
+  {
+    "id": "s-c1-06521",
+    "word": "stitch",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "dikiş; dikmek"
+  },
+  {
+    "id": "s-c1-06522",
+    "word": "stool",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "tabure"
+  },
+  {
+    "id": "s-c1-06523",
+    "word": "stove",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "soba; ocak"
+  },
+  {
+    "id": "s-c1-06524",
+    "word": "stranded",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "mahsur kalmış; yolda kalmış"
+  },
+  {
+    "id": "s-c1-06525",
+    "word": "strap",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kayış; askı"
+  },
+  {
+    "id": "s-b2-06526",
+    "word": "straw",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "saman; pipet"
+  },
+  {
+    "id": "s-b1-06527",
+    "word": "strawberry",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "çilek"
+  },
+  {
+    "id": "s-c1-06528",
+    "word": "stray",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "başıboş; yoldan sapmak"
+  },
+  {
+    "id": "s-b2-06529",
+    "word": "streak",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "çizgi; üst üste kazanılan seri"
+  },
+  {
+    "id": "s-c1-06530",
+    "word": "stricken",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "etkilenmiş; musibet çarpmış"
+  },
+  {
+    "id": "s-c1-06531",
+    "word": "stripe",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "çizgi; şerit"
+  },
+  {
+    "id": "s-c1-06532",
+    "word": "stroll",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gezinti; yürüyüşe çıkmak"
+  },
+  {
+    "id": "s-c1-06533",
+    "word": "stubborn",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "inatçı"
+  },
+  {
+    "id": "s-b1-06534",
+    "word": "stuck",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "sıkışmış; takılıp kalmış"
+  },
+  {
+    "id": "s-c1-06535",
+    "word": "stunt",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "dublörlük; akrobatik gösteri"
+  },
+  {
+    "id": "s-c1-06536",
+    "word": "stupidity",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "aptallık"
+  },
+  {
+    "id": "s-c1-06537",
+    "word": "stylish",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şık; modaya uygun"
+  },
+  {
+    "id": "s-c1-06538",
+    "word": "subjective",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "öznel; kişisel"
+  },
+  {
+    "id": "s-c1-06539",
+    "word": "submarine",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "denizaltı"
+  },
+  {
+    "id": "s-c1-06540",
+    "word": "submerged",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "suya batmış"
+  },
+  {
+    "id": "s-b2-06541",
+    "word": "subway",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "yeraltı treni; metro"
+  },
+  {
+    "id": "s-b1-06542",
+    "word": "suitcase",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "valiz"
+  },
+  {
+    "id": "s-c1-06543",
+    "word": "summon",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "çağırmak; toplantıya davet etmek"
+  },
+  {
+    "id": "s-b1-06544",
+    "word": "sunset",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "gün batımı"
+  },
+  {
+    "id": "s-b1-06545",
+    "word": "sunshine",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "güneş ışığı"
+  },
+  {
+    "id": "s-c1-06546",
+    "word": "supper",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "akşam yemeği"
+  },
+  {
+    "id": "s-c1-06547",
+    "word": "supplier",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "tedarikçi"
+  },
+  {
+    "id": "s-b1-06548",
+    "word": "supreme",
+    "letter": "S",
+    "level": "B1",
+    "turkish_explanation": "en yüksek; üstün"
+  },
+  {
+    "id": "s-c1-06549",
+    "word": "surf",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "dalgalarda kaymak; internette gezinmek"
+  },
+  {
+    "id": "s-c1-06550",
+    "word": "surname",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "soyadı"
+  },
+  {
+    "id": "s-c1-06551",
+    "word": "surreal",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "gerçeküstü"
+  },
+  {
+    "id": "s-c1-06552",
+    "word": "susceptible",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "etkilenmeye açık; hassas"
+  },
+  {
+    "id": "s-c1-06553",
+    "word": "swamp",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "bataklık"
+  },
+  {
+    "id": "s-c1-06554",
+    "word": "swan",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "kuğu"
+  },
+  {
+    "id": "s-b2-06555",
+    "word": "swap",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "değiş tokuş etmek; takas"
+  },
+  {
+    "id": "s-c1-06556",
+    "word": "sway",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "sallanmak; etki altına almak"
+  },
+  {
+    "id": "s-b2-06557",
+    "word": "sweat",
+    "letter": "S",
+    "level": "B2",
+    "turkish_explanation": "ter; terlemek"
+  },
+  {
+    "id": "s-c1-06558",
+    "word": "swell",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şişmek; kabarmak"
+  },
+  {
+    "id": "s-c1-06559",
+    "word": "swipe",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "parmakla kaydırmak; çalmak"
+  },
+  {
+    "id": "s-c1-06560",
+    "word": "swollen",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şişmiş"
+  },
+  {
+    "id": "s-c1-06561",
+    "word": "syndicate",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "birlik; sendika"
+  },
+  {
+    "id": "s-c1-06562",
+    "word": "synonymous",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "eş anlamlı"
+  },
+  {
+    "id": "s-c1-06563",
+    "word": "syrup",
+    "letter": "S",
+    "level": "C1",
+    "turkish_explanation": "şurup; kıvamlı tatlı sıvı"
+  },
+  {
+    "id": "t-c1-06564",
+    "word": "tailor",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "terzi"
+  },
+  {
+    "id": "t-c1-06565",
+    "word": "takeover",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "devralma; ele geçirme"
+  },
+  {
+    "id": "t-c1-06566",
+    "word": "tame",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "evcil; evcilleştirmek"
+  },
+  {
+    "id": "t-b2-06567",
+    "word": "tan",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "bronzlaşma; açık kahverengi"
+  },
+  {
+    "id": "t-c1-06568",
+    "word": "telegram",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "telgraf"
+  },
+  {
+    "id": "t-c1-06569",
+    "word": "telescope",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "teleskop; uzak cisimleri gösteren alet"
+  },
+  {
+    "id": "t-c1-06570",
+    "word": "temper",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "huy; öfke"
+  },
+  {
+    "id": "t-c1-06571",
+    "word": "temptation",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "ayartma; cazibe"
+  },
+  {
+    "id": "t-b2-06572",
+    "word": "tense",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "gergin; fiil zamanı"
+  },
+  {
+    "id": "t-c1-06573",
+    "word": "terminology",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "terminoloji; bir alana özgü sözcükler"
+  },
+  {
+    "id": "t-c1-06574",
+    "word": "terrace",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "teras"
+  },
+  {
+    "id": "t-b2-06575",
+    "word": "thankful",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "müteşekkir; minnettar"
+  },
+  {
+    "id": "t-c1-06576",
+    "word": "theatrical",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "tiyatroya ait; abartılı"
+  },
+  {
+    "id": "t-c1-06577",
+    "word": "therapeutic",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "iyileştirici; tedavi edici"
+  },
+  {
+    "id": "t-c1-06578",
+    "word": "thigh",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "uyluk"
+  },
+  {
+    "id": "t-c1-06579",
+    "word": "thrill",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "heyecan; coşku"
+  },
+  {
+    "id": "t-b2-06580",
+    "word": "thriller",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "gerilim filmi veya kitabı"
+  },
+  {
+    "id": "t-c1-06581",
+    "word": "thrust",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "itmek; sertçe sokmak"
+  },
+  {
+    "id": "t-b2-06582",
+    "word": "thunder",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "gök gürültüsü"
+  },
+  {
+    "id": "t-c1-06583",
+    "word": "tick",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "saatin tik sesi; işaret koymak"
+  },
+  {
+    "id": "t-c1-06584",
+    "word": "tidal",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "gelgitle ilgili"
+  },
+  {
+    "id": "t-b1-06585",
+    "word": "tiger",
+    "letter": "T",
+    "level": "B1",
+    "turkish_explanation": "kaplan"
+  },
+  {
+    "id": "t-c1-06586",
+    "word": "tile",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "fayans; kiremit"
+  },
+  {
+    "id": "t-c1-06587",
+    "word": "tilt",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "eğmek; yana yatmak"
+  },
+  {
+    "id": "t-c1-06588",
+    "word": "timeless",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "zamansız; hiç eskimeyen"
+  },
+  {
+    "id": "t-b2-06589",
+    "word": "tire",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "yormak; yorulmak"
+  },
+  {
+    "id": "t-b2-06590",
+    "word": "toast",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "kızarmış ekmek; kadeh kaldırmak"
+  },
+  {
+    "id": "t-c1-06591",
+    "word": "torch",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "meşale; el feneri"
+  },
+  {
+    "id": "t-c1-06592",
+    "word": "traitor",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "hain"
+  },
+  {
+    "id": "t-c1-06593",
+    "word": "transplant",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "nakil; başka yere dikmek"
+  },
+  {
+    "id": "t-c1-06594",
+    "word": "tray",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "tepsi"
+  },
+  {
+    "id": "t-c1-06595",
+    "word": "treason",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "vatana ihanet"
+  },
+  {
+    "id": "t-b2-06596",
+    "word": "trek",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "uzun yürüyüş"
+  },
+  {
+    "id": "t-c1-06597",
+    "word": "trench",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "hendek; siper"
+  },
+  {
+    "id": "t-c1-06598",
+    "word": "trim",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "budamak; kısaltmak"
+  },
+  {
+    "id": "t-c1-06599",
+    "word": "trivial",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "önemsiz"
+  },
+  {
+    "id": "t-b2-06600",
+    "word": "trunk",
+    "letter": "T",
+    "level": "B2",
+    "turkish_explanation": "ağaç gövdesi; bagaj; fil hortumu"
+  },
+  {
+    "id": "t-c1-06601",
+    "word": "trustworthy",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "güvenilir"
+  },
+  {
+    "id": "t-c1-06602",
+    "word": "turf",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "çim; çim tabakası"
+  },
+  {
+    "id": "t-b1-06603",
+    "word": "turkey",
+    "letter": "T",
+    "level": "B1",
+    "turkish_explanation": "hindi"
+  },
+  {
+    "id": "t-c1-06604",
+    "word": "tutor",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "özel öğretmen"
+  },
+  {
+    "id": "t-c1-06605",
+    "word": "tutorial",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "öğretici ders; kullanma kılavuzu"
+  },
+  {
+    "id": "t-c1-06606",
+    "word": "twitch",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "seğirmek; kasılma"
+  },
+  {
+    "id": "t-c1-06607",
+    "word": "tyranny",
+    "letter": "T",
+    "level": "C1",
+    "turkish_explanation": "zorbalık; baskıcı yönetim"
+  },
+  {
+    "id": "u-c1-06608",
+    "word": "unanimous",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "oybirliğiyle alınan"
+  },
+  {
+    "id": "u-c1-06609",
+    "word": "unanimously",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "oybirliğiyle"
+  },
+  {
+    "id": "u-c1-06610",
+    "word": "unaware",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "habersiz"
+  },
+  {
+    "id": "u-c1-06611",
+    "word": "uncommon",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "nadir; sıradışı"
+  },
+  {
+    "id": "u-c1-06612",
+    "word": "undercover",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "gizli çalışan; kimliğini saklayan"
+  },
+  {
+    "id": "u-b2-06613",
+    "word": "underneath",
+    "letter": "U",
+    "level": "B2",
+    "turkish_explanation": "altında; altına"
+  },
+  {
+    "id": "u-c1-06614",
+    "word": "undo",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "geri almak; çözmek"
+  },
+  {
+    "id": "u-c1-06615",
+    "word": "unfamiliar",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "yabancı; tanıdık olmayan"
+  },
+  {
+    "id": "u-c1-06616",
+    "word": "unhealthy",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "sağlıksız"
+  },
+  {
+    "id": "u-c1-06617",
+    "word": "unified",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "birleşmiş"
+  },
+  {
+    "id": "u-c1-06618",
+    "word": "unlawful",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "yasadışı"
+  },
+  {
+    "id": "u-b2-06619",
+    "word": "unlock",
+    "letter": "U",
+    "level": "B2",
+    "turkish_explanation": "kilidi açmak"
+  },
+  {
+    "id": "u-c1-06620",
+    "word": "unnamed",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "adı belirtilmemiş"
+  },
+  {
+    "id": "u-c1-06621",
+    "word": "unreliable",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "güvenilmez"
+  },
+  {
+    "id": "u-c1-06622",
+    "word": "unrest",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "huzursuzluk; toplumsal karışıklık"
+  },
+  {
+    "id": "u-c1-06623",
+    "word": "upbeat",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "neşeli; iyimser"
+  },
+  {
+    "id": "u-c1-06624",
+    "word": "upright",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "dik; dürüst"
+  },
+  {
+    "id": "u-c1-06625",
+    "word": "upward",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "yukarı doğru"
+  },
+  {
+    "id": "u-c1-06626",
+    "word": "urgency",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "acillik; ivedilik"
+  },
+  {
+    "id": "u-c1-06627",
+    "word": "usher",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "yer gösteren görevli"
+  },
+  {
+    "id": "u-c1-06628",
+    "word": "utmost",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "mümkün olan en yüksek; azami"
+  },
+  {
+    "id": "u-c1-06629",
+    "word": "utter",
+    "letter": "U",
+    "level": "C1",
+    "turkish_explanation": "tamamen; sözcük söylemek"
+  },
+  {
+    "id": "v-c1-06630",
+    "word": "vacant",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "boş; kimsenin kullanmadığı"
+  },
+  {
+    "id": "v-c1-06631",
+    "word": "vain",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "kendini beğenmiş; boş"
+  },
+  {
+    "id": "v-c1-06632",
+    "word": "validation",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "doğrulama; onaylama"
+  },
+  {
+    "id": "v-c1-06633",
+    "word": "vanilla",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "vanilya"
+  },
+  {
+    "id": "v-c1-06634",
+    "word": "vanity",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "kibir; makyaj masası"
+  },
+  {
+    "id": "v-c1-06635",
+    "word": "vase",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "vazo"
+  },
+  {
+    "id": "v-b2-06636",
+    "word": "vault",
+    "letter": "V",
+    "level": "B2",
+    "turkish_explanation": "kasa; tonoz; atlamak"
+  },
+  {
+    "id": "v-c1-06637",
+    "word": "veil",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "peçe; örtü"
+  },
+  {
+    "id": "v-b2-06638",
+    "word": "velocity",
+    "letter": "V",
+    "level": "B2",
+    "turkish_explanation": "hız; sürat"
+  },
+  {
+    "id": "v-c1-06639",
+    "word": "velvet",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "kadife"
+  },
+  {
+    "id": "v-c1-06640",
+    "word": "vengeance",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "intikam"
+  },
+  {
+    "id": "v-c1-06641",
+    "word": "vent",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "havalandırma deliği; öfkeyi boşaltmak"
+  },
+  {
+    "id": "v-b2-06642",
+    "word": "vibe",
+    "letter": "V",
+    "level": "B2",
+    "turkish_explanation": "hava; ortamın verdiği his"
+  },
+  {
+    "id": "v-b2-06643",
+    "word": "victor",
+    "letter": "V",
+    "level": "B2",
+    "turkish_explanation": "galip"
+  },
+  {
+    "id": "v-c1-06644",
+    "word": "victorious",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "zafer kazanmış"
+  },
+  {
+    "id": "v-c1-06645",
+    "word": "vile",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "iğrenç; aşağılık"
+  },
+  {
+    "id": "v-b1-06646",
+    "word": "villa",
+    "letter": "V",
+    "level": "B1",
+    "turkish_explanation": "bahçeli müstakil yazlık ev"
+  },
+  {
+    "id": "v-c1-06647",
+    "word": "vine",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "asma; sarılıcı bitki"
+  },
+  {
+    "id": "v-c1-06648",
+    "word": "vinegar",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "sirke"
+  },
+  {
+    "id": "v-c1-06649",
+    "word": "vista",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "manzara; geniş görünüm"
+  },
+  {
+    "id": "v-c1-06650",
+    "word": "vivid",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "canlı; parlak"
+  },
+  {
+    "id": "v-b1-06651",
+    "word": "vocabulary",
+    "letter": "V",
+    "level": "B1",
+    "turkish_explanation": "kelime hazinesi; sözcük dağarcığı"
+  },
+  {
+    "id": "v-b2-06652",
+    "word": "void",
+    "letter": "V",
+    "level": "B2",
+    "turkish_explanation": "boşluk; hükümsüz"
+  },
+  {
+    "id": "v-c1-06653",
+    "word": "volcano",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "yanardağ"
+  },
+  {
+    "id": "v-b1-06654",
+    "word": "volleyball",
+    "letter": "V",
+    "level": "B1",
+    "turkish_explanation": "voleybol"
+  },
+  {
+    "id": "v-c1-06655",
+    "word": "vomit",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "kusmak; kusmuk"
+  },
+  {
+    "id": "v-c1-06656",
+    "word": "voyage",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "deniz yolculuğu"
+  },
+  {
+    "id": "v-c1-06657",
+    "word": "vulgar",
+    "letter": "V",
+    "level": "C1",
+    "turkish_explanation": "kaba; bayağı"
+  },
+  {
+    "id": "w-b2-06658",
+    "word": "wade",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "su içinde yürümek"
+  },
+  {
+    "id": "w-b2-06659",
+    "word": "wagon",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "vagon; yük arabası"
+  },
+  {
+    "id": "w-b2-06660",
+    "word": "waist",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "bel"
+  },
+  {
+    "id": "w-c1-06661",
+    "word": "waiver",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "feragat; haktan vazgeçme"
+  },
+  {
+    "id": "w-b1-06662",
+    "word": "wallet",
+    "letter": "W",
+    "level": "B1",
+    "turkish_explanation": "cüzdan"
+  },
+  {
+    "id": "w-c1-06663",
+    "word": "walnut",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "ceviz"
+  },
+  {
+    "id": "w-b1-06664",
+    "word": "wardrobe",
+    "letter": "W",
+    "level": "B1",
+    "turkish_explanation": "gardırop; giysi dolabı"
+  },
+  {
+    "id": "w-c1-06665",
+    "word": "warmth",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "sıcaklık; samimiyet"
+  },
+  {
+    "id": "w-b1-06666",
+    "word": "waterfall",
+    "letter": "W",
+    "level": "B1",
+    "turkish_explanation": "şelale"
+  },
+  {
+    "id": "w-c1-06667",
+    "word": "weary",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "yorgun; bıkmış"
+  },
+  {
+    "id": "w-c1-06668",
+    "word": "wedge",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "kama; takoz"
+  },
+  {
+    "id": "w-b1-06669",
+    "word": "whale",
+    "letter": "W",
+    "level": "B1",
+    "turkish_explanation": "balina"
+  },
+  {
+    "id": "w-c1-06670",
+    "word": "whistle",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "ıslık; düdük"
+  },
+  {
+    "id": "w-c1-06671",
+    "word": "wholesome",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "sağlıklı; yararlı"
+  },
+  {
+    "id": "w-b2-06672",
+    "word": "wicked",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "kötü; çok kötü niyetli"
+  },
+  {
+    "id": "w-c1-06673",
+    "word": "wig",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "peruk"
+  },
+  {
+    "id": "w-c1-06674",
+    "word": "willow",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "söğüt"
+  },
+  {
+    "id": "w-c1-06675",
+    "word": "wink",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "göz kırpmak"
+  },
+  {
+    "id": "w-b1-06676",
+    "word": "wireless",
+    "letter": "W",
+    "level": "B1",
+    "turkish_explanation": "kablosuz"
+  },
+  {
+    "id": "w-b2-06677",
+    "word": "witch",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "cadı"
+  },
+  {
+    "id": "w-c1-06678",
+    "word": "witty",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "nüktedan; esprili"
+  },
+  {
+    "id": "w-c1-06679",
+    "word": "woody",
+    "letter": "W",
+    "level": "C1",
+    "turkish_explanation": "ağaçlı; odunsu"
+  },
+  {
+    "id": "w-b2-06680",
+    "word": "wreck",
+    "letter": "W",
+    "level": "B2",
+    "turkish_explanation": "enkaz; harap etmek; kaza"
+  },
+  {
+    "id": "y-c1-06681",
+    "word": "yeast",
+    "letter": "Y",
+    "level": "C1",
+    "turkish_explanation": "maya"
   }
 ]
