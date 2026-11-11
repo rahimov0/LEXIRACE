@@ -257,6 +257,7 @@ body:has(.home,.tab){background:radial-gradient(130% 55% at 50% -8%,color-mix(in
 .prow.dg b{color:var(--red)}.t-set .prow.dg .mi.sm{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)}
 .btn.dng{background:var(--red);border-color:transparent;color:#fff}.btn.dng:disabled,.btn.dgg:disabled{opacity:.4}
 .chk{display:flex;gap:10px;align-items:flex-start;margin:4px 0 12px;font-size:13.5px;line-height:1.4;cursor:pointer}.chk input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--red)}
+.native #ggo,.native .ordiv,.native #gmsg,.native #pgr{display:none!important}
 </style></head>
 <body><main id="app"></main>
 <script>
@@ -395,7 +396,9 @@ let FB=null,ACC=null,AUTHREADY=false;
 function gateView(){stop();if(!AUTHREADY){app.innerHTML=`<div class="in" id="ldg">${head("THINK FAST. SPEAK ENGLISH.",1)}<p class="note" style="text-align:center">Yükleniyor…</p></div>`;return}authView()}
 function syncDb(){const p=ACC?ACC.pid:"";if(p!==CURPID0){CURPID0=p;PULLED="";LASTP="";clearTimeout(SYNCT);initDb()}}
 function initDb(){db=Object.assign({games:[],recent:{},notebook:{},deck:[],unlocked:{},daily:{}},S.load());db.unlocked=db.unlocked||{};db.daily=db.daily||{};db.settings=Object.assign({},DEF,db.settings);UL.forEach(l=>checkUnlock(l));if(!isUnlocked(db.settings.lv))db.settings.lv="A1";applyTheme()}
-async function fb(){if(FB)return FB;const b="https://www.gstatic.com/firebasejs/10.14.1/",[app,auth,fs]=await Promise.all([import(b+"firebase-app.js"),import(b+"firebase-auth.js"),import(b+"firebase-firestore.js")]),a=app.initializeApp(FBCFG);return FB={app,a,auth,fs,A:auth.getAuth(a),D:fs.getFirestore(a)}}
+const NATIVE=/^(capacitor|ionic):$/.test(location.protocol)||!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());if(NATIVE)document.documentElement.classList.add("native");
+const mkAuth=(auth,app,mem)=>NATIVE?auth.initializeAuth(app,{persistence:mem?[auth.inMemoryPersistence]:[auth.indexedDBLocalPersistence,auth.inMemoryPersistence]}):auth.getAuth(app);
+async function fb(){if(FB)return FB;const b="https://www.gstatic.com/firebasejs/10.14.1/",[app,auth,fs]=await Promise.all([import(b+"firebase-app.js"),import(b+"firebase-auth.js"),import(b+"firebase-firestore.js")]),a=app.initializeApp(FBCFG);return FB={app,a,auth,fs,A:mkAuth(auth,a),D:fs.getFirestore(a)}}
 const AVATARS=["🦊","🐼","🐸","🐱","🐵","🐯","🐨","🐻","🐰","🦁","🐶","🐷","🐙","🦄","🐧","🐺","🐹","🦉"],EMD="lexirace.rahimov.tr",ALPH="ABCDEFGHJKMNPQRSTUVWXYZ23456789";
 const RESERVED=["admin","root","lexirace","moderator","support","system","null","undefined","anonymous","yonetici","yönetici"],BADW=["fuck","shit","orospu","yarrak","amk","piç","sikik","siktir","göt"];
 const nickKey=n=>(n||"").trim().replace(/[ıİ]/g,"i").toLowerCase(),codePw=c=>(c||"").replace(/[^A-Za-z0-9]/g,"").toUpperCase();
@@ -405,7 +408,7 @@ const AERR={"auth/network-request-failed":"Bağlantı hatası, internetini kontr
 const aerr=e=>(e&&(AERR[e.code]||(e.code&&!e.message?e.code:e.message)))||"Bir hata oluştu.";
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const dref=(F,...p)=>F.fs.doc(F.D,...p);
-async function secAuth(){const F=await fb();if(!F.sec)F.sec=F.auth.getAuth(F.app.initializeApp(FBCFG,"sec"));return F.sec}
+async function secAuth(){const F=await fb();if(!F.sec)F.sec=mkAuth(F.auth,F.app.initializeApp(FBCFG,"sec"),1);return F.sec}
 async function loadAC(u){const F=await fb(),m=/^(?:p|r\d+)_([a-z0-9]+)@/.exec((u&&u.email)||"");let pid=m&&m[1];if(!pid&&u){try{const l=await F.fs.getDoc(dref(F,"links",u.uid));if(l.exists())pid=l.data().pid}catch(e){}}if(!pid){ACC=null;syncDb();return}const d=await F.fs.getDoc(dref(F,"players",pid));ACC=d.exists()?{pid,uid:u.uid,...d.data()}:null;syncDb()}
 async function authInit(){setTimeout(()=>{if(!AUTHREADY){AUTHREADY=true;if($("#ldg"))authView()}},6000);
  try{const F=await fb();F.auth.onAuthStateChanged(F.A,async u=>{try{if(u)await loadAC(u);else{ACC=null;syncDb()}}catch(e){ACC=null}AUTHREADY=true;if(!GBUSY&&($("#ldg")||$("#acform")))ACC?menu():authView();else if($("#acprof"))profile()})}catch(e){AUTHREADY=true;if($("#ldg"))authView()}}
@@ -421,9 +424,9 @@ async function loginAcct(nick,pw){const F=await fb(),ix=await F.fs.getDoc(dref(F
 const GLE=`<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;let GBUSY=false,AMSG="";
 function gProv(F){const p=new F.auth.GoogleAuthProvider();p.setCustomParameters({prompt:"select_account"});return p}
 function gInfo(){const u=FB&&FB.A.currentUser;return(u&&u.providerData.find(p=>p.providerId==="google.com"))||null}
-async function linkGoogle(){const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw{message:"Önce giriş yapmalısın."};await F.auth.linkWithPopup(u,gProv(F));try{await F.fs.setDoc(dref(F,"links",u.uid),{pid:ACC.pid})}catch(e){}}
+async function linkGoogle(){if(NATIVE)throw{message:"Uygulamada Google bağlama henüz hazır değil."};const F=FB||await fb(),u=F.A.currentUser;if(!u||!ACC)throw{message:"Önce giriş yapmalısın."};await F.auth.linkWithPopup(u,gProv(F));try{await F.fs.setDoc(dref(F,"links",u.uid),{pid:ACC.pid})}catch(e){}}
 async function unlinkGoogle(){const F=await fb(),u=F.A.currentUser;await F.auth.unlink(u,"google.com");try{await F.fs.deleteDoc(dref(F,"links",u.uid))}catch(e){}}
-async function googleLogin(){const F=FB||await fb();GBUSY=true;try{const r=await F.auth.signInWithPopup(F.A,gProv(F)),u=r.user,ai=F.auth.getAdditionalUserInfo(r);
+async function googleLogin(){if(NATIVE)throw{message:"Uygulamada Google girişi henüz hazır değil. Takma ad ve şifrenle giriş yap."};const F=FB||await fb();GBUSY=true;try{const r=await F.auth.signInWithPopup(F.A,gProv(F)),u=r.user,ai=F.auth.getAdditionalUserInfo(r);
  if(ai&&ai.isNewUser){try{await F.auth.deleteUser(u)}catch(e){try{await F.auth.signOut(F.A)}catch(_){}}ACC=null;syncDb();throw{message:"Bu Google hesabı henüz bir LexiRace hesabına bağlı değil. Önce takma adın ve şifrenle giriş yap, sonra Ayarlar’dan Google’ı bağla."}}
  await loadAC(u);if(!ACC){try{await F.auth.signOut(F.A)}catch(e){}throw{message:"Bu Google hesabına bağlı bir LexiRace hesabı bulunamadı."}}}finally{GBUSY=false}}
 async function logoutAcct(){const F=await fb();await F.auth.signOut(F.A);ACC=null;syncDb()}
