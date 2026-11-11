@@ -1,0 +1,9 @@
+{
+  "appId": "tr.rahimov.lexirace",
+  "appName": "LexiRace",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#14110f"
+  }
+}
