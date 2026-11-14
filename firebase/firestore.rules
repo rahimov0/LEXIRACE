@@ -92,6 +92,22 @@ service cloud.firestore {
       allow delete: if signedIn() && isOwner(pid);
     }
 
+    // ---- Oyuncu bildirimleri (uygunsuz takma ad / hile). Yalnızca yazılır; uygulamadan okunamaz. ----
+    match /reports/{id} {
+      allow read: if false;
+      allow create, update: if signedIn()
+        && request.resource.data.keys().hasOnly(['pid', 'nick', 'by', 'src', 'at'])
+        && request.resource.data.by is string
+        && isOwner(request.resource.data.by)
+        && request.resource.data.pid is string
+        && request.resource.data.pid != request.resource.data.by
+        && id == request.resource.data.by + '_' + request.resource.data.pid
+        && request.resource.data.nick is string && request.resource.data.nick.size() <= 16
+        && request.resource.data.src is string && request.resource.data.src.size() <= 12
+        && request.resource.data.at == request.time;
+      allow delete: if false;
+    }
+
     // ---- Google bağlantısı: Firebase kullanıcısı (uid) -> oyuncu (pid). Sadece kendi kaydını okur/yazar. ----
     match /links/{uid} {
       allow get: if signedIn() && request.auth.uid == uid;
