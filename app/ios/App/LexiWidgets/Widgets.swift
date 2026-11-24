@@ -49,11 +49,16 @@ struct Provider: TimelineProvider {
     }
 }
 
+private let bgColor = Color(red: 0.24, green: 0.17, blue: 0.15)
+private let cream = Color(red: 1.0, green: 0.93, blue: 0.88)
+
 struct WordView: View {
     @Environment(\.widgetFamily) var family
     let entry: WordEntry
 
-    var body: some View {
+    private var isHome: Bool { family == .systemSmall || family == .systemMedium }
+
+    @ViewBuilder var content: some View {
         switch family {
         case .accessoryInline:
             Text(entry.card.map { "\($0.w) · \($0.m)" } ?? "LexiRace kartların boş")
@@ -68,16 +73,35 @@ struct WordView: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         default:
-            VStack(alignment: .leading, spacing: 6) {
-                Text(entry.card?.w ?? "Kartların boş")
-                    .font(.title2.bold())
+            VStack(spacing: 6) {
+                Spacer(minLength: 0)
+                Text((entry.card?.w ?? "Kartların boş").uppercased())
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundColor(cream)
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
                 Text(entry.card?.m ?? "Oyun sonunda kaçırdığın kelimeleri kartlara ekle, burada görünsün.")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
+                    .font(.system(size: 15))
+                    .foregroundColor(cream.opacity(0.9))
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.7)
                     .lineLimit(4)
                 Spacer(minLength: 0)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+    }
+
+    var body: some View {
+        if #available(iOS 17.0, *) {
+            content.containerBackground(for: .widget) {
+                if isHome { bgColor } else { Color.clear }
+            }
+        } else {
+            ZStack {
+                if isHome { bgColor }
+                content.padding()
+            }
         }
     }
 }
@@ -86,11 +110,7 @@ struct WordView: View {
 struct LexiWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: "LexiWordWidget", provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                WordView(entry: entry).containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                WordView(entry: entry).padding()
-            }
+            WordView(entry: entry)
         }
         .configurationDisplayName("Kelime Kartı")
         .description("Bilmediğin kelimeler sırayla görünür.")
