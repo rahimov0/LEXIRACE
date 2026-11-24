@@ -9,6 +9,7 @@
     "ios": "bash build-web.sh && cap sync ios && cap open ios"
   },
   "dependencies": {
+    "@capacitor-community/admob": "^8.4.2",
     "@capacitor/core": "^8.6.0",
     "@capacitor/haptics": "^8.0.2",
     "@capacitor/ios": "^8.6.0",
