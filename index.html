@@ -377,7 +377,7 @@ function playSheet(){const s=db.settings;let md=s.mode||"voice",rl=s.rule||"clas
   const sync=()=>{document.querySelectorAll("#pmb [data-pm]").forEach(x=>x.classList.toggle("on",x.dataset.pm===md));document.querySelectorAll("#prb [data-pr]").forEach(x=>x.classList.toggle("on",x.dataset.pr===rl));$("#phn").textContent=hint();const pr=$("#prb");pr.style.opacity=md==="scr"?".4":"";pr.style.pointerEvents=md==="scr"?"none":""};sync();
   document.querySelectorAll("#pmb [data-pm]").forEach(b=>b.onclick=()=>{md=b.dataset.pm;sync()});document.querySelectorAll("#prb [data-pr]").forEach(b=>b.onclick=()=>{rl=b.dataset.pr;sync()});
   $("#pgo").onclick=()=>{s.mode=md;s.rule=rl;save();close();begin()}})}
-const ADTEST=true,ADID={banner:"ca-app-pub-6811894230993861/1120559172",inter:"ca-app-pub-6811894230993861/1364101759",reward:"ca-app-pub-6811894230993861/3854533727"};
+const ADTEST=false,ADID={banner:"ca-app-pub-6811894230993861/1120559172",inter:"ca-app-pub-6811894230993861/1364101759",reward:"ca-app-pub-6811894230993861/3854533727"};
 const AD={ready:false,starting:false,initP:null,banner:"none",interOk:false,rewOk:false,showing:false,games:0,off:false,priv:false,then:null,rew:null,earned:false,dfy:false};
 const adc=(m,o)=>{try{const C=window.Capacitor;if(!NATIVE||!C||!C.nativePromise)return Promise.reject(new Error("no"));return C.nativePromise("AdMob",m,o||{})}catch(e){return Promise.reject(e)}};
 const adl=(ev,fn)=>{try{window.Capacitor.nativeCallback("AdMob","addListener",{eventName:ev},fn)}catch(e){}};
