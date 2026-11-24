@@ -607,14 +607,12 @@ function duelSeqHard(seed,lv){const r=rng("duelH|"+seed+"|"+lv),ws=WORDS.filter(
 function duelSeq(seed,lv,hard){if(hard)return duelSeqHard(seed,lv);const r=rng("duel|"+seed+"|"+lv),o={};WORDS.filter(w=>lv==="ALL"||w.level===lv).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return LANG.alphabet.map(L=>{const a=(o[L]||[]).sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
 async function micEnsure(){if(MICSESS)return true;try{let st="";try{st=(await navigator.permissions.query({name:"microphone"})).state}catch(_){}if(st!=="granted"){const s=await navigator.mediaDevices.getUserMedia({audio:true});s.getTracks().forEach(t=>t.stop())}MICSESS=true;return true}catch(e){return false}}
 const dBox=(t,sub)=>`<div class="card" style="text-align:center"><p class="note">${t}</p>${sub||""}</div>`;
-function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const md=db.settings.mode==="scr"?"type":db.settings.mode;
+function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const md=db.settings.mode==="scr"?"scr":"voice";
  app.innerHTML=`<div class="in tab t-duel">${phead("Düello","Aynı kelimeler, aynı süre, tek rakip","bolt","#cf6f7d")}
- <div class="info">${I("clock",17)}<p>${DUK==="wm"?"Aynı kelimeler iki ekranda. Doğru çifti ilk eşleştiren 1 puan alır. 3 tur: 5, 6, 7 kelime. Yanlış seçimde 1 sn beklersin.":"İki oyuncu, aynı 26 harf, harf başına 10 sn. PAS yok. Skorlar oda kapanınca silinir, seviye kilidini ve istatistiklerini etkilemez."}</p></div>
+ <div class="info">${I("clock",17)}<p>${DUK==="wm"?"Aynı kelimeler iki ekranda. Doğru çifti ilk eşleştiren 1 puan alır. 3 tur: 5, 6, 7 kelime. Yanlış seçimde 1 sn beklersin.":"İki oyuncu, aynı 26 kelime, kelime başına 10 sn. Zorlu kural: verilen harf kelimenin başında, ortasında ya da sonunda olabilir. PAS yok. Skorlar oda kapanınca silinir, seviye kilidini ve istatistiklerini etkilemez."}</p></div>
  <div class="card opt"><div class="lbl">Düello türü</div><div class="segc" id="dkd">${[["az","A–Z Düello"],["wm","Word Match"]].map(([k,t])=>`<button data-k="${k}" class="${DUK===k?"on":""}">${t}</button>`).join("")}</div>
  ${DUK==="wm"?`<div class="lbl">Seviye grubu</div><div class="segc c3">${WMG.map(([k,t])=>`<button data-w="WM${k}" class="${DUW==="WM"+k?"on":""}"><b>${t}</b></button>`).join("")}</div>`:`<div class="lbl">Seviye</div><div class="fl lvc" id="dlv">${[...UL,"ALL"].map(k=>`<button data-l="${k}" data-lcl="${k}" class="${k===DUL?"on":""}">${lvName(k)}</button>`).join("")}</div>
- <div class="lbl">Kural</div><div class="segc">${[[0,"Klasik"],[1,"Zorlu"]].map(([k,t])=>`<button data-h="${k}" class="${(DUH?1:0)===k?"on":""}">${t}</button>`).join("")}</div>
- <p class="note hint" id="drn">${DUH?"Zorlu: harf kelimenin başında, ortasında ya da sonunda olabilir.":"Klasik: kelime verilen harfle başlar."}</p>
- <div class="lbl">Oyun modu</div><div class="segc">${[["voice","mic","Sesli"],["type","pen","Yazılı"]].map(([k,i,t])=>`<button class="${md===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>`}</div>
+ <div class="lbl">Oyun modu</div><div class="segc">${[["voice","mic","Sesli"],["scr","rot","Sırala"]].map(([k,i,t])=>`<button class="${md===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>`}</div>
  ${msg?`<p class="note lkm">${esc(msg)}</p>`:""}
  <button class="btn cta" id="dq">${I("bolt",18)}Rastgele Rakip Bul</button>
  <button class="btn alt2" id="dc">${I("play",16)}Özel Oda Kur</button>
@@ -623,9 +621,8 @@ function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const m
  app.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{DUK=b.dataset.k;duelHome(msg)});app.querySelectorAll("[data-w]").forEach(b=>b.onclick=()=>{DUW=b.dataset.w;app.querySelectorAll("[data-w]").forEach(x=>x.classList.toggle("on",x===b))});
  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{DUL=b.dataset.l;app.querySelectorAll("[data-l]").forEach(x=>x.classList.toggle("on",x===b))});
  app.querySelectorAll("[data-md]").forEach(b=>b.onclick=()=>{db.settings.mode=b.dataset.md;save();duelHome(msg)});
- app.querySelectorAll("[data-h]").forEach(b=>b.onclick=()=>{DUH=b.dataset.h==="1";app.querySelectorAll("[data-h]").forEach(x=>x.classList.toggle("on",x===b));$("#drn").textContent=DUH?"Zorlu: harf kelimenin başında, ortasında ya da sonunda olabilir.":"Klasik: kelime verilen harfle başlar."});
  const busy=f=>async()=>{if(duelHome.b)return;duelHome.b=1;try{await f()}catch(e){duelHome(duelErr(e))}duelHome.b=0};
- $("#dq").onclick=busy(()=>DUK==="wm"?duelFind(DUW,false):duelFind(DUL,DUH));$("#dc").onclick=busy(()=>DUK==="wm"?duelCreate(DUW,false,false):duelCreate(DUL,false,DUH));
+ $("#dq").onclick=busy(()=>DUK==="wm"?duelFind(DUW,false):duelFind(DUL,true));$("#dc").onclick=busy(()=>DUK==="wm"?duelCreate(DUW,false,false):duelCreate(DUL,false,true));
  $("#djb").onclick=busy(()=>{const c=$("#dj").value.trim().toUpperCase();if(c.length!==5)return duelHome("Kod 5 karakter olmalı.");return duelJoin(c)});
 }
 const duelErr=e=>{console.error("duel",e);return e&&/PERMISSION_DENIED|permission_denied/i.test(e.code+" "+e.message)?"Düello şu an kullanılamıyor: veritabanı kuralları yayınlanmamış olabilir.":"Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene. ("+String((e&&(e.code||e.message))||e).slice(0,70)+")"};
@@ -644,8 +641,8 @@ async function duelFind(lv,hard){duelWait("Rakip aranıyor…");const R=await rt
   await duelOpen(code,true,{rnd:true,lv});return}
  duelHome("Şu an eşleşme bulunamadı. Biraz sonra tekrar dene.")}
 async function duelOpen(code,host,o){const R=await rt(),me=R.F.A.currentUser.uid;if(DU)duelDrop();
- let md=db.settings.mode==="scr"?"type":db.settings.mode,mk=false;const wmk=isWMlv(o&&o.lv);if(md==="voice"&&!wmk){mk=!!SR&&await micEnsure();if(!mk)md="type"}
- DU={code,host,uid:me,rf:rr("rooms/"+code),started:false,ended:false,ans:{},oppA:{},rnd:!!(o&&o.rnd),lv:(o&&o.lv)||null,mode:md,micOK:mk,micFell:db.settings.mode==="voice"&&md==="type"};
+ const md0=db.settings.mode==="scr"?"scr":"voice";let md=md0,mk=false;const wmk=isWMlv(o&&o.lv);if(md==="voice"&&!wmk){mk=!!SR&&await micEnsure();if(!mk)md="type"}
+ DU={code,host,uid:me,rf:rr("rooms/"+code),started:false,ended:false,ans:{},oppA:{},rnd:!!(o&&o.rnd),lv:(o&&o.lv)||null,mode:md,micOK:mk,micFell:md0==="voice"&&md==="type"};
  if(!wmk)try{localStorage.setItem("lexirace:duel",JSON.stringify({code,host,t:Date.now()}))}catch(e){}
  if(DU.rnd)DU.qt=setTimeout(()=>{const D=DU;if(D&&!D.started&&D.rnd)duelHome("Rakip bulunamadı. Tekrar dene.")},60000);
  DU.unsub=R.m.onValue(DU.rf,s=>duelSnap(s.val()),()=>{duelHome(duelErr({code:"PERMISSION_DENIED"}))})}
@@ -667,7 +664,7 @@ function duelSnap(v){const D=DU;if(!D)return;
  if(D.host&&oid&&!D.go&&v.status==="wait"){D.go=true;RT.m.update(D.rf,{status:"play",startAt:srv()+5000}).catch(()=>{});return}
  duelLobbyView(v)}
 function duelLobbyView(v){const D=DU,pl=v.players||{},oid=D.oid,sig=Object.keys(pl).join()+"|"+D.rnd;if(D.sig===sig&&$("#dx"))return;D.sig=sig;const P=(p,me)=>p?`<div class="lbr ${me?"me":""}"><span class="la">${esc(p.avatar)}</span><span class="ln"><b>${esc(p.nick)}${me?" (sen)":""}</b><small>${me?"Hazır":"Hazır"}</small></span></div>`:`<div class="lbr" style="opacity:.55"><span class="la">⏳</span><span class="ln"><b>Rakip bekleniyor…</b><small>${D.rnd?"Eşleşme aranıyor":"Kodu arkadaşınla paylaş"}</small></span></div>`;
- app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center">${D.rnd?`<h2 style="margin-top:0">Rakip aranıyor…</h2>`:`<h2 style="margin-top:0">Oda kodu</h2><div class="dcode">${D.code}</div><button class="btn alt" id="dcp" style="margin-top:8px">Kodu kopyala</button>`}<p class="note" style="margin:10px 0 0">${lvName(v.lv)}${v.hard?" · Zorlu":""}${isWMlv(v.lv)?" · 3 tur (5-6-7 kelime)":` · ${D.mode==="voice"?"Sesli":"Yazılı"} mod${D.micFell?" (mikrofon yok, yazılı oynayacaksın)":""}`}</p></div>
+ app.innerHTML=`<div class="in">${head("1V1 DÜELLO")}<div class="card" style="text-align:center">${D.rnd?`<h2 style="margin-top:0">Rakip aranıyor…</h2>`:`<h2 style="margin-top:0">Oda kodu</h2><div class="dcode">${D.code}</div><button class="btn alt" id="dcp" style="margin-top:8px">Kodu kopyala</button>`}<p class="note" style="margin:10px 0 0">${lvName(v.lv)}${v.hard?" · Zorlu":""}${isWMlv(v.lv)?" · 3 tur (5-6-7 kelime)":` · ${D.mode==="voice"?"Sesli":D.mode==="scr"?"Sırala":"Yazılı"} mod${D.micFell?" (mikrofon yok, yazılı oynayacaksın)":""}`}</p></div>
  <div style="margin-top:10px">${P(pl[D.uid],1)}${P(oid&&pl[oid],0)}</div>${oid?`<p class="note" style="text-align:center">Rakip geldi! Oyun başlıyor…</p>`:""}
  <button class="btn alt" id="dx" style="margin-top:10px">Vazgeç</button></div>`;
  $("#dx").onclick=()=>duelHome();const cp=$("#dcp");if(cp)cp.onclick=()=>{try{navigator.clipboard.writeText(D.code);cp.textContent="Kopyalandı ✓"}catch(e){cp.textContent=D.code}}}
@@ -839,7 +836,7 @@ function paint(){const c={ok:0,pass:0,wrong:0,time:0};G.res.forEach(r=>c[r.r]++)
 const anim=(id,c)=>{const e=$(id);if(e){e.classList.remove(c);void e.offsetWidth;e.classList.add(c)}};
 async function round(){const g=G,rid=++g.rid;g.phase="wait";g.lock=true;g.late=false;g.ls=null;g.heard={};clearTimeout(g.at);await Mic.stop();if(G!==g||g.rid!==rid)return;
  try{speechSynthesis.cancel()}catch(e){}const w=g.seq[g.i];g.lock=false;g.pv=[];g.pk=[];$("#big").className="big";$("#big").textContent=w.letter;$("#def").textContent=w.clue||w.def;trBtn(w);$("#bxh").innerHTML=boxHtml(w);$("#fb").textContent="";$("#pas").disabled=false;anim("#big","swap");anim("#def","swap");
- const t=$("#tin");if(t)t.value="";fillBoxes("");paint();if(g.daily){db.daily[g.daily.key].live=true;save()}if(g.mode==="scr")g.secs=scrSecs(w);g.phase="listen";g.end=endT(g);$("#sec").textContent=g.secs;$("#ring").style.strokeDashoffset=0;$("#stage").classList.remove("warn");
+ const t=$("#tin");if(t)t.value="";fillBoxes("");paint();if(g.daily){db.daily[g.daily.key].live=true;save()}if(g.mode==="scr"&&!g.mp)g.secs=scrSecs(w);g.phase="listen";g.end=endT(g);$("#sec").textContent=g.secs;$("#ring").style.strokeDashoffset=0;$("#stage").classList.remove("warn");
  g.ptt=g.mode==="voice"&&!!db.settings.ptt;pttUi(false);
  if(g.mode==="voice"&&!g.dead&&g.ptt){stat("retry","Mikrofona bas ve söyle");tick();return}
  if(g.mode==="voice"&&!g.dead){stat("listen","Dinleniyor…");await new Promise(res=>{g.ready=res;listen(rid);setTimeout(res,900)});g.ready=null;if(G!==g||g.rid!==rid||g.lock)return;g.end=endT(g)}
