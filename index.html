@@ -601,26 +601,28 @@ async function board(){stop();if(!ACC)return gateView();
 function reportSheet(pid,nick){sheet("Oyuncuyu bildir",`<p class="note" style="margin:0 0 12px"><b>${esc(nick)}</b> adlı oyuncuyu uygunsuz takma ad veya hile şüphesiyle bildirmek üzeresin. Bildirimler incelenir; kurallara uymayan hesaplar kaldırılır.</p><p class="amsg" id="rpm" role="alert"></p><button class="btn dng" id="rpg">Bildir</button><button class="btn alt" id="rpc" style="margin-top:8px">Vazgeç</button>`,close=>{$("#rpc").onclick=close;$("#rpg").onclick=async()=>{const b=$("#rpg");b.disabled=true;try{const F=await fb();await tmo(F.fs.setDoc(dref(F,"reports",ACC.pid+"_"+pid),{pid,nick,by:ACC.pid,src:"daily",at:F.fs.serverTimestamp()}),12000);close();infoBox("Teşekkürler","Bildirimin alındı. En kısa sürede inceleyeceğiz.")}catch(e){b.disabled=false;$("#rpm").innerHTML=`Bildirim gönderilemedi. İnternetini kontrol et ya da <a href="mailto:destek.rahimov@gmail.com?subject=${encodeURIComponent("LexiRace bildirim: "+nick)}">destek.rahimov@gmail.com</a> adresine yaz.`}}})}
 let BDQ=0;
 /* ===== 1v1 DÜELLO (Realtime Database) ===== */
-const SLOT=12500,RND=10000,lvName=k=>k==="ALL"?"TÜMÜ":/^WM[ABC]$/.test(k||"")?"Word Match "+k[2]:k;
-let RT=null,DU=null,DUL="A1",DUH=false,DRES=false;
+const SLOT=12500,RND=10000,lvName=k=>/^[ABC]2$/.test(k||"")?k[0]+" Seviyesi":k==="ALL"?"TÜMÜ":/^WM[ABC]$/.test(k||"")?"Word Match "+k[2]:k;
+let RT=null,DU=null,DUL="",DUH=false,DRES=false;
 async function rt(){if(RT)return RT;const F=await fb(),b="https://www.gstatic.com/firebasejs/10.14.1/",m=await import(b+"firebase-database.js"),d=m.getDatabase(F.a);RT={m,d,F,off:0,conn:true};
  m.onValue(m.ref(d,".info/serverTimeOffset"),s=>{RT.off=s.val()||0});m.onValue(m.ref(d,".info/connected"),s=>{RT.conn=!!s.val();if(RT.conn&&DU&&DU.started&&!DU.ended)duelPresence()});return RT}
 const srv=()=>Date.now()+(RT?RT.off:0);
 const roomCode=()=>{let s="";for(let i=0;i<5;i++)s+=ALPH[Math.floor(Math.random()*ALPH.length)];return s};
 const rr=p=>RT.m.ref(RT.d,p);
-function duelSeqHard(seed,lv){const r=rng("duelH|"+seed+"|"+lv),ws=WORDS.filter(w=>lv==="ALL"||w.level===lv).sort((x,y)=>x.id<y.id?-1:1);
- return LANG.alphabet.map(L=>{const l=L.toLowerCase(),cl={s:[],m:[],e:[]};ws.forEach(w=>{const a=w.word.toLowerCase().replace(/[^a-z]/g,"");if(!a.includes(l))return;(a[0]===l?cl.s:a[a.length-1]===l?cl.e:cl.m).push(w)});
+const dSeg=lv=>/^[ABC]2$/.test(lv)?lv[0]:null,dOk=(w,lv)=>{const g=dSeg(lv);return g?!!MIX[g][w.level]:(lv==="ALL"||w.level===lv)};
+function duelSeqHard(seed,lv){const r=rng("duelH|"+seed+"|"+lv),g=dSeg(lv),all0=WORDS.filter(w=>dOk(w,lv)).sort((x,y)=>x.id<y.id?-1:1),lvs=[];
+ if(g){Object.keys(MIX[g]).forEach(l=>{for(let i=0;i<MIX[g][l];i++)lvs.push(l)});for(let k=lvs.length-1;k>0;k--){const j=Math.floor(r()*(k+1));[lvs[k],lvs[j]]=[lvs[j],lvs[k]]}}
+ return LANG.alphabet.map((L,li)=>{const ws=g&&lvs[li]&&all0.some(w=>w.level===lvs[li]&&w.word.toLowerCase().includes(L.toLowerCase()))?all0.filter(w=>w.level===lvs[li]):all0;const l=L.toLowerCase(),cl={s:[],m:[],e:[]};ws.forEach(w=>{const a=w.word.toLowerCase().replace(/[^a-z]/g,"");if(!a.includes(l))return;(a[0]===l?cl.s:a[a.length-1]===l?cl.e:cl.m).push(w)});
   const ks=["s","m","e"].filter(k=>cl[k].length);if(!ks.length)return undefined;const all=cl[ks[Math.floor(r()*ks.length)]],w=all[Math.floor(r()*all.length)],a=w.word.replace(/[^a-z]/gi,"").toLowerCase(),pos=[];[...a].forEach((ch,i)=>{if(ch===l)pos.push(i)});
   return Object.assign({},w,{letter:L,pos,hard:true})})}
-function duelSeq(seed,lv,hard){if(hard)return duelSeqHard(seed,lv);const r=rng("duel|"+seed+"|"+lv),o={};WORDS.filter(w=>lv==="ALL"||w.level===lv).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return LANG.alphabet.map(L=>{const a=(o[L]||[]).sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
+function duelSeq(seed,lv,hard){if(hard)return duelSeqHard(seed,lv);const r=rng("duel|"+seed+"|"+lv),o={};WORDS.filter(w=>dOk(w,lv)).forEach(w=>(o[w.letter]=o[w.letter]||[]).push(w));return LANG.alphabet.map(L=>{const a=(o[L]||[]).sort((x,y)=>x.id<y.id?-1:1);return a[Math.floor(r()*a.length)]})}
 async function micEnsure(){if(MICSESS)return true;try{let st="";try{st=(await navigator.permissions.query({name:"microphone"})).state}catch(_){}if(st!=="granted"){const s=await navigator.mediaDevices.getUserMedia({audio:true});s.getTracks().forEach(t=>t.stop())}MICSESS=true;return true}catch(e){return false}}
 const dBox=(t,sub)=>`<div class="card" style="text-align:center"><p class="note">${t}</p>${sub||""}</div>`;
-function duelHome(msg){if(!ACC)return gateView();stop();if(DU)duelDrop();const md=db.settings.mode==="scr"?"scr":"voice";
+function duelHome(msg){if(!ACC)return gateView();stop();if(!DUL)DUL=userSeg()+"2";if(DU)duelDrop();const md=db.settings.mode==="scr"?"scr":"voice";
  app.innerHTML=`<div class="in tab t-duel">${phead("Düello","Aynı kelimeler, aynı süre, tek rakip","bolt","#5f7899")}
  <div class="card opt"><div class="segc" id="dkd">${[["az","A–Z Düello"],["wm","Word Match"]].map(([k,t])=>`<button data-k="${k}" class="${DUK===k?"on":""}">${t}</button>`).join("")}</div>
- ${DUK==="wm"?`<div class="lbl">Seviye grubu</div><div class="segc c3">${WMG.map(([k,t])=>`<button data-w="WM${k}" class="${DUW==="WM"+k?"on":""}"><b>${t}</b></button>`).join("")}</div><p class="dnote">Aynı kelimeler iki ekranda. Doğru çifti ilk eşleştiren 1 puan alır. 3 tur: 5, 6, 7 kelime. Yanlış seçimde 1 sn beklersin.</p>`:`<div class="lbl">Seviye</div><div class="fl lvc" id="dlv">${[...UL,"ALL"].map(k=>`<button data-l="${k}" data-lcl="${k}" class="${k===DUL?"on":""}">${lvName(k)}</button>`).join("")}</div>
+ ${DUK==="wm"?`<div class="lbl">Seviye grubu</div><div class="segc c3">${WMG.map(([k,t])=>`<button data-w="WM${k}" class="${DUW==="WM"+k?"on":""}"><b>${t}</b></button>`).join("")}</div><p class="dnote">Aynı kelimeler iki ekranda. Doğru çifti ilk eşleştiren 1 puan alır. 3 tur: 5, 6, 7 kelime. Yanlış seçimde 1 sn beklersin.</p>`:`<div class="lbl">Seviye</div><div class="segc c3" id="dlv">${["A","B","C"].map(g=>`<button data-l="${g}2" class="${g+"2"===DUL?"on":""}"><b>${g}</b><small style="display:block;font-size:11px;opacity:.7">${SEGN[g]}</small></button>`).join("")}</div>
  <div class="lbl">Oyun modu</div><div class="segc">${[["voice","mic","Sesli"],["scr","rot","Sırala"]].map(([k,i,t])=>`<button class="${md===k?"on":""}" data-md="${k}">${I(i,16)}${t}</button>`).join("")}</div>
- <p class="dnote">26 kelime, kelime başına 10 sn. Verilen harf kelimenin başında, ortasında ya da sonunda olabilir. PAS yok. Skorlar oda kapanınca silinir.</p>`}</div>
+ <p class="dnote">26 kelime, kelime başına 10 sn. Kelimeler seçtiğin seviyeden karışık gelir. Verilen harf kelimenin başında, ortasında ya da sonunda olabilir. PAS yok. Skorlar oda kapanınca silinir.</p>`}</div>
  ${msg?`<p class="note lkm">${esc(msg)}</p>`:""}
  <button class="btn cta" id="dq">${I("bolt",18)}Rakip Bul</button>
  <div class="card joinc"><div class="lbl">Arkadaşınla oyna</div><div class="jrow"><input id="dj" maxlength="5" placeholder="KOD" autocomplete="off" autocapitalize="characters" spellcheck="false"><button class="btn" id="djb">Katıl</button></div><button class="dlk" id="dc">veya özel oda kur</button></div>
